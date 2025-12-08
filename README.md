@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=300&section=header&text=Deivis%20Irio%20Mayer&fontSize=80&animation=fadeIn&fontAlignY=38&desc=Product%20Security%20Engineer%20%7C%20Linux%20Specialist%20%7C%20Techdim%20Architect&descAlignY=55&descAlign=62" width="100%" alt="Techdim Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=300&section=header&text=DEIVIS%20IRIO%20MAYER&fontSize=70&fontColor=ffffff&fontAlignY=35&animation=fadeIn&desc=Product%20Security%20Engineer%20%7C%20Techdim%20Architect%20%7C%20Kether_1&descAlignY=55&descAlign=62&descSize=20" width="100%" alt="Techdim Header" />
 </div>
 
 ---
@@ -11,13 +11,19 @@ Specialist in **Linux Hardening**, **Security Automation**, and **Cognitive Arch
 
 > *"My objective is to optimize the interface between Human Intent and Artificial Intelligence through secure, scalable Linux infrastructure."*
 
+<div align="center">
+  <a href="https://gemini.google.com/share/a7b477804e9a">
+    <img src="https://img.shields.io/badge/🧠_Neural_Architecture_Log-View_Gemini_Blueprint-8E75B2?style=for-the-badge&logo=google-bard&logoColor=white" alt="Gemini Blueprint" />
+  </a>
+</div>
+
 ---
 
 ### 🛠️ Technical Arsenal
 
 | **Core Infrastructure** | **Security Engineering** | **Cognitive Ops (AI)** |
 |:---:|:---:|:---:|
-| ![Linux](https://img.shields.io/badge/Debian%20Linux-Expert-A81D33?style=for-the-badge&logo=debian&logoColor=white) | ![Security](https://img.shields.io/badge/OS%20Hardening-ISO%2027001-blue?style=for-the-badge&logo=shield) | ![Kether](https://img.shields.io/badge/Arch-Kether__1%20Oracle-8E75B2?style=for-the-badge&logo=google-bard&logoColor=white) |
+| ![Linux](https://img.shields.io/badge/Debian%20Linux-Expert-A81D33?style=for-the-badge&logo=debian&logoColor=white) | ![Security](https://img.shields.io/badge/OS%20Hardening-ISO%2027001-blue?style=for-the-badge&logo=shield) | ![Kether](https://img.shields.io/badge/Arch-Kether__1%20Oracle-00FF00?style=for-the-badge&logo=google-bard&logoColor=black) |
 | ![Network](https://img.shields.io/badge/Network-TCP%2FIP%20%2F%20VPN-gray?style=for-the-badge&logo=cisco) | ![ZeroTrust](https://img.shields.io/badge/Architecture-Zero%20Trust-red?style=for-the-badge) | ![Gemini](https://img.shields.io/badge/Google%20AI-Gemini%201.5%20Pro-4285F4?style=for-the-badge&logo=google&logoColor=white) |
 
 ---
@@ -57,4 +63,6 @@ Internal development track at Techdim Labs focused on High-Level Cognitive Autom
   <a href="mailto:techdimbrasil@gmail.com">
     <img src="https://img.shields.io/badge/Contact-Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
+  <br>
+  <sub><i>Coder Gemini Kether_1</i></sub>
 </div>
