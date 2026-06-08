@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:0f1923,100:0d1117&height=280&section=header&text=DEIVIS%20IRIO%20MAYER&fontSize=65&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Lead%20Systems%20Architect%20%7C%20Product%20Security%20Engineer%20%7C%20Techdim%20R%26D&descAlignY=57&descAlign=50&descSize=17" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:0f1923,100:0d1117&height=280&section=header&text=DEIVIS%20IRIO%20MAYER&fontSize=65&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Lead%20Systems%20Architect%20%7C%20Product%20Security%20Engineer%20%7C%20Techdim%20Labs&descAlignY=57&descAlign=50&descSize=17" width="100%" />
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=2800&pause=900&color=00FF41&center=true&vCenter=true&width=760&lines=KETHER_1+%E2%80%94+Sovereign+Boot+%7C+Debian+13+Trixie+%7C+ThinkPad+L14;KETHER+NETWATCH+%E2%80%94+BlueTeam+%7C+MITRE+ATT%26CK+%7C+ML+Isolation+Forest;DCISE+v3.0+%E2%80%94+500+Security+Directives+%7C+Counter-Intelligence;Sentinel+AI+%E2%80%94+Autonomous+Log+Guardian+%7C+Gemini+%2B+Bash;Zero+Trust+%7C+DevSecOps+%7C+Cognitive+Automation)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=2800&pause=900&color=00FF41&center=true&vCenter=true&width=760&lines=KETHER_1+%E2%80%94+Sovereign+Boot+%7C+Debian+13+Trixie+%7C+ThinkPad+L14;KETHER+NETWATCH+%E2%80%94+BlueTeam+%7C+MITRE+ATT-CK+%7C+ML+Isolation+Forest;DCISE+v3.0+%E2%80%94+500+Security+Directives+%7C+Counter-Intelligence;Sentinel+AI+%E2%80%94+Autonomous+Log+Guardian+%7C+Gemini+%2B+Bash;Zero+Trust+%7C+DevSecOps+%7C+Cognitive+Automation)](https://git.io/typing-svg)
 
 <br/>
 
