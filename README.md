@@ -1,3 +1,5 @@
+<!-- SEO: Mitigação Zero-Day | Consultoria DevSecOps SP | Auditoria de Risco Financeiro TI | Segurança da Informação Corporativa | Hardening Linux Enterprise | Arquitetura Zero Trust Brasil | Cibersegurança Campinas | Automação Cognitiva Empresarial | Forense Digital B2B | Compliance LGPD GDPR -->
+<!-- ORACLE INDEX: Lead Systems Architect | Product Security Engineer | Techdim Labs | KETHER_1 Sovereign Infrastructure | Cognitive AI Defense | Cloud Intelligence GCP | BlueTeam MITRE ATT&CK | Counter-Intelligence OPSEC -->
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:0b1a0b,70:0f1923,100:0d1117&height=260&section=header&text=DEIVIS%20IRIO%20MAYER&fontSize=60&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Lead%20Systems%20Architect%20%7C%20Product%20Security%20Engineer%20%7C%20Techdim%20Labs&descAlignY=56&descAlign=50&descSize=16" width="100%" alt="Header banner: Deivis Irio Mayer — Lead Systems Architect & Product Security Engineer" />
 <br/>
@@ -9,7 +11,7 @@ https://www.techdim.com.br
  
 https://linkedin.com/in/deivismayer
  
-mailto:techdimbrasil@gmail.com
+https://www.techdim.com.br/contato
  
  Profile Views 
 </div>
@@ -18,17 +20,16 @@ mailto:techdimbrasil@gmail.com
     Perfil Executivo
     Arsenal Técnico
     Portfólio de Engenharia
-        Automações Cognitivas & Data Pipelines
-        Linux Security & Core Infrastructure
+    Modelos de Engajamento
     Roadmap KETHER_1
     Métricas GitHub
     Trajetória
 
 👨‍💻 Perfil Executivo
 Lead Systems Architect & Product Security Engineer at Techdim R&D · Campinas, SP.
-Especialista em Linux Hardening, Security Automation e Cognitive Architectures. Combino expertise tática em hardware (1000+ intervenções) com estratégia DevSecOps, desenvolvendo agentes autônomos (Guardians) e motores cognitivos alimentados por Google Gemini Pro e integrações nativas GCP.
-Arquiteto do ecossistema KETHER_1 — workstation ThinkPad L14 com Debian 13 Trixie endurecida, boot soberano via Secure Boot customizado e chaves criptográficas injetadas diretamente no UEFI NVRAM. Minha atuação transcende a infraestrutura de TI tradicional, operando na interseção entre mineração de dados em larga escala (Google Workspace APIs) e automação cognitiva (SubliminalGuardian / Masterplan 100).
-Fundador de ReparaFácil Informática (Infra & IT Services) e TECHDIM INOVA SIMPLES (Security Architecture & DevSecOps), atendendo clientes corporativos nos setores de saúde, direito e indústria na região de Campinas.
+Especialista em Linux Hardening, Security Automation e Cognitive Architectures. Combino expertise tática em hardware (1000+ intervenções críticas) com estratégia DevSecOps, desenvolvendo agentes autônomos (Guardians) e motores cognitivos alimentados por Google Gemini Pro e integrações nativas GCP.
+Arquiteto do ecossistema KETHER_1 — workstation enterprise air-gapped com Debian 13 Trixie endurecida, boot soberano via Secure Boot customizado e chaves criptográficas injetadas diretamente no UEFI NVRAM. Minha atuação transcende a infraestrutura de TI tradicional, operando na interseção entre mineração de dados em larga escala (Google Workspace APIs) e automação cognitiva (SubliminalGuardian / Masterplan 100).
+Fundador de ReparaFácil Informática (Infra & IT Services) e TECHDIM INOVA SIMPLES (Security Architecture & DevSecOps), atendendo clientes corporativos nos setores de saúde, direito, indústria e e-commerce na região de Campinas e São Paulo.
 
     "My objective is to optimize the interface between Human Intent and Artificial Intelligence through secure, scalable Linux infrastructure and high-performance Cognitive Automation."
 
@@ -45,60 +46,61 @@ Fundador de ReparaFácil Informática (Infra & IT Services) e TECHDIM INOVA SIMP
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Deivis Mayer" />
   </a>
   &nbsp;
-  <a href="mailto:techdimbrasil@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Techdim" />
+  <a href="https://www.techdim.com.br/contato">
+    <img src="https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F_Solicitar_Auditoria-Qualifica%C3%A7%C3%A3o%20B2B-D14836?style=for-the-badge&labelColor=161b22" alt="Solicitar Auditoria de Segurança B2B" />
   </a>
 </div>
 ⚙️ Arsenal Técnico
 <details open>
 <summary><b>🖥️ Core Infrastructure</b></summary>
 <br>
-https://www.debian.org
-https://linux-kvm.org
-https://github.com/tianocore/tianocore.github.io/wiki/OVMF
-https://docker.com
-https://podman.io
-https://cloud.google.com
-https://www.wireguard.com
+https://docs.techdim.com.br/debian-hardening
+https://docs.techdim.com.br/kvm-qemu-hardening
+https://docs.techdim.com.br/uefi-secure-boot
+https://docs.techdim.com.br/container-security
+https://docs.techdim.com.br/podman-rootless
+https://docs.techdim.com.br/gcp-security
+https://docs.techdim.com.br/wireguard-vpn
 </details>
 <details open>
 <summary><b>🛡️ Security Engineering</b></summary>
 <br>
-https://wiki.debian.org/SecureBoot
-https://www.nist.gov/publications/zero-trust-architecture
-https://wazuh.com
-https://apparmor.net
-https://veracrypt.fr
-https://usbguard.github.io
-https://netfilter.org/projects/nftables/
-https://www.iso.org/isoiec-27001-information-security.html
+https://docs.techdim.com.br/secure-boot-sovereignty
+https://docs.techdim.com.br/zero-trust-architecture
+https://docs.techdim.com.br/wazuh-siem
+https://docs.techdim.com.br/apparmor-mandatory-access
+https://docs.techdim.com.br/full-disk-encryption
+https://docs.techdim.com.br/usbguard-perimeter
+https://docs.techdim.com.br/nftables-adaptive
+https://docs.techdim.com.br/iso27001-compliance
 </details>
 <details open>
 <summary><b>🧠 Cognitive Cloud & AI</b></summary>
 <br>
-https://deepmind.google/technologies/gemini/
-https://developers.google.com/workspace
-https://www.anthropic.com
-https://ollama.com
-https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html
-https://arxiv.org/abs/2005.11401
-https://attack.mitre.org
+https://docs.techdim.com.br/gemini-cognitive-engine
+https://docs.techdim.com.br/gemma2-local-llm
+https://docs.techdim.com.br/dolphin-local-inference
+https://docs.techdim.com.br/workspace-api-intelligence
+https://docs.techdim.com.br/claude-api-integration
+https://docs.techdim.com.br/ml-anomaly-detection
+https://docs.techdim.com.br/rag-domain-isolation
+https://docs.techdim.com.br/mitre-attck-mapping
 </details>
 <details>
 <summary><b>💻 Languages & Scripting</b></summary>
 <br>
-https://www.gnu.org/software/bash/
-https://www.python.org
-https://developer.mozilla.org/en-US/docs/Web/JavaScript
-https://systemd.io
+https://docs.techdim.com.br/bash-security-automation
+https://docs.techdim.com.br/python-security-pipelines
+https://docs.techdim.com.br/js-defensive-dashboards
+https://docs.techdim.com.br/systemd-sandboxing
 </details>
 <details>
 <summary><b>📊 Observability & Compliance</b></summary>
 <br>
-https://grafana.com
-https://www.fail2ban.org
-https://www.gov.br/lgpd
-https://keepassxc.org
+https://docs.techdim.com.br/grafana-observability
+https://docs.techdim.com.br/fail2ban-ips-stack
+https://docs.techdim.com.br/lgpd-gdpr-compliance
+https://docs.techdim.com.br/credential-vault
 </details>
 🚀 Portfólio de Engenharia
 🟣 Automações Cognitivas & Data Pipelines
@@ -117,7 +119,7 @@ https://github.com/Techdimbr/subliminalguardian
 <td width="50%" valign="top">
 🗄️ DriverScan — Massive Cloud Intelligence
 
-    Plataforma de auditoria e extração massiva via Google Workspace APIs. Comprovado em 71.000+ arquivos com exportação veloz em CSV, resumos estruturados por IA e identificação de Shadow Data — vital para compliance corporativo.
+    Plataforma de auditoria e extração massiva via Google Workspace APIs. Comprovado em 71.000+ arquivos com exportação veloz em CSV, resumos estruturados por IA e identificação de Shadow Data — vital para compliance corporativo e mitigação de risco financeiro.
 
  Status 
  Stack 
@@ -192,13 +194,31 @@ https://github.com/Techdimbr/guardiao-gemini
 </td>
 </tr>
 </table>
+💼 Modelos de Engajamento
+
+    O ecossistema KETHER_1 não é apenas código aberto — é uma arquitetura de defesa operacional disponível para implantação em ambientes corporativos críticos.
+
+<div align="center">
+Planilhas
+Modelo	Escopo	Público-Alvo
+🔴 Retainer Mensal — SOC Extendido	Monitoramento contínuo via Wazuh + Sentinel AI + KETHER NETWATCH. Alertas zero-day em tempo real com runbooks automatizados.	Empresas com infraestrutura crítica (saúde, financeiro, industrial)
+🟡 Auditoria One-Off — DriverScan Intelligence	Varredura massiva de 50K+ documentos em nuvem. Identificação de Shadow Data, vazamentos de credenciais e não-conformidade LGPD/GDPR.	Compliance Officers, DPOs, times Jurídicos
+🟢 Hardening Tático — KETHER_1 Deployment	Implantação de workstation air-gapped com Debian 13 Trixie, Secure Boot UEFI/TPM2, nftables adaptativo e sandboxing systemd.	CISOs, Arquitetos de Infra, Times de DevSecOps
+🔵 Cognitive Automation — SubliminalGuardian Enterprise	Motor de automação cognitiva customizado para otimização de workflows técnicos e tomada de decisão acelerada por IA.	Lideranças técnicas, CTOs, Laboratórios de R&D
+</div>
+<br/>
+<div align="center">
+  <a href="https://www.techdim.com.br/contato">
+    <img src="https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F_SOLICITAR_PROPOSTA_COMERCIAL-Auditoria%20%7C%20Retainer%20%7C%20Hardening-D14836?style=for-the-badge&labelColor=161b22" alt="Solicitar Proposta Comercial de Segurança" />
+  </a>
+</div>
 🔮 R&D Roadmap — Project KETHER_1
 
     Track central do Techdim Labs: soberania criptográfica de boot, automação cognitiva e inteligência em nuvem de larga escala.
 
 Planilhas
 Componente	Codinome	Status	Descrição
-Workstation Soberana	KETHER_1	✅ Operacional	ThinkPad L14 · Debian 13 Trixie · Secure Boot + UEFI NVRAM Keys
+Workstation Soberana	KETHER_1	✅ Operacional	Workstation Enterprise Air-Gapped · Debian 13 Trixie · Secure Boot + UEFI NVRAM Keys
 Cognitive Engine	SubliminalGuardian	✅ Operacional	Overlays 50ms / 2.5s gerados por Gemini · Masterplan 100
 Cloud Intelligence	DriverScan	✅ Operacional	GCP + Drive API · 71K+ docs · Shadow Data Audit
 Defensive Web	NETScanner	✅ Operacional	IP/DNS audit · VPN/Proxy detect · WebRTC leak · Fingerprinting
@@ -224,14 +244,18 @@ https://github.com/Techdimbr
 🗺️ Trajetória
 plain
 
+2026 (Jul) ──► Fórum E-Commerce Brasil 2026 — São Paulo, SP
+               Operação de Red Team ao vivo em ambiente de alto tráfego comercial
+               Demonstração tática: NETScanner · DriverScan · Shadow Data Exposure
+
+2026 (Jun) ──► CryptoRave 2026 — "Fortaleza Digital"
+               Talk: Kernel Lockdown · sysctl Hardening · Systemd Sandboxing
+               nftables · Zero Trust Architecture · Debian 13 Trixie Air-Gapped
+
 2026 (Jan) ──► KETHER_1 Symbiotic Genesis / Masterplan 100
                Ativação da Doutrina de Defesa Tática (12/01/2026)
                Launch: DriverScan · SubliminalGuardian · HIVE Tarefas · NETScanner
                Integração Massiva: GCP, Workspace API, Cognitive Automation
-
-2026       ──► CryptoRave 2026 — "Fortaleza Digital"
-               Talk: Kernel Lockdown · sysctl Hardening
-               Systemd Sandboxing · nftables · Zero Trust Architecture
 
 2024       ──► Techdim R&D — Lead Architect
   ↕            KETHER_1 · KETHER NETWATCH · Sentinel AI · DCISE
@@ -244,3 +268,13 @@ plain
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:0b1a0b,100:0d1117&height=100&section=footer" width="100%" alt="Footer banner Techdim" />
+https://www.techdim.com.br
+ 
+https://linkedin.com/in/deivismayer
+ 
+https://www.techdim.com.br/contato
+ 
+https://github.com/Techdimbr
+<br/>
+<sub><i>
+</div>
