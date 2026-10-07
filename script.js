@@ -42,12 +42,14 @@ function initMobileNav() {
 
   if (toggleBtn && navMenu) {
     toggleBtn.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
+      const isOpen = navMenu.classList.toggle('open');
+      toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
     navMenu.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
       });
     });
   }
@@ -403,9 +405,14 @@ function initFaqAccordion() {
     if (btn) {
       btn.addEventListener('click', () => {
         const isOpen = item.classList.contains('open');
-        faqItems.forEach(i => i.classList.remove('open'));
+        faqItems.forEach(i => {
+          i.classList.remove('open');
+          const iBtn = i.querySelector('.faq-btn');
+          if (iBtn) iBtn.setAttribute('aria-expanded', 'false');
+        });
         if (!isOpen) {
           item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
         }
       });
     }
@@ -495,6 +502,11 @@ function initServiceModals() {
 
   if (!modal) return;
 
+  const closeModal = () => {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+  };
+
   document.querySelectorAll('[data-service]').forEach(btn => {
     btn.addEventListener('click', () => {
       const key = btn.getAttribute('data-service');
@@ -511,16 +523,23 @@ function initServiceModals() {
           ctaBtn.href = `https://wa.me/5519996153276?text=${encodeURIComponent(msg)}`;
         }
         modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
       }
     });
   });
 
   if (closeBtn) {
-    closeBtn.addEventListener('click', () => modal.classList.remove('open'));
+    closeBtn.addEventListener('click', closeModal);
   }
 
   modal.addEventListener('click', (e) => {
-    if (e.target === modal) modal.classList.remove('open');
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) {
+      closeModal();
+    }
   });
 }
 
