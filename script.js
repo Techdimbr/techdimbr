@@ -41,14 +41,23 @@ function initMobileNav() {
   const navMenu = document.getElementById('navMenu');
 
   if (toggleBtn && navMenu) {
-    toggleBtn.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-    });
+    const toggleMenu = (open) => {
+      const isOpen = open !== undefined ? open : !navMenu.classList.contains('open');
+      navMenu.classList.toggle('open', isOpen);
+      toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      toggleBtn.setAttribute('aria-label', isOpen ? 'Fechar Menu' : 'Abrir Menu');
+    };
+
+    toggleBtn.addEventListener('click', () => toggleMenu());
 
     navMenu.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-      });
+      link.addEventListener('click', () => toggleMenu(false));
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        toggleMenu(false);
+      }
     });
   }
 }
@@ -495,6 +504,23 @@ function initServiceModals() {
 
   if (!modal) return;
 
+  let lastActiveElement = null;
+
+  const openModal = () => {
+    lastActiveElement = document.activeElement;
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    if (closeBtn) closeBtn.focus();
+  };
+
+  const closeModal = () => {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    if (lastActiveElement && typeof lastActiveElement.focus === 'function') {
+      lastActiveElement.focus();
+    }
+  };
+
   document.querySelectorAll('[data-service]').forEach(btn => {
     btn.addEventListener('click', () => {
       const key = btn.getAttribute('data-service');
@@ -510,17 +536,23 @@ function initServiceModals() {
           const msg = `*TECHDIM - Proposta de Serviço*\nOlá! Tenho interesse no serviço: *${data.title}*.\nGostaria de solicitar uma proposta técnica para minha empresa.`;
           ctaBtn.href = `https://wa.me/5519996153276?text=${encodeURIComponent(msg)}`;
         }
-        modal.classList.add('open');
+        openModal();
       }
     });
   });
 
   if (closeBtn) {
-    closeBtn.addEventListener('click', () => modal.classList.remove('open'));
+    closeBtn.addEventListener('click', closeModal);
   }
 
   modal.addEventListener('click', (e) => {
-    if (e.target === modal) modal.classList.remove('open');
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) {
+      closeModal();
+    }
   });
 }
 
