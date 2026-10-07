@@ -58,6 +58,27 @@
   padding: 0;
 }
 
+/* Skip Link for WCAG Accessibility (Keyboard Users) */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 10000;
+  background: var(--cyan-neon);
+  color: #030712;
+  font-weight: 700;
+  font-family: var(--font-sans);
+  padding: 0.8rem 1.4rem;
+  border-radius: var(--radius-xs);
+  text-decoration: none;
+  box-shadow: 0 0 20px var(--cyan-glow);
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 /* 
  * Accessibility Focus Visible Styles
  * Expected Impact: Enhances keyboard navigation accessibility (WCAG 2.1 SC 2.4.7)
