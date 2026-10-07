@@ -1,0 +1,42 @@
+name: 🤖 Monitoramento Diário & Jules AI
+
+on:
+  schedule:
+    # Executa todos os dias às 06:00 da manhã (Horário de Brasília) / 09:00 UTC
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  daily-healthcheck-and-jules:
+    name: 🛡️ Healthcheck do Site & Acionamento Jules AI
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Clonar Repositório
+        uses: actions/checkout@v4
+
+      - name: 🐍 Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: ⚡ Executar Monitor Diário & Despacho Jules AI
+        env:
+          JULES_API_KEY: ${{ secrets.JULES_API_KEY }}
+        run: |
+          python3 scripts/jules-daily-monitor.py
+
+      - name: 💾 Registrar e Commitar Logs Diários
+        run: |
+          git config --global user.name "Jules AI Monitor [Bot]"
+          git config --global user.email "bot-jules@techdim.com.br"
+          git add Jules/logs/
+          if git diff --staged --quiet; then
+            echo "Nenhum log novo para commitar."
+          else
+            git commit -m "chore(jules): atualiza relatório diário de monitoramento e auditoria [skip ci]"
+            git push
+          fi
