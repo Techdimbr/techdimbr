@@ -34,6 +34,7 @@
   <link rel="apple-touch-icon" href="assets/techdim-official-logo.png" />
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#030712" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.ipify.org; frame-src 'self' https://www.youtube.com; object-src 'none'; base-uri 'self';" />
 
   <!-- Google Fonts Preconnect & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -825,22 +826,22 @@
 
                 <div class="field-group">
                   <label for="formName">Seu Nome / Responsável:</label>
-                  <input type="text" id="formName" class="cyber-input" placeholder="Ex: Rodrigo Albuquerque" required />
+                  <input type="text" id="formName" class="cyber-input" placeholder="Ex: Rodrigo Albuquerque" required maxlength="60" />
                 </div>
 
                 <div class="field-group">
                   <label for="formCompany">Empresa / Razão Social:</label>
-                  <input type="text" id="formCompany" class="cyber-input" placeholder="Ex: FinTech Soluções Ltda" required />
+                  <input type="text" id="formCompany" class="cyber-input" placeholder="Ex: FinTech Soluções Ltda" required maxlength="80" />
                 </div>
 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                   <div class="field-group">
                     <label for="formPhone">WhatsApp Comercial:</label>
-                    <input type="tel" id="formPhone" class="cyber-input" placeholder="(19) 99999-9999" required />
+                    <input type="tel" id="formPhone" class="cyber-input" placeholder="(19) 99999-9999" required maxlength="20" />
                   </div>
                   <div class="field-group">
                     <label for="formEmail">E-mail Corporativo:</label>
-                    <input type="email" id="formEmail" class="cyber-input" placeholder="contato@empresa.com" required />
+                    <input type="email" id="formEmail" class="cyber-input" placeholder="contato@empresa.com" required maxlength="100" />
                   </div>
                 </div>
 
@@ -859,7 +860,7 @@
 
                 <div class="field-group">
                   <label for="formMessage">Descreva brevemente sua necessidade:</label>
-                  <textarea id="formMessage" class="cyber-input" rows="3" placeholder="Ex: Precisamos blindar nossos servidores Linux e otimizar custos de computação em nuvem."></textarea>
+                  <textarea id="formMessage" class="cyber-input" rows="3" placeholder="Ex: Precisamos blindar nossos servidores Linux e otimizar custos de computação em nuvem." maxlength="500"></textarea>
                 </div>
 
                 <button type="submit" class="cyber-submit-btn">

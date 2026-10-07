@@ -14,3 +14,7 @@
    - Garantir que todos os links externos possuam `rel="noopener noreferrer"`.
 4. **Deploy e Compatibilidade:**
    - O site roda estático no GitHub Pages. Não adicionar dependências ou rotas de backend dinâmico que quebrem o GitHub Pages.
+## 2026-10-07 - [CSP and Form Input Length Limits]
+**Vulnerability:** Missing Content-Security-Policy (CSP) and unbounded form input fields (DoS/Buffer risk).
+**Learning:** The static HTML nature of the site meant these basic but essential protections were overlooked. CSP is crucial for mitigating XSS even on static pages. Unbounded inputs can be abused to create excessively long URLs or payload sizes when passing data to external integrations (like WhatsApp).
+**Prevention:** Always define a strict CSP tailored to the site's external dependencies (Fonts, APIs, Iframes). Enforce reasonable `maxlength` constraints on all user-facing inputs.
