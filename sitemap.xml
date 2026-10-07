@@ -114,4 +114,13 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  <!-- blog:inicio -->
+  <url><loc>https://techdimbr.github.io/techdimbr/blog/</loc><changefreq>daily</changefreq></url>
+  <url><loc>https://techdimbr.github.io/techdimbr/blog/2026-10-07/</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://techdimbr.github.io/techdimbr/blog/2026-10-06/</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://techdimbr.github.io/techdimbr/blog/2026-10-05/</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://techdimbr.github.io/techdimbr/blog/2026-10-04/</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://techdimbr.github.io/techdimbr/blog/2026-10-03/</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://techdimbr.github.io/techdimbr/blog/2026-10-02/</loc><changefreq>monthly</changefreq></url>
+  <!-- blog:fim -->
 </urlset>

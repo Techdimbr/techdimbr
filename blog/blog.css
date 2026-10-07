@@ -1,0 +1,32 @@
+/* Blog TECHDIM — complementa styles.css do site */
+.blog-artigo, .blog-lista { max-width: 860px; padding-top: 7rem; padding-bottom: 4rem; }
+.blog-migalhas { font-family: var(--font-mono); font-size: .8rem; color: var(--text-muted); margin-bottom: 1.2rem; }
+.blog-migalhas a { color: var(--cyan-neon); text-decoration: none; }
+.blog-topo h1 { font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.8rem); line-height: 1.15; color: var(--text-pure); margin: .4rem 0 1rem; }
+.blog-data { font-family: var(--font-mono); font-size: .82rem; color: var(--cyan-neon); }
+.blog-lead { color: var(--text-muted); font-size: 1.08rem; line-height: 1.65; max-width: 62ch; }
+.blog-sumario { list-style: none; margin: 1.4rem 0 0; padding: 1rem 1.2rem; border: 1px solid var(--border-cyber); border-radius: var(--radius-md); background: var(--bg-card); display: grid; gap: .6rem; }
+.blog-sumario li { color: var(--text-main); line-height: 1.4; }
+.blog-sumario span, .blog-rotulo { display: inline-block; font-family: var(--font-mono); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--cyan-neon); margin-right: .5rem; }
+.blog-secao { margin-top: 2.6rem; padding-top: 1.6rem; border-top: 1px solid var(--border-subtle); }
+.blog-secao h2 { font-family: var(--font-display); font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.25; color: var(--text-pure); margin: .5rem 0 1rem; }
+.blog-secao h3 { font-family: var(--font-display); font-size: 1.1rem; color: var(--text-pure); margin: 1.4rem 0 .6rem; }
+.blog-hacker .blog-rotulo { color: var(--rose-crit); }
+.blog-dica .blog-rotulo { color: var(--amber-warn); }
+.blog-servico .blog-rotulo { color: var(--emerald-live); }
+.blog-pontos, .blog-passos, .blog-fontes { margin: 0 0 1rem 1.2rem; color: var(--text-main); line-height: 1.7; }
+.blog-pontos li, .blog-passos li, .blog-fontes li { margin-bottom: .55rem; }
+.blog-fecho { color: var(--text-pure); font-weight: 600; line-height: 1.6; margin: 1rem 0; }
+.blog-motivo { color: var(--text-muted); line-height: 1.6; margin-bottom: .6rem; }
+.blog-fontes-titulo { font-family: var(--font-mono); font-size: .78rem; color: var(--text-dark); margin-top: 1.2rem; text-transform: uppercase; }
+.blog-fontes a, .blog-voltar { color: var(--cyan-neon); }
+.blog-botao { display: inline-block; padding: .8rem 1.4rem; border-radius: var(--radius-sm); background: var(--cyan-neon); color: #030712; font-weight: 700; text-decoration: none; }
+.blog-botao:hover { box-shadow: 0 0 20px var(--cyan-glow); }
+.blog-aviso { margin-top: 2.4rem; font-size: .85rem; color: var(--text-dark); line-height: 1.6; }
+.blog-grade { display: grid; gap: 1.2rem; margin-top: 2rem; }
+.blog-cartao { display: block; padding: 1.4rem 1.5rem; border: 1px solid var(--border-cyber); border-radius: var(--radius-md); background: var(--bg-card); text-decoration: none; transition: transform .25s var(--ease), background .25s var(--ease); }
+.blog-cartao:hover, .blog-cartao:focus-visible { background: var(--bg-card-hover); transform: translateY(-2px); }
+.blog-cartao h2 { font-family: var(--font-display); font-size: 1.35rem; color: var(--text-pure); margin: .3rem 0 .7rem; }
+.blog-cartao ul { margin: 0 0 .9rem 1.1rem; color: var(--text-muted); line-height: 1.55; }
+.blog-mais { font-family: var(--font-mono); font-size: .82rem; color: var(--cyan-neon); }
+@media (max-width: 640px) { .blog-artigo, .blog-lista { padding-top: 6rem; } }

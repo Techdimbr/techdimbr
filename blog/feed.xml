@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Blog TECHDIM</title>
+    <link>https://techdimbr.github.io/techdimbr/blog/</link>
+    <description>Radar diário de tecnologia e segurança para empresas.</description>
+    <language>pt-BR</language>
+    <item>
+      <title>Radar TECHDIM · 07/10/2026</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-07/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-07/</guid>
+      <pubDate>Wed, 07 Oct 2026 11:00:00 +0000</pubDate>
+      <description>Só 22% das empresas conseguiram escalar a IA; quem mede o retorno acerta mais | Exchange Server: atualização fora de ciclo corrige leitura indevida de caixas de e-mail | LGPD sem susto: comece com o modelo de registro da ANPD para pequenas empresas</description>
+    </item>
+    <item>
+      <title>Radar TECHDIM · 06/10/2026</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-06/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-06/</guid>
+      <pubDate>Tue, 06 Oct 2026 11:00:00 +0000</pubDate>
+      <description>Anthropic investe US$ 100 milhões para formar 10 mil engenheiros de IA para empresas | Zammad: falhas no sistema de chamados entram na lista de exploradas da CISA | Firewall do Windows desligado? Confira os 3 perfis em minutos</description>
+    </item>
+    <item>
+      <title>Radar TECHDIM · 05/10/2026</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-05/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-05/</guid>
+      <pubDate>Mon, 05 Oct 2026 11:00:00 +0000</pubDate>
+      <description>Modelo de IA aberto pode rodar dentro da empresa: Aleph Alpha lança o Kolibri | Citrix NetScaler: nova falha explorada em ataques atinge equipamentos com SAML | Proteja pastas do Windows contra ransomware: ative o Acesso controlado a pastas</description>
+    </item>
+    <item>
+      <title>Radar TECHDIM · 04/10/2026</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-04/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-04/</guid>
+      <pubDate>Sun, 04 Oct 2026 11:00:00 +0000</pubDate>
+      <description>IA achou falha em servidor de arquivos e ela foi explorada em até 24 horas | FortiMail: falha crítica (nota 9,8) já é explorada em ataques | Proteja o domínio da empresa contra e-mail falso: configure o DMARC passo a passo</description>
+    </item>
+    <item>
+      <title>Radar TECHDIM · 03/10/2026</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-03/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-03/</guid>
+      <pubDate>Sat, 03 Oct 2026 11:00:00 +0000</pubDate>
+      <description>Apple vai endurecer o Acesso Total ao Disco por causa dos agentes de IA | GitLab corrige falha crítica (nota 9,9) no AI Gateway que permite executar comandos | Ligue a verificação em 2 etapas no e-mail da empresa: passo a passo</description>
+    </item>
+    <item>
+      <title>Radar TECHDIM · 02/10/2026</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-02/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-02/</guid>
+      <pubDate>Fri, 02 Oct 2026 11:00:00 +0000</pubDate>
+      <description>IA já está em quase toda empresa, mas integração e governança ainda travam | ShinyHunters volta a explorar falha crítica do Oracle PeopleSoft | Notebook perdido sem BitLocker é dado exposto: como ligar a criptografia</description>
+    </item>
+  </channel>
+</rss>
