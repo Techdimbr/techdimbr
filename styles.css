@@ -58,6 +58,35 @@
   padding: 0;
 }
 
+/* 
+ * Accessibility Focus Visible Styles
+ * Expected Impact: Enhances keyboard navigation accessibility (WCAG 2.1 SC 2.4.7)
+ * without adding visible focus rings for mouse clicks.
+ */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--cyan-neon);
+  outline-offset: 3px;
+  box-shadow: 0 0 12px var(--cyan-glow);
+}
+
+/* 
+ * Prefers-Reduced-Motion
+ * Expected Impact: Prevents motion-triggered sickness for sensitive users
+ * and reduces GPU/CPU rendering cycles for users requesting reduced motion.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
