@@ -74,6 +74,16 @@ body {
   position: relative;
 }
 
+/* Accessible Focus Indicators for Keyboard Navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--cyan-neon);
+  outline-offset: 3px;
+}
+
 /* Background Cyber Grid & Vignette */
 .cyber-bg-canvas {
   position: fixed;
