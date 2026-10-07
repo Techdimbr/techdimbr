@@ -78,7 +78,7 @@
   <header class="site-header" id="top">
     <div class="container nav-bar">
       <a href="#top" class="brand-wrapper" aria-label="TECHDIM Início">
-        <img src="assets/techdim-official-logo.png" alt="Logo TECHDIM" class="brand-logo-img" width="48" height="48" />
+        <img src="assets/techdim-official-cube-icon.jpg" alt="Logo Oficial TECHDIM INOVA" class="brand-logo-img" width="50" height="50" />
         <div class="brand-meta">
           <span class="brand-title">TECHDIM<span>_</span></span>
           <span class="brand-subtitle">INOVA SIMPLES // KETHER_1</span>
@@ -89,6 +89,7 @@
       <nav aria-label="Navegação Principal">
         <ul class="nav-menu" id="navMenu">
           <li><a href="#solucoes" class="nav-link">Serviços B2B</a></li>
+          <li><a href="#multiagentes" class="nav-link">Multiagentes IA</a></li>
           <li><a href="#scanner" class="nav-link">ThreatScanner</a></li>
           <li><a href="#roi" class="nav-link">Calculadora ROI</a></li>
           <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
@@ -172,37 +173,32 @@
                 <span class="dot dot-y"></span>
                 <span class="dot dot-g"></span>
               </div>
-              <span class="frame-label">TECHDIM_OFFICIAL_LOGO_VIDEO // STREAM</span>
+              <span class="frame-label" id="showcaseLabel">TECHDIM_OFFICIAL_CUBE_3D // CORE</span>
             </div>
 
             <div class="video-viewport" id="videoViewport">
-              <video id="institutionalVideo" class="video-element" autoplay loop muted playsinline poster="assets/techdim-official-logo.jpg">
-                <source src="assets/techdim-logo-video.webm" type="video/webm">
-                <source src="assets/techdim-logo-video.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos HTML5.
-              </video>
-
-              <div class="video-overlay-ctrls">
-                <div style="display: flex; gap: 0.5rem; align-items: center;">
-                  <button class="ctrl-btn" id="btnVideoPlay" title="Pausar ou Reproduzir">
-                    <span>⏸ Pausar</span>
-                  </button>
-                  <button class="ctrl-btn" id="btnVideoMute" title="Áudio">
-                    <span>🔇 Mutado</span>
-                  </button>
+              <!-- Default state: Official 3D Cube Logo Showcase -->
+              <div class="cube-showcase-container">
+                <img src="assets/techdim-official-cube-logo.jpg" alt="Logotipo Oficial TECHDIM INOVA 3D" class="cube-showcase-img" id="cubeShowcaseImg" />
+                <div class="cube-hologram-glow"></div>
+                <div class="cube-status-pill">
+                  <span class="live-pulse-dot"></span>
+                  <span>LOGO OFICIAL // TECHDIM INOVA 2026</span>
                 </div>
-                <button class="ctrl-btn" id="btnVideoFullscreen" title="Tela Cheia">
-                  <span>⛶ Tela Cheia</span>
+                <button class="cube-play-overlay-btn" id="btnSwitchToVideo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  <span>Assistir Vídeo Animado</span>
                 </button>
               </div>
             </div>
 
             <div class="video-mode-tabs">
-              <div style="display: flex; gap: 0.5rem;">
-                <button class="tab-btn active" id="tabVideoLocal">Vídeo 3D Local</button>
-                <button class="tab-btn" id="tabVideoYoutube">Canal YouTube</button>
+              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                <button class="tab-btn active" id="tabLogoShowcase">Logotipo 3D</button>
+                <button class="tab-btn" id="tabVideoLocal">Vídeo Animado</button>
+                <button class="tab-btn" id="tabVideoYoutube">YouTube</button>
               </div>
-              <span style="color: var(--cyan-neon);">SISTEMA OPERACIONAL // ONLINE</span>
+              <span style="color: var(--cyan-neon);" class="font-mono">SISTEMA ATIVO // 2026</span>
             </div>
           </div>
         </div>
@@ -472,8 +468,89 @@
     </section>
 
     <!-- ==========================================================================
+         Multiagent AI Engine & Parallel Orchestration
+         ========================================================================== -->
+    <section class="multiagent-section" id="multiagentes">
+      <div class="container">
+        <div class="section-head">
+          <span class="badge-tag">CONCORRÊNCIA EM TEMPO REAL</span>
+          <h2>SISTEMA MULTIAGENTES DE IA // <span class="gradient-text-cyber">TECHDIM PARALLEL ENGINE</span></h2>
+          <p>
+            Quatro agentes autônomos de IA especializados operando simultaneamente em paralelo para auditar infraestrutura, caçar credenciais expostas, testar pipelines e garantir conformidade contínua.
+          </p>
+        </div>
+
+        <div class="multiagent-grid">
+          <!-- Agent 1 -->
+          <div class="agent-box">
+            <div class="agent-header">
+              <div class="agent-icon-badge">🛡️</div>
+              <span class="agent-status-tag">PASSED (0.086s)</span>
+            </div>
+            <h3>Sentinela de Segurança</h3>
+            <p>Varre repositórios e servidores em busca de credenciais vazadas (ghp_, OpenAI, chaves privadas RSA) e audita permissões de execução.</p>
+            <div class="agent-metric-bar">
+              <span>SECRETS SCAN: 0 DETECTADOS</span>
+              <span>100% BLINDADO</span>
+            </div>
+          </div>
+
+          <!-- Agent 2 -->
+          <div class="agent-box">
+            <div class="agent-header">
+              <div class="agent-icon-badge">🧪</div>
+              <span class="agent-status-tag">PASSED (0.086s)</span>
+            </div>
+            <h3>QA GitHub Actions</h3>
+            <p>Valida a integridade sintática de pipelines CI/CD, scripts bash (bash -n) e especificações JSON para implantações seguras sem quebras.</p>
+            <div class="agent-metric-bar">
+              <span>SINTAXE: 100% VÁLIDA</span>
+              <span>CI/CD SEGURO</span>
+            </div>
+          </div>
+
+          <!-- Agent 3 -->
+          <div class="agent-box">
+            <div class="agent-header">
+              <div class="agent-icon-badge">🗄️</div>
+              <span class="agent-status-tag">PASSED (0.087s)</span>
+            </div>
+            <h3>Curador de Catálogo</h3>
+            <p>Indexa e sincroniza volumes, arquivos e metadados com o banco geral SQLite, garantindo governança e rastreabilidade total de dados.</p>
+            <div class="agent-metric-bar">
+              <span>SQLITE: CONECTADO</span>
+              <span>GOVERNANÇA</span>
+            </div>
+          </div>
+
+          <!-- Agent 4 -->
+          <div class="agent-box">
+            <div class="agent-header">
+              <div class="agent-icon-badge">💻</div>
+              <span class="agent-status-tag">PASSED (0.083s)</span>
+            </div>
+            <h3>Desenvolvedor Core</h3>
+            <p>Audita arquitetura de software, modularização, resiliência estrutural e conformidade com boas práticas DevSecOps corporativas.</p>
+            <div class="agent-metric-bar">
+              <span>ARQUITETURA: LIMPA</span>
+              <span>RESILIÊNCIA</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.8rem;">
+          <a href="https://wa.me/5519996153276?text=Ol%C3%A1%2C%20gostaria%20de%20implementar%20a%20arquitetura%20de%20Agentes%20IA%20Paralelos%20na%20minha%20empresa!" 
+             class="btn-cta-whatsapp" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.974.545 1.785.835 2.791.835 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm7.391 5.766c-.001 4.077-3.314 7.39-7.391 7.39-1.282 0-2.484-.336-3.535-.921l-4.524 1.187 1.21-4.407c-.675-1.109-1.066-2.408-1.066-3.799.001-4.077 3.314-7.39 7.391-7.39 4.077 0 7.39 3.313 7.39 7.39z"/></svg>
+            <span>Contratar Orquestração Multiagentes para Minha Operação</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
          Downtime Loss & ROI Calculator
-         ========================================================================== */
+         ========================================================================== -->
     <section class="roi-section" id="roi">
       <div class="container">
         <div class="section-head">
@@ -801,7 +878,7 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <div class="brand-wrapper">
-          <img src="assets/techdim-official-logo.png" alt="TECHDIM Logo" class="brand-logo-img" width="40" height="40" />
+          <img src="assets/techdim-official-cube-icon.jpg" alt="Logo Oficial TECHDIM INOVA" class="brand-logo-img" width="46" height="46" />
           <div class="brand-meta">
             <span class="brand-title">TECHDIM<span>_</span></span>
             <span class="brand-subtitle">INOVA SIMPLES (I.S.) - ME</span>

@@ -185,17 +185,185 @@ body {
 }
 
 .brand-logo-img {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: var(--radius-sm);
-  filter: drop-shadow(0 0 10px var(--cyan-glow));
-  object-fit: contain;
+  border: 1px solid rgba(0, 240, 255, 0.45);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.35);
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.brand-wrapper:hover .brand-logo-img {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.6);
 }
 
 .brand-meta {
   display: flex;
   flex-direction: column;
 }
+
+/* Official 3D Cube Showcase in Hero */
+.cube-showcase-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: radial-gradient(circle at center, rgba(13, 24, 48, 0.8) 0%, #030712 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cube-showcase-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cube-showcase-container:hover .cube-showcase-img {
+  transform: scale(1.03);
+}
+
+.cube-hologram-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 40%, rgba(3, 7, 18, 0.7) 90%);
+}
+
+.cube-status-pill {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(3, 7, 18, 0.85);
+  border: 1px solid var(--cyan-neon);
+  border-radius: var(--radius-full);
+  padding: 0.3rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--cyan-neon);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+}
+
+.cube-play-overlay-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(3, 7, 18, 0.9);
+  border: 1px solid rgba(0, 240, 255, 0.4);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  backdrop-filter: blur(8px);
+}
+
+.cube-play-overlay-btn:hover {
+  background: var(--cyan-neon);
+  color: #030712;
+  box-shadow: 0 0 20px var(--cyan-glow);
+}
+
+/* Multiagent Engine Grid */
+.multiagent-section {
+  padding: 6.5rem 0;
+  position: relative;
+  background: linear-gradient(180deg, transparent 0%, rgba(6, 11, 23, 0.7) 50%, transparent 100%);
+}
+
+.multiagent-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.agent-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.8rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s var(--ease);
+}
+
+.agent-box:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-cyber);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 240, 255, 0.1);
+}
+
+.agent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.agent-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid var(--border-cyber);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.agent-status-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--emerald-live);
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+.agent-box h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.agent-box p {
+  color: var(--text-muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 1.2rem;
+}
+
+.agent-metric-bar {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--cyan-neon);
+}
+
 
 .brand-title {
   font-family: var(--font-display);

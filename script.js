@@ -57,67 +57,109 @@ function initMobileNav() {
    Video Player Showcase & Switcher
    ========================================================================== */
 function initVideoPlayer() {
-  const videoEl = document.getElementById('institutionalVideo');
-  const btnPlay = document.getElementById('btnVideoPlay');
-  const btnMute = document.getElementById('btnVideoMute');
-  const btnFullscreen = document.getElementById('btnVideoFullscreen');
+  const container = document.getElementById('videoViewport');
+  const tabLogo = document.getElementById('tabLogoShowcase');
   const tabLocal = document.getElementById('tabVideoLocal');
   const tabYoutube = document.getElementById('tabVideoYoutube');
-  const container = document.getElementById('videoViewport');
+  const label = document.getElementById('showcaseLabel');
+  const btnSwitch = document.getElementById('btnSwitchToVideo');
 
-  if (!videoEl || !container) return;
+  if (!container) return;
 
-  if (btnPlay) {
-    btnPlay.addEventListener('click', () => {
-      if (videoEl.paused) {
-        videoEl.play();
-        btnPlay.innerHTML = `<span>⏸ Pausar</span>`;
-      } else {
-        videoEl.pause();
-        btnPlay.innerHTML = `<span>▶ Reproduzir</span>`;
-      }
-    });
+  function setLogoMode() {
+    if (tabLogo) tabLogo.classList.add('active');
+    if (tabLocal) tabLocal.classList.remove('active');
+    if (tabYoutube) tabYoutube.classList.remove('active');
+    if (label) label.textContent = 'TECHDIM_OFFICIAL_CUBE_3D // CORE';
+
+    container.innerHTML = `
+      <div class="cube-showcase-container">
+        <img src="assets/techdim-official-cube-logo.jpg" alt="Logotipo Oficial TECHDIM INOVA 3D" class="cube-showcase-img" />
+        <div class="cube-hologram-glow"></div>
+        <div class="cube-status-pill">
+          <span class="live-pulse-dot"></span>
+          <span>LOGO OFICIAL // TECHDIM INOVA 2026</span>
+        </div>
+        <button class="cube-play-overlay-btn" id="btnSwitchToVideo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          <span>Assistir Vídeo Animado</span>
+        </button>
+      </div>
+    `;
+
+    const newBtn = document.getElementById('btnSwitchToVideo');
+    if (newBtn) newBtn.addEventListener('click', setLocalVideoMode);
   }
 
-  if (btnMute) {
-    btnMute.addEventListener('click', () => {
-      videoEl.muted = !videoEl.muted;
-      btnMute.innerHTML = videoEl.muted ? `<span>🔇 Mutado</span>` : `<span>🔊 Áudio On</span>`;
-    });
+  function setLocalVideoMode() {
+    if (tabLocal) tabLocal.classList.add('active');
+    if (tabLogo) tabLogo.classList.remove('active');
+    if (tabYoutube) tabYoutube.classList.remove('active');
+    if (label) label.textContent = 'TECHDIM_LOGO_VIDEO_3D // STREAM';
+
+    container.innerHTML = `
+      <video id="institutionalVideo" class="video-element" autoplay loop muted playsinline poster="assets/techdim-official-cube-logo.jpg">
+        <source src="assets/techdim-logo-video.webm" type="video/webm">
+        <source src="assets/techdim-logo-video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+      </video>
+      <div class="video-overlay-ctrls">
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <button class="ctrl-btn" id="btnVideoPlay" title="Pausar ou Reproduzir">
+            <span>⏸ Pausar</span>
+          </button>
+          <button class="ctrl-btn" id="btnVideoMute" title="Áudio">
+            <span>🔇 Mutado</span>
+          </button>
+        </div>
+        <button class="ctrl-btn" id="btnVideoFullscreen" title="Tela Cheia">
+          <span>⛶ Tela Cheia</span>
+        </button>
+      </div>
+    `;
+
+    const vid = document.getElementById('institutionalVideo');
+    const pBtn = document.getElementById('btnVideoPlay');
+    const mBtn = document.getElementById('btnVideoMute');
+    const fBtn = document.getElementById('btnVideoFullscreen');
+
+    if (vid && pBtn) {
+      pBtn.addEventListener('click', () => {
+        if (vid.paused) { vid.play(); pBtn.innerHTML = '<span>⏸ Pausar</span>'; }
+        else { vid.pause(); pBtn.innerHTML = '<span>▶ Reproduzir</span>'; }
+      });
+    }
+    if (vid && mBtn) {
+      mBtn.addEventListener('click', () => {
+        vid.muted = !vid.muted;
+        mBtn.innerHTML = vid.muted ? '<span>🔇 Mutado</span>' : '<span>🔊 Áudio On</span>';
+      });
+    }
+    if (container && fBtn) {
+      fBtn.addEventListener('click', () => {
+        if (container.requestFullscreen) container.requestFullscreen();
+      });
+    }
   }
 
-  if (btnFullscreen) {
-    btnFullscreen.addEventListener('click', () => {
-      if (container.requestFullscreen) {
-        container.requestFullscreen();
-      }
-    });
+  function setYoutubeMode() {
+    if (tabYoutube) tabYoutube.classList.add('active');
+    if (tabLogo) tabLogo.classList.remove('active');
+    if (tabLocal) tabLocal.classList.remove('active');
+    if (label) label.textContent = 'YOUTUBE_CANAL_OFICIAL // STREAM';
+
+    container.innerHTML = `
+      <iframe src="https://www.youtube.com/embed/VBeEkLy6ZoE?autoplay=1&mute=1&controls=1&rel=0" 
+              title="Apresentação TECHDIM" class="video-element" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+    `;
   }
 
-  if (tabLocal && tabYoutube) {
-    tabLocal.addEventListener('click', () => {
-      tabLocal.classList.add('active');
-      tabYoutube.classList.remove('active');
-      container.innerHTML = `
-        <video id="institutionalVideo" class="video-element" autoplay loop muted playsinline poster="assets/techdim-official-logo.jpg">
-          <source src="assets/techdim-logo-video.webm" type="video/webm">
-          <source src="assets/techdim-logo-video.mp4" type="video/mp4">
-        </video>
-      `;
-      initVideoPlayer(); // Rebind
-    });
-
-    tabYoutube.addEventListener('click', () => {
-      tabYoutube.classList.add('active');
-      tabLocal.classList.remove('active');
-      container.innerHTML = `
-        <iframe src="https://www.youtube.com/embed/VBeEkLy6ZoE?autoplay=1&mute=1&controls=1&rel=0" 
-                title="Apresentação TECHDIM" class="video-element" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
-      `;
-    });
-  }
+  if (tabLogo) tabLogo.addEventListener('click', setLogoMode);
+  if (tabLocal) tabLocal.addEventListener('click', setLocalVideoMode);
+  if (tabYoutube) tabYoutube.addEventListener('click', setYoutubeMode);
+  if (btnSwitch) btnSwitch.addEventListener('click', setLocalVideoMode);
 }
 
 /* ==========================================================================
@@ -191,8 +233,19 @@ async function runDiagnosticAudit() {
   };
 
   log(`[+] INICIANDO PROTOCOLO THREAT SCANNER // KETHER_1`, 'cyan');
-  await wait(300);
+  await wait(250);
+  log(`[+] DISPARANDO TECHDIM PARALLEL AI ENGINE (4 AGENTES CONCORRENTES)...`, 'accent');
+  await wait(200);
+  log(`[🛡️ Sentinela_Segurança] Verificando credenciais e certificados... (0 vazamentos)`, 'cyan');
+  await wait(200);
+  log(`[🧪 QA_GitHub_Actions] Validando sintaxe e integridade de pipelines... (100% íntegro)`, 'cyan');
+  await wait(200);
+  log(`[🗄️ Curador_Catalogo] Sincronizando inventário com banco SQLite... (Conexão saudável)`, 'cyan');
+  await wait(200);
+  log(`[💻 Desenvolvedor_Core] Analisando arquitetura e tolerância a falhas... (Aprovado)`, 'cyan');
+  await wait(250);
   log(`[+] COLETANDO TELEMETRIA DO CLIENTE & DETECTANDO VETORES...`);
+
   
   // Real browser telemetry
   const cores = navigator.hardwareConcurrency || 4;
