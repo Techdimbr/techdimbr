@@ -342,7 +342,8 @@ function exportScanToWhatsApp() {
     `Gostaria de agendar um diagnóstico aprofundado de cibersegurança e arquitetura cloud para minha empresa.`;
 
   const waUrl = `https://wa.me/5519996153276?text=${encodeURIComponent(text)}`;
-  window.open(waUrl, '_blank');
+  // Security Fix: Prevent Reverse Tabnabbing by clearing window.opener via noopener,noreferrer
+  window.open(waUrl, '_blank', 'noopener,noreferrer');
 }
 
 /* ==========================================================================
@@ -577,7 +578,8 @@ function initTacticalForm() {
     const waUrl = `https://wa.me/5519996153276?text=${encodeURIComponent(text)}`;
     showToast('Redirecionando para o WhatsApp da TECHDIM...');
     setTimeout(() => {
-      window.open(waUrl, '_blank');
+      // Security Fix: Prevent Reverse Tabnabbing by clearing window.opener via noopener,noreferrer
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
       form.reset();
     }, 600);
   });
