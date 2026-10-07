@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Primary Meta Tags -->
+  <title>TECHDIM | Cibersegurança Defensiva, Debian Hardening & Cloud Architecture</title>
+  <meta name="title" content="TECHDIM | Cibersegurança Defensiva, Debian Hardening & Cloud Architecture" />
+  <meta name="description" content="Engenharia de Cibersegurança e Infraestrutura de Alta Performance. Hardening avançado em Debian 13, Arquitetura Serverless em GCP e Governança Técnica por Eng. Deivis Irio Mayer (Kether1). Atendimento em Campinas-SP e todo o Brasil: (19) 99615-3276." />
+  <meta name="keywords" content="TECHDIM, Deivis Irio Mayer, Cibersegurança, Hardening Debian, Google Cloud, DevSecOps, Segurança da Informação Campinas, ThreatScanner, Arquitetura de Nuvem, IA Local Air-Gapped, ISO 27001, LGPD Compliance" />
+  <meta name="author" content="Eng. Deivis Irio Mayer - TECHDIM INOVA SIMPLES" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://techdimbr.github.io/" />
+
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://techdimbr.github.io/" />
+  <meta property="og:title" content="TECHDIM | Cibersegurança, Debian Hardening & Nuvem Serverless" />
+  <meta property="og:description" content="Transmutando entropia em ordem na infraestrutura de operações críticas. Cibersegurança defensiva, hardening Linux e GCP Serverless. Contato: (19) 99615-3276." />
+  <meta property="og:image" content="assets/techdim-preview.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="TECHDIM" />
+
+  <!-- Twitter / X -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://techdimbr.github.io/" />
+  <meta property="twitter:title" content="TECHDIM | Cibersegurança Defensiva & Cloud Architecture" />
+  <meta property="twitter:description" content="Hardening de Servidores Linux Debian 13, GCP Cloud Run Serverless e Governança Técnica por Eng. Deivis Irio Mayer." />
+  <meta property="twitter:image" content="assets/techdim-preview.jpg" />
+
+  <!-- Favicon & PWA Icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/techdim-official-logo.png" />
+  <meta name="theme-color" content="#030712" />
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "TECHDIM INOVA SIMPLES (I.S.) - ME",
+    "legalName": "TECHDIM INOVA SIMPLES (I.S.) - ME",
+    "founder": {
+      "@type": "Person",
+      "name": "Deivis Irio Mayer"
+    },
+    "taxID": "61.933.926/0001-24",
+    "telephone": "+55-19-99615-3276",
+    "email": "techdimbrasil@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Campinas",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "description": "Engenharia de Cibersegurança Defensiva, Hardening Linux Debian 13, Arquitetura Serverless em Google Cloud Platform e Inteligência Artificial Local.",
+    "serviceType": ["Cibersegurança", "Cloud Architecture", "Linux Hardening", "DevSecOps", "IA Corporativa"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Cyber Background Canvas -->
+  <div class="cyber-bg-canvas" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       Header & Navigation Bar
+       ========================================================================== -->
+  <header class="site-header" id="top">
+    <div class="container nav-bar">
+      <a href="#top" class="brand-wrapper" aria-label="TECHDIM Início">
+        <img src="assets/techdim-official-logo.png" alt="Logo TECHDIM" class="brand-logo-img" width="48" height="48" />
+        <div class="brand-meta">
+          <span class="brand-title">TECHDIM<span>_</span></span>
+          <span class="brand-subtitle">INOVA SIMPLES // KETHER_1</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#solucoes" class="nav-link">Serviços B2B</a></li>
+          <li><a href="#scanner" class="nav-link">ThreatScanner</a></li>
+          <li><a href="#roi" class="nav-link">Calculadora ROI</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="nav-cta-group">
+        <a href="https://wa.me/5519996153276?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20da%20TECHDIM!" 
+           class="btn-header-wa" target="_blank" rel="noopener noreferrer" 
+           title="Plantão WhatsApp Comercial">
+          <span class="live-pulse-dot" aria-hidden="true"></span>
+          <span>WhatsApp (19) 99615-3276</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <!-- Hero Text Column -->
+        <div class="hero-content-col">
+          <div class="hero-announcement">
+            <span class="status-pill">ONLINE</span>
+            <span class="announcement-text font-mono">SOBERANIA COMPUTACIONAL // GCP & LINUX</span>
+          </div>
+
+          <h1 class="hero-heading">
+            CIBERSEGURANÇA DEFENSIVA & <span class="gradient-text-cyber">GCP CLOUD ARCHITECTURE</span>
+          </h1>
+
+          <p class="hero-lead">
+            Transmutando entropia em ordem na infraestrutura de operações críticas. A <strong>TECHDIM</strong> projeta arquiteturas resilientes em Google Cloud, executa hardening avançado de kernel Linux Debian 13 e implanta IA corporativa com zero vazamento de dados.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/5519996153276?text=Ol%C3%A1%20TECHDIM%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20com%20o%20arquiteto%20s%C3%AAnior." 
+               class="btn-cta-whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.974.545 1.785.835 2.791.835 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm7.391 5.766c-.001 4.077-3.314 7.39-7.391 7.39-1.282 0-2.484-.336-3.535-.921l-4.524 1.187 1.21-4.407c-.675-1.109-1.066-2.408-1.066-3.799.001-4.077 3.314-7.39 7.391-7.39 4.077 0 7.39 3.313 7.39 7.39z"/></svg>
+              <span>Falar no WhatsApp (19) 99615-3276</span>
+            </a>
+
+            <a href="#scanner" class="btn-cta-scanner">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Executar ThreatScanner</span>
+            </a>
+          </div>
+
+          <!-- Trust & Credentials Bar -->
+          <div class="hero-credentials">
+            <div class="cred-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Campinas — SP · Atendimento Nacional</span>
+            </div>
+            <div class="cred-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <span>Google Cloud Partner Registered</span>
+            </div>
+            <div class="cred-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>ISO/IEC 27001 & LGPD Accredited</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video & Visual Showcase -->
+        <div class="hero-visual-col">
+          <div class="video-showcase-box">
+            <div class="video-frame-head">
+              <div class="window-dots">
+                <span class="dot dot-r"></span>
+                <span class="dot dot-y"></span>
+                <span class="dot dot-g"></span>
+              </div>
+              <span class="frame-label">TECHDIM_OFFICIAL_LOGO_VIDEO // STREAM</span>
+            </div>
+
+            <div class="video-viewport" id="videoViewport">
+              <video id="institutionalVideo" class="video-element" autoplay loop muted playsinline poster="assets/techdim-official-logo.jpg">
+                <source src="assets/techdim-logo-video.webm" type="video/webm">
+                <source src="assets/techdim-logo-video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos HTML5.
+              </video>
+
+              <div class="video-overlay-ctrls">
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                  <button class="ctrl-btn" id="btnVideoPlay" title="Pausar ou Reproduzir">
+                    <span>⏸ Pausar</span>
+                  </button>
+                  <button class="ctrl-btn" id="btnVideoMute" title="Áudio">
+                    <span>🔇 Mutado</span>
+                  </button>
+                </div>
+                <button class="ctrl-btn" id="btnVideoFullscreen" title="Tela Cheia">
+                  <span>⛶ Tela Cheia</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="video-mode-tabs">
+              <div style="display: flex; gap: 0.5rem;">
+                <button class="tab-btn active" id="tabVideoLocal">Vídeo 3D Local</button>
+                <button class="tab-btn" id="tabVideoYoutube">Canal YouTube</button>
+              </div>
+              <span style="color: var(--cyan-neon);">SISTEMA OPERACIONAL // ONLINE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Metrics Counter Ribbon
+         ========================================================================== -->
+    <section class="stats-ribbon">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-val">99.98%</div>
+          <div class="stat-title">Disponibilidade e Uptime</div>
+          <div class="stat-sub">SLA em ecossistemas de missão crítica</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val">+100k</div>
+          <div class="stat-title">Horas Economizadas</div>
+          <div class="stat-sub">Em rotinas automatizadas e seguras</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val">0</div>
+          <div class="stat-title">Incidentes Críticos</div>
+          <div class="stat-sub">Em servidores com hardening Debian 13</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val">15 min</div>
+          <div class="stat-title">Plantão Tático SLA</div>
+          <div class="stat-sub">Resposta emergencial 24/7 para clientes B2B</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ThreatScanner Kether_1 (Interactive Live Audit)
+         ========================================================================== -->
+    <section class="scanner-section" id="scanner">
+      <div class="container">
+        <div class="section-head">
+          <span class="badge-tag">DIAGNÓSTICO EM TEMPO REAL</span>
+          <h2>TECHDIM THREAT SCANNER // <span class="gradient-text-cyber">KETHER_1</span></h2>
+          <p>
+            Análise preliminar de superfície de ataque corporativa e exposição de infraestrutura. Execute a varredura tática para identificar vulnerabilidades de DNS, certificados, headers e entropia de sistema.
+          </p>
+        </div>
+
+        <div class="scanner-cockpit">
+          <div class="scanner-grid">
+            <!-- Terminal Console Box -->
+            <div class="terminal-box">
+              <div class="terminal-head">
+                <span>CONSOLA TÁTICA // AUDITORIA AUTOMATIZADA</span>
+                <span class="text-mono">TLS 1.3 · ECC 256</span>
+              </div>
+              <div class="terminal-body" id="terminalConsole">
+                <div class="log-line cyan">[!] SCANNER TÁTICO PRONTO PARA EXECUÇÃO.</div>
+                <div class="log-line">[>] Clique em "Iniciar Varredura Tática" para verificar a integridade da conexão.</div>
+                <div class="log-line text-dark">[#] Telemetria preliminar detectada: Hardware seguro.</div>
+              </div>
+              <div class="scanner-controls">
+                <button class="btn-scan-trigger" id="btnTriggerScan">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                  <span>Iniciar Varredura Tática</span>
+                </button>
+                <button class="btn-scan-reset" id="btnResetScan" title="Resetar Terminal">
+                  Resetar
+                </button>
+              </div>
+            </div>
+
+            <!-- Scanner Results Dashboard -->
+            <div class="scanner-results">
+              <div>
+                <div class="score-display-box">
+                  <div class="score-circle">
+                    <span class="score-number" id="scannerScoreVal">--</span>
+                    <span class="score-label">SCORE RESILIÊNCIA</span>
+                  </div>
+                  <div class="score-desc">
+                    <h3>Superfície de Ataque</h3>
+                    <p>Avaliação baseada em conformidade DNSSEC, isolamento de sessão, criptografia e mitigação de vazamento de dados.</p>
+                  </div>
+                </div>
+
+                <div class="metrics-audit-list">
+                  <div class="audit-item">
+                    <span class="lbl">Resolução DNS & DNSSEC:</span>
+                    <span class="val" id="auditStatusDns">Aguardando Varredura</span>
+                  </div>
+                  <div class="audit-item">
+                    <span class="lbl">Criptografia & Ciphers TLS:</span>
+                    <span class="val" id="auditStatusTls">Aguardando Varredura</span>
+                  </div>
+                  <div class="audit-item">
+                    <span class="lbl">Sistema Operacional / Plataforma:</span>
+                    <span class="val text-cyan" id="auditOsVal">Detectando...</span>
+                  </div>
+                  <div class="audit-item">
+                    <span class="lbl">Capacidade de Processamento:</span>
+                    <span class="val" id="auditPlatformVal">Detectando...</span>
+                  </div>
+                  <div class="audit-item">
+                    <span class="lbl">Latência de Rota B2B:</span>
+                    <span class="val" id="auditLatencyVal">Calculando...</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Export to WhatsApp CTA Card -->
+              <div class="export-wa-card">
+                <div>
+                  <strong>Relatório Tático Completo</strong>
+                  <p>Envie os resultados do diagnóstico para análise com o Eng. Deivis Irio Mayer.</p>
+                </div>
+                <button class="btn-export-wa" id="btnExportScanWa">
+                  <span>Exportar WhatsApp</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Specialized B2B Services Catalog
+         ========================================================================== -->
+    <section class="services-section" id="solucoes">
+      <div class="container">
+        <div class="section-head">
+          <span class="badge-tag">VETORES DE ATUAÇÃO TÁTICA</span>
+          <h2>CATÁLOGO DE ENGENHARIA <span class="gradient-text-cyber">& CIBERSEGURANÇA</span></h2>
+          <p>
+            A <strong>TECHDIM INOVA SIMPLES (I.S.) - ME</strong> atua em seis frentes de engenharia de elite para blindar operações contra interrupções, ataques cibernéticos e perdas de dados.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: CyberOps -->
+          <article class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3 class="service-title">CyberOps & Resposta a Incidentes</h3>
+            <p class="service-body">
+              Contenção imediata de vazamentos de dados sob LGPD, neutralização de ransomware em andamento, auditoria forense digital e defesa em profundidade.
+            </p>
+            <div class="service-tags">
+              <span class="tag-badge">Anti-Ransomware</span>
+              <span class="tag-badge">Perícia Forense</span>
+              <span class="tag-badge">SLA 15 Minutos</span>
+            </div>
+            <div class="service-foot">
+              <button class="btn-open-service" data-service="cyberops">
+                <span>Ver Especificação Técnica →</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Service 2: Google Cloud -->
+          <article class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <h3 class="service-title">Google Cloud & Serverless</h3>
+            <p class="service-body">
+              Arquitetura de microsserviços em Cloud Run e GKE, automação via Terraform (IaC) e redução comprovada de custos computacionais em até 40%.
+            </p>
+            <div class="service-tags">
+              <span class="tag-badge">GCP Cloud Run</span>
+              <span class="tag-badge">Zero-Cost Standby</span>
+              <span class="tag-badge">Terraform IaC</span>
+            </div>
+            <div class="service-foot">
+              <button class="btn-open-service" data-service="cloudgcp">
+                <span>Ver Especificação Técnica →</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Service 3: Linux Hardening -->
+          <article class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="service-title">Debian 13 Kernel Hardening</h3>
+            <p class="service-body">
+              Blindagem de baixo nível em Linux. Ajustes rigorosos de sysctl, isolamento estrito de processos com AppArmor, supressão de telemetrias e IAM.
+            </p>
+            <div class="service-tags">
+              <span class="tag-badge">Linux Debian 13</span>
+              <span class="tag-badge">sysctl Hardening</span>
+              <span class="tag-badge">AppArmor</span>
+            </div>
+            <div class="service-foot">
+              <button class="btn-open-service" data-service="hardening">
+                <span>Ver Especificação Técnica →</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Service 4: IA Local -->
+          <article class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="9" cy="9" r="2"/><circle cx="15" cy="15" r="2"/><path d="M9 15l6-6"/></svg>
+            </div>
+            <h3 class="service-title">IA Local & LLMs On-Premise</h3>
+            <p class="service-body">
+              Implantação de modelos de linguagem (LLaMA 3, DeepSeek, Mistral) operando 100% desconectados da internet (Air-Gapped) para análise confidencial sem vazamentos.
+            </p>
+            <div class="service-tags">
+              <span class="tag-badge">Modelos 100% Offline</span>
+              <span class="tag-badge">Air-Gapped</span>
+              <span class="tag-badge">RAG Confidencial</span>
+            </div>
+            <div class="service-foot">
+              <button class="btn-open-service" data-service="ialocal">
+                <span>Ver Especificação Técnica →</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Service 5: Engenharia de Dados -->
+          <article class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3 class="service-title">Engenharia de Dados Resiliente</h3>
+            <p class="service-body">
+              Pipelines de ingestão e processamento de dados analíticos em BigQuery e Firestore. Data lakes imutáveis com conformidade e criptografia ponta a ponta.
+            </p>
+            <div class="service-tags">
+              <span class="tag-badge">BigQuery</span>
+              <span class="tag-badge">Data Lake Imutável</span>
+              <span class="tag-badge">LGPD Compliant</span>
+            </div>
+            <div class="service-foot">
+              <button class="btn-open-service" data-service="dados">
+                <span>Ver Especificação Técnica →</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Service 6: Suporte Emergencial 24/7 -->
+          <article class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3 class="service-title">Plantão Tático Emergencial 24/7</h3>
+            <p class="service-body">
+              Pronto-socorro técnico imediato para paradas críticas de servidores, ataques DDoS, falhas em banco de dados ou recuperação de desastres (Disaster Recovery).
+            </p>
+            <div class="service-tags">
+              <span class="tag-badge">Plantão 24/7</span>
+              <span class="tag-badge">Atendimento em 15 min</span>
+              <span class="tag-badge">Disaster Recovery</span>
+            </div>
+            <div class="service-foot">
+              <button class="btn-open-service" data-service="suporte">
+                <span>Ver Especificação Técnica →</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Downtime Loss & ROI Calculator
+         ========================================================================== */
+    <section class="roi-section" id="roi">
+      <div class="container">
+        <div class="section-head">
+          <span class="badge-tag">SIMULADOR FINANCEIRO DE RISCO</span>
+          <h2>CALCULADORA DE PREVENÇÃO <span class="gradient-text-cyber">DE DOWNTIME</span></h2>
+          <p>
+            Descubra o custo real da instabilidade em sua operação. Sistemas fora do ar não custam apenas vendas diretas: custam horas paradas de equipe e danos severos à reputação da marca.
+          </p>
+        </div>
+
+        <div class="roi-card">
+          <div class="roi-grid">
+            <div>
+              <div class="slider-group">
+                <div class="slider-label-row">
+                  <span>Faturamento Mensal Estimado:</span>
+                  <span class="slider-value-badge" id="roiRevenueBadge">R$ 200.000</span>
+                </div>
+                <input type="range" class="cyber-range" id="roiRevenueSlider" min="30000" max="2000000" step="10000" value="200000" />
+              </div>
+
+              <div class="slider-group">
+                <div class="slider-label-row">
+                  <span>Horas de Instabilidade ou Lentidão / Mês:</span>
+                  <span class="slider-value-badge" id="roiDowntimeBadge">4h / mês</span>
+                </div>
+                <input type="range" class="cyber-range" id="roiDowntimeSlider" min="1" max="24" step="1" value="4" />
+              </div>
+
+              <p class="text-dark" style="font-size: 0.82rem; line-height: 1.5;">
+                * O modelo estatístico pondera perda de faturamento direto, custo da ociosidade da equipe produtiva e custo de reaquisição de clientes afetados (fator de entropia 2.8x).
+              </p>
+            </div>
+
+            <div class="roi-outcome-card">
+              <span class="outcome-pill">PREJUÍZO FINANCEIRO PROJETADO</span>
+              <div class="outcome-loss-val text-cyan" id="roiLossResult">R$ 3.111</div>
+              <p class="outcome-desc">
+                Em perdas operacionais acumuladas ao mês que poderiam ser 100% mitigadas com a blindagem de infraestrutura e alta disponibilidade da TECHDIM.
+              </p>
+              <a href="#" class="btn-prevent-loss" id="btnRoiWhatsapp" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.974.545 1.785.835 2.791.835 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm7.391 5.766c-.001 4.077-3.314 7.39-7.391 7.39-1.282 0-2.484-.336-3.535-.921l-4.524 1.187 1.21-4.407c-.675-1.109-1.066-2.408-1.066-3.799.001-4.077 3.314-7.39 7.391-7.39 4.077 0 7.39 3.313 7.39 7.39z"/></svg>
+                <span>Blindar Minha Operação Agora</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         About & Institutional Leadership
+         ========================================================================== -->
+    <section class="about-section" id="sobre">
+      <div class="container">
+        <div class="about-card-box">
+          <div class="about-layout">
+            <!-- Bio & Company Profile -->
+            <div class="about-bio">
+              <span class="badge-tag">AUTORIDADE & CREDIBILIDADE</span>
+              <h3>TRANSMUTANDO ENTROPIA <span class="gradient-text-cyber">EM ORDEM TÉCNICA</span></h3>
+              <p>
+                A <strong>TECHDIM INOVA SIMPLES (I.S.) - ME</strong> (CNPJ: <code>61.933.926/0001-24</code>) é uma empresa de engenharia de software e consultoria tática de cibersegurança sediada em Campinas, São Paulo, com capacidade operacional e clientes em todo o território nacional.
+              </p>
+              <p>
+                Fundada sob a premissa da <em>Soberania Computacional</em> e do <em>Hardening Matemático</em>, entregamos ecossistemas corporativos blindados, sem intermediários, conectando os decisores das empresas diretamente ao arquiteto sênior responsável.
+              </p>
+
+              <div class="founder-credential-card">
+                <div class="founder-avatar-box">K1</div>
+                <div class="founder-details">
+                  <h4>Eng. Deivis Irio Mayer (Kether1)</h4>
+                  <span class="role">Liderança Técnica & Arquiteto Principal de Sistemas</span>
+                  <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.35rem;">
+                    Especialista em segurança defensiva, isolamento de kernels Linux, arquitetura serverless em GCP e orquestração de IA on-premise.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certifications Block -->
+            <div class="certifications-block">
+              <div class="cert-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                <div>
+                  <div class="cert-name">IT Governance & LGPD Foundation</div>
+                  <div class="cert-auth">ITCERTS Toronto — Governança e Privacidade de Dados</div>
+                </div>
+              </div>
+
+              <div class="cert-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <div>
+                  <div class="cert-name">ISO/IEC 27001 Foundation Accredited</div>
+                  <div class="cert-auth">Padrão Internacional de Gestão de Segurança da Informação</div>
+                </div>
+              </div>
+
+              <div class="cert-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                <div>
+                  <div class="cert-name">Google Cloud Partner Registered</div>
+                  <div class="cert-auth">Ecossistema Credenciado para Arquiteturas GCP Serverless</div>
+                </div>
+              </div>
+
+              <!-- DCISE Intelligence Transmission -->
+              <div class="dcise-banner">
+                <div class="dcise-header">
+                  <span class="dcise-tag">TRANSMISSÃO TÁTICA // DCISE KETHER_1</span>
+                  <span class="live-pulse-dot"></span>
+                </div>
+                <p class="dcise-content font-mono" style="font-size: 0.82rem;">
+                  "A estabilidade de um sistema não decorre da ausência de ameaças, mas da robustez intrínseca de suas fronteiras. A blindagem preventiva é 10x mais barata do que remediar um único incidente de indisponibilidade."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ Section
+         ========================================================================== -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="badge-tag">ESCLARECIMENTOS COMERCIAIS</span>
+          <h2>PERGUNTAS <span class="gradient-text-cyber">FREQUENTES (FAQ)</span></h2>
+          <p>
+            Entenda como funciona a contratação dos serviços da TECHDIM, prazos de execução, acordos de confidencialidade e cobertura geográfica.
+          </p>
+        </div>
+
+        <div class="faq-wrapper">
+          <!-- FAQ 1 -->
+          <div class="faq-card open">
+            <button class="faq-btn">
+              <span>Como funciona o primeiro diagnóstico técnico da TECHDIM?</span>
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-panel">
+              <p>O atendimento inicial é realizado diretamente pelo Eng. Deivis Irio Mayer via WhatsApp ou videoconferência. Realizamos uma varredura preliminar da arquitetura, mapeamos os principais vetores de vulnerabilidade ou custos excessivos e entregamos um parecer com o plano de ação recomendado sem qualquer compromisso.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-card">
+            <button class="faq-btn">
+              <span>A TECHDIM atende clientes fora do estado de São Paulo?</span>
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-panel">
+              <p>Sim! Atendemos empresas em todo o Brasil e no exterior. Nossos processos de infraestrutura como código (Terraform), auditorias remotas e gestão Cloud GCP permitem atuação remota de altíssima segurança com zero perda de eficiência.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-card">
+            <button class="faq-btn">
+              <span>Como é garantido o sigilo e a privacidade dos dados corporativos?</span>
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-panel">
+              <p>Todas as interações técnicas são protegidas por Acordo de Confidencialidade (NDA) mútuo com firma jurídica antes do início de qualquer diagnóstico invasivo. Além disso, somos credenciados em conformidade LGPD e ISO/IEC 27001.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-card">
+            <button class="faq-btn">
+              <span>Em quanto tempo é possível iniciar a blindagem ou suporte?</span>
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-panel">
+              <p>Para chamados de emergência (parada de servidores ou incidentes de segurança), o acionamento tático é imediato com SLA de resposta em até 15 minutos pelo Plantão 24/7. Para projetos planejados de arquitetura ou hardening, o início ocorre em até 48 horas após alinhamento do escopo.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-card">
+            <button class="faq-btn">
+              <span>Qual a forma de contratação (Sprint, Projeto ou Sustentação)?</span>
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-panel">
+              <p>Oferecemos modelos flexíveis: contratação pontual por projeto (com escopo fechado e garantia de entrega) ou contratos mensais de sustentação e monitoramento contínuo com plantão tático prioritário.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact & Conversion Section
+         ========================================================================== -->
+    <section class="contact-section" id="contato">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-grid">
+            <!-- Direct Channels Column -->
+            <div>
+              <span class="badge-tag">ATENDIMENTO IMEDIATO B2B</span>
+              <h2 class="font-display" style="font-size: 2.2rem; margin: 0.8rem 0 1rem;">
+                FALE COM O <span class="gradient-text-cyber">CORPO TÉCNICO</span>
+              </h2>
+              <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.65;">
+                Inicie agora o diálogo diretamente com o Eng. Deivis Irio Mayer para blindar sua operação, migrar servidores ou contratar o Plantão Tático de Cibersegurança.
+              </p>
+
+              <div class="direct-channels-list">
+                <!-- WhatsApp Official -->
+                <a href="https://wa.me/5519996153276?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20da%20TECHDIM!" 
+                   class="channel-card-link wa-accent" target="_blank" rel="noopener noreferrer">
+                  <div class="channel-icon-circ">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.974.545 1.785.835 2.791.835 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm7.391 5.766c-.001 4.077-3.314 7.39-7.391 7.39-1.282 0-2.484-.336-3.535-.921l-4.524 1.187 1.21-4.407c-.675-1.109-1.066-2.408-1.066-3.799.001-4.077 3.314-7.39 7.391-7.39 4.077 0 7.39 3.313 7.39 7.39z"/></svg>
+                  </div>
+                  <div class="channel-data">
+                    <span class="channel-sub">WhatsApp & Plantão Comercial</span>
+                    <span class="channel-main">(19) 99615-3276</span>
+                  </div>
+                </a>
+
+                <!-- Phone Direct Call -->
+                <a href="tel:+5519996153276" class="channel-card-link">
+                  <div class="channel-icon-circ">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div class="channel-data">
+                    <span class="channel-sub">Discagem Direta</span>
+                    <span class="channel-main">+55 19 99615-3276</span>
+                  </div>
+                </a>
+
+                <!-- Email Institutional -->
+                <div class="channel-card-link" style="cursor: pointer;" data-copy="techdimbrasil@gmail.com" title="Clique para copiar e-mail">
+                  <div class="channel-icon-circ">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div class="channel-data">
+                    <span class="channel-sub">E-mail Institucional (Clique p/ copiar)</span>
+                    <span class="channel-main" style="font-size: 0.95rem;">techdimbrasil@gmail.com</span>
+                  </div>
+                </div>
+
+                <!-- Location -->
+                <div class="channel-card-link">
+                  <div class="channel-icon-circ">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div class="channel-data">
+                    <span class="channel-sub">Sede Operacional</span>
+                    <span class="channel-main">Campinas — SP, Brasil</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tactical Contact Form -->
+            <div>
+              <form class="tactical-form" id="tacticalContactForm">
+                <h3 class="font-display" style="font-size: 1.35rem; color: #fff;">
+                  Solicitar Diagnóstico Tático
+                </h3>
+                <p style="color: var(--text-dark); font-size: 0.85rem; margin-top: -0.5rem;">
+                  Preencha os dados abaixo para receber retorno em até 1 hora útil via WhatsApp ou e-mail.
+                </p>
+
+                <div class="field-group">
+                  <label for="formName">Seu Nome / Responsável:</label>
+                  <input type="text" id="formName" class="cyber-input" placeholder="Ex: Rodrigo Albuquerque" required />
+                </div>
+
+                <div class="field-group">
+                  <label for="formCompany">Empresa / Razão Social:</label>
+                  <input type="text" id="formCompany" class="cyber-input" placeholder="Ex: FinTech Soluções Ltda" required />
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                  <div class="field-group">
+                    <label for="formPhone">WhatsApp Comercial:</label>
+                    <input type="tel" id="formPhone" class="cyber-input" placeholder="(19) 99999-9999" required />
+                  </div>
+                  <div class="field-group">
+                    <label for="formEmail">E-mail Corporativo:</label>
+                    <input type="email" id="formEmail" class="cyber-input" placeholder="contato@empresa.com" required />
+                  </div>
+                </div>
+
+                <div class="field-group">
+                  <label for="formService">Serviço de Maior Interesse:</label>
+                  <select id="formService" class="cyber-input">
+                    <option value="CyberOps e Resposta a Incidentes">CyberOps & Resposta a Incidentes 24/7</option>
+                    <option value="Google Cloud Architecture e Serverless">Google Cloud Architecture & Serverless</option>
+                    <option value="Debian 13 Hardening e Blindagem Linux">Debian 13 Kernel Hardening & Blindagem Linux</option>
+                    <option value="IA Local On-Premise Air-Gapped">IA Local & LLMs On-Premise Air-Gapped</option>
+                    <option value="Engenharia de Dados e BigQuery">Engenharia de Dados & Data Lakes</option>
+                    <option value="Plantão Tático Emergencial">Plantão Tático Emergencial 24/7</option>
+                    <option value="Diagnóstico e Auditoria Geral">Diagnóstico & Auditoria Geral de TI</option>
+                  </select>
+                </div>
+
+                <div class="field-group">
+                  <label for="formMessage">Descreva brevemente sua necessidade:</label>
+                  <textarea id="formMessage" class="cyber-input" rows="3" placeholder="Ex: Precisamos blindar nossos servidores Linux e otimizar custos de computação em nuvem."></textarea>
+                </div>
+
+                <button type="submit" class="cyber-submit-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.974.545 1.785.835 2.791.835 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm7.391 5.766c-.001 4.077-3.314 7.39-7.391 7.39-1.282 0-2.484-.336-3.535-.921l-4.524 1.187 1.21-4.407c-.675-1.109-1.066-2.408-1.066-3.799.001-4.077 3.314-7.39 7.391-7.39 4.077 0 7.39 3.313 7.39 7.39z"/></svg>
+                  <span>Encaminhar Proposta via WhatsApp</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand-wrapper">
+          <img src="assets/techdim-official-logo.png" alt="TECHDIM Logo" class="brand-logo-img" width="40" height="40" />
+          <div class="brand-meta">
+            <span class="brand-title">TECHDIM<span>_</span></span>
+            <span class="brand-subtitle">INOVA SIMPLES (I.S.) - ME</span>
+          </div>
+        </div>
+        <p>
+          Consultoria especializada em Cibersegurança Defensiva, Hardening de Kernel Linux Debian 13 e Arquitetura Serverless em Google Cloud Platform.
+        </p>
+        <p class="font-mono text-dark" style="font-size: 0.78rem; margin-top: 0.5rem;">
+          CNPJ: 61.933.926/0001-24 · Campinas — SP
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Serviços Táticos</h4>
+        <ul class="footer-nav">
+          <li><a href="#solucoes">CyberOps & Incidentes</a></li>
+          <li><a href="#solucoes">Google Cloud Run & GKE</a></li>
+          <li><a href="#solucoes">Debian 13 Hardening</a></li>
+          <li><a href="#solucoes">IA Local Air-Gapped</a></li>
+          <li><a href="#solucoes">Engenharia de Dados</a></li>
+          <li><a href="#solucoes">Plantão Tático 24/7</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Recursos & Ferramentas</h4>
+        <ul class="footer-nav">
+          <li><a href="#scanner">ThreatScanner Kether_1</a></li>
+          <li><a href="#roi">Calculadora de Downtime</a></li>
+          <li><a href="#sobre">Corpo Técnico</a></li>
+          <li><a href="#faq">Perguntas Frequentes</a></li>
+          <li><a href="https://github.com/Techdimbr" target="_blank" rel="noopener">Repositório GitHub</a></li>
+          <li><a href="https://linkedin.com/in/deivismayer" target="_blank" rel="noopener">LinkedIn do Fundador</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Canais Oficiais</h4>
+        <ul class="footer-nav">
+          <li><a href="https://wa.me/5519996153276" target="_blank" rel="noopener">WhatsApp: (19) 99615-3276</a></li>
+          <li><a href="tel:+5519996153276">Telefone: (19) 99615-3276</a></li>
+          <li><a href="mailto:techdimbrasil@gmail.com">techdimbrasil@gmail.com</a></li>
+          <li><a href="#contato">Campinas — SP, Brasil</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bar">
+      <div>
+        © 2026 TECHDIM INOVA SIMPLES (I.S.) - ME. Todos os direitos reservados.
+      </div>
+      <div style="display: flex; gap: 1.5rem;">
+        <span class="font-mono text-cyan" style="font-size: 0.75rem;">AMBIENTE MONITORADO & SEGURO</span>
+        <a href="#top" style="color: var(--cyan-neon);">Voltar ao Topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Floating WhatsApp Widget (Always Visible)
+       ========================================================================== -->
+  <a href="https://wa.me/5519996153276?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20da%20TECHDIM!" 
+     class="floating-whatsapp" target="_blank" rel="noopener noreferrer" 
+     aria-label="Fale conosco no WhatsApp">
+    <span class="live-pulse-dot" style="background: #fff; box-shadow: 0 0 8px #fff;" aria-hidden="true"></span>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.974.545 1.785.835 2.791.835 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm7.391 5.766c-.001 4.077-3.314 7.39-7.391 7.39-1.282 0-2.484-.336-3.535-.921l-4.524 1.187 1.21-4.407c-.675-1.109-1.066-2.408-1.066-3.799.001-4.077 3.314-7.39 7.391-7.39 4.077 0 7.39 3.313 7.39 7.39z"/></svg>
+    <span>WhatsApp (19) 99615-3276</span>
+  </a>
+
+  <!-- ==========================================================================
+       Service Deep Dive Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="serviceModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Fechar Modal">✕</button>
+      <span class="badge-tag" id="modalServiceTag">ESPECIFICAÇÃO TÉCNICA</span>
+      <h3 class="font-display" id="modalServiceTitle" style="font-size: 1.8rem; margin: 0.8rem 0; color: #fff;">
+        Serviço
+      </h3>
+      <p id="modalServiceDesc" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.5rem;">
+        Descrição do serviço.
+      </p>
+      <div style="background: rgba(3, 7, 18, 0.7); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1.2rem; margin-bottom: 1.8rem;">
+        <h4 style="font-size: 0.88rem; color: var(--cyan-neon); margin-bottom: 0.6rem; text-transform: uppercase; font-family: var(--font-mono);">
+          Diferenciais de Engenharia:
+        </h4>
+        <ul id="modalServiceList" style="list-style: none; font-size: 0.88rem; color: #E2E8F0; display: flex; flex-direction: column; gap: 0.5rem;">
+        </ul>
+      </div>
+      <a href="#" id="modalServiceCta" class="btn-cta-whatsapp" style="width: 100%; justify-content: center;" target="_blank" rel="noopener noreferrer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.974.545 1.785.835 2.791.835 3.181 0 5.767-2.586 5.768-5.768zm7.391 5.766c-.001 4.077-3.314 7.39-7.391 7.39-1.282 0-2.484-.336-3.535-.921l-4.524 1.187 1.21-4.407c-.675-1.109-1.066-2.408-1.066-3.799.001-4.077 3.314-7.39 7.391-7.39 4.077 0 7.39 3.313 7.39 7.39z"/></svg>
+        <span>Solicitar Proposta para este Serviço via WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Site Interactive Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

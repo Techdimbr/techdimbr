@@ -1,0 +1,17 @@
+{
+  "short_name": "Techdim",
+  "name": "Techdim CyberOps & IA",
+  "description": "Engenharia de realidade, operações cibernéticas avançadas e inteligência de sistemas.",
+  "icons": [
+    {
+      "src": "/og-image.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "display": "standalone",
+  "orientation": "portrait"
+}
