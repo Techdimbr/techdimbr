@@ -14,3 +14,8 @@
    - Garantir que todos os links externos possuam `rel="noopener noreferrer"`.
 4. **Deploy e Compatibilidade:**
    - O site roda estático no GitHub Pages. Não adicionar dependências ou rotas de backend dinâmico que quebrem o GitHub Pages.
+
+## YYYY-MM-DD - [Prevenção contra Reverse Tabnabbing]
+**Vulnerability:** Abertura de janelas e abas externas sem isolamento do contexto de navegação original (falta de `rel="noopener noreferrer"` no HTML e opções em `window.open`).
+**Learning:** Mesmo em projetos frontend Vanilla JS, funções nativas como `window.open()` deixam a aplicação exposta a ataques de Reverse Tabnabbing e referrer leakage se não configuradas corretamente.
+**Prevention:** Sempre usar `rel="noopener noreferrer"` em tags `<a>` externas e incluir o parâmetro de opções `'noopener,noreferrer'` em chamadas `window.open()`.
