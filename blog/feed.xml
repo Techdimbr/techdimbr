@@ -1,51 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog TECHDIM</title>
     <link>https://techdimbr.github.io/techdimbr/blog/</link>
-    <description>Radar diário de tecnologia e segurança para empresas.</description>
+    <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
+    <lastBuildDate>Wed, 07 Oct 2026 06:03:00 -0300</lastBuildDate>
     <item>
-      <title>Radar TECHDIM · 07/10/2026</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-07/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-07/</guid>
-      <pubDate>Wed, 07 Oct 2026 11:00:00 +0000</pubDate>
-      <description>Só 22% das empresas conseguiram escalar a IA; quem mede o retorno acerta mais | Exchange Server: atualização fora de ciclo corrige leitura indevida de caixas de e-mail | LGPD sem susto: comece com o modelo de registro da ANPD para pequenas empresas</description>
+      <title>Hardening: servidores e estações configurados para dar menos brechas aos invasores</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-07/hardening-servidores-e-estacoes-configurados-para-dar-menos/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-07/hardening-servidores-e-estacoes-configurados-para-dar-menos/</guid>
+      <pubDate>Wed, 07 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>A TECHDIM revisa a configuração de servidores, estações e rede da sua empresa e fecha o que não precisa estar aberto</description>
     </item>
     <item>
-      <title>Radar TECHDIM · 06/10/2026</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-06/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-06/</guid>
-      <pubDate>Tue, 06 Oct 2026 11:00:00 +0000</pubDate>
-      <description>Anthropic investe US$ 100 milhões para formar 10 mil engenheiros de IA para empresas | Zammad: falhas no sistema de chamados entram na lista de exploradas da CISA | Firewall do Windows desligado? Confira os 3 perfis em minutos</description>
+      <title>LGPD sem susto: comece com o modelo de registro da ANPD para pequenas empresas</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-07/lgpd-sem-susto-comece-com-o-modelo-de-registro-da-anpd/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-07/lgpd-sem-susto-comece-com-o-modelo-de-registro-da-anpd/</guid>
+      <pubDate>Wed, 07 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>A ANPD oferece, para agentes de tratamento de pequeno porte, um guia de segurança, um checklist e um formulário-modelo de registro (Excel e PDF)</description>
     </item>
     <item>
-      <title>Radar TECHDIM · 05/10/2026</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-05/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-05/</guid>
-      <pubDate>Mon, 05 Oct 2026 11:00:00 +0000</pubDate>
-      <description>Modelo de IA aberto pode rodar dentro da empresa: Aleph Alpha lança o Kolibri | Citrix NetScaler: nova falha explorada em ataques atinge equipamentos com SAML | Proteja pastas do Windows contra ransomware: ative o Acesso controlado a pastas</description>
+      <title>Exchange Server: atualização fora de ciclo corrige leitura indevida de caixas de e-mail</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-07/exchange-server-atualizacao-fora-de-ciclo-corrige-leitura/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-07/exchange-server-atualizacao-fora-de-ciclo-corrige-leitura/</guid>
+      <pubDate>Wed, 07 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A Microsoft liberou atualização para o CVE-2026-96940 (nota 8,8): usuário autenticado pode ler e-mails e anexos de outros na mesma organização</description>
     </item>
     <item>
-      <title>Radar TECHDIM · 04/10/2026</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-04/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-04/</guid>
-      <pubDate>Sun, 04 Oct 2026 11:00:00 +0000</pubDate>
-      <description>IA achou falha em servidor de arquivos e ela foi explorada em até 24 horas | FortiMail: falha crítica (nota 9,8) já é explorada em ataques | Proteja o domínio da empresa contra e-mail falso: configure o DMARC passo a passo</description>
+      <title>Só 22% das empresas conseguiram escalar a IA; quem mede o retorno acerta mais</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-07/so-22-das-empresas-conseguiram-escalar-a-ia-quem-mede/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-07/so-22-das-empresas-conseguiram-escalar-a-ia-quem-mede/</guid>
+      <pubDate>Wed, 07 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Pesquisa do Gartner com 1.303 organizações aponta que só 22% escalaram a IA em várias áreas, mesmo com 85% dos líderes planejando gastar mais em 2026</description>
     </item>
     <item>
-      <title>Radar TECHDIM · 03/10/2026</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-03/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-03/</guid>
-      <pubDate>Sat, 03 Oct 2026 11:00:00 +0000</pubDate>
-      <description>Apple vai endurecer o Acesso Total ao Disco por causa dos agentes de IA | GitLab corrige falha crítica (nota 9,9) no AI Gateway que permite executar comandos | Ligue a verificação em 2 etapas no e-mail da empresa: passo a passo</description>
+      <title>Automação com IA: seu atendimento responde rápido sem perder o controle</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-06/automacao-com-ia-seu-atendimento-responde-rapido-sem-perder/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-06/automacao-com-ia-seu-atendimento-responde-rapido-sem-perder/</guid>
+      <pubDate>Tue, 06 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>A TECHDIM cria automações com IA para o dia a dia: triagem de e-mails, classificação de pedidos e rascunhos de resposta para sua equipe revisar</description>
     </item>
     <item>
-      <title>Radar TECHDIM · 02/10/2026</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-02/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-02/</guid>
-      <pubDate>Fri, 02 Oct 2026 11:00:00 +0000</pubDate>
-      <description>IA já está em quase toda empresa, mas integração e governança ainda travam | ShinyHunters volta a explorar falha crítica do Oracle PeopleSoft | Notebook perdido sem BitLocker é dado exposto: como ligar a criptografia</description>
+      <title>Firewall do Windows desligado? Confira os 3 perfis em minutos</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-06/firewall-do-windows-desligado-confira-os-3-perfis-em-minutos/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-06/firewall-do-windows-desligado-confira-os-3-perfis-em-minutos/</guid>
+      <pubDate>Tue, 06 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>O Firewall do Windows vem ligado por padrão e bloqueia o que entra sem pedido ou regra. Mas alguém pode tê-lo desligado para &quot;resolver um problema&quot;</description>
+    </item>
+    <item>
+      <title>Zammad: falhas no sistema de chamados entram na lista de exploradas da CISA</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-06/zammad-falhas-no-sistema-de-chamados-entram-na-lista/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-06/zammad-falhas-no-sistema-de-chamados-entram-na-lista/</guid>
+      <pubDate>Tue, 06 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A CISA incluiu duas falhas do Zammad, o CVE-2026-102489 e o CVE-2026-102490, na lista de vulnerabilidades exploradas</description>
+    </item>
+    <item>
+      <title>Anthropic investe US$ 100 milhões para formar 10 mil engenheiros de IA para empresas</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-06/anthropic-investe-us-100-milhoes-para-formar-10-mil/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-06/anthropic-investe-us-100-milhoes-para-formar-10-mil/</guid>
+      <pubDate>Tue, 06 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A Anthropic criou a Claude Frontier Academy, com US$ 100 milhões para formar 10 mil engenheiros até o fim de 2027</description>
+    </item>
+    <item>
+      <title>Acesso remoto sem abrir a porta: VPN, MFA e rede segmentada para sua empresa</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-05/acesso-remoto-sem-abrir-a-porta-vpn-mfa-e-rede-segmentada/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-05/acesso-remoto-sem-abrir-a-porta-vpn-mfa-e-rede-segmentada/</guid>
+      <pubDate>Mon, 05 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Equipes que trabalham fora do escritório dependem de acesso remoto, e equipamentos de acesso expostos à internet são alvo constante de ataques</description>
+    </item>
+    <item>
+      <title>Proteja pastas do Windows contra ransomware: ative o Acesso controlado a pastas</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-05/proteja-pastas-do-windows-contra-ransomware-ative-o-acesso/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-05/proteja-pastas-do-windows-contra-ransomware-ative-o-acesso/</guid>
+      <pubDate>Mon, 05 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>O Acesso controlado a pastas só deixa apps confiáveis alterarem arquivos em pastas protegidas, como Documentos, Imagens e Vídeos. Vem desligado por padrão</description>
+    </item>
+    <item>
+      <title>Citrix NetScaler: nova falha explorada em ataques atinge equipamentos com SAML</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-05/citrix-netscaler-nova-falha-explorada-em-ataques-atinge/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-05/citrix-netscaler-nova-falha-explorada-em-ataques-atinge/</guid>
+      <pubDate>Mon, 05 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A CVE-2026-88779 (nota 8,7) afeta NetScaler ADC e Gateway configurados como provedor (SP) ou identidade (IdP) SAML; a Citrix confirma ataques dirigidos</description>
+    </item>
+    <item>
+      <title>Modelo de IA aberto pode rodar dentro da empresa: Aleph Alpha lança o Kolibri</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-05/modelo-de-ia-aberto-pode-rodar-dentro-da-empresa-aleph-alpha/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-05/modelo-de-ia-aberto-pode-rodar-dentro-da-empresa-aleph-alpha/</guid>
+      <pubDate>Mon, 05 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Em 3/10 a alemã Aleph Alpha lançou o Kolibri, modelo de IA com pesos abertos e licença Apache 2.0: 78 bilhões de parâmetros, cerca de 3 bilhões ativos…</description>
+    </item>
+    <item>
+      <title>Atualização em dia é defesa: gestão de patches e suporte de TI para sua empresa</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-04/atualizacao-em-dia-e-defesa-gestao-de-patches-e-suporte/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-04/atualizacao-em-dia-e-defesa-gestao-de-patches-e-suporte/</guid>
+      <pubDate>Sun, 04 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Falhas críticas em servidores, gateways e sistemas são divulgadas com frequência, e o tempo entre o aviso e o ataque pode ser curto</description>
+    </item>
+    <item>
+      <title>Proteja o domínio da empresa contra e-mail falso: configure o DMARC passo a passo</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-04/proteja-o-dominio-da-empresa-contra-e-mail-falso-configure/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-04/proteja-o-dominio-da-empresa-contra-e-mail-falso-configure/</guid>
+      <pubDate>Sun, 04 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Antes, configure SPF e DKIM no domínio: o DMARC só funciona se um dos dois alinha com o endereço do remetente (From)</description>
+    </item>
+    <item>
+      <title>FortiMail: falha crítica (nota 9,8) já é explorada em ataques</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-04/fortimail-falha-critica-nota-9-8-ja-e-explorada-em-ataques/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-04/fortimail-falha-critica-nota-9-8-ja-e-explorada-em-ataques/</guid>
+      <pubDate>Sun, 04 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A CVE-2026-104286 (nota 9,8) deixa um atacante sem login gravar arquivos no FortiMail por requisições HTTP/HTTPS; a Fortinet confirma exploração</description>
+    </item>
+    <item>
+      <title>IA achou falha em servidor de arquivos e ela foi explorada em até 24 horas</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-04/ia-achou-falha-em-servidor-de-arquivos-e-ela-foi-explorada/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-04/ia-achou-falha-em-servidor-de-arquivos-e-ela-foi-explorada/</guid>
+      <pubDate>Sun, 04 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>O modelo Mythos, da Anthropic, ajudou um pesquisador da Horizon3 a achar a CVE-2026-61500, falha crítica no Rejetto HFS que dá acesso de administrador</description>
+    </item>
+    <item>
+      <title>Planilha que virou sistema: software sob medida para o seu processo</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-03/planilha-que-virou-sistema-software-sob-medida-para-o-seu/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-03/planilha-que-virou-sistema-software-sob-medida-para-o-seu/</guid>
+      <pubDate>Sat, 03 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Quando o processo depende de planilhas, mensagens e anotações, cada pessoa faz de um jeito e o erro passa despercebido</description>
+    </item>
+    <item>
+      <title>Ligue a verificação em 2 etapas no e-mail da empresa: passo a passo</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-03/ligue-a-verificacao-em-2-etapas-no-e-mail-da-empresa-passo/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-03/ligue-a-verificacao-em-2-etapas-no-e-mail-da-empresa-passo/</guid>
+      <pubDate>Sat, 03 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Microsoft 365: no Entra admin center, vá em Entra ID &gt; Overview &gt; Properties &gt; Manage security defaults, marque Enabled e salve (exige Conditional Access…</description>
+    </item>
+    <item>
+      <title>GitLab corrige falha crítica (nota 9,9) no AI Gateway que permite executar comandos</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/</guid>
+      <pubDate>Sat, 03 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A CVE-2026-90970 (nota 9,9) atinge o AI Gateway auto-hospedado do GitLab: quem tem acesso ao Duo Agent Platform escapa do sandbox de templates e executa…</description>
+    </item>
+    <item>
+      <title>Apple vai endurecer o Acesso Total ao Disco por causa dos agentes de IA</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-03/apple-vai-endurecer-o-acesso-total-ao-disco-por-causa/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-03/apple-vai-endurecer-o-acesso-total-ao-disco-por-causa/</guid>
+      <pubDate>Sat, 03 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Em 2/10 a Apple anunciou novos controles para o Acesso Total ao Disco do macOS: o app só obterá essa permissão com &quot;ação explícita do usuário&quot;</description>
+    </item>
+    <item>
+      <title>Backup que nunca foi restaurado é como extintor que ninguém testou</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-02/backup-que-nunca-foi-restaurado-e-como-extintor-que-ninguem/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-02/backup-que-nunca-foi-restaurado-e-como-extintor-que-ninguem/</guid>
+      <pubDate>Fri, 02 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>O problema: muita empresa tem rotina de backup, mas nunca restaurou um arquivo para provar que ele volta</description>
+    </item>
+    <item>
+      <title>Notebook perdido sem BitLocker é dado exposto: como ligar a criptografia</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-02/notebook-perdido-sem-bitlocker-e-dado-exposto-como-ligar/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-02/notebook-perdido-sem-bitlocker-e-dado-exposto-como-ligar/</guid>
+      <pubDate>Fri, 02 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Veja se o equipamento tem TPM e se atende aos requisitos: em msinfo32, a linha &quot;Suporte à criptografia do dispositivo&quot; deve indicar que atende</description>
+    </item>
+    <item>
+      <title>ShinyHunters volta a explorar falha crítica do Oracle PeopleSoft</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-02/shinyhunters-volta-a-explorar-falha-critica-do-oracle/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-02/shinyhunters-volta-a-explorar-falha-critica-do-oracle/</guid>
+      <pubDate>Fri, 02 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A CVE-2026-35273, nota 9,8, permite executar código sem login no PeopleSoft PeopleTools 8.61 e 8.62; a Mandiant relata nova campanha em setembro</description>
+    </item>
+    <item>
+      <title>IA já está em quase toda empresa, mas integração e governança ainda travam</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-02/ia-ja-esta-em-quase-toda-empresa-mas-integracao-e-governanca/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-02/ia-ja-esta-em-quase-toda-empresa-mas-integracao-e-governanca/</guid>
+      <pubDate>Fri, 02 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Segundo a Bain com a Microsoft, 95% das empresas brasileiras já usam IA generativa, mas a maioria ainda não tem estrutura formal de governança</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitLab corrige falha crítica (nota 9,9) no AI Gateway que permite executar comandos</title>
+  <meta name="description" content="A CVE-2026-90970 (nota 9,9) atinge o AI Gateway auto-hospedado do GitLab: quem tem acesso ao Duo Agent Platform escapa do sandbox de templates e executa…" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="TECHDIM INOVA SIMPLES" />
+  <link rel="canonical" href="https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/" />
+  <link rel="alternate" hreflang="x-default" href="https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/" />
+  <link rel="alternate" type="application/rss+xml" title="Blog TECHDIM" href="https://techdimbr.github.io/techdimbr/blog/feed.xml" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="TECHDIM" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="GitLab corrige falha crítica (nota 9,9) no AI Gateway que permite executar comandos" />
+  <meta property="og:description" content="A CVE-2026-90970 (nota 9,9) atinge o AI Gateway auto-hospedado do GitLab: quem tem acesso ao Duo Agent Platform escapa do sandbox de templates e executa…" />
+  <meta property="og:url" content="https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/" />
+  <meta property="og:image" content="https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/capa.jpg" />
+  <meta property="og:image:width" content="720" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="Infográfico TECHDIM: A falha está no template do agente de IA: nota 9,9 no GitLab." />
+  <meta property="article:published_time" content="2026-10-03T06:01:00-03:00" />
+  <meta property="article:modified_time" content="2026-10-03T06:01:00-03:00" />
+  <meta property="article:section" content="Alerta de segurança" />
+  <meta property="article:tag" content="GitLab" />
+  <meta property="article:tag" content="DevSecOps" />
+  <meta property="article:tag" content="IASegura" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GitLab corrige falha crítica (nota 9,9) no AI Gateway que permite executar comandos" />
+  <meta name="twitter:description" content="A CVE-2026-90970 (nota 9,9) atinge o AI Gateway auto-hospedado do GitLab: quem tem acesso ao Duo Agent Platform escapa do sandbox de templates e executa…" />
+  <meta name="twitter:image" content="https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/capa.jpg" />
+  <meta name="twitter:image:alt" content="Infográfico TECHDIM: A falha está no template do agente de IA: nota 9,9 no GitLab." />
+  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg" />
+  <meta name="theme-color" content="#030712" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../styles.css" />
+  <link rel="stylesheet" href="../../../blog/blog.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "GitLab corrige falha crítica (nota 9,9) no AI Gateway que permite executar comandos",
+  "description": "A CVE-2026-90970 (nota 9,9) atinge o AI Gateway auto-hospedado do GitLab: quem tem acesso ao Duo Agent Platform escapa do sandbox de templates e executa…",
+  "inLanguage": "pt-BR",
+  "datePublished": "2026-10-03T06:01:00-03:00",
+  "dateModified": "2026-10-03T06:01:00-03:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/"
+  },
+  "url": "https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/",
+  "articleSection": "Alerta de segurança",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/capa.jpg",
+    "width": 720,
+    "height": 900
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "TECHDIM INOVA SIMPLES",
+    "url": "https://techdimbr.github.io/techdimbr/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "TECHDIM INOVA SIMPLES",
+    "url": "https://techdimbr.github.io/techdimbr/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://techdimbr.github.io/techdimbr/assets/techdim-official-logo.png",
+      "width": 1024,
+      "height": 1024
+    }
+  },
+  "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://techdimbr.github.io/techdimbr/blog/#blog",
+    "name": "Blog TECHDIM",
+    "url": "https://techdimbr.github.io/techdimbr/blog/"
+  },
+  "keywords": "GitLab, DevSecOps, IASegura",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "securityonline.info",
+      "url": "https://securityonline.info/gitlab-ai-gateway-vulnerability/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "letsdatascience.com",
+      "url": "https://letsdatascience.com/news/gitlab-patches-critical-ai-gateway-command-execution-flaw-3c0f4f57"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://techdimbr.github.io/techdimbr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://techdimbr.github.io/techdimbr/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Radar 03/10/2026",
+      "item": "https://techdimbr.github.io/techdimbr/blog/2026-10-03/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "GitLab corrige falha crítica (nota 9,9) no AI Gateway que permite executar comandos",
+      "item": "https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo principal</a>
+  <div class="cyber-bg-canvas" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <div class="container nav-bar">
+      <a href="../../../" class="brand-wrapper" aria-label="TECHDIM Início">
+        <img src="../../../assets/techdim-official-cube-icon.jpg" alt="Logo Oficial TECHDIM INOVA" class="brand-logo-img" width="50" height="50" />
+        <div class="brand-meta">
+          <span class="brand-title">TECHDIM<span>_</span></span>
+          <span class="brand-subtitle">INOVA SIMPLES // KETHER_1</span>
+        </div>
+      </a>
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="../../../#solucoes" class="nav-link">Serviços B2B</a></li>
+          <li><a href="../../../#sobre" class="nav-link">Sobre Nós</a></li>
+          <li><a href="../../../blog/" class="nav-link active">Blog</a></li>
+          <li><a href="../../../#faq" class="nav-link">FAQ</a></li>
+          <li><a href="../../../#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta-group">
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="conteudo">
+    <article class="container blog-artigo">
+      <nav class="blog-migalhas" aria-label="Trilha de navegação"><a href="../../../">Início</a> / <a href="../../../blog/">Blog</a> / <a href="../">Radar 03/10/2026</a> / <span aria-current="page">Alerta de segurança</span></nav>
+      <header class="blog-topo">
+        <p class="blog-rotulo-linha"><span class="blog-rotulo blog-hacker">Alerta de segurança</span> <time datetime="2026-10-03">3 de outubro de 2026</time></p>
+        <h1>GitLab corrige falha crítica (nota 9,9) no AI Gateway que permite executar comandos</h1>
+        <p class="blog-lead">O GitLab corrigiu em 2/10 uma falha no AI Gateway auto-hospedado: com acesso ao Duo Agent Platform, dá para escapar do sandbox e rodar comandos no servidor. Não há exploração conhecida.</p>
+      </header>
+      <figure class="blog-capa"><img src="capa.jpg" width="720" height="900" alt="Infográfico TECHDIM: A falha está no template do agente de IA: nota 9,9 no GitLab." decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
+      <section class="blog-bloco">
+        <h2>O que aconteceu</h2>
+        <ul class="blog-pontos"><li>A CVE-2026-90970 (nota 9,9) atinge o AI Gateway auto-hospedado do GitLab: quem tem acesso ao Duo Agent Platform escapa do sandbox de templates e executa comandos</li><li>Afetadas: da 18.1.6 até antes da 19.2.4, da 19.3 até antes da 19.3.2 e a 19.4.0; correções 19.2.4, 19.3.2 e 19.4.1. Atualize a imagem Docker do gateway</li><li>Não há exploração conhecida até 2/10. Atualize, restrinja quem acessa o Duo Agent Platform e revise mudanças recentes nas configurações de flow</li></ul>
+        <p class="blog-fecho">Ferramenta de IA no servidor de código também precisa de patch e de acesso mínimo. A TECHDIM cuida disso.</p>
+      </section>
+      <section class="blog-bloco"><h2>Por que importa</h2><p>Falha crítica em ferramenta de IA integrada ao servidor de código; vale para empresas que hospedam o próprio GitLab.</p></section>
+      <section class="blog-bloco"><h2>Como se proteger</h2><ol class="blog-passos"><li><strong>Atualize o gateway.</strong> Suba para 19.2.4, 19.3.2 ou 19.4.1: a imagem Docker, não só o GitLab.</li><li><strong>Restrinja o acesso.</strong> Só quem precisa deve usar o Duo Agent Platform; revise contas e permissões.</li><li><strong>Revise as flows.</strong> Procure mudanças recentes e não autorizadas nas configurações de flow.</li></ol></section>
+      <section class="blog-bloco"><h2>Fontes consultadas</h2><ul class="blog-fontes"><li><a href="https://securityonline.info/gitlab-ai-gateway-vulnerability/" target="_blank" rel="noopener noreferrer">securityonline.info</a></li><li><a href="https://letsdatascience.com/news/gitlab-patches-critical-ai-gateway-command-execution-flaw-3c0f4f57" target="_blank" rel="noopener noreferrer">letsdatascience.com</a></li></ul></section>
+      <aside class="blog-cta" aria-label="Fale com a TECHDIM">
+        <p><strong>Precisa de ajuda com isso na sua empresa?</strong> A TECHDIM cuida de infraestrutura, segurança da informação, automação com IA e software sob medida, em Campinas e para todo o Brasil.</p>
+        <p><a class="blog-botao" href="../../../#contato">Fale com a TECHDIM</a></p>
+      </aside>
+      <section class="blog-bloco"><h2>Mais do Radar de hoje</h2><ul class="blog-lista-links"><li><span class="blog-rotulo blog-noticias">Notícia de tecnologia</span> <a href="../apple-vai-endurecer-o-acesso-total-ao-disco-por-causa/">Apple vai endurecer o Acesso Total ao Disco por causa dos agentes de IA</a></li><li><span class="blog-rotulo blog-dica">Dica prática</span> <a href="../ligue-a-verificacao-em-2-etapas-no-e-mail-da-empresa-passo/">Ligue a verificação em 2 etapas no e-mail da empresa: passo a passo</a></li><li><span class="blog-rotulo blog-servico">Serviço TECHDIM</span> <a href="../planilha-que-virou-sistema-software-sob-medida-para-o-seu/">Planilha que virou sistema: software sob medida para o seu processo</a></li></ul><p><a href="../">Ver o Radar TECHDIM de 03/10/2026 completo →</a></p></section>
+      
+      <nav class="blog-nav-dias" aria-label="Outros dias"><a class="blog-dia-ant" href="../../2026-10-02/" rel="prev">← Radar de 02/10/2026</a><a class="blog-dia-seg" href="../../2026-10-04/" rel="next">Radar de 04/10/2026 →</a></nav>
+      <p class="blog-tags"><span>#GitLab</span> <span>#DevSecOps</span> <span>#IASegura</span></p>
+      <p class="blog-aviso">Este texto resume as fontes citadas na data de publicação. Confira sempre o aviso oficial do fabricante antes de agir em produção.</p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-bar">
+      <div>© 2026 TECHDIM INOVA SIMPLES (I.S.) - ME. Todos os direitos reservados.</div>
+      <nav class="blog-rodape-nav" aria-label="Blog">
+        <a href="../../../blog/">Blog</a>
+        <a href="../../../blog/feed.xml">Feed RSS</a>
+        <a href="../../../#contato">Fale com a TECHDIM</a>
+        <a href="#top">Voltar ao topo ↑</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var b = document.getElementById('mobileToggle'), m = document.getElementById('navMenu');
+      if (!b || !m) return;
+      b.addEventListener('click', function () {
+        var aberto = m.classList.toggle('open');
+        b.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+      });
+    })();
+  </script>
+</body>
+</html>

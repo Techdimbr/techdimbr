@@ -21,4 +21,4 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-Sitemap: https://www.techdim.com.br/sitemap.xml
+Sitemap: https://techdimbr.github.io/techdimbr/sitemap.xml
