@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 07 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Infraestrutura de rede: Wi-Fi estável, cabeamento organizado e redes separadas</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-08/infraestrutura-de-rede-wi-fi-estavel-cabeamento-organizado/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-08/infraestrutura-de-rede-wi-fi-estavel-cabeamento-organizado/</guid>
+      <pubDate>Thu, 08 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>A rede é como o encanamento do prédio: ninguém lembra dela até a videoconferência travar, o sistema ficar lento ou o Wi-Fi cair na hora do atendimento</description>
+    </item>
+    <item>
+      <title>Inventário de TI com PowerShell: saiba o que usa antes do próximo alerta de falha</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-08/inventario-de-ti-com-powershell-saiba-o-que-usa-antes/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-08/inventario-de-ti-com-powershell-saiba-o-que-usa-antes/</guid>
+      <pubDate>Thu, 08 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>No Windows, abra o PowerShell e rode Get-ComputerInfo: ele reúne as propriedades do sistema, como nome, versão do Windows, fabricante, modelo e memória</description>
+    </item>
+    <item>
+      <title>Atlassian CVE-2026-21589: falha crítica no Jira e Confluence já atrai tentativas de ataque</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-08/atlassian-cve-2026-21589-falha-critica-no-jira-e-confluence/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-08/atlassian-cve-2026-21589-falha-critica-no-jira-e-confluence/</guid>
+      <pubDate>Thu, 08 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A Atlassian publicou o CVE-2026-21589 (nota 9,3): sem login, o invasor lê arquivos da pasta web do Jira, Confluence, Bitbucket e outros produtos Data…</description>
+    </item>
+    <item>
+      <title>Memória e SSD podem encarecer: Samsung projeta lucro recorde com a demanda de IA</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-08/memoria-e-ssd-podem-encarecer-samsung-projeta-lucro-recorde/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-08/memoria-e-ssd-podem-encarecer-samsung-projeta-lucro-recorde/</guid>
+      <pubDate>Thu, 08 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A Samsung estimou lucro operacional de 107,4 trilhões de wons no 3º trimestre, alta de 782% em um ano, puxado pela memória usada em servidores e IA</description>
+    </item>
     <item>
       <title>Hardening: servidores e estações configurados para dar menos brechas aos invasores</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-07/hardening-servidores-e-estacoes-configurados-para-dar-menos/</link>
