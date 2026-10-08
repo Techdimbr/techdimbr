@@ -1664,6 +1664,12 @@ body {
   color: #E2E8F0;
 }
 
+.required-marker {
+  color: var(--rose-crit);
+  margin-left: 0.2rem;
+  font-weight: 700;
+}
+
 .cyber-input {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-subtle);
