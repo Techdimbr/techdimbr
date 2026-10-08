@@ -42,7 +42,7 @@
 .blog-rodape-nav a { color: var(--cyan-neon); }
 /* Bloco "Blog" da página inicial */
 .blog-home { padding: 5rem 0; }
-.blog-home-grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.blog-home-grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); }
 .blog-home-card { display: block; padding: 1.3rem 1.4rem; border: 1px solid var(--border-cyber); border-radius: var(--radius-md); background: var(--bg-card); text-decoration: none; transition: background .25s var(--ease), transform .25s var(--ease); }
 .blog-home-card:hover, .blog-home-card:focus-visible { background: var(--bg-card-hover); transform: translateY(-2px); }
 .blog-home-card h3 { font-family: var(--font-display); font-size: 1.1rem; line-height: 1.35; color: var(--text-pure); margin: .5rem 0 .6rem; }

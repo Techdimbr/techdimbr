@@ -1936,3 +1936,105 @@ body {
     padding: 1.8rem 1.4rem;
   }
 }
+
+
+/* ==========================================================================
+   RESPONSIVE v2 — header fluido + correção de overflow mobile (out/2026)
+   ========================================================================== */
+
+/* ---- Header: ajusta continuamente ao redimensionar ---- */
+.nav-bar { gap: clamp(0.75rem, 1.6vw, 2rem); height: auto; min-height: 76px; }
+.brand-wrapper { min-width: 0; flex-shrink: 0; gap: clamp(0.6rem, 1vw, 1rem); }
+.brand-logo-img { width: clamp(40px, 3.4vw, 50px); height: clamp(40px, 3.4vw, 50px); }
+.brand-title { font-size: clamp(1.1rem, 1.5vw, 1.4rem); white-space: nowrap; }
+.brand-subtitle { font-size: clamp(0.6rem, 0.7vw, 0.68rem); white-space: nowrap; letter-spacing: 0.12em; }
+nav[aria-label="Navegação Principal"] { flex: 1 1 auto; min-width: 0; display: flex; justify-content: center; }
+.nav-menu { gap: clamp(0.85rem, 1.5vw, 1.8rem); flex-wrap: nowrap; }
+.nav-link { white-space: nowrap; font-size: clamp(0.82rem, 0.95vw, 0.92rem); }
+.nav-cta-group { flex-shrink: 0; gap: 0.75rem; }
+.btn-header-wa { white-space: nowrap; padding: 0.55rem clamp(0.8rem, 1.1vw, 1.25rem); font-size: clamp(0.8rem, 0.9vw, 0.88rem); min-height: 44px; }
+.btn-header-wa .wa-ico { flex-shrink: 0; display: none; }
+.btn-header-wa .wa-label-short { display: none; }
+.btn-header-wa .live-pulse-dot { flex-shrink: 0; }
+.mobile-toggle { min-width: 44px; min-height: 44px; display: none; align-items: center; justify-content: center; }
+
+/* O número fica no botão do hero e no flutuante; no topo (container de 1280px) cabe só "WhatsApp".
+   Com o texto completo o menu invadia a marca e o botão em telas largas. */
+.btn-header-wa .wa-label-full { display: none; }
+.btn-header-wa .wa-label-short { display: inline; }
+
+/* Abaixo de 1180px: menu hambúrguer (evita aperto entre 769–1180px) */
+@media (max-width: 1180px) {
+  nav[aria-label="Navegação Principal"] { flex: 0 0 auto; }
+  .site-header .nav-menu {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    background: #030712; border-bottom: 1px solid var(--border-subtle);
+    padding: 1rem clamp(1rem, 4vw, 2rem) 1.5rem; flex-direction: column; align-items: stretch; gap: 0;
+    max-height: calc(100vh - 76px); overflow-y: auto;
+  }
+  .site-header .nav-menu.open { display: flex; }
+  .site-header .nav-menu .nav-link { display: flex; align-items: center; min-height: 48px; font-size: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .mobile-toggle { display: inline-flex; }
+}
+
+/* Celular: só ícone WhatsApp (o botão nunca fica vazio) */
+@media (max-width: 768px) {
+  .nav-bar { min-height: 68px; }
+  .btn-header-wa span.wa-label, .btn-header-wa .live-pulse-dot { display: none !important; }
+  .btn-header-wa .wa-ico { display: block; }
+  .btn-header-wa { padding: 0; width: 44px; height: 44px; justify-content: center; }
+  .site-header .nav-menu { max-height: calc(100vh - 68px); }
+  .floating-whatsapp span { display: none; }
+}
+@media (max-width: 400px) {
+  .brand-subtitle { display: none; }
+}
+
+/* ---- Grids: nunca maiores que o container ---- */
+.hero-grid > *, .scanner-grid > *, .services-grid > *, .contact-grid > *,
+.multiagent-grid > *, .roi-grid > *, .about-layout > *, .stats-grid > *, .footer-grid > * { min-width: 0; }
+.multiagent-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1180px) {
+  .multiagent-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 1024px) {
+  .hero-grid, .scanner-grid, .roi-grid, .about-layout, .contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+  .multiagent-grid, .services-grid { grid-template-columns: minmax(0, 1fr); }
+  .terminal-body, .log-line { white-space: pre-wrap; overflow-wrap: anywhere; word-break: break-word; }
+  .contact-box h2, .contact-box a, .contact-box div, .channel-card-link { overflow-wrap: anywhere; }
+  .contact-box h2 { font-size: clamp(1.5rem, 6.5vw, 2.2rem) !important; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions > a, .hero-actions > button { width: 100%; justify-content: center; text-align: center; }
+  .btn-export-wa { white-space: normal; }
+  /* espaço para o botão flutuante não cobrir conteúdo */
+  footer { padding-bottom: 90px; }
+}
+
+/* Títulos fluidos */
+.hero-heading { font-size: clamp(1.9rem, 4.2vw + 0.5rem, 3.8rem); overflow-wrap: anywhere; hyphens: auto; }
+h2 { overflow-wrap: break-word; }
+
+/* ---- Toque e legibilidade ---- */
+@media (max-width: 768px) {
+  a, button { -webkit-tap-highlight-color: transparent; }
+  .service-card a, .footer-links a, .video-tab, .hero-media-tabs button, [class*="tab-btn"] { min-height: 44px; display: inline-flex; align-items: center; }
+}
+
+/* Rede de segurança contra scroll lateral */
+html { overflow-x: clip; }
+
+
+/* Formulário e scanner: campos fluidos */
+.form-row-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.field-group { min-width: 0; }
+.cyber-input { width: 100%; min-width: 0; max-width: 100%; box-sizing: border-box; font-size: max(16px, 0.95rem); }
+.scanner-controls { flex-wrap: wrap; }
+.btn-scan-trigger { min-width: 0; min-height: 44px; }
+.btn-scan-reset { min-height: 44px; }
+@media (max-width: 480px) {
+  .form-row-2 { grid-template-columns: minmax(0, 1fr); }
+  .scanner-controls > * { flex: 1 1 100%; }
+}
