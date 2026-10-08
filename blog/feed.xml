@@ -29,7 +29,7 @@
       <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-08/atlassian-cve-2026-21589-falha-critica-no-jira-e-confluence/</guid>
       <pubDate>Thu, 08 Oct 2026 06:01:00 -0300</pubDate>
       <category>Alerta de segurança</category>
-      <description>A Atlassian publicou o CVE-2026-21589 (nota 9,3): sem login, o invasor lê arquivos da pasta web do Jira, Confluence, Bitbucket e outros produtos Data…</description>
+      <description>CVE-2026-21589 (nota 9,3): sem login, o invasor lê arquivos da pasta web, se souber o nome exato, no Jira, Confluence, Bitbucket e outros produtos Data…</description>
     </item>
     <item>
       <title>Memória e SSD podem encarecer: Samsung projeta lucro recorde com a demanda de IA</title>
