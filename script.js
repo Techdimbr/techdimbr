@@ -59,8 +59,12 @@ function initMobileNav() {
         toggleBtn.setAttribute('aria-expanded', 'false');
       }
     });
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 1180 && navMenu.classList.contains('open')) {
+    // ⚡ Performance Optimization (Bolt): Replaced expensive 'resize' event listener
+    // with matchMedia observer. 'resize' fires continuously, causing main-thread CPU
+    // usage and layout thrashing (from window.innerWidth). matchMedia fires exactly once
+    // when crossing the breakpoint (1181px corresponds to > 1180px condition).
+    window.matchMedia('(min-width: 1181px)').addEventListener('change', (e) => {
+      if (e.matches && navMenu.classList.contains('open')) {
         navMenu.classList.remove('open');
         toggleBtn.setAttribute('aria-expanded', 'false');
       }
