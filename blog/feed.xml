@@ -6,7 +6,23 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 08 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 06:01:00 -0300</lastBuildDate>
+    <item>
+      <title>Citrix NetScaler: falha crítica (nota 9,5) pode permitir execução remota de código em SAML</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-09/citrix-netscaler-falha-critica-nota-9-5-pode-permitir/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-09/citrix-netscaler-falha-critica-nota-9-5-pode-permitir/</guid>
+      <pubDate>Fri, 09 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>CVE-2026-107406 (nota 9,5): estouro de memória no NetScaler ADC e Gateway que pode levar a execução remota de código ou queda do equipamento</description>
+    </item>
+    <item>
+      <title>Windows 11 24H2 Home e Pro perde atualizações de segurança em 13 de outubro</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-09/windows-11-24h2-home-e-pro-perde-atualizacoes-de-seguranca/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-09/windows-11-24h2-home-e-pro-perde-atualizacoes-de-seguranca/</guid>
+      <pubDate>Fri, 09 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Segundo a Microsoft, o Windows 11 versão 24H2 (Home e Pro) termina o suporte em 13 de outubro de 2026, no horário do Pacífico: depois disso, não recebe…</description>
+    </item>
     <item>
       <title>Infraestrutura de rede: Wi-Fi estável, cabeamento organizado e redes separadas</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-08/infraestrutura-de-rede-wi-fi-estavel-cabeamento-organizado/</link>
