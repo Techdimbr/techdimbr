@@ -166,7 +166,7 @@
         <h1>Firewall do Windows desligado? Confira os 3 perfis em minutos</h1>
         <p class="blog-lead">O Firewall do Windows já vem ligado e bloqueia o que entra sem regra. O risco é alguém desligá-lo para testar algo e esquecer. Em um minuto você confere e religa, sem instalar nada.</p>
       </header>
-      <figure class="blog-capa"><img src="capa.jpg" width="720" height="900" alt="Infográfico TECHDIM: Firewall do Windows: confira os 3 perfis" decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
+      <figure class="blog-capa"><img src="capa.jpg" fetchpriority="high" width="720" height="900" alt="Infográfico TECHDIM: Firewall do Windows: confira os 3 perfis" decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
       <section class="blog-bloco">
         <h2>Resumo da dica</h2>
         <ul class="blog-pontos"><li>O Firewall do Windows vem ligado por padrão e bloqueia o que entra sem pedido ou regra. Mas alguém pode tê-lo desligado para &quot;resolver um problema&quot;</li><li>Abra Segurança do Windows &gt; Firewall e proteção de rede e veja os perfis Domínio, Particular e Pública: os três devem estar ativos</li><li>Prefira o PowerShell como administrador: Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True liga os três de uma vez</li></ul>
