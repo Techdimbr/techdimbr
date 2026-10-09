@@ -1596,6 +1596,12 @@ body {
   transform: translateX(6px);
 }
 
+.channel-card-link-btn {
+  width: 100%;
+  font-family: inherit;
+  color: inherit;
+}
+
 .channel-card-link.wa-accent {
   border-color: rgba(37, 211, 102, 0.4);
   background: rgba(37, 211, 102, 0.06);

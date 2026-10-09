@@ -633,16 +633,16 @@
             <div>
               <div class="slider-group">
                 <div class="slider-label-row">
-                  <span>Faturamento Mensal Estimado:</span>
-                  <span class="slider-value-badge" id="roiRevenueBadge">R$ 200.000</span>
+                  <label for="roiRevenueSlider">Faturamento Mensal Estimado:</label>
+                  <span class="slider-value-badge" id="roiRevenueBadge" aria-live="polite">R$ 200.000</span>
                 </div>
                 <input type="range" class="cyber-range" id="roiRevenueSlider" min="30000" max="2000000" step="10000" value="200000" />
               </div>
 
               <div class="slider-group">
                 <div class="slider-label-row">
-                  <span>Horas de Instabilidade ou Lentidão / Mês:</span>
-                  <span class="slider-value-badge" id="roiDowntimeBadge">4h / mês</span>
+                  <label for="roiDowntimeSlider">Horas de Instabilidade ou Lentidão / Mês:</label>
+                  <span class="slider-value-badge" id="roiDowntimeBadge" aria-live="polite">4h / mês</span>
                 </div>
                 <input type="range" class="cyber-range" id="roiDowntimeSlider" min="1" max="24" step="1" value="4" />
               </div>
@@ -898,7 +898,7 @@
                 </a>
 
                 <!-- Email Institutional -->
-                <div class="channel-card-link" style="cursor: pointer;" data-copy="techdimbrasil@gmail.com" title="Clique para copiar e-mail">
+                <button type="button" class="channel-card-link channel-card-link-btn" style="cursor: pointer; text-align: left;" data-copy="techdimbrasil@gmail.com" title="Clique para copiar e-mail">
                   <div class="channel-icon-circ">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                   </div>
@@ -906,7 +906,7 @@
                     <span class="channel-sub">E-mail Institucional (Clique p/ copiar)</span>
                     <span class="channel-main" style="font-size: 0.95rem;">techdimbrasil@gmail.com</span>
                   </div>
-                </div>
+                </button>
 
                 <!-- Location -->
                 <div class="channel-card-link">
