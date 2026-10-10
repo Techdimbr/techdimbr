@@ -166,7 +166,8 @@
         <h1>Exchange Server: atualização fora de ciclo corrige leitura indevida de caixas de e-mail</h1>
         <p class="blog-lead">A Microsoft publicou uma atualização fora do ciclo para o Exchange Server. A falha exige login válido e permite ler caixas de outros usuários. Não há exploração conhecida, mas o patch deve ser aplicado logo.</p>
       </header>
-      <figure class="blog-capa"><img src="capa.jpg" width="720" height="900" alt="Infográfico TECHDIM: Exchange: leitura indevida de e-mails" decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
+      <!-- ⚡ Bolt: Added fetchpriority="high" to prioritize LCP image loading -->
+      <figure class="blog-capa"><img src="capa.jpg" fetchpriority="high" width="720" height="900" alt="Infográfico TECHDIM: Exchange: leitura indevida de e-mails" decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
       <section class="blog-bloco">
         <h2>O que aconteceu</h2>
         <ul class="blog-pontos"><li>A Microsoft liberou atualização para o CVE-2026-96940 (nota 8,8): usuário autenticado pode ler e-mails e anexos de outros na mesma organização</li><li>Afeta Exchange Server Subscription RTM, 2019 (CU14 e CU15) e 2016 (CU23); o Exchange Online já recebeu a correção no serviço</li><li>A Microsoft diz não ter notícia de exploração, mas vê o problema como explorável; instale a atualização em todos os servidores Exchange</li></ul>
