@@ -331,15 +331,29 @@ async function runDiagnosticAudit() {
 function animateScore(target) {
   const scoreNum = document.getElementById('scannerScoreVal');
   if (!scoreNum) return;
-  let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
-    }
+
+  // ⚡ Performance Optimization (Bolt): Use requestAnimationFrame instead of setInterval.
+  // setInterval doesn't sync with monitor refresh rates, causing main-thread jitter.
+  // requestAnimationFrame ensures smooth repaints and avoids executing when the tab is inactive.
+  const duration = 1000; // 1 second animation
+  let startTimestamp = null;
+
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+
+    // Using linear ease here, but could be customized
+    const current = Math.floor(progress * target);
     scoreNum.textContent = current;
-  }, 20);
+
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    } else {
+      scoreNum.textContent = target; // Ensure exact final value
+    }
+  };
+
+  window.requestAnimationFrame(step);
 }
 
 function resetScanner() {
