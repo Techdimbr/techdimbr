@@ -166,7 +166,7 @@
         <h1>Proteja o domínio da empresa contra e-mail falso: configure o DMARC passo a passo</h1>
         <p class="blog-lead">O DMARC diz aos servidores de destino o que fazer com mensagens que dizem vir do seu domínio, mas não passam na verificação. Comece só monitorando e endureça aos poucos.</p>
       </header>
-      <figure class="blog-capa"><img src="capa.jpg" width="720" height="900" alt="Infográfico TECHDIM: Impeça golpistas de enviar e-mail em nome da sua empresa." decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
+      <figure class="blog-capa"><img fetchpriority="high" src="capa.jpg" width="720" height="900" alt="Infográfico TECHDIM: Impeça golpistas de enviar e-mail em nome da sua empresa." decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
       <section class="blog-bloco">
         <h2>Resumo da dica</h2>
         <ul class="blog-pontos"><li>Antes, configure SPF e DKIM no domínio: o DMARC só funciona se um dos dois alinha com o endereço do remetente (From)</li><li>No DNS, crie um registro TXT com nome _dmarc e valor v=DMARC1; p=none; rua=mailto:seu-email, para só monitorar e receber relatórios</li><li>Analise os relatórios e endureça aos poucos: p=none, depois p=quarantine (com pct de 10 a 100) e, por fim, p=reject, corrigindo envios legítimos</li></ul>
