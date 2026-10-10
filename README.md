@@ -100,6 +100,27 @@ Combinamos rigor matemático, protocolos de defesa em profundidade e arquitetura
 
 ---
 
+## 🚀 Portfólio de Repositórios Públicos Open-Core (10 Projetos Oficiais)
+
+A TECHDIM disponibiliza uma suíte open-core de nível corporativo projetada para auditabilidade, soberania digital e aceleração de ambientes corporativos:
+
+| # | Projeto & Repositório | Categoria | Descrição Executiva | Stack |
+| :---: | :--- | :--- | :--- | :--- |
+| **01** | [**debian-hardening-framework**](https://github.com/Techdimbr/debian-hardening-framework) | Hardening / OS | Baseline rigoroso de segurança para Debian 13 (Trixie/Sid), CIS Benchmark, `sysctl`, AppArmor e nftables. | Bash, nftables, AppArmor |
+| **02** | [**gcp-landing-zone-terraform**](https://github.com/Techdimbr/gcp-landing-zone-terraform) | Cloud / IaC | Arquitetura de infraestrutura como código (IaC) modular para Google Cloud Platform com VPC e IAM Zero Trust. | Terraform, GCP, Cloud IAM |
+| **03** | [**driverscan-hardware-audit**](https://github.com/Techdimbr/driverscan-hardware-audit) | Hardware / Forense | Auditoria forense profunda de hardware, detecção de firmwares adulterados e telemetria PCI/USB/NVMe. | Python, Linux Kernel, PCI utils |
+| **04** | [**linux-privacy-guard**](https://github.com/Techdimbr/linux-privacy-guard) | Privacidade / SO | Supressão sistemática de telemetria indesejada, blindagem de DNS criptografado e anonimização de logs. | Bash, Python, systemd |
+| **05** | [**sovereign-rag-engine**](https://github.com/Techdimbr/sovereign-rag-engine) | IA On-Premise | Mecanismo corporativo de RAG 100% desconectado da nuvem para análise confidencial de documentos via LLMs locais. | Python, ChromaDB, Ollama, LangChain |
+| **06** | [**unifi-controller-toolkit**](https://github.com/Techdimbr/unifi-controller-toolkit) | Redes / Infra | Orquestração, backup automatizado e políticas de firewall para redes Ubiquiti UniFi corporativas. | Python, UniFi API, Docker |
+| **07** | [**enterprise-lgpd-scanner**](https://github.com/Techdimbr/enterprise-lgpd-scanner) | Compliance / Dados | Varredura automatizada de bancos de dados e sistemas para localização de dados pessoais sensíveis (Lei 13.709/2018). | Python, Regex, SQLite, PostgreSQL |
+| **08** | [**linux-ir-triage-collector**](https://github.com/Techdimbr/linux-ir-triage-collector) | DFIR / Incidentes | Coleta forense volátil automatizada em incidentes cibernéticos com preservação de hash e cadeia de custódia. | Bash, Tar, SHA256, DFIR Tools |
+| **09** | [**ad-linux-integrator**](https://github.com/Techdimbr/ad-linux-integrator) | Identidade / Acesso | Integração e autenticação segura de servidores Linux ao Microsoft Active Directory via SSSD e Kerberos. | Bash, SSSD, Kerberos, Samba |
+| **10** | [**techdim-architecture-decision-records**](https://github.com/Techdimbr/techdim-architecture-decision-records) | Governança / ADR | Repositório de governança técnica registrando todas as decisões arquiteturais da TECHDIM (ADR 0001 a 0010). | Markdown, ADR Tools, Git |
+
+> 🌐 **Explore a vitrine visual interativa no site:** [https://techdimbr.github.io/techdimbr/#produtos](https://techdimbr.github.io/techdimbr/#produtos)
+
+---
+
 ## 🤖 Ecossistema Multiagentes & Automação Inteligente
 
 A Techdim opera com arquitetura multiagentes de última geração, combinando agentes concorrentes locais com agentes assíncronos na nuvem:

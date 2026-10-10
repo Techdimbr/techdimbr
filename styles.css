@@ -2038,3 +2038,184 @@ html { overflow-x: clip; }
   .form-row-2 { grid-template-columns: minmax(0, 1fr); }
   .scanner-controls > * { flex: 1 1 100%; }
 }
+
+/* ==========================================================================
+   Seção de Portfólio Open-Core & Produtos de Referência (Techdim Google IA)
+   ========================================================================== */
+.portfolio-section {
+  padding: 6rem 0;
+  position: relative;
+  background: radial-gradient(circle at 50% 0%, rgba(0, 229, 255, 0.05) 0%, transparent 60%);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.portfolio-card {
+  background: rgba(10, 18, 36, 0.75);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: var(--radius-md, 14px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 229, 255, 0.6);
+  box-shadow: 0 16px 36px rgba(0, 229, 255, 0.15), 0 0 20px rgba(124, 77, 255, 0.2);
+}
+
+.portfolio-img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #060913;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-img {
+  transform: scale(1.06);
+}
+
+.portfolio-category-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(6, 9, 19, 0.85);
+  border: 1px solid rgba(0, 229, 255, 0.5);
+  color: #00E5FF;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+.portfolio-body {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.portfolio-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.portfolio-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted, #94A3B8);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-tag {
+  background: rgba(124, 77, 255, 0.15);
+  border: 1px solid rgba(124, 77, 255, 0.3);
+  color: #D8B4FE;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.portfolio-action {
+  margin-top: auto;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn-github-view {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.12), rgba(124, 77, 255, 0.18));
+  border: 1px solid rgba(0, 229, 255, 0.4);
+  color: #fff;
+  padding: 0.75rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-github-view:hover {
+  background: linear-gradient(135deg, #00E5FF, #7C4DFF);
+  color: #060913;
+  border-color: #00E5FF;
+  box-shadow: 0 4px 18px rgba(0, 229, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.investor-cta-box {
+  margin-top: 4.5rem;
+  background: linear-gradient(135deg, rgba(10, 24, 52, 0.85), rgba(20, 15, 45, 0.9));
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  border-radius: var(--radius-md, 16px);
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.investor-cta-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, #00E5FF, #7C4DFF, #4285F4);
+}
+
+.investor-cta-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.investor-cta-desc {
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  color: #CBD5E1;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.investor-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
