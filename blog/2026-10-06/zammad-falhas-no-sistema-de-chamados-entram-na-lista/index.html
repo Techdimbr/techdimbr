@@ -166,7 +166,8 @@
         <h1>Zammad: falhas no sistema de chamados entram na lista de exploradas da CISA</h1>
         <p class="blog-lead">Duas falhas no Zammad, sistema de chamados de código aberto, entraram na lista da CISA. O DIVD relatou um ataque feito por agente de IA autônomo. A segunda falha ainda aguarda correção.</p>
       </header>
-      <figure class="blog-capa"><img src="capa.jpg" width="720" height="900" alt="Infográfico TECHDIM: Helpdesk na mira: falhas no Zammad" decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
+      <!-- ⚡ Bolt: Added fetchpriority="high" to prioritize LCP image loading -->
+      <figure class="blog-capa"><img src="capa.jpg" fetchpriority="high" width="720" height="900" alt="Infográfico TECHDIM: Helpdesk na mira: falhas no Zammad" decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
       <section class="blog-bloco">
         <h2>O que aconteceu</h2>
         <ul class="blog-pontos"><li>A CISA incluiu duas falhas do Zammad, o CVE-2026-102489 e o CVE-2026-102490, na lista de vulnerabilidades exploradas</li><li>A primeira permite executar código sem login no Zammad 6.5 e anteriores; a partir da versão 7 não é explorável nas condições atuais</li><li>A segunda eleva o acesso a root, exige acesso prévio ao servidor e, segundo o aviso, a correção ainda estava em desenvolvimento</li></ul>

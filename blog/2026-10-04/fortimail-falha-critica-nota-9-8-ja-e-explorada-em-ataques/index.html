@@ -166,7 +166,8 @@
         <h1>FortiMail: falha crítica (nota 9,8) já é explorada em ataques</h1>
         <p class="blog-lead">A Fortinet avisou que a falha CVE-2026-104286, nota 9,8, no FortiMail já é explorada. Quem alcança a interface de gestão sem login pode gravar arquivos. Na divulgação, as correções estavam previstas.</p>
       </header>
-      <figure class="blog-capa"><img src="capa.jpg" width="720" height="900" alt="Infográfico TECHDIM: Falha crítica no FortiMail já é explorada em ataques." decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
+      <!-- ⚡ Bolt: Added fetchpriority="high" to prioritize LCP image loading -->
+      <figure class="blog-capa"><img src="capa.jpg" fetchpriority="high" width="720" height="900" alt="Infográfico TECHDIM: Falha crítica no FortiMail já é explorada em ataques." decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
       <section class="blog-bloco">
         <h2>O que aconteceu</h2>
         <ul class="blog-pontos"><li>A CVE-2026-104286 (nota 9,8) deixa um atacante sem login gravar arquivos no FortiMail por requisições HTTP/HTTPS; a Fortinet confirma exploração</li><li>Afetadas as versões 7.2, 7.4, 7.6 e 8.0; na divulgação, as correções 7.4.9, 7.6.7 e 8.0.2 estavam previstas. Quem usa a 7.2 deve migrar para a 7.4 ou superior</li><li>Enquanto isso: restrinja a interface de gestão a redes confiáveis, tire-a da internet, desative o IBE se não usar e procure arquivos alterados</li></ul>

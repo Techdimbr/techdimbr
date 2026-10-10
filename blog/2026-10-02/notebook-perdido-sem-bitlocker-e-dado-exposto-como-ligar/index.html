@@ -161,7 +161,8 @@
         <h1>Notebook perdido sem BitLocker é dado exposto: como ligar a criptografia</h1>
         <p class="blog-lead">O BitLocker cifra o disco inteiro e torna os dados inacessíveis em dispositivos perdidos ou roubados. Funciona melhor com TPM e, se preciso, com PIN na inicialização.</p>
       </header>
-      <figure class="blog-capa"><img src="capa.jpg" width="720" height="900" alt="Infográfico TECHDIM: Notebook roubado não pode virar vazamento de dados." decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
+      <!-- ⚡ Bolt: Added fetchpriority="high" to prioritize LCP image loading -->
+      <figure class="blog-capa"><img src="capa.jpg" fetchpriority="high" width="720" height="900" alt="Infográfico TECHDIM: Notebook roubado não pode virar vazamento de dados." decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
       <section class="blog-bloco">
         <h2>Resumo da dica</h2>
         <ul class="blog-pontos"><li>Veja se o equipamento tem TPM e se atende aos requisitos: em msinfo32, a linha &quot;Suporte à criptografia do dispositivo&quot; deve indicar que atende</li><li>Ative o BitLocker (Windows Pro/Enterprise) ou a criptografia do dispositivo em Configurações, para proteger o disco contra acesso não autorizado</li><li>Guarde a chave de recuperação em local seguro: no Microsoft Entra ID, no AD ou na conta Microsoft, e teste a recuperação</li></ul>
