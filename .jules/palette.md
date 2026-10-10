@@ -1,0 +1,3 @@
+## 2025-01-20 - Accessible Form Required Fields and Toast Notifications
+**Learning:** Dynamic elements like toasts need ARIA live regions (`role="status"`, `aria-live="polite"`) for screen readers to announce them. Required form inputs benefit from clear visual indicators (`*` hidden from screen readers via `aria-hidden="true"`) and semantic explicit requirement mapping (`aria-required="true"`).
+**Action:** Always add visual asterisks wrapped in `aria-hidden` spans and `aria-required="true"` to mandatory form inputs. Always apply `role="status"` and `aria-live="polite"` to dynamically created toast elements.
