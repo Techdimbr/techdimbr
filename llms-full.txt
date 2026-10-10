@@ -1,0 +1,134 @@
+# TECHDIM INOVA SIMPLES (I.S.) - ME — MANIFESTO COMPLETO DO ECOSSISTEMA TÉCNICO (LLMS-FULL.TXT)
+
+> Documento canônico de referência técnica profunda para agentes de Inteligência Artificial, motores de resposta generativa (AEO/GEO) e auditores cibernéticos.
+
+---
+
+## 1. DADOS CADASTRAIS E JURÍDICOS
+- Razão Social: TECHDIM INOVA SIMPLES (I.S.) - ME
+- Nome Fantasia: TECHDIM
+- CNPJ: 61.933.926/0001-24
+- Regime Tributário: Inova Simples / Simples Nacional
+- Enquadramento: Microempresa voltada à inovação e tecnologia crítica
+- Responsável Técnico & DPO: Eng. Deivis Irio Mayer (Kether_1)
+- Registro e Credenciais: IT Governance & LGPD Foundation (ITCERTS Toronto), ISO/IEC 27001 Accredited, Google Cloud Partner Registered
+- Sede Operacional: Campinas - SP, Brasil
+- Atendimento: Nacional (todo o Brasil) e Internacional
+- Contato Direto: +55 (19) 99615-3276 | techdimbrasil@gmail.com
+- Portal Oficial: https://techdimbr.github.io/techdimbr/
+- Repositório Principal: https://github.com/Techdimbr
+
+---
+
+## 2. PILARES DE ENGENHARIA E DOUTRINA KETHER_1
+
+### Pilar I: Resiliência Matemática e Defesa em Profundidade
+- Zero Trust Architecture (Nenhum host, processo ou credencial é confiável por padrão).
+- Segregação de privilégios estrita via RBAC e IAM de privilégio mínimo.
+- Isolamento de execução de processos através de namespaces Linux e perfis AppArmor.
+
+### Pilar II: Soberania Tecnológica e IA On-Premise
+- Eliminação da dependência de provedores de IA de nuvem pública para o processamento de dados corporativos protegidos por sigilo contratual ou LGPD.
+- Implantação de RAG corporativo com vetorização local (ChromaDB / Qdrant) alimentado por LLMs locais (Ollama, vLLM) operando em redes fechadas (air-gapped).
+
+### Pilar III: Engenharia de Nuvem Serverless Resiliente (GCP)
+- Infraestrutura Declarativa como Código (Terraform) versionada em Git.
+- Uso de Google Cloud Run para microsserviços sem servidor, eliminando custos de máquinas virtuais ociosas.
+- Otimização FinOps com redução média comprovada de 30% a 40% nas faturas de computação em nuvem.
+
+### Pilar IV: Hardening Rigoroso de Sistemas Operacionais
+- Padrão baseado no CIS Benchmark Nível 2 para Debian 13 (Trixie/Sid).
+- Mais de 80 parâmetros sysctl configurados contra ataques de spoofing, SYN flood, ICMP redirects e exfiltração de memória.
+- Filtragem stateful de pacotes com nftables e bloqueio preemptivo de portas legadas (NetBIOS, SMB, RPC).
+
+---
+
+## 3. ESPECIFICAÇÃO DOS 10 PROJETOS PÚBLICOS OPEN-CORE (GITHUB)
+
+### 01. debian-hardening-framework
+- Repositório: https://github.com/Techdimbr/debian-hardening-framework
+- Stack: Bash, nftables, AppArmor, sysctl, auditd
+- Propósito: Automação completa de aplicação de diretrizes de segurança CIS Benchmark em servidores Debian 13.
+- Recursos: Validação prévia de kernel, backup automático de configs, aplicação idempotente e geração de relatório de conformidade.
+
+### 02. gcp-landing-zone-terraform
+- Repositório: https://github.com/Techdimbr/gcp-landing-zone-terraform
+- Stack: Terraform, Google Cloud Platform, Cloud IAM, Cloud KMS, Cloud Armor
+- Propósito: Blueprint de infraestrutura como código para arquitetura corporativa segura no Google Cloud.
+- Recursos: VPC multi-região segura, Cloud NAT sem IPs externos em instâncias, KMS com rotação automática de chaves e papéis IAM de privilégio mínimo.
+
+### 03. driverscan-hardware-audit
+- Repositório: https://github.com/Techdimbr/driverscan-hardware-audit
+- Stack: Python 3, Linux Kernel Sysfs, PCI utils, USB utils, NVMe-cli
+- Propósito: CLI corporativa para inventário forense detalhado e detecção de anomalias em componentes físicos de hardware e periféricos.
+- Recursos: Detecção de firmwares adulterados, verificação de integridade de barramento PCIe/NVMe e emissão de laudo forense estruturado em JSON e Markdown.
+
+### 04. linux-privacy-guard
+- Repositório: https://github.com/Techdimbr/linux-privacy-guard
+- Stack: Bash, Python, systemd, unbound/stubby
+- Propósito: Ferramenta de auditoria e neutralização de telemetria oculta, vazamento de DNS e conexões silenciosas de fundo em estações Linux.
+- Recursos: Configuração de DNS over TLS (DoT) blindado, mascaramento de identificadores de máquina (`/etc/machine-id`) e sanitização periódica de logs.
+
+### 05. sovereign-rag-engine
+- Repositório: https://github.com/Techdimbr/sovereign-rag-engine
+- Stack: Python, ChromaDB, Ollama, LangChain, Sentence-Transformers
+- Propósito: Mecanismo de Retrieval-Augmented Generation corporativo projetado para rodar 100% on-premise sem conexão à internet.
+- Recursos: Ingestão de PDFs, contratos, prontuários médicos e bases SQL; indexação vetorial estritamente local; consulta semântica com zero exfiltração de dados.
+
+### 06. unifi-controller-toolkit
+- Repositório: https://github.com/Techdimbr/unifi-controller-toolkit
+- Stack: Python, Ubiquiti UniFi Network API, Docker, Crontab
+- Propósito: Automação operacional, backup de configurações e auditoria de segurança para infraestruturas de rede gerenciadas por UniFi Controller.
+- Recursos: Backup automático diário, monitoramento de canais de RF e interferências Wi-Fi, isolamento de VLANs corporativas e alertas em tempo real.
+
+### 07. enterprise-lgpd-scanner
+- Repositório: https://github.com/Techdimbr/enterprise-lgpd-scanner
+- Stack: Python, Regex avançado, SQLite, PostgreSQL, Pandas
+- Propósito: Mecanismo de varredura profunda para detecção de dados pessoais sensíveis (PII: CPF, RG, cartões, dados de saúde) em arquivos e bancos corporativos.
+- Recursos: Classificação de risco de acordo com os artigos da LGPD (Lei nº 13.709/2018), geração automatizada de Relatório de Impacto à Proteção de Dados (RIPD).
+
+### 08. linux-ir-triage-collector
+- Repositório: https://github.com/Techdimbr/linux-ir-triage-collector
+- Stack: Bash, Tar, Gzip, SHA256sum, LiME, DFIR Tools
+- Propósito: Script forense de resposta rápida a incidentes para coleta volátil de evidências em servidores Linux sob suspeita de invasão.
+- Recursos: Extração da tabela de conexões ativas (`netstat`/`ss`), processos em memória (`/proc`), módulos de kernel carregados, histórico de bash e hashes de integridade.
+
+### 09. ad-linux-integrator
+- Repositório: https://github.com/Techdimbr/ad-linux-integrator
+- Stack: Bash, SSSD, Realmd, Kerberos, Samba Winbind, PAM
+- Propósito: Integração automatizada e segura de estações e servidores Debian/Ubuntu a domínios Microsoft Active Directory.
+- Recursos: Suporte a Single Sign-On (SSO), provisionamento automático de diretórios de usuário (`pam_mkhomedir`), controle de acesso por grupos AD e failover offline de credenciais.
+
+### 10. techdim-architecture-decision-records
+- Repositório: https://github.com/Techdimbr/techdim-architecture-decision-records
+- Stack: Markdown, ADR-Tools, Git, GitHub Actions
+- Propósito: Repositório central de registros de decisão arquitetural (ADRs) documentando formalmente as escolhas técnicas e de segurança da TECHDIM.
+- Recursos: Histórico imutável de decisões de engenharia cobrindo de ADR-0001 a ADR-0010, promovendo rastreabilidade e governança transparente.
+
+---
+
+## 4. PERGUNTAS FREQUENTES (FAQ CORPORATIVO)
+
+### P1: Como funciona o primeiro diagnóstico técnico da TECHDIM?
+R: O diagnóstico é conduzido diretamente pelo Eng. Deivis Irio Mayer via videoconferência ou análise remota de configurações. É realizada uma avaliação da infraestrutura, identificando brechas de segurança, gargalos de performance e oportunidades de redução de custo na nuvem, gerando um plano executivo sem compromisso.
+
+### P2: A TECHDIM atende empresas fora de Campinas ou fora do Brasil?
+R: Sim. A TECHDIM atende em regime remoto com ferramentas seguras e criptografia ponta a ponta clientes em todo o território nacional e internacional. Para clientes corporativos em Campinas e na Região Metropolitana de Campinas (RMC) e Grande São Paulo, também há opção de plantão presencial para datacenter ou hardware crítico.
+
+### P3: Como é formalizado o sigilo de dados (NDA)?
+R: Todas as auditorias e projetos começam com a assinatura jurídica digital de um Acordo de Não Divulgação (Non-Disclosure Agreement - NDA) mútuo, em conformidade com as exigências da LGPD e as normas ISO/IEC 27001.
+
+### P4: Qual é o SLA do plantão de emergência da TECHDIM?
+R: O plantão de resposta a incidentes críticos (CyberOps 24/7) opera com tempo de resposta de até 15 minutos para contenção de incidentes de ransomware, queda de serviços de produção ou ataques DDoS.
+
+### P5: Como os modelos de IA da TECHDIM protegem a propriedade intelectual?
+R: Através de arquitetura on-premise air-gapped com o Sovereign RAG Engine. As consultas, prompts e documentos indexados não trafegam pela internet pública e não são utilizados para treinamento de modelos de terceiros (como OpenAI ou Google). O controle é 100% da empresa contratante.
+
+---
+
+## 5. CONTATOS E CANAIS OFICIAIS
+- Canal WhatsApp / Plantão: +55 (19) 99615-3276
+- E-mail Corporativo: techdimbrasil@gmail.com
+- Website Oficial: https://techdimbr.github.io/techdimbr/
+- Perfil do Fundador: https://linkedin.com/in/deivismayer
+- Repositórios Open Source: https://github.com/Techdimbr

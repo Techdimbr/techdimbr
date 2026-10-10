@@ -1,24 +1,66 @@
+# robots.txt — TECHDIM INOVA SIMPLES (I.S.) - ME
+# Permissões completas para Buscadores Globais e Mecanismos de IA (GEO / AEO)
+
 User-agent: *
 Allow: /
 Allow: /llms.txt
+Allow: /llms-full.txt
 Allow: /sitemap.xml
+Allow: /assets/
+Allow: /blog/
 
+# Google & Gemini Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI Crawlers (ChatGPT, SearchGPT)
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+# Perplexity AI
 User-agent: PerplexityBot
 Allow: /
 
+# Anthropic Claude
 User-agent: ClaudeBot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: anthropic-ai
 Allow: /
 
-User-agent: Amazonbot
+# Apple Intelligence
+User-agent: Applebot
 Allow: /
 
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Bing & Copilot
+User-agent: Bingbot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Outros Agentes de IA e Pesquisa Semântica
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Declaração de Sitemap Oficial
 Sitemap: https://techdimbr.github.io/techdimbr/sitemap.xml
