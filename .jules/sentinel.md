@@ -14,3 +14,8 @@
    - Garantir que todos os links externos possuam `rel="noopener noreferrer"`.
 4. **Deploy e Compatibilidade:**
    - O site roda estático no GitHub Pages. Não adicionar dependências ou rotas de backend dinâmico que quebrem o GitHub Pages.
+
+## 2026-10-11 - Add noreferrer to target="_blank" links
+**Vulnerability:** External links (both HTML and window.open) used `rel="noopener"` or `'_blank'` without `noreferrer`, exposing the Referer header to external sites and risking reverse tabnabbing.
+**Learning:** While `noopener` prevents the new tab from accessing `window.opener` in most modern browsers, it still sends the Referer header. Adding `noreferrer` is a best practice to ensure complete separation and prevent information leakage.
+**Prevention:** Always use `rel="noopener noreferrer"` for HTML links and `'noopener,noreferrer'` for `window.open` calls with `_blank`.
