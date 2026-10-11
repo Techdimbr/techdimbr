@@ -14,3 +14,8 @@
    - Garantir que todos os links externos possuam `rel="noopener noreferrer"`.
 4. **Deploy e Compatibilidade:**
    - O site roda estático no GitHub Pages. Não adicionar dependências ou rotas de backend dinâmico que quebrem o GitHub Pages.
+
+## 2024-05-18 - [Fix Reverse Tabnabbing]
+**Vulnerability:** Reverse Tabnabbing vulnerability when using `window.open` with `_blank` without `noopener` and `noreferrer`.
+**Learning:** Even though HTML `a` tags often get checked, programmatic `window.open` calls can easily miss the `noopener` property, allowing the opened window to manipulate `window.opener.location`.
+**Prevention:** Always add `'noopener,noreferrer'` as the third argument in `window.open(url, '_blank', 'noopener,noreferrer')`.
