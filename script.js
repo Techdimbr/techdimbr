@@ -331,15 +331,26 @@ async function runDiagnosticAudit() {
 function animateScore(target) {
   const scoreNum = document.getElementById('scannerScoreVal');
   if (!scoreNum) return;
-  let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
+
+  // ⚡ Bolt: Replaced setInterval with requestAnimationFrame for smoother performance and battery efficiency
+  let startTime = performance.now();
+
+  function update(time) {
+    const elapsed = time - startTime;
+
+    // Original behavior: increment by 2 every 20ms
+    let current = Math.floor(elapsed / 20) * 2;
+
     if (current >= target) {
-      current = target;
-      clearInterval(timer);
+      scoreNum.textContent = target;
+      return; // Stop animation
     }
+
     scoreNum.textContent = current;
-  }, 20);
+    requestAnimationFrame(update);
+  }
+
+  requestAnimationFrame(update);
 }
 
 function resetScanner() {
