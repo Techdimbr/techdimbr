@@ -332,14 +332,20 @@ function animateScore(target) {
   const scoreNum = document.getElementById('scannerScoreVal');
   if (!scoreNum) return;
   let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
-    }
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    // Calculate how many 20ms intervals have passed since start
+    const intervals = Math.floor((timestamp - startTimestamp) / 20);
+    // Original behavior: increment by 2 for each interval
+    current = Math.min(intervals * 2, target);
     scoreNum.textContent = current;
-  }, 20);
+
+    if (current < target) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
 }
 
 function resetScanner() {
