@@ -1462,7 +1462,7 @@
                 </a>
 
                 <!-- Email Institutional -->
-                <div class="channel-card-link" style="cursor: pointer;" data-copy="techdimbrasil@gmail.com" title="Clique para copiar e-mail">
+                <button type="button" class="channel-card-link" style="cursor: pointer; text-align: left; width: 100%; font-family: inherit; font-size: inherit; background-color: rgba(3, 7, 18, 0.85); border: 1px solid var(--border-subtle); color: var(--text-main);" data-copy="techdimbrasil@gmail.com" title="Clique para copiar e-mail">
                   <div class="channel-icon-circ">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                   </div>
@@ -1470,7 +1470,7 @@
                     <span class="channel-sub">E-mail Institucional (Clique p/ copiar)</span>
                     <span class="channel-main" style="font-size: 0.95rem;">techdimbrasil@gmail.com</span>
                   </div>
-                </div>
+                </button>
 
                 <!-- Location -->
                 <div class="channel-card-link">
@@ -1496,23 +1496,23 @@
                 </p>
 
                 <div class="field-group">
-                  <label for="formName">Seu Nome / Responsável:</label>
-                  <input type="text" id="formName" class="cyber-input" placeholder="Ex: Rodrigo Albuquerque" required />
+                  <label for="formName">Seu Nome / Responsável: <span aria-hidden="true" style="color: var(--amber-warn);">*</span></label>
+                  <input type="text" id="formName" class="cyber-input" placeholder="Ex: Rodrigo Albuquerque" required aria-required="true" />
                 </div>
 
                 <div class="field-group">
-                  <label for="formCompany">Empresa / Razão Social:</label>
-                  <input type="text" id="formCompany" class="cyber-input" placeholder="Ex: FinTech Soluções Ltda" required />
+                  <label for="formCompany">Empresa / Razão Social: <span aria-hidden="true" style="color: var(--amber-warn);">*</span></label>
+                  <input type="text" id="formCompany" class="cyber-input" placeholder="Ex: FinTech Soluções Ltda" required aria-required="true" />
                 </div>
 
                 <div class="form-row-2">
                   <div class="field-group">
-                    <label for="formPhone">WhatsApp Comercial:</label>
-                    <input type="tel" id="formPhone" class="cyber-input" placeholder="(19) 99999-9999" required />
+                    <label for="formPhone">WhatsApp Comercial: <span aria-hidden="true" style="color: var(--amber-warn);">*</span></label>
+                    <input type="tel" id="formPhone" class="cyber-input" placeholder="(19) 99999-9999" required aria-required="true" />
                   </div>
                   <div class="field-group">
-                    <label for="formEmail">E-mail Corporativo:</label>
-                    <input type="email" id="formEmail" class="cyber-input" placeholder="contato@empresa.com" required />
+                    <label for="formEmail">E-mail Corporativo: <span aria-hidden="true" style="color: var(--amber-warn);">*</span></label>
+                    <input type="email" id="formEmail" class="cyber-input" placeholder="contato@empresa.com" required aria-required="true" />
                   </div>
                 </div>
 

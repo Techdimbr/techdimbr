@@ -24,6 +24,8 @@ function showToast(message) {
     toast = document.createElement('div');
     toast.id = 'toastNotice';
     toast.className = 'toast-box';
+    toast.setAttribute('role', 'status');
+    toast.setAttribute('aria-live', 'polite');
     document.body.appendChild(toast);
   }
   toast.textContent = message;
