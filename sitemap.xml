@@ -2,59 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://techdimbr.github.io/techdimbr/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <image:image>
-      <image:loc>https://techdimbr.github.io/techdimbr/assets/techdim-official-logo.png</image:loc>
-      <image:title>TECHDIM INOVA SIMPLES Logo Oficial</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://techdimbr.github.io/techdimbr/assets/portfolio/01_techdim_debian_hardening_framework.png</image:loc>
-      <image:title>Debian 13 Hardening Framework — TECHDIM Cibersegurança</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://techdimbr.github.io/techdimbr/assets/portfolio/02_gcp_sovereign_landing_zone.png</image:loc>
-      <image:title>GCP Sovereign Landing Zone Terraform — TECHDIM Cloud</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://techdimbr.github.io/techdimbr/assets/portfolio/03_driverscan_workspace_audit_cli.png</image:loc>
-      <image:title>DriverScan Hardware Audit CLI — TECHDIM Forense</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://techdimbr.github.io/techdimbr/assets/portfolio/04_local_network_privacy_guard.png</image:loc>
-      <image:title>Linux Privacy Guard Telemetry Blocker — TECHDIM</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://techdimbr.github.io/techdimbr/assets/portfolio/05_enterprise_sovereign_rag_gcp.png</image:loc>
-      <image:title>Sovereign RAG Engine IA On-Premise Air-Gapped — TECHDIM</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://techdimbr.github.io/techdimbr/assets/portfolio/06_unifi_enterprise_ops_toolkit.png</image:loc>
-      <image:title>UniFi Controller Ops Toolkit — TECHDIM Redes</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://techdimbr.github.io/techdimbr/assets/portfolio/07_lgpd_pii_scanner_toolkit.png</image:loc>
-      <image:title>Enterprise LGPD PII Scanner — TECHDIM Conformidade</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://techdimbr.github.io/techdimbr/assets/portfolio/08_linux_ir_triage_collector.png</image:loc>
-      <image:title>Linux IR Incident Response Triage Collector — TECHDIM DFIR</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://techdimbr.github.io/techdimbr/assets/portfolio/09_active_directory_linux_integrator.png</image:loc>
-      <image:title>Active Directory Linux SSSD Integrator — TECHDIM</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://techdimbr.github.io/techdimbr/assets/portfolio/10_techdim_architecture_decision_records.png</image:loc>
-      <image:title>TECHDIM Architecture Decision Records ADR — Governança</image:title>
-    </image:image>
+    <lastmod>2026-10-12</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/llms.txt</loc>
+    <lastmod>2026-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/llms-full.txt</loc>
+    <lastmod>2026-10-10</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-10/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-12/</loc>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-12/windows-update-certificados-vencem-em-2027-e-pcs/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-12/windows-update-certificados-vencem-em-2027-e-pcs/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-12/bricksforge-cve-2026-85097-falha-critica-em-plugin/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-12/bricksforge-cve-2026-85097-falha-critica-em-plugin/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-12/desligar-funcionario-no-microsoft-365-7-passos-para-cortar/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-12/desligar-funcionario-no-microsoft-365-7-passos-para-cortar/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-12/software-sob-medida-conte-sua-ideia-e-a-techdim-ajuda/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-12/software-sob-medida-conte-sua-ideia-e-a-techdim-ajuda/capa.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-08/</loc>
@@ -223,13 +211,5 @@
     <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-02/backup-que-nunca-foi-restaurado-e-como-extintor-que-ninguem/</loc>
     <lastmod>2026-10-02</lastmod>
     <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-02/backup-que-nunca-foi-restaurado-e-como-extintor-que-ninguem/capa.jpg</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://techdimbr.github.io/techdimbr/llms.txt</loc>
-    <lastmod>2026-10-10</lastmod>
-  </url>
-  <url>
-    <loc>https://techdimbr.github.io/techdimbr/llms-full.txt</loc>
-    <lastmod>2026-10-10</lastmod>
   </url>
 </urlset>
