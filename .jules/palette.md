@@ -1,0 +1,3 @@
+## 2024-10-12 - Form Accessibility: Explicit Required Fields
+**Learning:** Native `required` attributes are not always clearly communicated visually or via screen readers without explicit ARIA hints, causing confusion in multi-field forms. Adding a visual asterisk wrapped in an `aria-hidden` span, coupled with `aria-required="true"` on the input, significantly improves both cognitive and semantic accessibility.
+**Action:** Always pair visual indicators (like asterisks) with `aria-hidden="true"` to prevent redundant screen reader announcements, while explicitly setting `aria-required="true"` on the input element for robust semantic clarity.
