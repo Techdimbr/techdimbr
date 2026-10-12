@@ -14,3 +14,8 @@
    - Garantir que todos os links externos possuam `rel="noopener noreferrer"`.
 4. **Deploy e Compatibilidade:**
    - O site roda estático no GitHub Pages. Não adicionar dependências ou rotas de backend dinâmico que quebrem o GitHub Pages.
+
+## 2026-10-12 - [Programmatic Reverse Tabnabbing via window.open]
+**Vulnerability:** External links opened programmatically via `window.open()` were lacking `'noopener,noreferrer'` features, exposing the application to Reverse Tabnabbing.
+**Learning:** While HTML anchor tags (`<a target="_blank">`) are often secured with `rel="noopener noreferrer"`, it is easy to overlook equivalent programmatic link openings in JavaScript. The `window.open` function can leave the window reference intact.
+**Prevention:** Always include `'noopener,noreferrer'` as the third argument (windowFeatures) whenever using `window.open()` to redirect or open a new window to an external domain.
