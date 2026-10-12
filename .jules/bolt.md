@@ -1,3 +1,6 @@
 ## 2026-03-30 - Reuse Intl.NumberFormat Instances in Hot Event Handlers
 **Learning:** Instantiating `new Intl.NumberFormat(...)` inside continuous input event handlers (e.g. range slider input listeners) creates significant overhead (~6.8s vs ~0.08s per 100k calls in V8) and triggers frequent garbage collection.
 **Action:** Always instantiate and cache `Intl.NumberFormat` instances at component/module level outside event listeners when formatting numbers repeatedly.
+## 2025-02-12 - requestAnimationFrame preserving original timer step logic
+**Learning:** When optimizing animations by replacing `setInterval` with `requestAnimationFrame`, it's critical to track elapsed time (using the timestamp parameter) to compute exactly how many logic intervals have passed. A naive requestAnimationFrame loop increments once per frame (typically 16ms), which breaks original timing math if the interval was larger (e.g., 20ms or more) or if the display refresh rate varies.
+**Action:** Always capture a `startTime` parameter and calculate discrete intervals (`Math.floor(elapsed / intervalTime)`) rather than assuming `requestAnimationFrame` fires at a constant rate, ensuring logic execution remains functionally identical to `setInterval`.
