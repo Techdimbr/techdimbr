@@ -332,14 +332,36 @@ function animateScore(target) {
   const scoreNum = document.getElementById('scannerScoreVal');
   if (!scoreNum) return;
   let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
+
+  // ⚡ Performance Optimization (Bolt): Replace setInterval with requestAnimationFrame
+  // setInterval can run in the background, consuming CPU when the tab is inactive, and
+  // isn't synchronized with the browser's display refresh rate (often causing jittery animations).
+  // requestAnimationFrame only runs when the tab is active and visible, and matches the display refresh rate,
+  // preventing main-thread blocking and optimizing CPU/battery usage.
+  // We track elapsed time to preserve the original 20ms step increment logic (+2 per 20ms).
+  let startTime = null;
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+
+    // Calculate how many 20ms intervals have passed
+    const increments = Math.floor(elapsed / 20);
+
+    // Update current value based on intervals passed
+    current = increments * 2;
+
     if (current >= target) {
       current = target;
-      clearInterval(timer);
+      scoreNum.textContent = current;
+      return; // Stop animation loop
     }
+
     scoreNum.textContent = current;
-  }, 20);
+    requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
 }
 
 function resetScanner() {
