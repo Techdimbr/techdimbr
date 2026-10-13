@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 12 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Check-up de TI: diagnóstico da infraestrutura e da segurança antes que algo pare a empresa</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-13/check-up-de-ti-diagnostico-da-infraestrutura-e-da-seguranca/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-13/check-up-de-ti-diagnostico-da-infraestrutura-e-da-seguranca/</guid>
+      <pubDate>Tue, 13 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Você faz check-up antes de sentir dor? A TI também precisa: o diagnóstico mostra o que está frágil antes de virar parada, perda de dados ou invasão</description>
+    </item>
+    <item>
+      <title>Restaurar o OneDrive: desfaça em 5 passos o estrago de ransomware ou exclusão em massa</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-13/restaurar-o-onedrive-desfaca-em-5-passos-o-estrago/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-13/restaurar-o-onedrive-desfaca-em-5-passos-o-estrago/</guid>
+      <pubDate>Tue, 13 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Com Microsoft 365, o Restaurar o OneDrive desfaz alterações dos últimos 30 dias. Antes, passe o antivírus em todos os dispositivos da conta, para não…</description>
+    </item>
+    <item>
+      <title>SonicWall SMA 1000 CVE-2026-102255: falha nota 10 já sofre tentativas de ataque</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-13/sonicwall-sma-1000-cve-2026-102255-falha-nota-10-ja-sofre/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-13/sonicwall-sma-1000-cve-2026-102255-falha-nota-10-ja-sofre/</guid>
+      <pubDate>Tue, 13 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>O SonicWall SMA 1000 (modelos 6210, 7210 e 8200v) tem falha nota 10 (CVE-2026-102255): sem login, o invasor faz o equipamento enviar pedidos a serviços…</description>
+    </item>
+    <item>
+      <title>Gemini Enterprise processará dados no Brasil a partir de 15/10 com o Gemini 3.5 Flash</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-13/gemini-enterprise-processara-dados-no-brasil-a-partir-de-15/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-13/gemini-enterprise-processara-dados-no-brasil-a-partir-de-15/</guid>
+      <pubDate>Tue, 13 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A partir de 15/10, o Gemini Enterprise na web passa a ter processamento de dados no Brasil com o Gemini 3.5 Flash, anunciou o Google Cloud no Brazil Summit</description>
+    </item>
     <item>
       <title>Software sob medida: conte sua ideia e a TECHDIM ajuda a transformá-la em sistema ou app</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-12/software-sob-medida-conte-sua-ideia-e-a-techdim-ajuda/</link>
