@@ -332,14 +332,32 @@ function animateScore(target) {
   const scoreNum = document.getElementById('scannerScoreVal');
   if (!scoreNum) return;
   let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
+  let lastTime = 0;
+
+  // ⚡ Performance Optimization (Bolt):
+  // Replaced setInterval with requestAnimationFrame to pause execution when the tab
+  // is inactive, reducing CPU and battery usage. The logic strictly preserves the
+  // original +2 step increment and 20ms timing condition by tracking the exact
+  // elapsed time and carrying over the remainder to prevent framerate dependency.
+  function step(timestamp) {
+    if (!lastTime) lastTime = timestamp;
+    const elapsed = timestamp - lastTime;
+
+    if (elapsed >= 20) {
+      current += 2;
+      // Preserve the remainder to ensure consistent 20ms intervals over time
+      lastTime = timestamp - (elapsed % 20);
+      if (current >= target) {
+        current = target;
+        scoreNum.textContent = current;
+        return;
+      }
+      scoreNum.textContent = current;
     }
-    scoreNum.textContent = current;
-  }, 20);
+    requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
 }
 
 function resetScanner() {
