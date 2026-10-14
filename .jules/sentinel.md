@@ -14,3 +14,8 @@
    - Garantir que todos os links externos possuam `rel="noopener noreferrer"`.
 4. **Deploy e Compatibilidade:**
    - O site roda estático no GitHub Pages. Não adicionar dependências ou rotas de backend dinâmico que quebrem o GitHub Pages.
+
+## 2026-10-14 - Fix Reverse Tabnabbing Vulnerability
+**Vulnerability:** External links opened via JavaScript `window.open` and some HTML anchor tags lacked `noreferrer`, potentially exposing referrer information and creating a reverse tabnabbing risk.
+**Learning:** Security attributes like `rel="noopener noreferrer"` need to be explicitly managed not just in HTML anchor tags, but also programmatically in `window.open(url, target, features)` calls.
+**Prevention:** Always verify both HTML static links and JS dynamic redirections when auditing for external link vulnerabilities.
