@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Migração de servidor: planeje a troca antes que o suporte do Windows Server 2016 acabe</title>
+  <meta name="description" content="Quem muda de casa etiqueta as caixas, combina o caminhão e guarda a chave antiga. Migrar servidor é igual, e o suporte do Windows Server 2016 acaba em…" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="TECHDIM INOVA SIMPLES" />
+  <link rel="canonical" href="https://techdimbr.github.io/techdimbr/blog/2026-10-14/migracao-de-servidor-planeje-a-troca-antes-que-o-suporte/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://techdimbr.github.io/techdimbr/blog/2026-10-14/migracao-de-servidor-planeje-a-troca-antes-que-o-suporte/" />
+  <link rel="alternate" hreflang="x-default" href="https://techdimbr.github.io/techdimbr/blog/2026-10-14/migracao-de-servidor-planeje-a-troca-antes-que-o-suporte/" />
+  <link rel="alternate" type="application/rss+xml" title="Blog TECHDIM" href="https://techdimbr.github.io/techdimbr/blog/feed.xml" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="TECHDIM" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Migração de servidor: planeje a troca antes que o suporte do Windows Server 2016 acabe" />
+  <meta property="og:description" content="Quem muda de casa etiqueta as caixas, combina o caminhão e guarda a chave antiga. Migrar servidor é igual, e o suporte do Windows Server 2016 acaba em…" />
+  <meta property="og:url" content="https://techdimbr.github.io/techdimbr/blog/2026-10-14/migracao-de-servidor-planeje-a-troca-antes-que-o-suporte/" />
+  <meta property="og:image" content="https://techdimbr.github.io/techdimbr/blog/2026-10-14/migracao-de-servidor-planeje-a-troca-antes-que-o-suporte/capa.jpg" />
+  <meta property="og:image:width" content="720" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="Infográfico TECHDIM: Migração de servidor: com plano de volta escrito" />
+  <meta property="article:published_time" content="2026-10-14T06:03:00-03:00" />
+  <meta property="article:modified_time" content="2026-10-14T06:03:00-03:00" />
+  <meta property="article:section" content="Serviço TECHDIM" />
+  <meta property="article:tag" content="MigracaoDeServidor" />
+  <meta property="article:tag" content="WindowsServer" />
+  <meta property="article:tag" content="Infraestrutura" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Migração de servidor: planeje a troca antes que o suporte do Windows Server 2016 acabe" />
+  <meta name="twitter:description" content="Quem muda de casa etiqueta as caixas, combina o caminhão e guarda a chave antiga. Migrar servidor é igual, e o suporte do Windows Server 2016 acaba em…" />
+  <meta name="twitter:image" content="https://techdimbr.github.io/techdimbr/blog/2026-10-14/migracao-de-servidor-planeje-a-troca-antes-que-o-suporte/capa.jpg" />
+  <meta name="twitter:image:alt" content="Infográfico TECHDIM: Migração de servidor: com plano de volta escrito" />
+  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg" />
+  <meta name="theme-color" content="#030712" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../styles.css" />
+  <link rel="stylesheet" href="../../../blog/blog.css" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Migração de servidor: planeje a troca antes que o suporte do Windows Server 2016 acabe",
+  "description": "Quem muda de casa etiqueta as caixas, combina o caminhão e guarda a chave antiga. Migrar servidor é igual, e o suporte do Windows Server 2016 acaba em…",
+  "inLanguage": "pt-BR",
+  "datePublished": "2026-10-14T06:03:00-03:00",
+  "dateModified": "2026-10-14T06:03:00-03:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://techdimbr.github.io/techdimbr/blog/2026-10-14/migracao-de-servidor-planeje-a-troca-antes-que-o-suporte/"
+  },
+  "url": "https://techdimbr.github.io/techdimbr/blog/2026-10-14/migracao-de-servidor-planeje-a-troca-antes-que-o-suporte/",
+  "articleSection": "Serviço TECHDIM",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://techdimbr.github.io/techdimbr/blog/2026-10-14/migracao-de-servidor-planeje-a-troca-antes-que-o-suporte/capa.jpg",
+    "width": 720,
+    "height": 900
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "TECHDIM INOVA SIMPLES",
+    "url": "https://techdimbr.github.io/techdimbr/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "TECHDIM INOVA SIMPLES",
+    "url": "https://techdimbr.github.io/techdimbr/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://techdimbr.github.io/techdimbr/assets/techdim-official-logo.png",
+      "width": 1024,
+      "height": 1024
+    }
+  },
+  "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://techdimbr.github.io/techdimbr/blog/#blog",
+    "name": "Blog TECHDIM",
+    "url": "https://techdimbr.github.io/techdimbr/blog/"
+  },
+  "keywords": "MigracaoDeServidor, WindowsServer, Infraestrutura"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://techdimbr.github.io/techdimbr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://techdimbr.github.io/techdimbr/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Radar 14/10/2026",
+      "item": "https://techdimbr.github.io/techdimbr/blog/2026-10-14/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Migração de servidor: planeje a troca antes que o suporte do Windows Server 2016 acabe",
+      "item": "https://techdimbr.github.io/techdimbr/blog/2026-10-14/migracao-de-servidor-planeje-a-troca-antes-que-o-suporte/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo principal</a>
+  <div class="cyber-bg-canvas" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <div class="container nav-bar">
+      <a href="../../../" class="brand-wrapper" aria-label="TECHDIM Início">
+        <img src="../../../assets/techdim-official-cube-icon.jpg" alt="Logo Oficial TECHDIM INOVA" class="brand-logo-img" width="50" height="50" />
+        <div class="brand-meta">
+          <span class="brand-title">TECHDIM<span>_</span></span>
+          <span class="brand-subtitle">INOVA SIMPLES // KETHER_1</span>
+        </div>
+      </a>
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="../../../#solucoes" class="nav-link">Serviços B2B</a></li>
+          <li><a href="../../../#sobre" class="nav-link">Sobre Nós</a></li>
+          <li><a href="../../../blog/" class="nav-link active">Blog</a></li>
+          <li><a href="../../../#faq" class="nav-link">FAQ</a></li>
+          <li><a href="../../../#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta-group">
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu" aria-controls="navMenu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="conteudo">
+    <article class="container blog-artigo">
+      <nav class="blog-migalhas" aria-label="Trilha de navegação"><a href="../../../">Início</a> / <a href="../../../blog/">Blog</a> / <a href="../">Radar 14/10/2026</a> / <span aria-current="page">Serviço TECHDIM</span></nav>
+      <header class="blog-topo">
+        <p class="blog-rotulo-linha"><span class="blog-rotulo blog-servico">Serviço TECHDIM</span> <time datetime="2026-10-14">14 de outubro de 2026</time></p>
+        <h1>Migração de servidor: planeje a troca antes que o suporte do Windows Server 2016 acabe</h1>
+        <p class="blog-lead">Ninguém muda de casa sem etiquetar as caixas e guardar a chave antiga. Com servidor é igual: janela combinada, ambiente novo testado antes da troca e plano de volta escrito. A TECHDIM ajuda a planejar.</p>
+      </header>
+      <figure class="blog-capa"><img src="capa.jpg" width="720" height="900" alt="Infográfico TECHDIM: Migração de servidor: com plano de volta escrito" decoding="async" /><figcaption>Infográfico do dia, no padrão TECHDIM.</figcaption></figure>
+      <section class="blog-bloco">
+        <h2>O que a TECHDIM faz</h2>
+        <ul class="blog-pontos"><li>Quem muda de casa etiqueta as caixas, combina o caminhão e guarda a chave antiga. Migrar servidor é igual, e o suporte do Windows Server 2016 acaba em janeiro de 2027</li><li>A TECHDIM planeja a migração com janela combinada fora do horário comercial e valida o ambiente novo antes de virar a chave</li><li>O plano de volta fica escrito antes de começar, e a equipe acompanha os primeiros dias de uso do servidor novo</li></ul>
+        <p class="blog-fecho">Seu servidor está ficando velho? Fale com a TECHDIM: www.techdim.com.br</p>
+      </section>
+      
+      <section class="blog-bloco"><h2>Como funciona</h2><ol class="blog-passos"><li><strong>Planeje a janela.</strong> Combine a troca fora do horário comercial, para atrapalhar o mínimo possível.</li><li><strong>Teste antes.</strong> O ambiente novo é validado antes da virada, não depois.</li><li><strong>Tenha plano de volta.</strong> Se algo falhar, o plano de retorno já está escrito e pronto para uso.</li></ol></section>
+      
+      <aside class="blog-cta" aria-label="Fale com a TECHDIM">
+        <p><strong>Quer esse serviço na sua empresa?</strong> A TECHDIM cuida de infraestrutura, segurança da informação, automação com IA e software sob medida, em Campinas e para todo o Brasil.</p>
+        <p><a class="blog-botao" href="../../../#contato">Fale com a TECHDIM</a></p>
+      </aside>
+      <section class="blog-bloco"><h2>Mais do Radar de hoje</h2><ul class="blog-lista-links"><li><span class="blog-rotulo blog-noticias">Notícia de tecnologia</span> <a href="../totvs-apresenta-o-corten-gestao-com-mais-de-30-agentes-de-ia/">Totvs apresenta o Corten: gestão com mais de 30 agentes de IA e supervisão humana</a></li><li><span class="blog-rotulo blog-hacker">Alerta de segurança</span> <a href="../windows-shell-cve-2026-96951-falha-explorada-burla-o-aviso/">Windows Shell CVE-2026-96951: falha explorada burla o aviso de arquivos da internet</a></li><li><span class="blog-rotulo blog-dica">Dica prática</span> <a href="../encaminhamento-automatico-de-e-mail-como-bloquear-no-google/">Encaminhamento automático de e-mail: como bloquear no Google Workspace e no Microsoft 365</a></li></ul><p><a href="../">Ver o Radar TECHDIM de 14/10/2026 completo →</a></p></section>
+      <section class="blog-bloco"><h2>Leia também</h2><ul class="blog-lista-links"><li><a href="../../../blog/2026-10-13/check-up-de-ti-diagnostico-da-infraestrutura-e-da-seguranca/">Check-up de TI: diagnóstico da infraestrutura e da segurança antes que algo pare a empresa</a> <time datetime="2026-10-13">(13/10/2026)</time></li><li><a href="../../../blog/2026-10-02/backup-que-nunca-foi-restaurado-e-como-extintor-que-ninguem/">Backup que nunca foi restaurado é como extintor que ninguém testou</a> <time datetime="2026-10-02">(02/10/2026)</time></li></ul></section>
+      <nav class="blog-nav-dias" aria-label="Outros dias"><a class="blog-dia-ant" href="../../2026-10-13/" rel="prev">← Radar de 13/10/2026</a></nav>
+      <p class="blog-tags"><span>#MigracaoDeServidor</span> <span>#WindowsServer</span> <span>#Infraestrutura</span></p>
+      <p class="blog-aviso">Este texto resume as fontes citadas na data de publicação. Confira sempre o aviso oficial do fabricante antes de agir em produção.</p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-bar">
+      <div>© 2026 TECHDIM INOVA SIMPLES (I.S.) - ME. Todos os direitos reservados.</div>
+      <nav class="blog-rodape-nav" aria-label="Blog">
+        <a href="../../../blog/">Blog</a>
+        <a href="../../../blog/feed.xml">Feed RSS</a>
+        <a href="../../../#contato">Fale com a TECHDIM</a>
+        <a href="#top">Voltar ao topo ↑</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var b = document.getElementById('mobileToggle'), m = document.getElementById('navMenu');
+      if (!b || !m) return;
+      function fechar() { m.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); }
+      b.addEventListener('click', function () {
+        var aberto = m.classList.toggle('open');
+        b.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && m.classList.contains('open')) { fechar(); b.focus(); }
+      });
+      document.addEventListener('click', function (e) {
+        if (m.classList.contains('open') && !m.contains(e.target) && !b.contains(e.target)) fechar();
+      });
+      window.addEventListener('resize', function () { if (window.innerWidth > 1180) fechar(); });
+      m.querySelectorAll('.nav-link').forEach(function (a) { a.addEventListener('click', fechar); });
+    })();
+  </script>
+</body>
+</html>
