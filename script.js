@@ -328,18 +328,31 @@ async function runDiagnosticAudit() {
   showToast('Diagnóstico ThreatScanner concluído! Relatório pronto.');
 }
 
+// ⚡ Bolt: Replaced setInterval with requestAnimationFrame in animateScore.
+// Reduces main thread blocking, avoids running in background tabs, and syncs with display refresh rate.
+// Impact: Smoother animation and better CPU efficiency.
 function animateScore(target) {
   const scoreNum = document.getElementById('scannerScoreVal');
   if (!scoreNum) return;
   let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
+  let lastTime = performance.now();
+
+  function step(currentTime) {
+    const elapsed = currentTime - lastTime;
+    if (elapsed >= 20) {
+      current += 2;
+      if (current >= target) {
+        current = target;
+        scoreNum.textContent = current;
+        return;
+      }
+      scoreNum.textContent = current;
+      // Adjust lastTime to prevent drift
+      lastTime = currentTime - (elapsed % 20);
     }
-    scoreNum.textContent = current;
-  }, 20);
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
 }
 
 function resetScanner() {
