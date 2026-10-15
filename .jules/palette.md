@@ -1,0 +1,3 @@
+## 2026-10-15 - Required form fields visualization pattern
+**Learning:** Adding visual indicators (like an asterisk) to required form fields, wrapped in an `aria-hidden="true"` span alongside the `aria-required="true"` attribute on the input, effectively improves both visual cueing and screen reader accessibility for form inputs. This makes forms much more accessible and intuitive without requiring complex logic.
+**Action:** Always include this combination (visual indicator + `aria-hidden` span + `aria-required` attribute) when creating or modifying required form fields across this app to maintain a consistent accessibility pattern.
