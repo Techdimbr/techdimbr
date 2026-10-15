@@ -332,14 +332,32 @@ function animateScore(target) {
   const scoreNum = document.getElementById('scannerScoreVal');
   if (!scoreNum) return;
   let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
+  let lastTime = null;
+  const interval = 20;
+
+  // ⚡ Performance Optimization (Bolt): Replaced setInterval with requestAnimationFrame
+  // for smoother animation bound to display refresh rate, using modulo to strictly preserve
+  // the exact 20ms increment logic and prevent framerate dependency/drift.
+  function step(timestamp) {
+    if (!lastTime) lastTime = timestamp;
+    const elapsed = timestamp - lastTime;
+
+    if (elapsed >= interval) {
+      const steps = Math.floor(elapsed / interval);
+      for (let i = 0; i < steps; i++) {
+        current += 2;
+        if (current >= target) {
+          current = target;
+          break;
+        }
+      }
+      scoreNum.textContent = current;
+      if (current >= target) return;
+      lastTime = timestamp - (elapsed % interval);
     }
-    scoreNum.textContent = current;
-  }, 20);
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
 }
 
 function resetScanner() {
