@@ -332,14 +332,29 @@ function animateScore(target) {
   const scoreNum = document.getElementById('scannerScoreVal');
   if (!scoreNum) return;
   let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
+  let lastTime = 0;
+
+  function step(timestamp) {
+    if (!lastTime) lastTime = timestamp;
+    const elapsed = timestamp - lastTime;
+
+    // Original interval was 20ms
+    if (elapsed >= 20) {
+      const steps = Math.floor(elapsed / 20);
+      current += 2 * steps;
+      lastTime = timestamp - (elapsed % 20); // Carry over remainder
+
+      if (current >= target) {
+        current = target;
+        scoreNum.textContent = current;
+        return; // Stop animation
+      }
+      scoreNum.textContent = current;
     }
-    scoreNum.textContent = current;
-  }, 20);
+    requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
 }
 
 function resetScanner() {
