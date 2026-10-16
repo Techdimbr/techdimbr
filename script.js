@@ -332,14 +332,30 @@ function animateScore(target) {
   const scoreNum = document.getElementById('scannerScoreVal');
   if (!scoreNum) return;
   let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
+  let lastTime = 0;
+  const interval = 20;
+
+  function step(timestamp) {
+    if (!lastTime) lastTime = timestamp;
+    const elapsed = timestamp - lastTime;
+
+    if (elapsed >= interval) {
+      // ⚡ Performance Optimization (Bolt): Replacing setInterval with requestAnimationFrame
+      // Preserving exact 20ms timing logic by carrying over the remainder.
+      // This reduces main thread blocking and prevents time drift.
+      current += 2;
+      lastTime = timestamp - (elapsed % interval);
+
+      if (current >= target) {
+        current = target;
+        scoreNum.textContent = current;
+        return;
+      }
+      scoreNum.textContent = current;
     }
-    scoreNum.textContent = current;
-  }, 20);
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
 }
 
 function resetScanner() {
