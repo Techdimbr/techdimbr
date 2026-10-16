@@ -331,15 +331,33 @@ async function runDiagnosticAudit() {
 function animateScore(target) {
   const scoreNum = document.getElementById('scannerScoreVal');
   if (!scoreNum) return;
+
   let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
+  let lastTime = 0;
+  const interval = 20;
+
+  // ⚡ Performance Optimization (Bolt): Use requestAnimationFrame instead of setInterval.
+  // This prevents the browser from firing layout/paint cycles when the tab is inactive,
+  // reducing battery and CPU usage. The modulo logic strictly preserves the original 20ms step timing.
+  function update(timestamp) {
+    if (!lastTime) lastTime = timestamp;
+    const elapsed = timestamp - lastTime;
+
+    if (elapsed >= interval) {
+      current += 2;
+      lastTime = timestamp - (elapsed % interval);
+
+      if (current >= target) {
+        current = target;
+        scoreNum.textContent = current;
+        return; // Stop animation
+      }
+      scoreNum.textContent = current;
     }
-    scoreNum.textContent = current;
-  }, 20);
+    requestAnimationFrame(update);
+  }
+
+  requestAnimationFrame(update);
 }
 
 function resetScanner() {
