@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 15 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Automação com IA: comece pela tarefa que sua equipe repete todo dia</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-16/automacao-com-ia-comece-pela-tarefa-que-sua-equipe-repete/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-16/automacao-com-ia-comece-pela-tarefa-que-sua-equipe-repete/</guid>
+      <pubDate>Fri, 16 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Toda empresa tem tarefas repetidas: copiar dados entre planilhas, montar o mesmo relatório, responder as mesmas dúvidas. IA e automação ajudam, com…</description>
+    </item>
+    <item>
+      <title>SPF, DKIM e DMARC: dificulte a falsificação do e-mail da sua empresa em 5 passos</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-16/spf-dkim-e-dmarc-dificulte-a-falsificacao-do-e-mail-da-sua/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-16/spf-dkim-e-dmarc-dificulte-a-falsificacao-do-e-mail-da-sua/</guid>
+      <pubDate>Fri, 16 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>1) Liste tudo que envia e-mail pelo seu domínio. 2) Publique o SPF em TXT no DNS (v=spf1 include:seu-provedor ~all) e troque por -all quando mapear todas…</description>
+    </item>
+    <item>
+      <title>Zero-day no BeyondTrust Remote Support: falha foi explorada desde o fim de agosto</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-16/zero-day-no-beyondtrust-remote-support-falha-foi-explorada/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-16/zero-day-no-beyondtrust-remote-support-falha-foi-explorada/</guid>
+      <pubDate>Fri, 16 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A BeyondTrust avisou que o Remote Support (até a versão 26.2.3) tem uma falha crítica, a CVE-2026-102764, explorada como zero-day desde o fim de agosto</description>
+    </item>
+    <item>
+      <title>Google dá mais destaque a links nas respostas de IA e testa seção de páginas oficiais</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-16/google-da-mais-destaque-a-links-nas-respostas-de-ia-e-testa/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-16/google-da-mais-destaque-a-links-nas-respostas-de-ia-e-testa/</guid>
+      <pubDate>Fri, 16 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>O Google diz ter aumentado de forma substancial os links no Modo IA e nas visões gerais de IA, exibindo-os mais acima, com mais frequência e, no fim, com…</description>
+    </item>
     <item>
       <title>LGPD: incidente com risco relevante pede aviso à ANPD em 3 dias úteis; tenha plano pronto</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-15/lgpd-incidente-com-risco-relevante-pede-aviso-a-anpd-em-3/</link>
@@ -294,38 +326,6 @@
       <pubDate>Sun, 04 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>O modelo Mythos, da Anthropic, ajudou um pesquisador da Horizon3 a achar a CVE-2026-61500, falha crítica no Rejetto HFS que dá acesso de administrador</description>
-    </item>
-    <item>
-      <title>Planilha que virou sistema: software sob medida para o seu processo</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-03/planilha-que-virou-sistema-software-sob-medida-para-o-seu/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-03/planilha-que-virou-sistema-software-sob-medida-para-o-seu/</guid>
-      <pubDate>Sat, 03 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Quando o processo depende de planilhas, mensagens e anotações, cada pessoa faz de um jeito e o erro passa despercebido</description>
-    </item>
-    <item>
-      <title>Ligue a verificação em 2 etapas no e-mail da empresa: passo a passo</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-03/ligue-a-verificacao-em-2-etapas-no-e-mail-da-empresa-passo/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-03/ligue-a-verificacao-em-2-etapas-no-e-mail-da-empresa-passo/</guid>
-      <pubDate>Sat, 03 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Microsoft 365: no Entra admin center, vá em Entra ID &gt; Overview &gt; Properties &gt; Manage security defaults, marque Enabled e salve (exige Conditional Access…</description>
-    </item>
-    <item>
-      <title>GitLab corrige falha crítica (nota 9,9) no AI Gateway que permite executar comandos</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-03/gitlab-corrige-falha-critica-nota-9-9-no-ai-gateway/</guid>
-      <pubDate>Sat, 03 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A CVE-2026-90970 (nota 9,9) atinge o AI Gateway auto-hospedado do GitLab: quem tem acesso ao Duo Agent Platform escapa do sandbox de templates e executa…</description>
-    </item>
-    <item>
-      <title>Apple vai endurecer o Acesso Total ao Disco por causa dos agentes de IA</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-03/apple-vai-endurecer-o-acesso-total-ao-disco-por-causa/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-03/apple-vai-endurecer-o-acesso-total-ao-disco-por-causa/</guid>
-      <pubDate>Sat, 03 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>Em 2/10 a Apple anunciou novos controles para o Acesso Total ao Disco do macOS: o app só obterá essa permissão com &quot;ação explícita do usuário&quot;</description>
     </item>
   </channel>
 </rss>
