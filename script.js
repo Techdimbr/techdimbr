@@ -332,14 +332,27 @@ function animateScore(target) {
   const scoreNum = document.getElementById('scannerScoreVal');
   if (!scoreNum) return;
   let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
+  let lastTime = performance.now();
+
+  // ⚡ Performance Optimization (Bolt): Replace setInterval with requestAnimationFrame
+  // Syncs with display refresh rate, preventing layout thrashing and battery drain.
+  // Preserves exact 20ms timing and step increments without framerate dependency or time drift.
+  function step(timestamp) {
+    const elapsed = timestamp - lastTime;
+    if (elapsed >= 20) {
+      current += 2;
+      lastTime = timestamp - (elapsed % 20);
+
+      if (current >= target) {
+        current = target;
+        scoreNum.textContent = current;
+        return;
+      }
+      scoreNum.textContent = current;
     }
-    scoreNum.textContent = current;
-  }, 20);
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
 }
 
 function resetScanner() {
