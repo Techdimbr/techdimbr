@@ -328,18 +328,39 @@ async function runDiagnosticAudit() {
   showToast('Diagnóstico ThreatScanner concluído! Relatório pronto.');
 }
 
+// ⚡ Performance Optimization (Bolt): Replaced setInterval with requestAnimationFrame
+// to prevent main-thread blocking and layout thrashing, aligning updates with screen refresh.
+// We strictly preserve the 20ms logic and step increment by using elapsed time modulo.
 function animateScore(target) {
   const scoreNum = document.getElementById('scannerScoreVal');
   if (!scoreNum) return;
+
   let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
+  let lastTime = performance.now();
+  const interval = 20;
+
+  function step(timestamp) {
+    const elapsed = timestamp - lastTime;
+
+    if (elapsed >= interval) {
+      // Calculate how many times 20ms passed in case of lag/slow frame rates
+      const steps = Math.floor(elapsed / interval);
+      current += 2 * steps;
+      lastTime = timestamp - (elapsed % interval); // Carry over remainder to prevent drift
+
+      if (current >= target) {
+        current = target;
+        scoreNum.textContent = current;
+        return; // Stop animation
+      }
+
+      scoreNum.textContent = current;
     }
-    scoreNum.textContent = current;
-  }, 20);
+
+    requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
 }
 
 function resetScanner() {
