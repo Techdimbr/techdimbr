@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 16 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Suporte de TI: alguém acompanhando alertas e atualizações antes que virem problema</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-17/suporte-de-ti-alguem-acompanhando-alertas-e-atualizacoes/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-17/suporte-de-ti-alguem-acompanhando-alertas-e-atualizacoes/</guid>
+      <pubDate>Sat, 17 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Toda semana surgem alertas e atualizações importantes. Em muitas empresas ninguém tem tempo de ler, testar e aplicar: o aviso chega, mas a ação não</description>
+    </item>
+    <item>
+      <title>BitLocker nos notebooks da empresa: criptografe o disco em 5 passos contra perda e roubo</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-17/bitlocker-nos-notebooks-da-empresa-criptografe-o-disco-em-5/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-17/bitlocker-nos-notebooks-da-empresa-criptografe-o-disco-em-5/</guid>
+      <pubDate>Sat, 17 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>1) Confira a edição: BitLocker está no Windows Pro, Enterprise e Education. 2) Abra msinfo32 e veja se a criptografia de dispositivo atende aos…</description>
+    </item>
+    <item>
+      <title>AOMEI Backupper: servidores de atualização foram adulterados e instalaram backdoor</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-17/aomei-backupper-servidores-de-atualizacao-foram-adulterados/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-17/aomei-backupper-servidores-de-atualizacao-foram-adulterados/</guid>
+      <pubDate>Sat, 17 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>Google (GTIG/Mandiant) e ManageEngine relatam: de abril a julho, invasores adulteraram por 5 a 10 minutos a atualização do AOMEI Backupper e instalaram…</description>
+    </item>
+    <item>
+      <title>Agentes de IA em testes acessaram dados de empresas na Índia por credenciais expostas</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-17/agentes-de-ia-em-testes-acessaram-dados-de-empresas-na-india/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-17/agentes-de-ia-em-testes-acessaram-dados-de-empresas-na-india/</guid>
+      <pubDate>Sat, 17 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>O CERT-In, órgão de segurança da Índia, relata que agentes de IA em testes na internet chegaram a sistemas reais e leram dados pessoais e registros…</description>
+    </item>
     <item>
       <title>Automação com IA: comece pela tarefa que sua equipe repete todo dia</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-16/automacao-com-ia-comece-pela-tarefa-que-sua-equipe-repete/</link>
@@ -294,38 +326,6 @@
       <pubDate>Mon, 05 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>Em 3/10 a alemã Aleph Alpha lançou o Kolibri, modelo de IA com pesos abertos e licença Apache 2.0: 78 bilhões de parâmetros, cerca de 3 bilhões ativos…</description>
-    </item>
-    <item>
-      <title>Atualização em dia é defesa: gestão de patches e suporte de TI para sua empresa</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-04/atualizacao-em-dia-e-defesa-gestao-de-patches-e-suporte/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-04/atualizacao-em-dia-e-defesa-gestao-de-patches-e-suporte/</guid>
-      <pubDate>Sun, 04 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Falhas críticas em servidores, gateways e sistemas são divulgadas com frequência, e o tempo entre o aviso e o ataque pode ser curto</description>
-    </item>
-    <item>
-      <title>Proteja o domínio da empresa contra e-mail falso: configure o DMARC passo a passo</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-04/proteja-o-dominio-da-empresa-contra-e-mail-falso-configure/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-04/proteja-o-dominio-da-empresa-contra-e-mail-falso-configure/</guid>
-      <pubDate>Sun, 04 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Antes, configure SPF e DKIM no domínio: o DMARC só funciona se um dos dois alinha com o endereço do remetente (From)</description>
-    </item>
-    <item>
-      <title>FortiMail: falha crítica (nota 9,8) já é explorada em ataques</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-04/fortimail-falha-critica-nota-9-8-ja-e-explorada-em-ataques/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-04/fortimail-falha-critica-nota-9-8-ja-e-explorada-em-ataques/</guid>
-      <pubDate>Sun, 04 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A CVE-2026-104286 (nota 9,8) deixa um atacante sem login gravar arquivos no FortiMail por requisições HTTP/HTTPS; a Fortinet confirma exploração</description>
-    </item>
-    <item>
-      <title>IA achou falha em servidor de arquivos e ela foi explorada em até 24 horas</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-04/ia-achou-falha-em-servidor-de-arquivos-e-ela-foi-explorada/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-04/ia-achou-falha-em-servidor-de-arquivos-e-ela-foi-explorada/</guid>
-      <pubDate>Sun, 04 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>O modelo Mythos, da Anthropic, ajudou um pesquisador da Horizon3 a achar a CVE-2026-61500, falha crítica no Rejetto HFS que dá acesso de administrador</description>
     </item>
   </channel>
 </rss>
