@@ -819,6 +819,8 @@ async function runDiagnosticAudit() {
   lastScanResult = Object.assign(lastScanResult || {}, result);
 
   diagLog(`[■] DIAGNÓSTICO CONCLUÍDO · SCORE DE PRIVACIDADE ${score}/100`, 'cyan');
+  saveDiagnostic(lastScanResult, 'completo');
+  if (window.techdimTrack) window.techdimTrack('diagnostico', { score });
   setProgress('CONCLUÍDO');
   setRunning(false, 'Repetir Diagnóstico');
   if (typeof showToast === 'function') showToast('Diagnóstico concluído. Veja os achados e recomendações.');
@@ -832,8 +834,41 @@ async function runSpeedOnly() {
   result.termsAcceptedAt = result.termsAcceptedAt || new Date().toLocaleString('pt-BR');
   await stepSpeed(result);
   lastScanResult = result;
+  if (result.speed) saveDiagnostic(result, 'velocidade');
   setProgress('CONCLUÍDO');
   setRunning(false, lastScanResult.score !== undefined ? 'Repetir Diagnóstico' : 'Iniciar Diagnóstico Completo');
+}
+
+/* ---------- Registro no n8n (ver tracking.js e os termos aceitos no clique) ---------- */
+// Só o necessário: IPs privados da rede local e endereços mDNS não saem do navegador
+function diagnosticPayload(r, kind) {
+  const round = v => (typeof v === 'number' ? Math.round(v * 10) / 10 : null);
+  return {
+    type: 'diagnostico',
+    kind,
+    ts: new Date().toISOString(),
+    termsAcceptedAt: r.termsAcceptedAt || null,
+    score: typeof r.score === 'number' ? r.score : null,
+    ipv4: r.ipv4 || null,
+    ipv6: r.ipv6 || null,
+    isp: r.isp || null,
+    asn: r.asn || null,
+    geo: r.geo || null,
+    colo: r.trace && r.trace.colo ? r.trace.colo : null,
+    dns: r.dns ? { ip: r.dns.ip, operator: r.dns.org, country: r.dns.country, kind: r.dns.kind, ecs: !!r.dns.ecs, leak: r.dns.leak } : null,
+    crypto: r.crypto ? { tls: r.crypto.tls, http: r.crypto.http, kex: r.crypto.kex, pq: r.crypto.pq, ech: r.crypto.ech } : null,
+    webrtc: r.webrtc ? { status: r.webrtc.status, privateIpExposed: (r.webrtc.privateIps || []).length > 0, mdns: (r.webrtc.mdns || []).length > 0 } : null,
+    fingerprint: r.fp ? { id: r.fp.id, browser: r.fp.browser, protected: r.fp.protectedFp, gpc: r.fp.gpc, dnt: r.fp.dnt } : null,
+    speed: r.speed ? { down: round(r.speed.down), up: round(r.speed.up), latency: round(r.speed.latency), jitter: round(r.speed.jitter) } : null,
+    findings: (r.findings || []).map(f => `${f[0]}: ${f[1]}`)
+  };
+}
+
+function saveDiagnostic(r, kind) {
+  if (!r || typeof window.techdimSaveDiagnostic !== 'function') return;
+  if (window.techdimSaveDiagnostic(diagnosticPayload(r, kind))) {
+    diagLog('[✓] Relatório registrado no ambiente privado da TECHDIM, conforme os termos aceitos.');
+  }
 }
 
 /* ---------- Reset e exportação ---------- */

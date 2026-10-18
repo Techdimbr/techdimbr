@@ -7,7 +7,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initVideoPlayer();
-  initThreatScanner();
+  if (typeof initThreatScanner === 'function') initThreatScanner();
   initRoiCalculator();
   initFaqAccordion();
   initServiceModals();
