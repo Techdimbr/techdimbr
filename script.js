@@ -61,7 +61,7 @@ function initMobileNav() {
       }
     });
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 1239 && navMenu.classList.contains('open')) {
+      if (window.innerWidth > 899 && navMenu.classList.contains('open')) {
         navMenu.classList.remove('open');
         toggleBtn.setAttribute('aria-expanded', 'false');
       }
