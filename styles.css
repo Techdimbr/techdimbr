@@ -2711,3 +2711,86 @@ nav[aria-label="Navegação Principal"] { justify-content: flex-end; }
   .consent-banner { flex-direction: column; align-items: stretch; }
   .consent-actions > .consent-btn { flex: 1 1 0; }
 }
+
+/* ==========================================================================
+   Loja (loja.html)
+   ========================================================================== */
+.loja { max-width: 1080px; padding-top: 2.5rem; padding-bottom: 4rem; }
+.loja-topo h1 { font-family: var(--font-display); font-size: clamp(2rem, 1.4rem + 2.4vw, 2.8rem); line-height: 1.15; color: #fff; margin: 0.4rem 0 0.8rem; }
+.loja-filtros { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.4rem; }
+.loja-filtro {
+  min-height: 40px;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.loja-filtro[aria-pressed="true"] { color: var(--cyan-neon); border-color: var(--border-cyber); background: rgba(0, 240, 255, 0.08); }
+.loja-lista { display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
+.loja-item {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) auto;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1.4rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  scroll-margin-top: 90px;
+  transition: border-color 0.2s;
+}
+.loja-item:hover, .loja-item:target { border-color: var(--border-cyber); }
+.loja-item[hidden] { display: none; }
+.loja-icone {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--cyan-subtle);
+  border: 1px solid var(--border-cyber);
+  color: var(--cyan-neon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loja-icone svg { width: 26px; height: 26px; }
+.loja-rotulo { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--cyan-neon); }
+.loja-info h2 { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.3; color: #fff; margin: 0.25rem 0 0.45rem; }
+.loja-desc { color: var(--text-muted); font-size: 0.93rem; line-height: 1.6; }
+.loja-inclui { margin: 0.7rem 0 0 1.1rem; color: var(--text-main); font-size: 0.88rem; line-height: 1.6; }
+.loja-inclui li { margin-bottom: 0.2rem; }
+.loja-entrega { margin-top: 0.6rem; font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-dark); }
+.loja-acao { display: flex; flex-direction: column; align-items: flex-end; gap: 0.6rem; min-width: 180px; text-align: right; }
+.loja-preco { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: #fff; }
+.loja-botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.7rem 1.3rem;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--cyan-neon) 0%, var(--blue-cyber) 100%);
+  color: #030712;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.loja-botao:hover { box-shadow: 0 0 22px var(--cyan-glow); transform: translateY(-1px); }
+.loja-nota { margin-top: 2.5rem; padding: 1.4rem 1.5rem; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); background: rgba(6, 11, 23, 0.6); }
+.loja-nota h2 { font-family: var(--font-display); font-size: 1.15rem; color: #fff; margin-bottom: 0.6rem; }
+.loja-nota p { color: var(--text-muted); font-size: 0.93rem; line-height: 1.65; }
+.loja-nota a { color: var(--cyan-neon); }
+.loja-agentes { margin-top: 1rem; }
+@media (max-width: 720px) {
+  .loja-item { grid-template-columns: 44px minmax(0, 1fr); padding: 1.2rem; gap: 1rem; }
+  .loja-icone { width: 44px; height: 44px; }
+  .loja-acao { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: center; min-width: 0; text-align: left; }
+}
+@media (max-width: 420px) {
+  .loja-acao { flex-direction: column; align-items: stretch; }
+  .loja-botao { width: 100%; }
+}
