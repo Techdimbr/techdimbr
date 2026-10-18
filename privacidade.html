@@ -2,6 +2,21 @@
 <html lang="pt-BR" class="dark">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEF3PZHXEM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // LGPD: visitas medidas por legítimo interesse (recusável no aviso de cookies); anúncios só com aceite
+    (function () {
+      var c = null;
+      try { c = localStorage.getItem('techdim_consent_v1'); } catch (e) {}
+      var ads = c === 'granted' ? 'granted' : 'denied';
+      gtag('consent', 'default', { analytics_storage: c === 'denied' ? 'denied' : 'granted', ad_storage: ads, ad_user_data: ads, ad_personalization: ads });
+    })();
+    gtag('js', new Date());
+    gtag('config', 'G-VEF3PZHXEM');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Política de Privacidade e Cookies | TECHDIM</title>
   <meta name="description" content="Como a TECHDIM trata dados pessoais no site: contagem anônima de visitas, diagnóstico de rede, contato por WhatsApp e cookies de publicidade do Google e da Meta, conforme a LGPD." />
@@ -112,6 +127,7 @@
       <nav class="blog-rodape-nav" aria-label="Rodapé">
         <a href="./">Início</a>
         <a href="blog/">Blog</a>
+        <a href="loja.html">Loja</a>
         <a href="./#contato">Fale com a TECHDIM</a>
       </nav>
     </div>

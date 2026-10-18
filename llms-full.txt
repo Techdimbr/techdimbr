@@ -45,65 +45,75 @@
 
 ## 3. ESPECIFICAÇÃO DOS 10 PROJETOS PÚBLICOS OPEN-CORE (GITHUB)
 
-### 01. debian-hardening-framework
-- Repositório: https://github.com/Techdimbr/debian-hardening-framework
-- Stack: Bash, nftables, AppArmor, sysctl, auditd
-- Propósito: Automação completa de aplicação de diretrizes de segurança CIS Benchmark em servidores Debian 13.
-- Recursos: Validação prévia de kernel, backup automático de configs, aplicação idempotente e geração de relatório de conformidade.
+### 01. techdim-debian-hardening-framework
+- Repositório: https://github.com/Techdimbr/techdim-debian-hardening-framework
+- Nome: Techdim Debian Hardening Framework
+- Categoria: IaC & Blue Team
+- Descrição: Playbooks automatizados em Ansible e Bash para hardening determinístico de servidores Debian 13. Baseline CIS Benchmark Level 2, firewall nftables e isolamento AppArmor.
+- Tecnologias: Ansible, Debian 13, nftables, CIS Level 2
 
-### 02. gcp-landing-zone-terraform
-- Repositório: https://github.com/Techdimbr/gcp-landing-zone-terraform
-- Stack: Terraform, Google Cloud Platform, Cloud IAM, Cloud KMS, Cloud Armor
-- Propósito: Blueprint de infraestrutura como código para arquitetura corporativa segura no Google Cloud.
-- Recursos: VPC multi-região segura, Cloud NAT sem IPs externos em instâncias, KMS com rotação automática de chaves e papéis IAM de privilégio mínimo.
+### 02. gcp-sovereign-landing-zone
+- Repositório: https://github.com/Techdimbr/gcp-sovereign-landing-zone
+- Nome: GCP Sovereign Landing Zone
+- Categoria: Nuvem Soberana GCP
+- Descrição: Módulo Terraform corporativo para perímetro blindado com Zero Public IPs no Google Cloud. Acesso administrativo via túnel seguro IAP e criptografia CMEK Cloud KMS.
+- Tecnologias: Terraform, Zero Public IPs, Cloud KMS, IAP Tunnel
 
-### 03. driverscan-hardware-audit
-- Repositório: https://github.com/Techdimbr/driverscan-hardware-audit
-- Stack: Python 3, Linux Kernel Sysfs, PCI utils, USB utils, NVMe-cli
-- Propósito: CLI corporativa para inventário forense detalhado e detecção de anomalias em componentes físicos de hardware e periféricos.
-- Recursos: Detecção de firmwares adulterados, verificação de integridade de barramento PCIe/NVMe e emissão de laudo forense estruturado em JSON e Markdown.
+### 03. driverscan-workspace-audit-cli
+- Repositório: https://github.com/Techdimbr/driverscan-workspace-audit-cli
+- Nome: DriverScan Workspace Audit CLI
+- Categoria: Governança Workspace
+- Descrição: Scanner ultrarrápido em Python stdlib para inventariar arquivos e permissões no Google Drive corporativo. Identificação de links públicos órfãos e matriz de risco em SQLite.
+- Tecnologias: Python stdlib, Drive API v3, SQLite3, ISO 27001
 
-### 04. linux-privacy-guard
-- Repositório: https://github.com/Techdimbr/linux-privacy-guard
-- Stack: Bash, Python, systemd, unbound/stubby
-- Propósito: Ferramenta de auditoria e neutralização de telemetria oculta, vazamento de DNS e conexões silenciosas de fundo em estações Linux.
-- Recursos: Configuração de DNS over TLS (DoT) blindado, mascaramento de identificadores de máquina (`/etc/machine-id`) e sanitização periódica de logs.
+### 04. local-network-privacy-guard
+- Repositório: https://github.com/Techdimbr/local-network-privacy-guard
+- Nome: Local Network Privacy Guard
+- Categoria: Privacidade Operacional
+- Descrição: Guardião de privacidade para estações de trabalho corporativas em trânsito. Rotação determinística de MAC Address, DNS seguro via DoH/DoT e Kill Switch de rede contra vigilância.
+- Tecnologias: Python puro, MAC Spoofing, DNS DoH/DoT, Kill Switch
 
-### 05. sovereign-rag-engine
-- Repositório: https://github.com/Techdimbr/sovereign-rag-engine
-- Stack: Python, ChromaDB, Ollama, LangChain, Sentence-Transformers
-- Propósito: Mecanismo de Retrieval-Augmented Generation corporativo projetado para rodar 100% on-premise sem conexão à internet.
-- Recursos: Ingestão de PDFs, contratos, prontuários médicos e bases SQL; indexação vetorial estritamente local; consulta semântica com zero exfiltração de dados.
+### 05. enterprise-sovereign-rag-gcp
+- Repositório: https://github.com/Techdimbr/enterprise-sovereign-rag-gcp
+- Nome: Enterprise Sovereign RAG GCP
+- Categoria: IA Soberana Corporativa
+- Descrição: Pipeline RAG soberano para documentos confidenciais na Vertex AI. Busca vetorial ultrarrápida e respostas fundamentadas com Google Gemini sem risco de vazamento de dados.
+- Tecnologias: Vertex AI, Gemini 2.5 Pro, Vector Search, Zero Training Leak
 
-### 06. unifi-controller-toolkit
-- Repositório: https://github.com/Techdimbr/unifi-controller-toolkit
-- Stack: Python, Ubiquiti UniFi Network API, Docker, Crontab
-- Propósito: Automação operacional, backup de configurações e auditoria de segurança para infraestruturas de rede gerenciadas por UniFi Controller.
-- Recursos: Backup automático diário, monitoramento de canais de RF e interferências Wi-Fi, isolamento de VLANs corporativas e alertas em tempo real.
+### 06. unifi-enterprise-ops-toolkit
+- Repositório: https://github.com/Techdimbr/unifi-enterprise-ops-toolkit
+- Nome: UniFi Enterprise Ops Toolkit
+- Categoria: Automação de Redes
+- Descrição: Toolkit corporativo para ecossistemas Ubiquiti UniFi / UDM-Pro. Rotinas de backup criptografado externo, validação de isolamento de VLANs e telemetria de switches e APs.
+- Tecnologias: Python, UDM-Pro, UniFi OS API, VLAN Audit
 
-### 07. enterprise-lgpd-scanner
-- Repositório: https://github.com/Techdimbr/enterprise-lgpd-scanner
-- Stack: Python, Regex avançado, SQLite, PostgreSQL, Pandas
-- Propósito: Mecanismo de varredura profunda para detecção de dados pessoais sensíveis (PII: CPF, RG, cartões, dados de saúde) em arquivos e bancos corporativos.
-- Recursos: Classificação de risco de acordo com os artigos da LGPD (Lei nº 13.709/2018), geração automatizada de Relatório de Impacto à Proteção de Dados (RIPD).
+### 07. lgpd-pii-scanner-toolkit
+- Repositório: https://github.com/Techdimbr/lgpd-pii-scanner-toolkit
+- Nome: LGPD PII Scanner Toolkit
+- Categoria: Conformidade Regulatória
+- Descrição: Scanner determinístico de dados pessoais sensíveis (CPF, cartões, e-mails). Validação matemática Módulo 11 da Receita Federal e geração automatizada de relatórios RIPD.
+- Tecnologias: LGPD Lei 13.709, CPF Mod 11, Algoritmo Luhn, RIPD ANPD
 
 ### 08. linux-ir-triage-collector
 - Repositório: https://github.com/Techdimbr/linux-ir-triage-collector
-- Stack: Bash, Tar, Gzip, SHA256sum, LiME, DFIR Tools
-- Propósito: Script forense de resposta rápida a incidentes para coleta volátil de evidências em servidores Linux sob suspeita de invasão.
-- Recursos: Extração da tabela de conexões ativas (`netstat`/`ss`), processos em memória (`/proc`), módulos de kernel carregados, histórico de bash e hashes de integridade.
+- Nome: Linux IR Triage Collector
+- Categoria: Forense Blue Team
+- Descrição: Coletor forense live-response em Bash nativo conforme a norma ISO/IEC 27037 e RFC 3227. Preservação de memória volátil e geração de manifesto criptográfico SHA-256 de custódia.
+- Tecnologias: ISO/IEC 27037, RFC 3227, Bash POSIX, Cadeia de Custódia
 
-### 09. ad-linux-integrator
-- Repositório: https://github.com/Techdimbr/ad-linux-integrator
-- Stack: Bash, SSSD, Realmd, Kerberos, Samba Winbind, PAM
-- Propósito: Integração automatizada e segura de estações e servidores Debian/Ubuntu a domínios Microsoft Active Directory.
-- Recursos: Suporte a Single Sign-On (SSO), provisionamento automático de diretórios de usuário (`pam_mkhomedir`), controle de acesso por grupos AD e failover offline de credenciais.
+### 09. active-directory-linux-integrator
+- Repositório: https://github.com/Techdimbr/active-directory-linux-integrator
+- Nome: Active Directory Linux Integrator
+- Categoria: Identidade Híbrida
+- Descrição: Ingresso seguro e governança de estações e servidores Linux Debian/Ubuntu em domínios Microsoft Active Directory. Autenticação Kerberos, SSSD, SSO e regras de sudoers centralizadas.
+- Tecnologias: Ansible, Active Directory, SSSD, Kerberos SSO
 
 ### 10. techdim-architecture-decision-records
 - Repositório: https://github.com/Techdimbr/techdim-architecture-decision-records
-- Stack: Markdown, ADR-Tools, Git, GitHub Actions
-- Propósito: Repositório central de registros de decisão arquitetural (ADRs) documentando formalmente as escolhas técnicas e de segurança da TECHDIM.
-- Recursos: Histórico imutável de decisões de engenharia cobrindo de ADR-0001 a ADR-0010, promovendo rastreabilidade e governança transparente.
+- Nome: Techdim Architecture Decision Records
+- Categoria: Governança Técnica
+- Descrição: Repositório oficial de Registros de Decisão de Arquitetura no padrão Michael Nygard com diagramas Mermaid. Histórico imutável de decisões de engenharia, ciberdefesa e trade-offs.
+- Tecnologias: ADR Nygard, Mermaid.js, Governança, ISO 27001
 
 ---
 
@@ -123,6 +133,12 @@ R: O plantão de resposta a incidentes críticos (CyberOps 24/7) opera com tempo
 
 ### P5: Como os modelos de IA da TECHDIM protegem a propriedade intelectual?
 R: Através de arquitetura on-premise air-gapped com o Sovereign RAG Engine. As consultas, prompts e documentos indexados não trafegam pela internet pública e não são utilizados para treinamento de modelos de terceiros (como OpenAI ou Google). O controle é 100% da empresa contratante.
+
+---
+
+## 4B. ATENDIMENTO A IAs, ROBÔS E AGENTES AUTÔNOMOS
+
+A TECHDIM atende IAs, robôs e agentes automatizados autônomos. Basta enviar por e-mail (techdimbrasil@gmail.com) ou WhatsApp (+55 19 99615-3276) o serviço ou produto de que precisa. Analisamos se é possível e viável e fazemos o orçamento. Atendemos apenas serviços legais. O pagamento pode ser combinado conforme cada caso. Catálogo para compra online: https://techdimbr.github.io/techdimbr/loja.html
 
 ---
 

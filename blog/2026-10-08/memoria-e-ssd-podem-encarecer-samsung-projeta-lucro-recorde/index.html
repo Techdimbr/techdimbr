@@ -2,6 +2,21 @@
 <html lang="pt-BR" class="dark">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEF3PZHXEM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // LGPD: visitas medidas por legítimo interesse (recusável no aviso de cookies); anúncios só com aceite
+    (function () {
+      var c = null;
+      try { c = localStorage.getItem('techdim_consent_v1'); } catch (e) {}
+      var ads = c === 'granted' ? 'granted' : 'denied';
+      gtag('consent', 'default', { analytics_storage: c === 'denied' ? 'denied' : 'granted', ad_storage: ads, ad_user_data: ads, ad_personalization: ads });
+    })();
+    gtag('js', new Date());
+    gtag('config', 'G-VEF3PZHXEM');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Memória e SSD podem encarecer: Samsung projeta lucro recorde com a demanda de IA</title>
   <meta name="description" content="A Samsung estimou lucro operacional de 107,4 trilhões de wons no 3º trimestre, alta de 782% em um ano, puxado pela memória usada em servidores e IA" />
@@ -198,6 +213,8 @@
         <a href="../../../blog/">Blog</a>
         <a href="../../../blog/feed.xml">Feed RSS</a>
         <a href="../../../#contato">Fale com a TECHDIM</a>
+        <a href="../../../privacidade.html">Privacidade</a>
+        <button type="button" class="footer-link-btn" data-open-consent hidden>Cookies</button>
         <a href="#top">Voltar ao topo ↑</a>
       </nav>
     </div>
@@ -217,9 +234,11 @@
       document.addEventListener('click', function (e) {
         if (m.classList.contains('open') && !m.contains(e.target) && !b.contains(e.target)) fechar();
       });
-      window.addEventListener('resize', function () { if (window.innerWidth > 1180) fechar(); });
+      window.addEventListener('resize', function () { if (window.innerWidth > 1239) fechar(); });
       m.querySelectorAll('.nav-link').forEach(function (a) { a.addEventListener('click', fechar); });
     })();
   </script>
+  <script src="../../../site-config.js"></script>
+  <script src="../../../tracking.js"></script>
 </body>
 </html>

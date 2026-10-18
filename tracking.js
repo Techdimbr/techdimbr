@@ -4,8 +4,11 @@
    Configuração em site-config.js; campo vazio = integração desligada.
    - Visitas: contagem anônima no n8n, sem cookies e sem identificador. Não
      envia se o navegador pedir privacidade (GPC ou Do Not Track).
-   - Google e Meta: só carregam depois de "Aceitar" no aviso de cookies
-     (ANPD: publicidade exige consentimento). A escolha fica no localStorage
+   - Google Analytics: a tag oficial fica no <head> de cada página e mede
+     todas as visitas (legítimo interesse); "Recusar" desliga a medição.
+   - Google Ads e Meta: só depois de "Aceitar" (ANPD: publicidade exige
+     consentimento). O Ads entra na MESMA tag do Google via gtag('config'),
+     como o Google pede (uma tag por página). A escolha fica no localStorage
      e pode ser revista em "Cookies" no rodapé.
    - Diagnósticos: o scanner chama techdimSaveDiagnostic() depois do clique
      que aceita os termos.
@@ -20,7 +23,7 @@
   const meta = cfg.metaPixel || {};
   const n8n = cfg.n8n || {};
   const CONSENT_KEY = 'techdim_consent_v1';
-  const hasAdTags = !!(ads.id || ga4.id || meta.id);
+  const hasTags = !!(ads.id || ga4.id || meta.id);
   const DENIED = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' };
   const GRANTED = { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' };
   let tagsLoaded = false;
@@ -86,20 +89,22 @@
   }
 
   /* ---------- Google Ads / GA4 / Meta Pixel ---------- */
-  function loadAdTags() {
-    if (tagsLoaded || !hasAdTags) return;
+  function grantTags() {
+    if (tagsLoaded || !hasTags) return;
     tagsLoaded = true;
 
-    const googleId = ads.id || ga4.id;
-    if (googleId) {
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () { window.dataLayer.push(arguments); };
-      window.gtag('consent', 'default', DENIED);
+    if (ads.id || ga4.id) {
+      if (typeof window.gtag !== 'function') {
+        // Página sem a tag no <head>: carrega a tag do Google aqui (uma só por página)
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag('consent', 'default', DENIED);
+        window.gtag('js', new Date());
+        if (ga4.id) window.gtag('config', ga4.id);
+        loadScript(`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(ga4.id || ads.id)}`);
+      }
       window.gtag('consent', 'update', GRANTED);
-      window.gtag('js', new Date());
       if (ads.id) window.gtag('config', ads.id);
-      if (ga4.id) window.gtag('config', ga4.id);
-      loadScript(`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(googleId)}`);
     }
 
     if (meta.id) {
@@ -122,20 +127,20 @@
     }
   }
 
-  // Eventos de conversão: whatsapp, lead (formulário) e diagnostico
+  // Eventos de conversão: whatsapp, lead (formulário), diagnostico e compra (loja)
   function track(name, data) {
-    if (!tagsLoaded) return;
     const map = {
       whatsapp: { ga: 'whatsapp_click', meta: ['track', 'Contact'], label: labels.whatsapp },
       lead: { ga: 'generate_lead', meta: ['track', 'Lead'], label: labels.lead },
-      diagnostico: { ga: 'diagnostico_concluido', meta: ['trackCustom', 'DiagnosticoConcluido'], label: labels.diagnostico }
+      diagnostico: { ga: 'diagnostico_concluido', meta: ['trackCustom', 'DiagnosticoConcluido'], label: labels.diagnostico },
+      compra: { ga: 'begin_checkout', meta: ['track', 'InitiateCheckout'], label: labels.compra }
     };
     const ev = map[name];
     if (!ev) return;
-    if (window.gtag) {
-      if (ads.id && ev.label) window.gtag('event', 'conversion', { send_to: `${ads.id}/${ev.label}` });
-      if (ga4.id) window.gtag('event', ev.ga, data || {});
-    }
+    // Analytics: sempre (o modo de consentimento da tag respeita quem recusou)
+    if (window.gtag && ga4.id) window.gtag('event', ev.ga, data || {});
+    if (!tagsLoaded) return;
+    if (window.gtag && ads.id && ev.label) window.gtag('event', 'conversion', { send_to: `${ads.id}/${ev.label}` });
     if (window.fbq && meta.id) window.fbq(ev.meta[0], ev.meta[1], data || {});
   }
 
@@ -148,10 +153,12 @@
     el.hidden = true;
 
     // O texto cita só o que está ligado em site-config.js
-    const owners = [(ads.id || ga4.id) && 'do Google', meta.id && 'da Meta'].filter(Boolean).join(' e ');
-    const uses = [ga4.id && 'medir o uso do site', (ads.id || meta.id) && 'medir nossas campanhas de anúncios'].filter(Boolean).join(' e ');
+    const partes = [];
+    if (ga4.id) partes.push('Medimos as visitas com o Google Analytics para melhorar o site; você pode recusar.');
+    const anunciantes = [ads.id && 'do Google', meta.id && 'da Meta'].filter(Boolean).join(' e ');
+    if (anunciantes) partes.push(`Cookies de anúncios ${anunciantes} só com a sua permissão.`);
     const text = document.createElement('p');
-    text.append(`Usamos cookies ${owners} para ${uses}, somente se você permitir. `);
+    text.append(`${partes.join(' ')} `);
     const link = document.createElement('a');
     link.href = 'privacidade.html';
     link.textContent = 'Política de privacidade';
@@ -181,32 +188,33 @@
   }
 
   function setChoice(value) {
-    const previous = storageGet(CONSENT_KEY);
     storageSet(CONSENT_KEY, value);
     storageSet(`${CONSENT_KEY}_em`, new Date().toISOString());
     if (banner) banner.hidden = true;
     document.body.classList.remove('consent-open');
 
     if (value === 'granted') {
-      loadAdTags();
-    } else if (previous === 'granted' || tagsLoaded) {
-      // Revogação: avisa as tags e recarrega para que nada continue rodando
+      grantTags();
+    } else {
+      // Recusa ou revogação: a tag do Google para de gravar cookies na hora
       if (window.gtag) window.gtag('consent', 'update', DENIED);
-      if (window.fbq) window.fbq('consent', 'revoke');
-      location.reload();
+      if (window.fbq) {
+        window.fbq('consent', 'revoke');
+        location.reload(); // o Pixel não descarrega sozinho
+      }
     }
   }
 
   /* ---------- Inicialização ---------- */
   sendVisit();
 
-  if (hasAdTags) {
+  if (hasTags) {
     document.querySelectorAll('[data-open-consent]').forEach(btn => {
       btn.hidden = false;
       btn.addEventListener('click', () => showBanner(true));
     });
     const choice = storageGet(CONSENT_KEY);
-    if (choice === 'granted') loadAdTags();
+    if (choice === 'granted') grantTags();
     else if (choice !== 'denied') showBanner(false);
   }
 
