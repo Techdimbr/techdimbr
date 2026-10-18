@@ -7,10 +7,16 @@ Gera merchant-feed.xml (RSS 2.0 com atributos g:) a partir de:
     bater com a página de destino);
   - site-config.js (TECHDIM_CONFIG.loja): preço, foto e GTIN de cada item.
 
-Só entram os itens da categoria "equipamento": o Google Shopping não aceita
-serviços (política "Conteúdo não suportado no Shopping").
-Item sem preço ou sem foto entra no feed mesmo assim; o Merchant Center
-aponta o que falta em Produtos > Diagnóstico.
+Só entram os itens da categoria "equipamento". Serviço não pode entrar, nem com
+preço fixo: "Não são permitidos trabalho, tempo, esforço, experiência ou ações
+que não resultem na propriedade de um produto tangível" (política "Conteúdo não
+compatível com o Shopping", support.google.com/merchants/answer/6150006). O item
+é reprovado e, se continuar no feed depois do aviso, a conta pode ser suspensa.
+Um equipamento só entra no feed quando está pronto para ser aprovado: preço,
+foto real e link de compra (plataforma de venda ou link de pagamento) em
+site-config.js. O Merchant exige preço fixo e compra pelo site, e um item
+incompleto só gera reprovação e expõe a conta à revisão. O motivo de cada item
+que ficou de fora aparece na saída do script (e no log do GitHub Actions).
 
 Uso:
   python3 scripts/gerar_feed_merchant.py            # grava merchant-feed.xml
@@ -40,6 +46,10 @@ PRODUTOS = {
     "kit-unifi-ubiquiti": {
         "marca": "Ubiquiti", "categoria": "342", "tipo": "Redes > Kits UniFi",
         "identificadores": True, "kit": True,
+        # A página vende o kit "instalado": serviço junto com produto é proibido
+        # no Merchant. Venda o kit como equipamento e a instalação à parte, ajuste
+        # loja.html e apague esta linha.
+        "bloqueio": "a página inclui instalação (serviço junto com o produto)",
     },
     "pixel-11-pro-hardening": {
         "marca": "Google", "categoria": "267", "tipo": "Celulares > Celulares com hardening",
@@ -147,6 +157,14 @@ def gerar():
         if meta is None:
             sys.exit(f"Item '{item['id']}' da loja sem dados em PRODUTOS (scripts/gerar_feed_merchant.py)")
         cfg = config.get(item["id"], {})
+        faltando = [nome for nome, ok in (
+            ("preço", cfg.get("preco")), ("foto", cfg.get("imagem")),
+            ("link de compra", (cfg.get("link") or "").startswith("https://")),
+        ) if not ok]
+        if meta.get("bloqueio") or faltando:
+            motivo = meta.get("bloqueio") or "falta " + ", ".join(faltando)
+            print(f"fora do feed: {item['id']} ({motivo})")
+            continue
         descricao = limpar(item["desc"])
         inclui = [limpar(i) for i in item["inclui"] if limpar(i)]
         if inclui:
@@ -188,8 +206,8 @@ def gerar():
         "    <title>Loja TECHDIM</title>\n"
         f"    <link>{SITE_URL}loja.html</link>\n"
         "    <description>Equipamentos com segurança aplicada vendidos pela TECHDIM</description>\n"
-        + "\n".join(itens) + "\n"
-        "  </channel>\n"
+        + "".join(f"{item}\n" for item in itens)
+        + "  </channel>\n"
         "</rss>\n"
     )
 

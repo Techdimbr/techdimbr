@@ -31,14 +31,18 @@ window.TECHDIM_CONFIG = {
 
   // Loja (loja.html): link do produto na plataforma de venda e, se quiser, o preço exibido.
   // Sem link, o botão vira "Pedir orçamento" no WhatsApp com a mensagem pronta.
-  // Equipamentos também vão para o Google Merchant Center (merchant-feed.xml, refeito
-  // sozinho a cada alteração deste arquivo). Para o anúncio ser aprovado, preencha:
+  // Equipamentos vão para o Google Merchant Center (merchant-feed.xml, refeito sozinho
+  // a cada alteração deste arquivo) quando têm os três campos abaixo preenchidos:
+  //   link:   página do produto na plataforma de venda ou link de pagamento (https://...)
   //   preco:  valor final no formato 'R$ 1.234,56' (o mesmo exibido na loja)
   //   imagem: foto real do produto, ex.: 'assets/loja/pixel-11-pro.jpg' (mín. 500x500, sem texto)
-  //   gtin:   código de barras (EAN) do fabricante, só se tiver certeza
+  //   gtin:   opcional, código de barras (EAN) do fabricante, só se tiver certeza
+  // Serviços não entram no Merchant (política do Google), mas aparecem com preço na loja.
+  //   unidade: opcional, aparece ao lado do preço (ex.: 'por chamado')
+  // Com preço e sem link, o botão vira "Contratar/Comprar pelo WhatsApp" com o valor na mensagem.
   loja: {
     'workstation-ia-ryzen9':     { link: '', preco: '', imagem: '' },
-    'suporte-ti-especializado':  { link: '', preco: '' },
+    'suporte-ti-especializado':  { link: '', preco: 'R$ 500,00', unidade: 'por chamado', imagem: 'assets/loja/suporte-ti-especializado.jpg' },
     'kit-unifi-ubiquiti':        { link: '', preco: '', imagem: '', gtin: '' },
     'pixel-11-pro-hardening':    { link: '', preco: '', imagem: '', gtin: '' },
     'thinkpad-l14-hardening':    { link: '', preco: '', imagem: '', gtin: '' },

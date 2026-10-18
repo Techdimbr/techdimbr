@@ -65,11 +65,13 @@ Equipamentos (entregues configurados e testados):
 5. [Mídia USB Debian 13](https://techdimbr.github.io/techdimbr/loja.html#midia-usb-debian-13): pendrive com imagem oficial do Debian 13 verificada por SHA-256 e guia de hardening.
 
 Serviços:
-6. [Suporte de TI Especializado](https://techdimbr.github.io/techdimbr/loja.html#suporte-ti-especializado): remoto para todo o Brasil e presencial em Campinas e região.
+6. [Suporte de TI Especializado](https://techdimbr.github.io/techdimbr/loja.html#suporte-ti-especializado): R$ 500,00 por chamado; remoto para todo o Brasil e presencial em Campinas e região.
 7. [Hardening de Servidor Debian 13](https://techdimbr.github.io/techdimbr/loja.html#hardening-servidor-debian): CIS, sysctl, AppArmor, nftables, relatório e playbook Ansible.
 8. [IA Local On-Premise](https://techdimbr.github.io/techdimbr/loja.html#ia-local-on-premise): modelo de linguagem dentro da empresa, com RAG e controle de acesso.
 9. [Backup Seguro 3-2-1](https://techdimbr.github.io/techdimbr/loja.html#backup-seguro-3-2-1): backup criptografado e imutável contra ransomware, com teste de restauração.
 10. [Adequação LGPD Essencial](https://techdimbr.github.io/techdimbr/loja.html#adequacao-lgpd-essencial): mapeamento de dados, política de privacidade e plano de resposta a incidentes.
+
+Trocas e devoluções: 7 dias para desistir com reembolso integral, frete de devolução por conta da TECHDIM e garantia legal do CDC. Detalhes: https://techdimbr.github.io/techdimbr/trocas-e-devolucoes.html
 
 ---
 
