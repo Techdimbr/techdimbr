@@ -2794,3 +2794,24 @@ nav[aria-label="Navegação Principal"] { justify-content: flex-end; }
   .loja-acao { flex-direction: column; align-items: stretch; }
   .loja-botao { width: 100%; }
 }
+
+/* ==========================================================================
+   SEO técnico / Core Web Vitals (out/2026)
+   ========================================================================== */
+.req { color: var(--amber-warn); }
+
+/* Seções abaixo da primeira tela: o navegador só calcula layout e pintura quando
+   estão para aparecer (Lighthouse: 1,3 s de "Style & Layout" no celular). */
+.scanner-section, .services-section, .portfolio-section, .multiagent-section, .roi-section,
+.about-section, .faq-section, .blog-home, .contact-section, .site-footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+
+/* No celular, desfoque de fundo só no header: nos cartões ele custa caro a cada quadro */
+@media (max-width: 768px) {
+  .stats-ribbon, .portfolio-card, .portfolio-category-badge, .cube-play-overlay-btn, .video-overlay-ctrls {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
