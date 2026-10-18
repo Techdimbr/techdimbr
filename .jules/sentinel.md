@@ -14,3 +14,8 @@
    - Garantir que todos os links externos possuam `rel="noopener noreferrer"`.
 4. **Deploy e Compatibilidade:**
    - O site roda estático no GitHub Pages. Não adicionar dependências ou rotas de backend dinâmico que quebrem o GitHub Pages.
+
+## 2026-10-07 - Fix Reverse Tabnabbing and Referrer Leakage
+**Vulnerability:** External links (both HTML `<a>` tags and programmatic `window.open` calls) lacked the `noreferrer` attribute in addition to `noopener`.
+**Learning:** Even though `noopener` prevents reverse tabnabbing in most modern browsers, `noreferrer` is required for comprehensive protection (including legacy browsers) and prevents the destination site from tracking the origin of the traffic, which is a privacy and security best practice. Furthermore, `window.open` is equally vulnerable and must use `'noopener,noreferrer'` in its features string.
+**Prevention:** Always use `rel="noopener noreferrer"` for HTML anchor tags that open in a new tab (`target="_blank"`). For programmatic navigation, ensure `window.open(url, '_blank', 'noopener,noreferrer')` is used instead of just passing `_blank`.
