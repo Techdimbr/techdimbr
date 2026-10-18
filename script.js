@@ -353,6 +353,7 @@ function initServiceModals() {
   const closeModal = () => {
     modal.classList.remove('open');
     modal.setAttribute('aria-hidden', 'true');
+    modal.inert = true;
   };
 
   document.querySelectorAll('[data-service]').forEach(btn => {
@@ -372,6 +373,7 @@ function initServiceModals() {
         }
         modal.classList.add('open');
         modal.setAttribute('aria-hidden', 'false');
+        modal.inert = false;
       }
     });
   });
@@ -419,7 +421,7 @@ function initTacticalForm() {
     const waUrl = `https://wa.me/5519996153276?text=${encodeURIComponent(text)}`;
     showToast('Redirecionando para o WhatsApp da TECHDIM...');
     setTimeout(() => {
-      window.open(waUrl, '_blank');
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
       form.reset();
     }, 600);
   });

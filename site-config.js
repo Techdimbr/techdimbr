@@ -31,13 +31,18 @@ window.TECHDIM_CONFIG = {
 
   // Loja (loja.html): link do produto na plataforma de venda e, se quiser, o preço exibido.
   // Sem link, o botão vira "Pedir orçamento" no WhatsApp com a mensagem pronta.
+  // Equipamentos também vão para o Google Merchant Center (merchant-feed.xml, refeito
+  // sozinho a cada alteração deste arquivo). Para o anúncio ser aprovado, preencha:
+  //   preco:  valor final no formato 'R$ 1.234,56' (o mesmo exibido na loja)
+  //   imagem: foto real do produto, ex.: 'assets/loja/pixel-11-pro.jpg' (mín. 500x500, sem texto)
+  //   gtin:   código de barras (EAN) do fabricante, só se tiver certeza
   loja: {
-    'workstation-ia-ryzen9':     { link: '', preco: '' },
+    'workstation-ia-ryzen9':     { link: '', preco: '', imagem: '' },
     'suporte-ti-especializado':  { link: '', preco: '' },
-    'kit-unifi-ubiquiti':        { link: '', preco: '' },
-    'pixel-11-pro-hardening':    { link: '', preco: '' },
-    'thinkpad-l14-hardening':    { link: '', preco: '' },
-    'midia-usb-debian-13':       { link: '', preco: '' },
+    'kit-unifi-ubiquiti':        { link: '', preco: '', imagem: '', gtin: '' },
+    'pixel-11-pro-hardening':    { link: '', preco: '', imagem: '', gtin: '' },
+    'thinkpad-l14-hardening':    { link: '', preco: '', imagem: '', gtin: '' },
+    'midia-usb-debian-13':       { link: '', preco: '', imagem: '' },
     'hardening-servidor-debian': { link: '', preco: '' },
     'ia-local-on-premise':       { link: '', preco: '' },
     'backup-seguro-3-2-1':       { link: '', preco: '' },
