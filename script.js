@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initServiceModals();
   initTacticalForm();
   initCopyButtons();
+  initFloatingWhatsapp();
 });
 
 /* ==========================================================================
@@ -60,7 +61,7 @@ function initMobileNav() {
       }
     });
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 1180 && navMenu.classList.contains('open')) {
+      if (window.innerWidth > 1239 && navMenu.classList.contains('open')) {
         navMenu.classList.remove('open');
         toggleBtn.setAttribute('aria-expanded', 'false');
       }
@@ -96,7 +97,7 @@ function initVideoPlayer() {
 
     container.innerHTML = `
       <div class="cube-showcase-container">
-        <img src="assets/techdim-official-cube-logo.jpg" alt="Logotipo Oficial TECHDIM INOVA 3D" class="cube-showcase-img" />
+        <img src="assets/techdim-official-cube-logo.webp" width="800" height="800" alt="Logotipo Oficial TECHDIM INOVA 3D" class="cube-showcase-img" />
         <div class="cube-hologram-glow"></div>
         <div class="cube-status-pill">
           <span class="live-pulse-dot"></span>
@@ -184,186 +185,7 @@ function initVideoPlayer() {
   if (btnSwitch) btnSwitch.addEventListener('click', setLocalVideoMode);
 }
 
-/* ==========================================================================
-   ThreatScanner Kether_1 (Real Client Telemetry & Attack Surface Audit)
-   ========================================================================== */
-let lastScanResult = null;
-
-function initThreatScanner() {
-  const btnTrigger = document.getElementById('btnTriggerScan');
-  const btnReset = document.getElementById('btnResetScan');
-  const terminal = document.getElementById('terminalConsole');
-  const scoreNum = document.getElementById('scannerScoreVal');
-  const btnExportWa = document.getElementById('btnExportScanWa');
-
-  if (!btnTrigger || !terminal) return;
-
-  btnTrigger.addEventListener('click', () => {
-    runDiagnosticAudit();
-  });
-
-  if (btnReset) {
-    btnReset.addEventListener('click', () => {
-      resetScanner();
-    });
-  }
-
-  if (btnExportWa) {
-    btnExportWa.addEventListener('click', (e) => {
-      e.preventDefault();
-      exportScanToWhatsApp();
-    });
-  }
-
-  // Pre-populate system telemetry on load
-  populateInitialTelemetry();
-}
-
-function populateInitialTelemetry() {
-  const elOs = document.getElementById('auditOsVal');
-  const elPlatform = document.getElementById('auditPlatformVal');
-  const elLatency = document.getElementById('auditLatencyVal');
-
-  const nav = window.navigator;
-  const platform = nav.userAgentData ? nav.userAgentData.platform : (nav.platform || 'Linux/POSIX');
-  const cores = nav.hardwareConcurrency ? `${nav.hardwareConcurrency} Cores` : '4+ Cores';
-  
-  if (elOs) elOs.textContent = platform;
-  if (elPlatform) elPlatform.textContent = cores;
-  if (elLatency) elLatency.textContent = '14 ms (Cloudflare Edge)';
-}
-
-async function runDiagnosticAudit() {
-  const terminal = document.getElementById('terminalConsole');
-  const btnTrigger = document.getElementById('btnTriggerScan');
-  const scoreNum = document.getElementById('scannerScoreVal');
-  const statusAudit = document.getElementById('auditStatusDns');
-  const statusTls = document.getElementById('auditStatusTls');
-
-  if (!terminal) return;
-
-  btnTrigger.disabled = true;
-  btnTrigger.innerHTML = `<span>⏳ Auditando Ambiente...</span>`;
-  terminal.innerHTML = '';
-
-  const log = (msg, cls = '') => {
-    const p = document.createElement('div');
-    p.className = `log-line ${cls}`;
-    p.textContent = msg;
-    terminal.appendChild(p);
-    terminal.scrollTop = terminal.scrollHeight;
-  };
-
-  log(`[+] INICIANDO PROTOCOLO THREAT SCANNER // KETHER_1`, 'cyan');
-  await wait(250);
-  log(`[+] DISPARANDO TECHDIM PARALLEL AI ENGINE (4 AGENTES CONCORRENTES)...`, 'accent');
-  await wait(200);
-  log(`[🛡️ Sentinela_Segurança] Verificando credenciais e certificados... (0 vazamentos)`, 'cyan');
-  await wait(200);
-  log(`[🧪 QA_GitHub_Actions] Validando sintaxe e integridade de pipelines... (100% íntegro)`, 'cyan');
-  await wait(200);
-  log(`[🗄️ Curador_Catalogo] Sincronizando inventário com banco SQLite... (Conexão saudável)`, 'cyan');
-  await wait(200);
-  log(`[💻 Desenvolvedor_Core] Analisando arquitetura e tolerância a falhas... (Aprovado)`, 'cyan');
-  await wait(250);
-  log(`[+] COLETANDO TELEMETRIA DO CLIENTE & DETECTANDO VETORES...`);
-
-  
-  // Real browser telemetry
-  const cores = navigator.hardwareConcurrency || 4;
-  const ram = navigator.deviceMemory ? `${navigator.deviceMemory} GB` : '8+ GB';
-  const isHttps = window.location.protocol === 'https:';
-  log(`[>] CPU Cores: ${cores} | Memória Alocada: ${ram} | Protocolo: ${isHttps ? 'HTTPS/TLS Ativo' : 'HTTP'}`);
-
-  await wait(450);
-  log(`[+] EXECUTANDO VARREDURA DE RESOLUÇÃO DNS & RESILIÊNCIA...`, 'cyan');
-
-  let publicIp = '189.40.12.85 (Provedor Detectado)';
-  try {
-    const res = await fetch('https://api.ipify.org?format=json', { signal: AbortSignal.timeout(2000) });
-    if (res.ok) {
-      const data = await res.json();
-      publicIp = data.ip;
-      log(`[✓] IP Público Externo Mapeado: ${publicIp}`, 'cyan');
-    }
-  } catch (err) {
-    log(`[!] Modo de Blindagem Ativo / Resolução Direta por Proxy`, 'warn');
-  }
-
-  await wait(400);
-  log(`[+] TESTANDO RESILIÊNCIA CONTRA DNS LEAK & SPOOFING...`);
-  await wait(350);
-  log(`[✓] DNSSEC Validado. Risco de sequestro de sessão mitigado.`, 'cyan');
-
-  await wait(400);
-  log(`[+] ANALISANDO HEADERS DE SEGURANÇA (HSTS, CSP, X-Frame-Options)...`, 'cyan');
-  await wait(300);
-  log(`[✓] Camada de Contenção Entrópica em Conformidade.`, 'cyan');
-
-  await wait(350);
-  log(`[+] VERIFICANDO EXPOSIÇÃO A RANSOMWARE E PORTAS CRÍTICAS...`, 'warn');
-  await wait(400);
-  log(`[!] RECOMENDAÇÃO: Implementar Hardening Linux Debian 13 e WAF Cloudflare.`, 'accent');
-
-  await wait(300);
-  log(`[+] DIAGNÓSTICO CONCLUÍDO. SCORE DE RESILIÊNCIA CALCULADO.`, 'cyan');
-
-  // Set score
-  const finalScore = 92;
-  animateScore(finalScore);
-
-  if (statusAudit) statusAudit.innerHTML = `<span class="status-ok">RESILIENTE (DNSSEC)</span>`;
-  if (statusTls) statusTls.innerHTML = `<span class="status-ok">TLS 1.3 / ECC 256</span>`;
-
-  lastScanResult = {
-    ip: publicIp,
-    score: finalScore,
-    cores: cores,
-    ram: ram,
-    timestamp: new Date().toLocaleTimeString('pt-BR')
-  };
-
-  btnTrigger.disabled = false;
-  btnTrigger.innerHTML = `<span>✓ Varredura Concluída (Repetir)</span>`;
-  showToast('Diagnóstico ThreatScanner concluído! Relatório pronto.');
-}
-
-function animateScore(target) {
-  const scoreNum = document.getElementById('scannerScoreVal');
-  if (!scoreNum) return;
-  let current = 0;
-  const timer = setInterval(() => {
-    current += 2;
-    if (current >= target) {
-      current = target;
-      clearInterval(timer);
-    }
-    scoreNum.textContent = current;
-  }, 20);
-}
-
-function resetScanner() {
-  const terminal = document.getElementById('terminalConsole');
-  const scoreNum = document.getElementById('scannerScoreVal');
-  if (terminal) terminal.innerHTML = `<div class="log-line cyan">[!] SCANNER PRONTO. AGUARDANDO COMANDO DE DISPARO.</div>`;
-  if (scoreNum) scoreNum.textContent = '--';
-  lastScanResult = null;
-  showToast('Scanner redefinido.');
-}
-
-function exportScanToWhatsApp() {
-  const score = lastScanResult ? lastScanResult.score : 92;
-  const ip = lastScanResult ? lastScanResult.ip : 'Auditoria Web';
-  
-  const text = `*TECHDIM - Diagnóstico ThreatScanner // Kether_1*\n` +
-    `Olá, Deivis! Realizei a varredura no site da TECHDIM.\n` +
-    `• Score de Resiliência: ${score}/100\n` +
-    `• IP/Origem: ${ip}\n` +
-    `Gostaria de agendar um diagnóstico aprofundado de cibersegurança e arquitetura cloud para minha empresa.`;
-
-  const waUrl = `https://wa.me/5519996153276?text=${encodeURIComponent(text)}`;
-  window.open(waUrl, '_blank');
-}
+/* ThreatScanner Kether_1: ver scanner.js (initThreatScanner) */
 
 /* ==========================================================================
    Downtime Loss & ROI Calculator
@@ -624,4 +446,27 @@ function initCopyButtons() {
 /* Helper */
 function wait(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+/* ==========================================================================
+   Floating WhatsApp: aparece depois do hero e some no contato/rodapé
+   (esses trechos já têm botão de WhatsApp; assim o flutuante não cobre conteúdo)
+   ========================================================================== */
+function initFloatingWhatsapp() {
+  const fab = document.querySelector('.floating-whatsapp');
+  const hero = document.querySelector('.hero-section');
+  if (!fab || !hero || !('IntersectionObserver' in window)) return;
+
+  const zones = [hero, document.getElementById('contato'), document.querySelector('.site-footer')].filter(Boolean);
+  const inView = new Set();
+  fab.classList.add('fab-managed');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) inView.add(entry.target);
+      else inView.delete(entry.target);
+    });
+    fab.classList.toggle('is-visible', inView.size === 0);
+  });
+  zones.forEach(zone => observer.observe(zone));
 }

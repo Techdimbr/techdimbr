@@ -446,12 +446,12 @@
       <!-- Navigation Links -->
       <nav aria-label="Navegação Principal">
         <ul class="nav-menu" id="navMenu">
-          <li><a href="#solucoes" class="nav-link">Serviços B2B</a></li>
-          <li><a href="#produtos" class="nav-link">Portfólio Open-Core</a></li>
-          <li><a href="#multiagentes" class="nav-link">Multiagentes IA</a></li>
-          <li><a href="#scanner" class="nav-link">ThreatScanner</a></li>
-          <li><a href="#roi" class="nav-link">Calculadora ROI</a></li>
-          <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+          <li><a href="#solucoes" class="nav-link">Serviços</a></li>
+          <li><a href="#produtos" class="nav-link">Portfólio</a></li>
+          <li><a href="#multiagentes" class="nav-link">Agentes IA</a></li>
+          <li><a href="#scanner" class="nav-link">Scanner</a></li>
+          <li><a href="#roi" class="nav-link">Calculadora</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
           <li><a href="blog/" class="nav-link">Blog</a></li>
           <li><a href="#faq" class="nav-link">FAQ</a></li>
           <li><a href="#contato" class="nav-link">Contato</a></li>
@@ -500,7 +500,7 @@
             <a href="https://wa.me/5519996153276?text=Ol%C3%A1%20TECHDIM%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20com%20o%20arquiteto%20s%C3%AAnior." 
                class="btn-cta-whatsapp" target="_blank" rel="noopener noreferrer">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.974.545 1.785.835 2.791.835 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.768-5.768-5.768zm7.391 5.766c-.001 4.077-3.314 7.39-7.391 7.39-1.282 0-2.484-.336-3.535-.921l-4.524 1.187 1.21-4.407c-.675-1.109-1.066-2.408-1.066-3.799.001-4.077 3.314-7.39 7.391-7.39 4.077 0 7.39 3.313 7.39 7.39z"/></svg>
-              <span>Falar no WhatsApp (19) 99615-3276</span>
+              <span>Falar no WhatsApp<span class="cta-num"> (19) 99615-3276</span></span>
             </a>
 
             <a href="#scanner" class="btn-cta-scanner">
@@ -541,7 +541,7 @@
             <div class="video-viewport" id="videoViewport">
               <!-- Default state: Official 3D Cube Logo Showcase -->
               <div class="cube-showcase-container">
-                <img src="assets/techdim-official-cube-logo.jpg" alt="Logotipo Oficial TECHDIM INOVA 3D" class="cube-showcase-img" id="cubeShowcaseImg" fetchpriority="high" decoding="async" />
+                <img src="assets/techdim-official-cube-logo.webp" width="800" height="800" alt="Logotipo Oficial TECHDIM INOVA 3D" class="cube-showcase-img" id="cubeShowcaseImg" fetchpriority="high" decoding="async" />
                 <div class="cube-hologram-glow"></div>
                 <div class="cube-status-pill">
                   <span class="live-pulse-dot"></span>
@@ -604,7 +604,7 @@
           <span class="badge-tag">DIAGNÓSTICO EM TEMPO REAL</span>
           <h2>TECHDIM THREAT SCANNER // <span class="gradient-text-cyber">KETHER_1</span></h2>
           <p>
-            Análise preliminar de superfície de ataque corporativa e exposição de infraestrutura. Execute a varredura tática para identificar vulnerabilidades de DNS, certificados, headers e entropia de sistema.
+            Diagnóstico de rede e privacidade direto no seu navegador: IP público e privado, servidor DNS, vazamento WebRTC, impressão digital do dispositivo, criptografia da conexão e teste rápido de velocidade. Opcional: audite o DNS e o e-mail do domínio da sua empresa.
           </p>
         </div>
 
@@ -613,20 +613,20 @@
             <!-- Terminal Console Box -->
             <div class="terminal-box">
               <div class="terminal-head">
-                <span>CONSOLA TÁTICA // AUDITORIA AUTOMATIZADA</span>
-                <span class="text-mono">TLS 1.3 · ECC 256</span>
+                <span>CONSOLA TÁTICA // DIAGNÓSTICO DE REDE</span>
+                <span class="text-mono" id="scanProgress">PRONTO</span>
               </div>
-              <div class="terminal-body" id="terminalConsole">
-                <div class="log-line cyan">[!] SCANNER TÁTICO PRONTO PARA EXECUÇÃO.</div>
-                <div class="log-line">[>] Clique em "Iniciar Varredura Tática" para verificar a integridade da conexão.</div>
-                <div class="log-line text-dark">[#] Telemetria preliminar detectada: Hardware seguro.</div>
+              <div class="terminal-body" id="terminalConsole" aria-live="polite">
+                <div class="log-line cyan">[!] SCANNER PRONTO PARA EXECUÇÃO.</div>
+                <div class="log-line">[&gt;] Clique em "Iniciar Diagnóstico Completo" para analisar IP, DNS, WebRTC, fingerprint, criptografia e velocidade.</div>
+                <div class="log-line text-dark">[#] Nenhum serviço externo é consultado antes do seu clique.</div>
               </div>
               <div class="scanner-controls">
-                <button class="btn-scan-trigger" id="btnTriggerScan">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-                  <span>Iniciar Varredura Tática</span>
+                <button class="btn-scan-trigger" id="btnTriggerScan" type="button">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                  <span>Iniciar Diagnóstico Completo</span>
                 </button>
-                <button class="btn-scan-reset" id="btnResetScan" title="Resetar Terminal">
+                <button class="btn-scan-reset" id="btnResetScan" type="button" title="Limpar resultados">
                   Resetar
                 </button>
               </div>
@@ -636,36 +636,36 @@
             <div class="scanner-results">
               <div>
                 <div class="score-display-box">
-                  <div class="score-circle">
+                  <div class="score-circle" id="scoreCircle">
                     <span class="score-number" id="scannerScoreVal">--</span>
-                    <span class="score-label">SCORE RESILIÊNCIA</span>
+                    <span class="score-label">SCORE PRIVACIDADE</span>
                   </div>
                   <div class="score-desc">
-                    <h3>Superfície de Ataque</h3>
-                    <p>Avaliação baseada em conformidade DNSSEC, isolamento de sessão, criptografia e mitigação de vazamento de dados.</p>
+                    <h3 id="scoreGradeTitle">Exposição da Conexão</h3>
+                    <p id="scoreGradeText">Nota de 0 a 100 a partir de criptografia, DNS, WebRTC e rastreabilidade do dispositivo. Execute o diagnóstico para calcular.</p>
                   </div>
                 </div>
 
                 <div class="metrics-audit-list">
                   <div class="audit-item">
-                    <span class="lbl">Resolução DNS & DNSSEC:</span>
-                    <span class="val" id="auditStatusDns">Aguardando Varredura</span>
+                    <span class="lbl">IP público:</span>
+                    <span class="val" id="sumIp">Aguardando</span>
                   </div>
                   <div class="audit-item">
-                    <span class="lbl">Criptografia & Ciphers TLS:</span>
-                    <span class="val" id="auditStatusTls">Aguardando Varredura</span>
+                    <span class="lbl">Provedor / ASN:</span>
+                    <span class="val" id="sumIsp">Aguardando</span>
                   </div>
                   <div class="audit-item">
-                    <span class="lbl">Sistema Operacional / Plataforma:</span>
-                    <span class="val text-cyan" id="auditOsVal">Detectando...</span>
+                    <span class="lbl">Servidor DNS:</span>
+                    <span class="val" id="sumDns">Aguardando</span>
                   </div>
                   <div class="audit-item">
-                    <span class="lbl">Capacidade de Processamento:</span>
-                    <span class="val" id="auditPlatformVal">Detectando...</span>
+                    <span class="lbl">Vazamento WebRTC:</span>
+                    <span class="val" id="sumRtc">Aguardando</span>
                   </div>
                   <div class="audit-item">
-                    <span class="lbl">Latência de Rota B2B:</span>
-                    <span class="val" id="auditLatencyVal">Calculando...</span>
+                    <span class="lbl">Velocidade:</span>
+                    <span class="val" id="sumSpeed">Aguardando</span>
                   </div>
                 </div>
               </div>
@@ -674,14 +674,138 @@
               <div class="export-wa-card">
                 <div>
                   <strong>Relatório Tático Completo</strong>
-                  <p>Envie os resultados do diagnóstico para análise com o Eng. Deivis Irio Mayer.</p>
+                  <p>Envie os resultados para análise com o Eng. Deivis Irio Mayer.</p>
                 </div>
-                <button class="btn-export-wa" id="btnExportScanWa">
+                <button class="btn-export-wa" id="btnExportScanWa" type="button">
                   <span>Exportar WhatsApp</span>
                 </button>
               </div>
             </div>
           </div>
+
+          <!-- Painel detalhado do diagnóstico -->
+          <div class="diag-board" id="diagBoard">
+            <article class="diag-card" data-card="ip">
+              <header class="diag-card-head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <h3>Conexão &amp; IP</h3>
+                <span class="diag-pill">aguardando</span>
+              </header>
+              <dl class="diag-list">
+                <div class="diag-row" data-k="ipv4"><dt>IPv4 público</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="ipv6"><dt>IPv6 público</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="isp"><dt>Provedor (ASN)</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="geo"><dt>Localização aproximada</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="colo"><dt>Borda Cloudflare</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="nettype"><dt>Tipo de rede</dt><dd>—</dd></div>
+              </dl>
+            </article>
+
+            <article class="diag-card" data-card="dns">
+              <header class="diag-card-head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="7" rx="1.5"/><rect x="2" y="14" width="20" height="7" rx="1.5"/><path d="M6 6.5h.01M6 17.5h.01"/></svg>
+                <h3>Servidor DNS</h3>
+                <span class="diag-pill">aguardando</span>
+              </header>
+              <dl class="diag-list">
+                <div class="diag-row" data-k="dnsip"><dt>IP do resolvedor</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="dnsorg"><dt>Operador do DNS</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="dnskind"><dt>Classificação</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="dnsecs"><dt>EDNS Client Subnet</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="dnsleak"><dt>Coerência DNS × IP</dt><dd>—</dd></div>
+              </dl>
+            </article>
+
+            <article class="diag-card" data-card="crypto">
+              <header class="diag-card-head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <h3>Criptografia da Conexão</h3>
+                <span class="diag-pill">aguardando</span>
+              </header>
+              <dl class="diag-list">
+                <div class="diag-row" data-k="pageproto"><dt>Este site</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="tls"><dt>Versão TLS</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="http"><dt>Protocolo HTTP</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="kex"><dt>Troca de chaves</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="ech"><dt>SNI cifrado (ECH)</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="warp"><dt>WARP / Zero Trust</dt><dd>—</dd></div>
+              </dl>
+            </article>
+
+            <article class="diag-card" data-card="webrtc">
+              <header class="diag-card-head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                <h3>Vazamento WebRTC</h3>
+                <span class="diag-pill">aguardando</span>
+              </header>
+              <dl class="diag-list">
+                <div class="diag-row" data-k="rtcsup"><dt>WebRTC no navegador</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="rtclocal"><dt>IP privado (rede local)</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="rtcpublic"><dt>IP público via STUN</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="rtcleak"><dt>Resultado</dt><dd>—</dd></div>
+              </dl>
+            </article>
+
+            <article class="diag-card" data-card="fp">
+              <header class="diag-card-head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 11c0 3.5-1 6.5-3 9M8 6.5A6 6 0 0 1 18 11c0 2-.3 4-1 6M5 9.5a8 8 0 0 0-.5 2.5c0 1.5-.3 3-1 4.5M12 11a2 2 0 0 0-4 0c0 2.5-.5 5-2 7M16 11.5c0 2.5-.6 5-1.8 7.5"/></svg>
+                <h3>Impressão Digital do Dispositivo</h3>
+                <span class="diag-pill">aguardando</span>
+              </header>
+              <dl class="diag-list">
+                <div class="diag-row" data-k="fpid"><dt>ID de fingerprint</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="browser"><dt>Navegador &amp; sistema</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="screen"><dt>Tela</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="hw"><dt>CPU &amp; memória</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="gpu"><dt>GPU (WebGL)</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="locale"><dt>Fuso &amp; idioma</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="fpprot"><dt>Proteção anti-rastreio</dt><dd>—</dd></div>
+              </dl>
+            </article>
+
+            <article class="diag-card" data-card="speed">
+              <header class="diag-card-head">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 14l4-4M3.3 19a10 10 0 1 1 17.4 0"/></svg>
+                <h3>Velocidade &amp; Latência</h3>
+                <span class="diag-pill">aguardando</span>
+              </header>
+              <div class="speed-meters">
+                <div class="speed-meter"><span class="speed-val" id="speedDown">—</span><span class="speed-unit">Mbps download</span></div>
+                <div class="speed-meter"><span class="speed-val" id="speedUp">—</span><span class="speed-unit">Mbps upload</span></div>
+              </div>
+              <dl class="diag-list">
+                <div class="diag-row" data-k="latency"><dt>Latência</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="jitter"><dt>Jitter</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="quality"><dt>Qualidade</dt><dd>—</dd></div>
+                <div class="diag-row" data-k="datause"><dt>Dados usados</dt><dd>—</dd></div>
+              </dl>
+              <button class="btn-speed-only" id="btnSpeedOnly" type="button">Testar só a velocidade (usa de 5 a 40 MB)</button>
+            </article>
+          </div>
+
+          <!-- Recomendações geradas a partir dos achados -->
+          <div class="diag-findings" id="diagFindings" hidden>
+            <h3>Achados &amp; recomendações</h3>
+            <ul class="diag-findings-list" id="diagFindingsList"></ul>
+          </div>
+
+          <!-- Auditoria opcional do domínio da empresa -->
+          <form class="domain-check" id="domainCheckForm" novalidate>
+            <div class="domain-check-head">
+              <h3>Auditoria do domínio da sua empresa</h3>
+              <p>DNSSEC, SPF, DMARC, MX, CAA e IPv6 — o que protege seu e-mail contra falsificação e seu site contra sequestro de DNS.</p>
+            </div>
+            <div class="domain-check-row">
+              <label class="sr-only" for="domainInput">Domínio da empresa</label>
+              <input class="cyber-input" id="domainInput" name="domain" type="text" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="ex.: suaempresa.com.br" />
+              <button class="btn-domain-check" id="btnDomainCheck" type="submit">Auditar domínio</button>
+            </div>
+            <dl class="diag-list domain-results" id="domainResults" hidden></dl>
+          </form>
+
+          <p class="diag-privacy">
+            O diagnóstico roda no seu navegador. Para medir IP, DNS e velocidade, ele consulta serviços públicos (Cloudflare, ipify, GeoJS e ip-api) somente depois do seu clique. A TECHDIM não recebe nem armazena esses dados; eles só saem do seu dispositivo se você usar "Exportar WhatsApp".
+          </p>
         </div>
       </div>
     </section>
@@ -847,7 +971,7 @@
           <!-- Produto 01 -->
           <article class="portfolio-card">
             <div class="portfolio-img-wrapper">
-              <img src="assets/portfolio/01_techdim_debian_hardening_framework.png" alt="Techdim Debian Hardening Framework" class="portfolio-img" loading="lazy" />
+              <img src="assets/portfolio/01_techdim_debian_hardening_framework.webp" width="800" height="446" alt="Techdim Debian Hardening Framework" class="portfolio-img" loading="lazy" />
               <span class="portfolio-category-badge">IaC & Blue Team</span>
             </div>
             <div class="portfolio-body">
@@ -872,7 +996,7 @@
           <!-- Produto 02 -->
           <article class="portfolio-card">
             <div class="portfolio-img-wrapper">
-              <img src="assets/portfolio/02_gcp_sovereign_landing_zone.png" alt="GCP Sovereign Landing Zone" class="portfolio-img" loading="lazy" />
+              <img src="assets/portfolio/02_gcp_sovereign_landing_zone.webp" width="800" height="446" alt="GCP Sovereign Landing Zone" class="portfolio-img" loading="lazy" />
               <span class="portfolio-category-badge">Nuvem Soberana GCP</span>
             </div>
             <div class="portfolio-body">
@@ -897,7 +1021,7 @@
           <!-- Produto 03 -->
           <article class="portfolio-card">
             <div class="portfolio-img-wrapper">
-              <img src="assets/portfolio/03_driverscan_workspace_audit_cli.png" alt="DriverScan Workspace Audit CLI" class="portfolio-img" loading="lazy" />
+              <img src="assets/portfolio/03_driverscan_workspace_audit_cli.webp" width="800" height="446" alt="DriverScan Workspace Audit CLI" class="portfolio-img" loading="lazy" />
               <span class="portfolio-category-badge">Governança Workspace</span>
             </div>
             <div class="portfolio-body">
@@ -922,7 +1046,7 @@
           <!-- Produto 04 -->
           <article class="portfolio-card">
             <div class="portfolio-img-wrapper">
-              <img src="assets/portfolio/04_local_network_privacy_guard.png" alt="Local Network Privacy Guard" class="portfolio-img" loading="lazy" />
+              <img src="assets/portfolio/04_local_network_privacy_guard.webp" width="800" height="446" alt="Local Network Privacy Guard" class="portfolio-img" loading="lazy" />
               <span class="portfolio-category-badge">Privacidade Operacional</span>
             </div>
             <div class="portfolio-body">
@@ -947,7 +1071,7 @@
           <!-- Produto 05 -->
           <article class="portfolio-card">
             <div class="portfolio-img-wrapper">
-              <img src="assets/portfolio/05_enterprise_sovereign_rag_gcp.png" alt="Enterprise Sovereign RAG GCP" class="portfolio-img" loading="lazy" />
+              <img src="assets/portfolio/05_enterprise_sovereign_rag_gcp.webp" width="800" height="446" alt="Enterprise Sovereign RAG GCP" class="portfolio-img" loading="lazy" />
               <span class="portfolio-category-badge">IA Soberana Corporativa</span>
             </div>
             <div class="portfolio-body">
@@ -972,7 +1096,7 @@
           <!-- Produto 06 -->
           <article class="portfolio-card">
             <div class="portfolio-img-wrapper">
-              <img src="assets/portfolio/06_unifi_enterprise_ops_toolkit.png" alt="UniFi Enterprise Ops Toolkit" class="portfolio-img" loading="lazy" />
+              <img src="assets/portfolio/06_unifi_enterprise_ops_toolkit.webp" width="800" height="446" alt="UniFi Enterprise Ops Toolkit" class="portfolio-img" loading="lazy" />
               <span class="portfolio-category-badge">Automação de Redes</span>
             </div>
             <div class="portfolio-body">
@@ -997,7 +1121,7 @@
           <!-- Produto 07 -->
           <article class="portfolio-card">
             <div class="portfolio-img-wrapper">
-              <img src="assets/portfolio/07_lgpd_pii_scanner_toolkit.png" alt="LGPD PII Scanner Toolkit" class="portfolio-img" loading="lazy" />
+              <img src="assets/portfolio/07_lgpd_pii_scanner_toolkit.webp" width="800" height="446" alt="LGPD PII Scanner Toolkit" class="portfolio-img" loading="lazy" />
               <span class="portfolio-category-badge">Conformidade Regulatória</span>
             </div>
             <div class="portfolio-body">
@@ -1022,7 +1146,7 @@
           <!-- Produto 08 -->
           <article class="portfolio-card">
             <div class="portfolio-img-wrapper">
-              <img src="assets/portfolio/08_linux_ir_triage_collector.png" alt="Linux Incident Response Triage Collector" class="portfolio-img" loading="lazy" />
+              <img src="assets/portfolio/08_linux_ir_triage_collector.webp" width="800" height="446" alt="Linux Incident Response Triage Collector" class="portfolio-img" loading="lazy" />
               <span class="portfolio-category-badge">Forense Blue Team</span>
             </div>
             <div class="portfolio-body">
@@ -1047,7 +1171,7 @@
           <!-- Produto 09 -->
           <article class="portfolio-card">
             <div class="portfolio-img-wrapper">
-              <img src="assets/portfolio/09_active_directory_linux_integrator.png" alt="Active Directory Linux Integrator" class="portfolio-img" loading="lazy" />
+              <img src="assets/portfolio/09_active_directory_linux_integrator.webp" width="800" height="446" alt="Active Directory Linux Integrator" class="portfolio-img" loading="lazy" />
               <span class="portfolio-category-badge">Identidade Híbrida</span>
             </div>
             <div class="portfolio-body">
@@ -1072,7 +1196,7 @@
           <!-- Produto 10 -->
           <article class="portfolio-card">
             <div class="portfolio-img-wrapper">
-              <img src="assets/portfolio/10_techdim_architecture_decision_records.png" alt="Techdim Architecture Decision Records" class="portfolio-img" loading="lazy" />
+              <img src="assets/portfolio/10_techdim_architecture_decision_records.webp" width="800" height="446" alt="Techdim Architecture Decision Records" class="portfolio-img" loading="lazy" />
               <span class="portfolio-category-badge">Governança Técnica</span>
             </div>
             <div class="portfolio-body">
@@ -1692,6 +1816,7 @@
   </div>
 
   <!-- Site Interactive Scripts -->
+  <script src="scanner.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -2219,3 +2219,408 @@ html { overflow-x: clip; }
   gap: 1.2rem;
   flex-wrap: wrap;
 }
+
+/* ==========================================================================
+   DESIGN v3 — refinamento UX/UI e responsividade total (out/2026)
+   Camada final: sobrepõe as regras anteriores sem alterar a identidade visual.
+   ========================================================================== */
+
+:root {
+  /* #64748B tinha contraste 4.2:1 no fundo escuro (abaixo do WCAG AA); #8391A7 tem 6.3:1 */
+  --text-dark: #8391A7;
+  --gutter: clamp(1rem, 4vw, 1.5rem);
+  --section-y: clamp(3.5rem, 7vw, 6.5rem);
+}
+
+.container { padding-left: var(--gutter); padding-right: var(--gutter); }
+
+/* body com overflow-x: hidden (e html com clip) vira container de rolagem e anula o
+   position: sticky — o menu sumia ao rolar. "clip" corta o vazamento lateral sem isso. */
+body { overflow-x: clip; }
+
+/* Com o header fixo, as âncoras do menu param abaixo dele (não atrás) */
+section[id] { scroll-margin-top: 64px; }
+
+/* ---- Header: tamanhos fixos ----
+   O container trava em 1280px, mas marca/menu/botão cresciam em vw: em telas largas
+   (1400px+) o menu passava da largura e invadia o logotipo e o botão WhatsApp. */
+.nav-bar { min-height: 72px; gap: 1.5rem; }
+.brand-wrapper { gap: 0.75rem; }
+.brand-logo-img { width: 44px; height: 44px; }
+.brand-meta { line-height: 1.15; gap: 3px; }
+.brand-title { font-size: 1.25rem; }
+.brand-subtitle { font-size: 0.62rem; letter-spacing: 0.12em; }
+nav[aria-label="Navegação Principal"] { justify-content: flex-end; }
+.nav-menu { gap: 1.5rem; }
+.nav-link { font-size: 0.9rem; }
+.btn-header-wa { font-size: 0.88rem; padding: 0.55rem 1.15rem; }
+
+/* Menu completo só onde comprovadamente cabe; abaixo disso, hambúrguer */
+@media (max-width: 1239px) {
+  nav[aria-label="Navegação Principal"] { flex: 0 0 auto; }
+  .site-header .nav-menu {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    background: #030712; border-bottom: 1px solid var(--border-subtle);
+    padding: 0.5rem var(--gutter) 1.25rem; flex-direction: column; align-items: stretch; gap: 0;
+    max-height: calc(100dvh - 72px); overflow-y: auto;
+    box-shadow: 0 24px 40px rgba(0, 0, 0, 0.55);
+  }
+  .site-header .nav-menu.open { display: flex; }
+  .site-header .nav-menu .nav-link {
+    display: flex; align-items: center; min-height: 52px; font-size: 1.02rem;
+    color: var(--text-main); border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .site-header .nav-menu .nav-link::after { display: none; }
+  .mobile-toggle { display: inline-flex; }
+}
+@media (max-width: 768px) {
+  .nav-bar { min-height: 64px; }
+  .brand-logo-img { width: 40px; height: 40px; }
+  .brand-title { font-size: 1.1rem; }
+  .site-header .nav-menu { max-height: calc(100dvh - 64px); }
+}
+
+/* ---- Hero ---- */
+.hero-section { padding: clamp(2.5rem, 6vw, 5rem) 0 clamp(3rem, 6vw, 4.5rem); }
+.hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: clamp(2rem, 4vw, 3.5rem); }
+.hero-heading { font-size: clamp(2rem, 1.15rem + 3.3vw, 3.6rem); overflow-wrap: break-word; hyphens: manual; }
+.hero-lead { font-size: clamp(1rem, 0.95rem + 0.35vw, 1.12rem); }
+.hero-announcement { max-width: 100%; }
+.announcement-text { overflow-wrap: anywhere; }
+.btn-cta-whatsapp, .btn-cta-scanner { min-height: 54px; justify-content: center; }
+
+/* Logotipo 3D: a arte é quadrada (1024×1024) e era cortada num quadro 16:9 —
+   a palavra TECHDIM ficava pela metade, atrás do botão "Assistir Vídeo". */
+.video-viewport { aspect-ratio: auto; }
+.cube-showcase-container { aspect-ratio: 1 / 1; }
+.cube-showcase-img { object-fit: cover; }
+.video-viewport > .video-element { aspect-ratio: 16 / 9; height: auto; }
+.cube-hologram-glow { background: radial-gradient(circle at center, transparent 55%, rgba(3, 7, 18, 0.55) 100%); }
+.cube-status-pill { top: 0.85rem; left: 0.85rem; max-width: calc(100% - 1.7rem); font-size: 0.68rem; }
+.cube-status-pill span:last-child { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Os arquivos techdim-logo-video.mp4/.webm do repositório estão corrompidos (não tocam em
+   nenhum navegador). Atalhos ocultos até o vídeo ser reenviado; a aba YouTube segue ativa. */
+.cube-play-overlay-btn, #tabVideoLocal { display: none; }
+.video-mode-tabs { flex-wrap: wrap; gap: 0.6rem 1rem; }
+.video-mode-tabs > span { white-space: nowrap; }
+.tab-btn { min-height: 36px; }
+.frame-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-left: 1rem; }
+
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero-visual-col { width: 100%; max-width: 520px; margin: 0 auto; }
+}
+@media (max-width: 768px) {
+  .hero-announcement { border-radius: var(--radius-md); }
+  .hero-credentials { gap: 0.85rem 1.5rem; }
+}
+@media (max-width: 480px) {
+  .cta-num { display: none; }
+  .hero-actions { gap: 0.85rem; margin-bottom: 2rem; }
+}
+
+/* ---- Métricas ---- */
+.stat-val { font-size: clamp(1.9rem, 1.2rem + 2.6vw, 3.2rem); }
+@media (max-width: 768px) {
+  .stats-ribbon { padding: 2rem 0; }
+  .stats-grid { gap: 1.25rem 0.75rem; }
+  .stat-item { padding: 0.4rem; }
+}
+
+/* ---- Ritmo vertical e títulos de seção ---- */
+.scanner-section, .services-section, .portfolio-section, .multiagent-section,
+.roi-section, .about-section, .faq-section, .contact-section, .blog-home { padding-top: var(--section-y); padding-bottom: var(--section-y); }
+.section-head { margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+.section-head h2 { font-size: clamp(1.6rem, 1.1rem + 2.4vw, 2.75rem); }
+.section-head p { font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.05rem); }
+.scanner-cockpit, .roi-card, .about-card-box, .contact-box { padding: clamp(1.25rem, 4vw, 3rem); }
+
+/* ---- Scanner: terminal preenche a coluna (antes sobrava uma faixa preta vazia) ---- */
+.terminal-body { flex: 1 1 auto; height: 0; min-height: 280px; }
+.terminal-head { gap: 0.5rem 1rem; flex-wrap: wrap; }
+.score-circle { width: 112px; height: 112px; }
+.score-label { font-size: 0.55rem; line-height: 1.25; text-align: center; max-width: 84px; margin-top: 0.25rem; }
+.audit-item { gap: 1rem; }
+.audit-item .val { text-align: right; }
+@media (max-width: 1024px) {
+  .terminal-body { height: 300px; flex: 0 0 auto; }
+}
+@media (max-width: 640px) {
+  .scanner-cockpit { padding: 0; background: none; border: 0; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
+  .scanner-results { padding: 1.25rem; }
+  .score-display-box { flex-direction: column; text-align: center; gap: 1rem; }
+  .audit-item { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+  .audit-item .val { text-align: left; }
+  .export-wa-card { flex-direction: column; align-items: stretch; text-align: center; }
+  .btn-export-wa { justify-content: center; min-height: 48px; }
+}
+
+/* ---- Serviços ---- */
+.service-card { padding: clamp(1.5rem, 3vw, 2.4rem); }
+.services-grid { gap: clamp(1.25rem, 2.5vw, 2rem); }
+
+/* ---- Portfólio ----
+   minmax(340px) estourava a largura em celulares de 360px; e 10 cards em 3 colunas
+   deixavam 1 card sozinho na última linha — agora ele ocupa a linha inteira. */
+.portfolio-grid { grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: clamp(1.25rem, 2.5vw, 2rem); margin-top: 0; }
+.portfolio-body { padding: clamp(1.25rem, 2.5vw, 1.6rem); }
+.btn-github-view { min-height: 48px; }
+@media (min-width: 1100px) {
+  .portfolio-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .portfolio-card:last-child:nth-child(3n+1) { grid-column: 1 / -1; flex-direction: row; }
+  .portfolio-card:last-child:nth-child(3n+1) .portfolio-img-wrapper { flex: 0 0 calc((100% - 4rem) / 3); aspect-ratio: auto; min-height: 260px; }
+  .portfolio-card:last-child:nth-child(3n+1) .portfolio-img { position: absolute; inset: 0; }
+  .portfolio-card:last-child:nth-child(3n+1) .portfolio-body { justify-content: center; padding: 2rem 2.5rem; }
+  .portfolio-card:last-child:nth-child(3n+1) .portfolio-action { max-width: 320px; }
+}
+
+/* ---- Banner de investimento: os links não tinham estilo (azul escuro sobre azul escuro, ilegíveis) ---- */
+.investor-cta-box { padding: clamp(1.5rem, 5vw, 3rem); margin-top: clamp(2.5rem, 6vw, 4.5rem); }
+.investor-cta-title { font-family: var(--font-display); font-size: clamp(1.35rem, 0.95rem + 1.8vw, 2rem); line-height: 1.25; }
+.investor-cta-desc { font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.05rem); }
+.btn-primary-cyber, .btn-secondary-cyber {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  min-height: 50px; padding: 0.85rem 1.6rem; border-radius: var(--radius-sm);
+  font-weight: 700; font-size: 0.95rem; text-decoration: none;
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), background 0.2s var(--ease);
+}
+.btn-primary-cyber { background: linear-gradient(135deg, var(--cyan-neon) 0%, var(--blue-cyber) 100%); color: #030712; }
+.btn-primary-cyber:hover { transform: translateY(-2px); box-shadow: 0 10px 30px var(--cyan-glow); }
+.btn-secondary-cyber { background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border-cyber); color: #fff; }
+.btn-secondary-cyber:hover { border-color: var(--cyan-neon); background: rgba(0, 240, 255, 0.08); transform: translateY(-2px); }
+@media (max-width: 480px) {
+  .investor-cta-actions > a { width: 100%; }
+}
+
+/* ---- Calculadora ---- */
+.slider-label-row { gap: 0.75rem; flex-wrap: wrap; }
+.roi-outcome-card { padding: clamp(1.4rem, 3vw, 2.4rem); }
+
+/* ---- Sobre ---- */
+.about-bio h3 { font-size: clamp(1.6rem, 1.1rem + 2vw, 2.2rem); line-height: 1.2; }
+@media (max-width: 480px) {
+  .founder-credential-card { flex-direction: column; align-items: flex-start; }
+  .dcise-banner { padding: 1.4rem; }
+}
+
+/* ---- FAQ: respostas longas eram cortadas em 400px no celular ---- */
+.faq-btn { gap: 1rem; padding: 1.15rem clamp(1rem, 3vw, 1.6rem); font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.05rem); }
+.faq-panel { padding-left: clamp(1rem, 3vw, 1.6rem); padding-right: clamp(1rem, 3vw, 1.6rem); }
+.faq-card.open .faq-panel { max-height: 1200px; padding-left: clamp(1rem, 3vw, 1.6rem); padding-right: clamp(1rem, 3vw, 1.6rem); }
+
+/* ---- Blog: 6 posts em 3 colunas (antes 4 + 2, com buraco à direita) ---- */
+@media (min-width: 900px) {
+  .blog-home .blog-home-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ---- Contato ---- */
+.tactical-form { padding: clamp(1.25rem, 3vw, 2.4rem); }
+.cyber-submit-btn { min-height: 52px; }
+
+/* ---- Rodapé ---- */
+.footer-nav a { display: inline-block; padding: 0.2rem 0; }
+.footer-bar { gap: 1rem 2rem; }
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.25rem 1.5rem; }
+  .footer-brand, .footer-grid > div:last-child { grid-column: 1 / -1; }
+  .footer-bar { flex-direction: column; align-items: flex-start; }
+  footer { padding-bottom: 2.5rem; }
+}
+
+/* ---- WhatsApp flutuante: só aparece fora do hero/contato/rodapé (ver script.js) ---- */
+.floating-whatsapp {
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease), visibility 0.3s;
+}
+.floating-whatsapp.fab-managed:not(.is-visible) { opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(16px) scale(0.92); }
+@media (min-width: 769px) {
+  .floating-whatsapp { padding: 0.75rem 1.25rem; font-size: 0.9rem; }
+}
+@media (max-width: 768px) {
+  .floating-whatsapp { width: 56px; height: 56px; padding: 0; justify-content: center; }
+  .floating-whatsapp .live-pulse-dot { display: none; }
+}
+
+/* ---- Modal de serviços: rolagem interna em telas baixas ---- */
+.modal-card { max-height: calc(100dvh - 2rem); overflow-y: auto; padding: clamp(1.25rem, 4vw, 2.5rem); }
+
+/* ==========================================================================
+   ThreatScanner v2 — painel de diagnóstico real (ver scanner.js)
+   ========================================================================== */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+.score-circle { transition: border-color 0.4s var(--ease), box-shadow 0.4s var(--ease); }
+.score-circle[data-grade="ok"] { border-color: var(--emerald-live); box-shadow: 0 0 30px var(--emerald-glow); }
+.score-circle[data-grade="warn"] { border-color: var(--amber-warn); box-shadow: 0 0 30px rgba(245, 158, 11, 0.35); }
+.score-circle[data-grade="bad"] { border-color: var(--rose-crit); box-shadow: 0 0 30px rgba(244, 63, 94, 0.35); }
+.log-line { word-break: normal; overflow-wrap: anywhere; }
+.audit-item .lbl { flex-shrink: 0; }
+.audit-item .val { overflow-wrap: anywhere; }
+.btn-scan-trigger:disabled, .btn-speed-only:disabled, .btn-domain-check:disabled { opacity: 0.6; cursor: progress; transform: none; box-shadow: none; }
+
+.diag-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+@media (min-width: 1100px) {
+  .diag-board { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.diag-card {
+  background: rgba(6, 11, 23, 0.85);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.35rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  transition: border-color 0.3s var(--ease);
+}
+.diag-card[data-state="ok"] { border-color: rgba(16, 185, 129, 0.35); }
+.diag-card[data-state="warn"] { border-color: rgba(245, 158, 11, 0.35); }
+.diag-card[data-state="bad"] { border-color: rgba(244, 63, 94, 0.5); }
+.diag-card-head { display: flex; align-items: center; gap: 0.65rem; }
+.diag-card-head svg { width: 20px; height: 20px; color: var(--cyan-neon); flex-shrink: 0; }
+.diag-card-head h3 { font-family: var(--font-display); font-size: 1.02rem; font-weight: 700; color: #fff; line-height: 1.3; min-width: 0; }
+.diag-pill {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: 0.18rem 0.6rem;
+  white-space: nowrap;
+}
+.diag-card[data-state="running"] .diag-pill { color: var(--cyan-neon); border-color: var(--border-cyber); animation: diagPulse 1.2s ease-in-out infinite; }
+.diag-card[data-state="ok"] .diag-pill { color: var(--emerald-live); border-color: rgba(16, 185, 129, 0.45); background: rgba(16, 185, 129, 0.08); }
+.diag-card[data-state="warn"] .diag-pill { color: var(--amber-warn); border-color: rgba(245, 158, 11, 0.45); background: rgba(245, 158, 11, 0.08); }
+.diag-card[data-state="bad"] .diag-pill { color: var(--rose-crit); border-color: rgba(244, 63, 94, 0.5); background: rgba(244, 63, 94, 0.1); }
+@keyframes diagPulse { 50% { opacity: 0.45; } }
+
+.diag-list { margin-top: 0.85rem; display: flex; flex-direction: column; }
+.diag-row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 0.35rem 0.85rem;
+  align-items: baseline;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.84rem;
+}
+.diag-row:last-child { border-bottom: 0; }
+.diag-row dt { color: var(--text-muted); }
+.diag-row dd {
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-align: right;
+  overflow-wrap: anywhere;
+  font-variant-numeric: tabular-nums;
+}
+.diag-row[data-state="ok"] dd::before,
+.diag-row[data-state="warn"] dd::before,
+.diag-row[data-state="bad"] dd::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 0.45rem;
+  vertical-align: 0.05em;
+  background: var(--emerald-live);
+}
+.diag-row[data-state="warn"] dd::before { background: var(--amber-warn); }
+.diag-row[data-state="bad"] dd::before { background: var(--rose-crit); }
+.diag-row[data-state="bad"] dd { color: #FDA4AF; }
+
+.speed-meters + .diag-list { margin-bottom: 1rem; }
+.speed-meters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; margin-top: 1rem; }
+.speed-meter {
+  background: var(--bg-terminal);
+  border: 1px solid var(--border-cyber);
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.speed-val { font-family: var(--font-display); font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.1rem); font-weight: 800; color: var(--cyan-neon); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.speed-unit { font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.btn-speed-only {
+  margin-top: auto;
+  min-height: 44px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--border-cyber);
+  border-radius: var(--radius-xs);
+  color: var(--cyan-neon);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-speed-only:hover { background: rgba(0, 240, 255, 0.1); color: #fff; }
+
+.diag-findings { margin-top: clamp(1.5rem, 3vw, 2.5rem); }
+.diag-findings h3, .domain-check-head h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 0.9rem; }
+.diag-findings-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); gap: 0.75rem; }
+.diag-finding {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.95rem 1.1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.02);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+.diag-finding strong { color: #fff; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem; }
+.diag-finding strong::before { content: ''; width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: var(--emerald-live); }
+.diag-finding[data-level="warn"] { border-color: rgba(245, 158, 11, 0.3); }
+.diag-finding[data-level="warn"] strong::before { background: var(--amber-warn); }
+.diag-finding[data-level="bad"] { border-color: rgba(244, 63, 94, 0.4); background: rgba(244, 63, 94, 0.05); }
+.diag-finding[data-level="bad"] strong::before { background: var(--rose-crit); }
+
+.domain-check {
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+  background: rgba(6, 11, 23, 0.85);
+  border: 1px solid var(--border-cyber);
+  border-radius: var(--radius-md);
+  padding: clamp(1.1rem, 3vw, 1.75rem);
+}
+.domain-check-head p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-top: -0.4rem; margin-bottom: 1rem; }
+.domain-check-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.domain-check-row .cyber-input { flex: 1 1 260px; width: auto; }
+.domain-check-row .cyber-input[aria-invalid="true"] { border-color: var(--rose-crit); }
+.btn-domain-check {
+  flex: 0 0 auto;
+  min-height: 48px;
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: var(--radius-xs);
+  background: linear-gradient(135deg, var(--cyan-neon) 0%, var(--blue-cyber) 100%);
+  color: #030712;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.btn-domain-check:hover { box-shadow: 0 0 22px var(--cyan-glow); }
+.domain-results { margin-top: 1rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr)); column-gap: 2rem; }
+.domain-results .diag-row:last-child { border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+
+.diag-privacy { margin-top: 1.25rem; font-size: 0.8rem; line-height: 1.6; color: var(--text-dark); max-width: 90ch; }
+
+@media (max-width: 480px) {
+  .diag-row { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  .diag-row dd { text-align: left; }
+  .btn-domain-check { width: 100%; }
+}
