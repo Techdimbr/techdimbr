@@ -32,6 +32,15 @@
 > **Portal Corporativo:** [https://techdimbr.github.io/techdimbr/](https://techdimbr.github.io/techdimbr/)  
 > Totalmente interativo com **ThreatScanner Kether_1**, **Calculadora de ROI de Downtime**, **Catálogo de Serviços B2B** e **Ecossistema Multiagentes**.
 
+| Página | Link |
+|---|---|
+| Diagnóstico de rede grátis (IP, DNS, WebRTC, velocidade) | [ThreatScanner Kether_1](https://techdimbr.github.io/techdimbr/#scanner) |
+| Loja: equipamentos com hardening e serviços de TI | [techdimbr.github.io/techdimbr/loja.html](https://techdimbr.github.io/techdimbr/loja.html) |
+| Feed de produtos do Google Merchant Center | [merchant-feed.xml](https://techdimbr.github.io/techdimbr/merchant-feed.xml) (gerado por `scripts/gerar_feed_merchant.py`) |
+| Blog: radar diário de tecnologia e segurança | [techdimbr.github.io/techdimbr/blog/](https://techdimbr.github.io/techdimbr/blog/) |
+| Guia para IAs e agentes autônomos | [llms.txt](https://techdimbr.github.io/techdimbr/llms.txt) |
+| Instagram · LinkedIn | [@techdimbr](https://www.instagram.com/techdimbr/) · [TECHDIM](https://www.linkedin.com/company/techdim/) |
+
 ---
 
 ## 🏛️ Sobre a Empresa & Apresentação Institucional

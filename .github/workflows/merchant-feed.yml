@@ -1,0 +1,53 @@
+name: 🛒 Feed do Google Merchant Center
+
+# Refaz merchant-feed.xml quando muda preço/foto (site-config.js) ou a loja.
+# O Merchant Center busca o arquivo pelo link e atualiza os produtos sozinho.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site-config.js'
+      - 'loja.html'
+      - 'scripts/gerar_feed_merchant.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: merchant-feed
+  cancel-in-progress: false
+
+jobs:
+  feed:
+    name: Gerar e publicar o feed
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Clonar Repositório
+        uses: actions/checkout@v4
+
+      - name: 🐍 Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 🛒 Gerar merchant-feed.xml
+        run: python3 scripts/gerar_feed_merchant.py
+
+      - name: 📤 Publicar se mudou
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- merchant-feed.xml; then
+            echo "Feed já estava em dia."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add merchant-feed.xml
+          git commit -m "Atualiza feed do Merchant Center"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          # Push feito pelo GITHUB_TOKEN pode não disparar o GitHub Pages; pede o build
+          gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" || true
