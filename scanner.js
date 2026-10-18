@@ -7,8 +7,9 @@
    - GeoJS / ipinfo    → provedor, ASN e localização aproximada
    - ip-api EDNS       → IP e operador do servidor DNS que o visitante usa
    - Cloudflare speed  → latência, jitter, download e upload
-   - Cloudflare DoH    → auditoria opcional do domínio (DNSSEC, SPF, DMARC...)
    A TECHDIM não recebe nada: o relatório só sai pelo botão "Exportar WhatsApp".
+   Clicar em "Iniciar Diagnóstico" ou "Testar só a velocidade" registra o aceite
+   dos termos (#termos-diagnostico no index.html).
    ========================================================================== */
 let lastScanResult = null;
 let scanRunning = false;
@@ -22,8 +23,6 @@ const DIAG = {
   dns: 'https://edns.ip-api.com/json',
   speedDown: 'https://speed.cloudflare.com/__down',
   speedUp: 'https://speed.cloudflare.com/__up',
-  doh: 'https://cloudflare-dns.com/dns-query',
-  dohFallback: 'https://dns.google/resolve',
   stun: ['stun:stun.cloudflare.com:3478', 'stun:stun.l.google.com:19302']
 };
 
@@ -44,7 +43,7 @@ function initThreatScanner() {
   const btnReset = document.getElementById('btnResetScan');
   const btnExportWa = document.getElementById('btnExportScanWa');
   const btnSpeed = document.getElementById('btnSpeedOnly');
-  const domainForm = document.getElementById('domainCheckForm');
+  const termsLink = document.getElementById('linkTermosDiagnostico');
 
   if (!btnTrigger || !document.getElementById('terminalConsole')) return;
 
@@ -52,7 +51,10 @@ function initThreatScanner() {
   if (btnReset) btnReset.addEventListener('click', resetScanner);
   if (btnExportWa) btnExportWa.addEventListener('click', e => { e.preventDefault(); exportScanToWhatsApp(); });
   if (btnSpeed) btnSpeed.addEventListener('click', runSpeedOnly);
-  if (domainForm) domainForm.addEventListener('submit', e => { e.preventDefault(); runDomainAudit(); });
+  if (termsLink) termsLink.addEventListener('click', () => {
+    const terms = document.getElementById('termos-diagnostico');
+    if (terms) terms.open = true;
+  });
 
   // Dados locais (sem rede) já preenchidos no carregamento
   populateLocalTelemetry();
@@ -776,6 +778,7 @@ async function runDiagnosticAudit() {
   ['ip', 'dns', 'crypto', 'webrtc', 'fp', 'speed'].forEach(c => setCard(c, 'running', 'na fila'));
 
   const result = { timestamp: new Date().toLocaleString('pt-BR') };
+  result.termsAcceptedAt = result.timestamp;
   diagLog('[+] INICIANDO THREAT SCANNER // KETHER_1 · DIAGNÓSTICO REAL DE REDE', 'cyan');
   const conn = connectionInfo();
 
@@ -826,129 +829,11 @@ async function runSpeedOnly() {
   setRunning(true, 'Medindo velocidade…');
   setProgress('VELOCIDADE');
   const result = lastScanResult || {};
+  result.termsAcceptedAt = result.termsAcceptedAt || new Date().toLocaleString('pt-BR');
   await stepSpeed(result);
   lastScanResult = result;
   setProgress('CONCLUÍDO');
   setRunning(false, lastScanResult.score !== undefined ? 'Repetir Diagnóstico' : 'Iniciar Diagnóstico Completo');
-}
-
-/* ---------- Auditoria do domínio (DNS over HTTPS) ---------- */
-function normalizeDomain(input) {
-  let d = String(input || '').trim().toLowerCase();
-  if (!d) return null;
-  d = d.replace(/^[a-z]+:\/\//, '').split(/[/?#@]/)[0].replace(/:\d+$/, '').replace(/\.$/, '');
-  try { d = new URL(`http://${d}`).hostname; } catch (e) { return null; }
-  d = d.replace(/^www\./, '');
-  return /^(?=.{4,253}$)([a-z0-9-]{1,63}\.)+(xn--[a-z0-9-]{2,59}|[a-z]{2,63})$/.test(d) ? d : null;
-}
-
-async function dohQuery(name, type) {
-  try {
-    return await fetchJson(`${DIAG.doh}?name=${encodeURIComponent(name)}&type=${type}`, 6000, { headers: { accept: 'application/dns-json' } });
-  } catch (e) {
-    return fetchJson(`${DIAG.dohFallback}?name=${encodeURIComponent(name)}&type=${type}`, 6000);
-  }
-}
-
-function txtValues(resp, typeNum = 16) {
-  return ((resp && resp.Answer) || []).filter(a => a.type === typeNum).map(a => {
-    const chunks = String(a.data).match(/"((?:[^"\\]|\\.)*)"/g);
-    return chunks ? chunks.map(c => c.slice(1, -1)).join('') : String(a.data);
-  });
-}
-
-function addDomainRow(dl, label, value, state) {
-  const row = document.createElement('div');
-  row.className = 'diag-row';
-  row.dataset.state = state;
-  const dt = document.createElement('dt');
-  dt.textContent = label;
-  const dd = document.createElement('dd');
-  dd.textContent = value;
-  row.append(dt, dd);
-  dl.appendChild(row);
-}
-
-async function runDomainAudit() {
-  const input = document.getElementById('domainInput');
-  const btn = document.getElementById('btnDomainCheck');
-  const dl = document.getElementById('domainResults');
-  if (!input || !dl) return;
-
-  const domain = normalizeDomain(input.value);
-  if (!domain) {
-    input.setAttribute('aria-invalid', 'true');
-    if (typeof showToast === 'function') showToast('Digite um domínio válido, ex.: suaempresa.com.br');
-    input.focus();
-    return;
-  }
-  input.removeAttribute('aria-invalid');
-  input.value = domain;
-  btn.disabled = true;
-  btn.textContent = 'Auditando…';
-  dl.hidden = false;
-  dl.textContent = '';
-  addDomainRow(dl, 'Domínio', `${domain}: consultando DNS…`, '');
-
-  try {
-    const [a, aaaa, mx, txt, dmarc, caa] = await Promise.all([
-      dohQuery(domain, 'A'), dohQuery(domain, 'AAAA'), dohQuery(domain, 'MX'),
-      dohQuery(domain, 'TXT'), dohQuery(`_dmarc.${domain}`, 'TXT'), dohQuery(domain, 'CAA')
-    ]);
-    dl.textContent = '';
-    const findings = [];
-
-    if (a.Status === 3) {
-      addDomainRow(dl, 'Domínio', `${domain} não existe no DNS (NXDOMAIN)`, 'bad');
-      return;
-    }
-    const ips = ((a.Answer || []).filter(x => x.type === 1)).map(x => x.data);
-    addDomainRow(dl, 'Domínio', `${domain}${ips.length ? ` → ${ips.slice(0, 2).join(', ')}` : ''}`, '');
-
-    addDomainRow(dl, 'DNSSEC', a.AD ? 'Assinado e validado' : 'Ausente: DNS pode ser falsificado (spoofing)', a.AD ? 'ok' : 'warn');
-    if (!a.AD) findings.push('sem DNSSEC');
-
-    const hasV6 = (aaaa.Answer || []).some(x => x.type === 28);
-    addDomainRow(dl, 'IPv6', hasV6 ? 'Publicado (AAAA)' : 'Sem registro AAAA', hasV6 ? 'ok' : 'warn');
-
-    const mxList = ((mx.Answer || []).filter(x => x.type === 15)).map(x => String(x.data).split(' ').pop().replace(/\.$/, ''));
-    addDomainRow(dl, 'MX (e-mail)', mxList.length ? mxList.slice(0, 2).join(', ') : 'Nenhum servidor de e-mail', mxList.length ? 'ok' : '');
-
-    const spf = txtValues(txt).find(t => /^v=spf1/i.test(t));
-    let spfState = 'bad';
-    let spfText = 'Ausente: qualquer servidor pode enviar e-mail em seu nome';
-    if (spf) {
-      if (/[-]all\b/.test(spf)) { spfState = 'ok'; spfText = 'Configurado com bloqueio (-all)'; }
-      else if (/~all\b/.test(spf)) { spfState = 'ok'; spfText = 'Configurado (~all, rejeição branda)'; }
-      else { spfState = 'warn'; spfText = 'Permissivo (?all/+all ou sem "all")'; }
-    }
-    addDomainRow(dl, 'SPF', spfText, spfState);
-    if (spfState !== 'ok') findings.push('SPF');
-
-    const dmarcRec = txtValues(dmarc).find(t => /^v=DMARC1/i.test(t));
-    const policy = dmarcRec ? (dmarcRec.match(/;\s*p=(\w+)/i) || [])[1] : null;
-    let dmarcState = 'bad';
-    let dmarcText = 'Ausente: golpistas podem falsificar seu e-mail (phishing)';
-    if (dmarcRec) {
-      if (/reject|quarantine/i.test(policy || '')) { dmarcState = 'ok'; dmarcText = `Política ${policy}: falsificações bloqueadas`; }
-      else { dmarcState = 'warn'; dmarcText = 'Política "none": só monitora, não bloqueia'; }
-    }
-    addDomainRow(dl, 'DMARC', dmarcText, dmarcState);
-    if (dmarcState !== 'ok') findings.push('DMARC');
-
-    const hasCaa = (caa.Answer || []).some(x => x.type === 257);
-    addDomainRow(dl, 'CAA', hasCaa ? 'Restringe quem emite certificados' : 'Ausente: qualquer autoridade pode emitir certificado', hasCaa ? 'ok' : 'warn');
-    if (!hasCaa) findings.push('CAA');
-
-    lastScanResult = Object.assign(lastScanResult || {}, { domain, domainIssues: findings });
-    if (typeof showToast === 'function') showToast(findings.length ? `Domínio auditado: ${findings.length} ponto(s) a corrigir.` : 'Domínio auditado: configuração sólida.');
-  } catch (e) {
-    dl.textContent = '';
-    addDomainRow(dl, 'Domínio', 'Não foi possível consultar o DNS agora (rede ou filtro). Tente novamente.', 'warn');
-  } finally {
-    btn.disabled = false;
-    btn.textContent = 'Auditar domínio';
-  }
 }
 
 /* ---------- Reset e exportação ---------- */
@@ -992,7 +877,7 @@ function exportScanToWhatsApp() {
   if (r.crypto) lines.push(`• Criptografia: ${r.crypto.tls}${r.crypto.pq ? ' + pós-quântica' : ''}${r.crypto.ech ? ' + ECH' : ''}`);
   if (r.fp) lines.push(`• Fingerprint: ${r.fp.protectedFp ? 'protegido' : 'rastreável sem cookies'}`);
   if (r.speed) lines.push(`• Velocidade: ↓ ${fmtMbps(r.speed.down)} / ↑ ${fmtMbps(r.speed.up)} Mbps · ${Math.round(r.speed.latency)} ms`);
-  if (r.domain) lines.push(`• Domínio ${r.domain}: ${r.domainIssues && r.domainIssues.length ? `corrigir ${r.domainIssues.join(', ')}` : 'configuração sólida'}`);
+  if (r.termsAcceptedAt) lines.push(`• Termos de uso do diagnóstico aceitos em ${r.termsAcceptedAt}`);
   if (lines.length === 2) lines.push('Ainda não executei o diagnóstico, mas quero uma análise da rede da minha empresa.');
   lines.push('Gostaria de agendar um diagnóstico aprofundado de cibersegurança para minha empresa.');
 

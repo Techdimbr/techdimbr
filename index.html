@@ -604,7 +604,7 @@
           <span class="badge-tag">DIAGNÓSTICO EM TEMPO REAL</span>
           <h2>TECHDIM THREAT SCANNER // <span class="gradient-text-cyber">KETHER_1</span></h2>
           <p>
-            Diagnóstico de rede e privacidade direto no seu navegador: IP público e privado, servidor DNS, vazamento WebRTC, impressão digital do dispositivo, criptografia da conexão e teste rápido de velocidade. Opcional: audite o DNS e o e-mail do domínio da sua empresa.
+            Diagnóstico de rede e privacidade direto no seu navegador: IP público e privado, servidor DNS, vazamento WebRTC, impressão digital do dispositivo, criptografia da conexão e teste rápido de velocidade.
           </p>
         </div>
 
@@ -629,6 +629,9 @@
                 <button class="btn-scan-reset" id="btnResetScan" type="button" title="Limpar resultados">
                   Resetar
                 </button>
+                <p class="scan-consent">
+                  Ao clicar em "Iniciar Diagnóstico" ou "Testar só a velocidade", você aceita os <a href="#termos-diagnostico" id="linkTermosDiagnostico">termos de uso e a política de segurança da informação</a> do diagnóstico e assume a responsabilidade pelo uso.
+                </p>
               </div>
             </div>
 
@@ -789,23 +792,19 @@
             <ul class="diag-findings-list" id="diagFindingsList"></ul>
           </div>
 
-          <!-- Auditoria opcional do domínio da empresa -->
-          <form class="domain-check" id="domainCheckForm" novalidate>
-            <div class="domain-check-head">
-              <h3>Auditoria do domínio da sua empresa</h3>
-              <p>DNSSEC, SPF, DMARC, MX, CAA e IPv6 — o que protege seu e-mail contra falsificação e seu site contra sequestro de DNS.</p>
+          <!-- Termos aceitos ao clicar nos botões do diagnóstico -->
+          <details class="diag-terms" id="termos-diagnostico">
+            <summary>Termos de uso e política de segurança da informação do diagnóstico</summary>
+            <div class="diag-terms-body">
+              <p><strong>Aceite.</strong> Ao clicar em "Iniciar Diagnóstico Completo" ou em "Testar só a velocidade", você declara que leu e aceita estes termos e assume a responsabilidade pelo uso da ferramenta.</p>
+              <p><strong>Finalidade.</strong> O diagnóstico avalia somente a conexão e o dispositivo de quem o executa, para fins informativos de segurança da informação. Ele não analisa domínios, servidores ou redes de terceiros.</p>
+              <p><strong>Uso permitido.</strong> Execute o diagnóstico apenas na sua própria conexão e no seu próprio dispositivo, ou em equipamentos que você tem autorização para avaliar. Qualquer uso indevido é de responsabilidade exclusiva do usuário.</p>
+              <p><strong>Dados pessoais (LGPD).</strong> O processamento acontece no seu navegador. Para medir IP, DNS e velocidade, o navegador se conecta a serviços públicos (Cloudflare, ipify, GeoJS e ip-api), que recebem o seu IP como em qualquer acesso à internet. A TECHDIM não coleta nem armazena os resultados. Eles só chegam à TECHDIM se você usar "Exportar WhatsApp", com base no seu consentimento (Lei 13.709/2018, art. 7º, I).</p>
+              <p><strong>Limitação.</strong> Os resultados são indicativos, variam conforme o navegador e a rede e não substituem uma auditoria profissional.</p>
+              <p><strong>Consumo de dados.</strong> O teste de velocidade usa de 5 a 40 MB, conforme a velocidade da conexão.</p>
+              <p><strong>Controlador.</strong> TECHDIM INOVA SIMPLES (I.S.) - ME · CNPJ 61.933.926/0001-24 · techdimbrasil@gmail.com</p>
             </div>
-            <div class="domain-check-row">
-              <label class="sr-only" for="domainInput">Domínio da empresa</label>
-              <input class="cyber-input" id="domainInput" name="domain" type="text" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="ex.: suaempresa.com.br" />
-              <button class="btn-domain-check" id="btnDomainCheck" type="submit">Auditar domínio</button>
-            </div>
-            <dl class="diag-list domain-results" id="domainResults" hidden></dl>
-          </form>
-
-          <p class="diag-privacy">
-            O diagnóstico roda no seu navegador. Para medir IP, DNS e velocidade, ele consulta serviços públicos (Cloudflare, ipify, GeoJS e ip-api) somente depois do seu clique. A TECHDIM não recebe nem armazena esses dados; eles só saem do seu dispositivo se você usar "Exportar WhatsApp".
-          </p>
+          </details>
         </div>
       </div>
     </section>

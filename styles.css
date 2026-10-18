@@ -2457,7 +2457,7 @@ nav[aria-label="Navegação Principal"] { justify-content: flex-end; }
 .log-line { word-break: normal; overflow-wrap: anywhere; }
 .audit-item .lbl { flex-shrink: 0; }
 .audit-item .val { overflow-wrap: anywhere; }
-.btn-scan-trigger:disabled, .btn-speed-only:disabled, .btn-domain-check:disabled { opacity: 0.6; cursor: progress; transform: none; box-shadow: none; }
+.btn-scan-trigger:disabled, .btn-speed-only:disabled { opacity: 0.6; cursor: progress; transform: none; box-shadow: none; }
 
 .diag-board {
   display: grid;
@@ -2568,7 +2568,7 @@ nav[aria-label="Navegação Principal"] { justify-content: flex-end; }
 .btn-speed-only:hover { background: rgba(0, 240, 255, 0.1); color: #fff; }
 
 .diag-findings { margin-top: clamp(1.5rem, 3vw, 2.5rem); }
-.diag-findings h3, .domain-check-head h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 0.9rem; }
+.diag-findings h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 0.9rem; }
 .diag-findings-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); gap: 0.75rem; }
 .diag-finding {
   display: flex;
@@ -2589,38 +2589,51 @@ nav[aria-label="Navegação Principal"] { justify-content: flex-end; }
 .diag-finding[data-level="bad"] { border-color: rgba(244, 63, 94, 0.4); background: rgba(244, 63, 94, 0.05); }
 .diag-finding[data-level="bad"] strong::before { background: var(--rose-crit); }
 
-.domain-check {
+.scan-consent {
+  flex-basis: 100%;
+  font-size: 0.76rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+.scan-consent a { color: var(--cyan-neon); text-underline-offset: 2px; }
+
+.diag-terms {
   margin-top: clamp(1.5rem, 3vw, 2.5rem);
   background: rgba(6, 11, 23, 0.85);
-  border: 1px solid var(--border-cyber);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: clamp(1.1rem, 3vw, 1.75rem);
+  scroll-margin-top: 80px;
 }
-.domain-check-head p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-top: -0.4rem; margin-bottom: 1rem; }
-.domain-check-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-.domain-check-row .cyber-input { flex: 1 1 260px; width: auto; }
-.domain-check-row .cyber-input[aria-invalid="true"] { border-color: var(--rose-crit); }
-.btn-domain-check {
-  flex: 0 0 auto;
-  min-height: 48px;
-  padding: 0.8rem 1.4rem;
-  border: none;
-  border-radius: var(--radius-xs);
-  background: linear-gradient(135deg, var(--cyan-neon) 0%, var(--blue-cyber) 100%);
-  color: #030712;
-  font-weight: 700;
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
+.diag-terms[open] { border-color: var(--border-cyber); }
+.diag-terms summary {
   cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 52px;
+  padding: 0.9rem clamp(1rem, 3vw, 1.4rem);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: #fff;
 }
-.btn-domain-check:hover { box-shadow: 0 0 22px var(--cyan-glow); }
-.domain-results { margin-top: 1rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr)); column-gap: 2rem; }
-.domain-results .diag-row:last-child { border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
-
-.diag-privacy { margin-top: 1.25rem; font-size: 0.8rem; line-height: 1.6; color: var(--text-dark); max-width: 90ch; }
+.diag-terms summary::-webkit-details-marker { display: none; }
+.diag-terms summary::after { content: '+'; font-family: var(--font-mono); font-size: 1.2rem; color: var(--cyan-neon); flex-shrink: 0; }
+.diag-terms[open] summary::after { content: '−'; }
+.diag-terms-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 0 clamp(1rem, 3vw, 1.4rem) 1.2rem;
+  font-size: 0.86rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 95ch;
+}
+.diag-terms-body strong { color: var(--text-main); }
 
 @media (max-width: 480px) {
   .diag-row { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
   .diag-row dd { text-align: left; }
-  .btn-domain-check { width: 100%; }
 }
