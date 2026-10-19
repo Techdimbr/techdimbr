@@ -33,7 +33,7 @@
       const msg = `Olá, TECHDIM! Quero ${servico ? 'contratar' : 'comprar'}: ${nome} (${valor}) pela loja do site. ${servico ? 'Como agendamos?' : 'Qual o prazo de entrega?'}`;
       botao.href = `https://wa.me/5519996153276?text=${encodeURIComponent(msg)}`;
       botao.textContent = servico ? 'Contratar pelo WhatsApp' : 'Comprar pelo WhatsApp';
-      botao.dataset.compra = card.dataset.produto;
+      // Sem data-compra: o clique já conta como contato no WhatsApp (tracking.js)
     }
   });
 

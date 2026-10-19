@@ -25,9 +25,9 @@ Uso:
 Feed publicado: https://techdimbr.github.io/techdimbr/merchant-feed.xml
 """
 
+import pathlib
 import re
 import sys
-import pathlib
 from html.parser import HTMLParser
 from xml.sax.saxutils import escape
 
@@ -45,7 +45,7 @@ PRODUTOS = {
     },
     "kit-unifi-ubiquiti": {
         "marca": "Ubiquiti", "categoria": "342", "tipo": "Redes > Kits UniFi",
-        "identificadores": True, "kit": True,
+        "identificadores": True,
         # A página vende o kit "instalado": serviço junto com produto é proibido
         # no Merchant. Venda o kit como equipamento e a instalação à parte, ajuste
         # loja.html e apague esta linha.
@@ -106,37 +106,50 @@ class LeitorLoja(HTMLParser):
 
 
 def ler_config_loja(texto):
-    """Lê o bloco loja: { 'slug': { link: '', preco: '', ... } } do site-config.js."""
-    bloco = re.search(r"\bloja\s*:\s*\{(.*?)\n\s*\}", texto, re.S)
-    if not bloco:
+    """Lê o bloco loja: { 'slug': { link: '', preco: '', ... } } do site-config.js.
+    Aceita aspas simples ou duplas e entradas em várias linhas."""
+    inicio = re.search(r"\bloja\s*:\s*\{", texto)
+    if not inicio:
         sys.exit("site-config.js: bloco 'loja' não encontrado")
+    nivel, fim = 1, inicio.end()
+    while nivel and fim < len(texto):
+        nivel += {"{": 1, "}": -1}.get(texto[fim], 0)
+        fim += 1
+    bloco = texto[inicio.end():fim - 1]
     config = {}
-    for slug, campos in re.findall(r"'([a-z0-9-]+)'\s*:\s*\{([^}]*)\}", bloco.group(1)):
-        config[slug] = dict(re.findall(r"(\w+)\s*:\s*'([^']*)'", campos))
+    for _, slug, campos in re.findall(r"(['\"])([a-z0-9-]+)\1\s*:\s*\{(.*?)\}", bloco, re.DOTALL):
+        config[slug] = {chave: valor for chave, _, valor in re.findall(r"(\w+)\s*:\s*(['\"])(.*?)\2", campos, re.DOTALL)}
+    if not config:
+        sys.exit("site-config.js: nenhum item lido no bloco 'loja' (formato inesperado)")
     return config
 
 
 def preco_feed(texto):
-    """'R$ 18.900,00' -> '18900.00 BRL'. Vazio -> ''."""
-    if not texto.strip():
+    """'R$ 18.900,00' -> '18900.00 BRL'. Vazio -> ''.
+    Só aceita um valor: texto como "a partir de" ou "12x" faria o feed divergir da página."""
+    texto = texto.replace("\u00a0", " ").strip()
+    if not texto:
         return ""
-    numero = re.sub(r"[^\d,.]", "", texto)
-    if "," in numero:
-        numero = numero.replace(".", "").replace(",", ".")
-    elif re.fullmatch(r"\d{1,3}(\.\d{3})+", numero):
-        numero = numero.replace(".", "")  # "18.900" = dezoito mil e novecentos
-    try:
+    numero = re.sub(r"^R\$\s*", "", texto)
+    if re.fullmatch(r"\d{1,3}(\.\d{3})*(,\d{1,2})?|\d+(,\d{1,2})?", numero):
+        valor = float(numero.replace(".", "").replace(",", "."))
+    elif re.fullmatch(r"\d+\.\d{1,2}", numero):
         valor = float(numero)
-    except ValueError:
-        sys.exit(f"site-config.js: preço inválido '{texto}' (use o formato R$ 1.234,56)")
+    else:
+        sys.exit(f"site-config.js: preço inválido '{texto}' (use só o valor, no formato R$ 1.234,56)")
     if valor <= 0:
         sys.exit(f"site-config.js: preço deve ser maior que zero ('{texto}')")
     return f"{valor:.2f} BRL"
 
 
-def url_absoluta(caminho):
+def url_imagem(caminho, slug):
+    """Foto em https:// ou caminho de um arquivo que existe no repositório."""
     if caminho.startswith("https://"):
         return caminho
+    if re.match(r"^[a-z]+:", caminho, re.IGNORECASE):
+        sys.exit(f"site-config.js: imagem de '{slug}' precisa ser https:// ou um arquivo do site ('{caminho}')")
+    if not (RAIZ / caminho.lstrip("/")).is_file():
+        sys.exit(f"site-config.js: imagem de '{slug}' não existe no repositório ('{caminho}')")
     return SITE_URL + caminho.lstrip("/")
 
 
@@ -153,9 +166,7 @@ def gerar():
     for item in leitor.itens:
         if item["categoria"] != "equipamento":
             continue
-        meta = PRODUTOS.get(item["id"])
-        if meta is None:
-            sys.exit(f"Item '{item['id']}' da loja sem dados em PRODUTOS (scripts/gerar_feed_merchant.py)")
+        meta = PRODUTOS.get(item["id"], {})
         cfg = config.get(item["id"], {})
         faltando = [nome for nome, ok in (
             ("preço", cfg.get("preco")), ("foto", cfg.get("imagem")),
@@ -165,6 +176,9 @@ def gerar():
             motivo = meta.get("bloqueio") or "falta " + ", ".join(faltando)
             print(f"fora do feed: {item['id']} ({motivo})")
             continue
+        if not meta:
+            sys.exit(f"Equipamento '{item['id']}' pronto para o feed, mas sem marca e categoria em PRODUTOS "
+                     "(scripts/gerar_feed_merchant.py)")
         descricao = limpar(item["desc"])
         inclui = [limpar(i) for i in item["inclui"] if limpar(i)]
         if inclui:
@@ -176,21 +190,24 @@ def gerar():
             ("g:description", descricao),
             ("g:link", f"{SITE_URL}loja.html#{item['id']}"),
         ]
-        if cfg.get("imagem"):
-            campos.append(("g:image_link", url_absoluta(cfg["imagem"])))
-        campos.append(("g:availability", "in_stock"))
-        if cfg.get("preco"):
-            campos.append(("g:price", preco_feed(cfg["preco"])))
+        campos += [
+            ("g:image_link", url_imagem(cfg["imagem"], item["id"])),
+            ("g:availability", "in_stock"),
+            ("g:price", preco_feed(cfg["preco"])),
+        ]
         campos += [
             ("g:condition", "new"),
             ("g:brand", meta["marca"]),
         ]
         if cfg.get("gtin"):
-            campos.append(("g:gtin", re.sub(r"\D", "", cfg["gtin"])))
+            gtin = re.sub(r"[\s-]", "", cfg["gtin"])
+            if not re.fullmatch(r"\d{8}|\d{12,14}", gtin):
+                sys.exit(f"site-config.js: GTIN de '{item['id']}' inválido ('{cfg['gtin']}'): use 8, 12, 13 ou 14 dígitos")
+            campos.append(("g:gtin", gtin))
+        elif meta["identificadores"]:
+            print(f"aviso: {item['id']} sem GTIN; o Google limita o alcance de produto de marca sem código de barras")
         if not meta["identificadores"]:
             campos.append(("g:identifier_exists", "no"))
-        if meta.get("kit"):
-            campos.append(("g:is_bundle", "yes"))
         campos += [
             ("g:google_product_category", meta["categoria"]),
             ("g:product_type", meta["tipo"]),

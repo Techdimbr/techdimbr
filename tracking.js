@@ -23,6 +23,8 @@
   const meta = cfg.metaPixel || {};
   const n8n = cfg.n8n || {};
   const CONSENT_KEY = 'techdim_consent_v1';
+  // Pasta do site, a partir do próprio tracking.js: o link da política funciona também no blog
+  const SITE_BASE = document.currentScript ? new URL('.', document.currentScript.src).href : '';
   const hasTags = !!(ads.id || ga4.id || meta.id);
   const DENIED = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' };
   const GRANTED = { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' };
@@ -160,7 +162,7 @@
     const text = document.createElement('p');
     text.append(`${partes.join(' ')} `);
     const link = document.createElement('a');
-    link.href = 'privacidade.html';
+    link.href = `${SITE_BASE}privacidade.html`;
     link.textContent = 'Política de privacidade';
     text.append(link);
 
