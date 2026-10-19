@@ -2838,10 +2838,14 @@ nav[aria-label="Navegação Principal"] { justify-content: flex-end; }
 /* Título do hero um pouco menor: o texto novo ocupava 4 linhas no desktop */
 .hero-heading { font-size: clamp(1.85rem, 1.05rem + 2.9vw, 3.1rem); }
 
-/* Celular: marca + carrinho + WhatsApp + menu cabem até 320px */
+/* Celular: marca + carrinho + WhatsApp + menu cabem até 320px. Abaixo de 480px o
+   subtítulo da marca sai: entre 401 e 427px ele empurrava o botão do menu para fora da tela. */
 @media (max-width: 480px) {
   .nav-bar { gap: 0.5rem; }
   .nav-cta-group { gap: 0.4rem; }
+}
+@media (max-width: 479px) {
+  .brand-subtitle { display: none; }
 }
 @media (max-width: 359px) {
   .brand-logo-img { width: 36px; height: 36px; }
@@ -2849,3 +2853,14 @@ nav[aria-label="Navegação Principal"] { justify-content: flex-end; }
   .brand-title { font-size: 1rem; }
   .nav-cart, .btn-header-wa, .mobile-toggle { width: 42px; min-width: 42px; height: 42px; min-height: 42px; }
 }
+
+/* Contato criptografado (rodapé): e-mail Proton, Signal e Telegram, bem discretos */
+.contato-seguro { list-style: none; display: flex; gap: 0.4rem; margin: 0.6rem 0 0; padding: 0; }
+.contato-seguro a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: var(--radius-full);
+  color: var(--text-dark); opacity: 0.75; transition: color 0.2s, opacity 0.2s;
+}
+.contato-seguro a:hover, .contato-seguro a:focus-visible { color: var(--cyan-neon); opacity: 1; }
+.contato-seguro svg { width: 15px; height: 15px; }
+.footer-bar .contato-seguro { margin: 0; }

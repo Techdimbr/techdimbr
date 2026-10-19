@@ -38,6 +38,8 @@ window.TECHDIM_CONFIG = {
   //   imagem: foto real do produto, ex.: 'assets/loja/pixel-11-pro.jpg' (mín. 500x500, sem texto)
   //   gtin:   opcional, código de barras (EAN) do fabricante, só se tiver certeza
   // Serviços não entram no Merchant (política do Google), mas aparecem com preço na loja.
+  // O preço do Suporte de TI também está escrito em loja.html (texto e dados estruturados)
+  // e no llms.txt, para buscadores e IAs: ao mudar o valor aqui, atualize lá também.
   //   unidade: opcional, aparece ao lado do preço (ex.: 'por chamado')
   // Com preço e sem link, o botão vira "Contratar/Comprar pelo WhatsApp" com o valor na mensagem.
   loja: {

@@ -11,6 +11,8 @@ A TECHDIM INOVA SIMPLES (I.S.) - ME é uma empresa brasileira de tecnologia avan
 - **Localização:** Campinas — SP, Brasil
 - **Plantão 24/7 / WhatsApp Comercial:** +55 (19) 99615-3276
 - **E-mail Corporativo:** techdimbrasil@gmail.com
+- **E-mail criptografado (Proton Mail):** techdimbr@proton.me
+- **Signal e Telegram:** +55 (19) 99615-3276
 - **SLA Crítico de Resposta:** 15 minutos para emergências e contenção de incidentes
 
 ---
