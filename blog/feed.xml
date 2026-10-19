@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 17 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Software sob medida com IA: Claude Code, Gemini e Antigravity, sempre com revisão humana</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-18/software-sob-medida-com-ia-claude-code-gemini-e-antigravity/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-18/software-sob-medida-com-ia-claude-code-gemini-e-antigravity/</guid>
+      <pubDate>Sun, 18 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Assistentes de programação com IA, como Claude Code, Gemini e Antigravity, ajudam a escrever e testar código. O que entra no sistema continua sendo…</description>
+    </item>
+    <item>
+      <title>Windows LAPS: senha de administrador local diferente em cada computador, em 5 passos</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-18/windows-laps-senha-de-administrador-local-diferente-em-cada/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-18/windows-laps-senha-de-administrador-local-diferente-em-cada/</guid>
+      <pubDate>Sun, 18 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>1) Use Windows 11 (ou 10 atualizado) em PCs ingressados no Entra ID. 2) No Entra: Devices &gt; Device settings &gt; Enable Local Administrator Password…</description>
+    </item>
+    <item>
+      <title>ConnectWise Cloud Backup suspenso após invasão a ambientes Microsoft 365 de clientes</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-18/connectwise-cloud-backup-suspenso-apos-invasao-a-ambientes/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-18/connectwise-cloud-backup-suspenso-apos-invasao-a-ambientes/</guid>
+      <pubDate>Sun, 18 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A ConnectWise suspendeu o Cloud Backup (antigo SkyKick) após invasores usarem credenciais do aplicativo para entrar em ambientes Microsoft 365 de…</description>
+    </item>
+    <item>
+      <title>Vazamento de dados custa R$ 7,44 milhões no Brasil: recorde no relatório 2026 da IBM</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-18/vazamento-de-dados-custa-r-7-44-milhoes-no-brasil-recorde/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-18/vazamento-de-dados-custa-r-7-44-milhoes-no-brasil-recorde/</guid>
+      <pubDate>Sun, 18 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>O relatório Cost of a Data Breach 2026, da IBM, aponta que o custo médio de um vazamento no Brasil chegou a R$ 7,44 milhões, recorde da série e 3,5%…</description>
+    </item>
     <item>
       <title>Suporte de TI: alguém acompanhando alertas e atualizações antes que virem problema</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-17/suporte-de-ti-alguem-acompanhando-alertas-e-atualizacoes/</link>
@@ -294,38 +326,6 @@
       <pubDate>Tue, 06 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A Anthropic criou a Claude Frontier Academy, com US$ 100 milhões para formar 10 mil engenheiros até o fim de 2027</description>
-    </item>
-    <item>
-      <title>Acesso remoto sem abrir a porta: VPN, MFA e rede segmentada para sua empresa</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-05/acesso-remoto-sem-abrir-a-porta-vpn-mfa-e-rede-segmentada/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-05/acesso-remoto-sem-abrir-a-porta-vpn-mfa-e-rede-segmentada/</guid>
-      <pubDate>Mon, 05 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Equipes que trabalham fora do escritório dependem de acesso remoto, e equipamentos de acesso expostos à internet são alvo constante de ataques</description>
-    </item>
-    <item>
-      <title>Proteja pastas do Windows contra ransomware: ative o Acesso controlado a pastas</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-05/proteja-pastas-do-windows-contra-ransomware-ative-o-acesso/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-05/proteja-pastas-do-windows-contra-ransomware-ative-o-acesso/</guid>
-      <pubDate>Mon, 05 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>O Acesso controlado a pastas só deixa apps confiáveis alterarem arquivos em pastas protegidas, como Documentos, Imagens e Vídeos. Vem desligado por padrão</description>
-    </item>
-    <item>
-      <title>Citrix NetScaler: nova falha explorada em ataques atinge equipamentos com SAML</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-05/citrix-netscaler-nova-falha-explorada-em-ataques-atinge/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-05/citrix-netscaler-nova-falha-explorada-em-ataques-atinge/</guid>
-      <pubDate>Mon, 05 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A CVE-2026-88779 (nota 8,7) afeta NetScaler ADC e Gateway configurados como provedor (SP) ou identidade (IdP) SAML; a Citrix confirma ataques dirigidos</description>
-    </item>
-    <item>
-      <title>Modelo de IA aberto pode rodar dentro da empresa: Aleph Alpha lança o Kolibri</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-05/modelo-de-ia-aberto-pode-rodar-dentro-da-empresa-aleph-alpha/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-05/modelo-de-ia-aberto-pode-rodar-dentro-da-empresa-aleph-alpha/</guid>
-      <pubDate>Mon, 05 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>Em 3/10 a alemã Aleph Alpha lançou o Kolibri, modelo de IA com pesos abertos e licença Apache 2.0: 78 bilhões de parâmetros, cerca de 3 bilhões ativos…</description>
     </item>
   </channel>
 </rss>
