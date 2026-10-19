@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://techdimbr.github.io/techdimbr/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/privacidade.html</loc>
@@ -30,7 +30,31 @@
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-10/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-19/</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-19/exchange-atualizacao-de-outubro-do-windows-server-pode/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-19/exchange-atualizacao-de-outubro-do-windows-server-pode/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-19/opencode-console-invasao-pode-ter-exposto-chaves-de-api/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-19/opencode-console-invasao-pode-ter-exposto-chaves-de-api/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-19/verificacao-em-duas-etapas-no-google-workspace-exija/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-19/verificacao-em-duas-etapas-no-google-workspace-exija/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-19/infraestrutura-e-redes-wi-fi-firewall-e-cabeamento/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-19/infraestrutura-e-redes-wi-fi-firewall-e-cabeamento/capa.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-18/</loc>

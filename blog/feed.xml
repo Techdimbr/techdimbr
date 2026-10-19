@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Sun, 18 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Infraestrutura e redes: Wi-Fi, firewall e cabeamento organizados para a empresa funcionar</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-19/infraestrutura-e-redes-wi-fi-firewall-e-cabeamento/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-19/infraestrutura-e-redes-wi-fi-firewall-e-cabeamento/</guid>
+      <pubDate>Mon, 19 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Rede lenta, Wi-Fi que cai e acesso remoto instável costumam vir de equipamento mal dimensionado ou configuração antiga. O primeiro passo é saber o que…</description>
+    </item>
+    <item>
+      <title>Verificação em duas etapas no Google Workspace: exija para todos em 5 passos</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-19/verificacao-em-duas-etapas-no-google-workspace-exija/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-19/verificacao-em-duas-etapas-no-google-workspace-exija/</guid>
+      <pubDate>Mon, 19 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>1) Como superadmin, abra Menu &gt; Security &gt; Authentication &gt; 2-step verification. 2) Marque Allow users to turn on 2-Step Verification, deixe Enforcement…</description>
+    </item>
+    <item>
+      <title>OpenCode Console: invasão pode ter exposto chaves de API da OpenAI, Anthropic e Google</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-19/opencode-console-invasao-pode-ter-exposto-chaves-de-api/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-19/opencode-console-invasao-pode-ter-exposto-chaves-de-api/</guid>
+      <pubDate>Mon, 19 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>O OpenCode, agente de código aberto para programar com IA, diz que uma invasão ao Console pode ter exposto chaves de API da OpenAI, Anthropic e Google…</description>
+    </item>
+    <item>
+      <title>Exchange: atualização de outubro do Windows Server pode travar o OWA e o envio de e-mail</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-19/exchange-atualizacao-de-outubro-do-windows-server-pode/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-19/exchange-atualizacao-de-outubro-do-windows-server-pode/</guid>
+      <pubDate>Mon, 19 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A Microsoft confirmou que a atualização de 13/10 do Windows Server pode causar falha no login do OWA e no envio de e-mail em Exchange 2016, 2019 e…</description>
+    </item>
     <item>
       <title>Software sob medida com IA: Claude Code, Gemini e Antigravity, sempre com revisão humana</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-18/software-sob-medida-com-ia-claude-code-gemini-e-antigravity/</link>
@@ -294,38 +326,6 @@
       <pubDate>Wed, 07 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>Pesquisa do Gartner com 1.303 organizações aponta que só 22% escalaram a IA em várias áreas, mesmo com 85% dos líderes planejando gastar mais em 2026</description>
-    </item>
-    <item>
-      <title>Automação com IA: seu atendimento responde rápido sem perder o controle</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-06/automacao-com-ia-seu-atendimento-responde-rapido-sem-perder/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-06/automacao-com-ia-seu-atendimento-responde-rapido-sem-perder/</guid>
-      <pubDate>Tue, 06 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>A TECHDIM cria automações com IA para o dia a dia: triagem de e-mails, classificação de pedidos e rascunhos de resposta para sua equipe revisar</description>
-    </item>
-    <item>
-      <title>Firewall do Windows desligado? Confira os 3 perfis em minutos</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-06/firewall-do-windows-desligado-confira-os-3-perfis-em-minutos/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-06/firewall-do-windows-desligado-confira-os-3-perfis-em-minutos/</guid>
-      <pubDate>Tue, 06 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>O Firewall do Windows vem ligado por padrão e bloqueia o que entra sem pedido ou regra. Mas alguém pode tê-lo desligado para &quot;resolver um problema&quot;</description>
-    </item>
-    <item>
-      <title>Zammad: falhas no sistema de chamados entram na lista de exploradas da CISA</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-06/zammad-falhas-no-sistema-de-chamados-entram-na-lista/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-06/zammad-falhas-no-sistema-de-chamados-entram-na-lista/</guid>
-      <pubDate>Tue, 06 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A CISA incluiu duas falhas do Zammad, o CVE-2026-102489 e o CVE-2026-102490, na lista de vulnerabilidades exploradas</description>
-    </item>
-    <item>
-      <title>Anthropic investe US$ 100 milhões para formar 10 mil engenheiros de IA para empresas</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-06/anthropic-investe-us-100-milhoes-para-formar-10-mil/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-06/anthropic-investe-us-100-milhoes-para-formar-10-mil/</guid>
-      <pubDate>Tue, 06 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>A Anthropic criou a Claude Frontier Academy, com US$ 100 milhões para formar 10 mil engenheiros até o fim de 2027</description>
     </item>
   </channel>
 </rss>
