@@ -916,5 +916,5 @@ function exportScanToWhatsApp() {
   if (lines.length === 2) lines.push('Ainda não executei o diagnóstico, mas quero uma análise da rede da minha empresa.');
   lines.push('Gostaria de agendar um diagnóstico aprofundado de cibersegurança para minha empresa.');
 
-  window.open(`https://wa.me/5519996153276?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
+  window.open(`https://wa.me/5519996153276?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener,noreferrer');
 }
