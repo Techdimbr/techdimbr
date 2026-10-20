@@ -251,6 +251,10 @@ function initFaqAccordion() {
   faqItems.forEach(item => {
     const btn = item.querySelector('.faq-btn');
     if (btn) {
+      // Initialize state correctly on load based on whether the item is open
+      const isInitiallyOpen = item.classList.contains('open');
+      btn.setAttribute('aria-expanded', isInitiallyOpen ? 'true' : 'false');
+
       btn.addEventListener('click', () => {
         const isOpen = item.classList.contains('open');
         faqItems.forEach(i => {
