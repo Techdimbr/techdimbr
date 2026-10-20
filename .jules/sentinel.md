@@ -14,3 +14,8 @@
    - Garantir que todos os links externos possuam `rel="noopener noreferrer"`.
 4. **Deploy e Compatibilidade:**
    - O site roda estático no GitHub Pages. Não adicionar dependências ou rotas de backend dinâmico que quebrem o GitHub Pages.
+
+## 2026-10-21 - [Fix DOM XSS] Secure DOM manipulation
+**Vulnerability:** Use of `innerHTML` to populate list elements dynamically in `script.js` which could potentially lead to DOM-based Cross-Site Scripting (XSS).
+**Learning:** Even when the data source appears static or controlled, the use of `innerHTML` is a risky practice that should be avoided.
+**Prevention:** Avoid `innerHTML` for dynamically creating DOM elements. Always prefer creating elements explicitly using `document.createElement()` and assigning values via `textContent` or `innerText`.
