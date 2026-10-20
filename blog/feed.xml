@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 19 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>IA local: modelos de linguagem na sua rede para analisar documentos sem enviá-los à nuvem</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-20/ia-local-modelos-de-linguagem-na-sua-rede-para-analisar/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-20/ia-local-modelos-de-linguagem-na-sua-rede-para-analisar/</guid>
+      <pubDate>Tue, 20 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Contratos, dados de clientes e planilhas financeiras nem sempre podem ir para um serviço de IA na nuvem. A IA local roda os modelos dentro da sua própria…</description>
+    </item>
+    <item>
+      <title>Acesso controlado a pastas do Windows: proteja arquivos contra ransomware em 5 passos</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-20/acesso-controlado-a-pastas-do-windows-proteja-arquivos/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-20/acesso-controlado-a-pastas-do-windows-proteja-arquivos/</guid>
+      <pubDate>Tue, 20 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>1) Segurança do Windows &gt; Proteção contra vírus e ameaças &gt; Gerenciar configurações &gt; Gerenciar acesso controlado a pastas. 2) Ative a chave e confirme…</description>
+    </item>
+    <item>
+      <title>Rank Math PRO adulterado: plugin de SEO do WordPress entregou backdoor que se recria</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-20/rank-math-pro-adulterado-plugin-de-seo-do-wordpress-entregou/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-20/rank-math-pro-adulterado-plugin-de-seo-do-wordpress-entregou/</guid>
+      <pubDate>Tue, 20 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>O Rank Math PRO 3.0.123, plugin pago de SEO, saiu adulterado do site do próprio fornecedor para quem baixou entre 20h02 de 15/10 e 07h12 de 16/10 (UTC)</description>
+    </item>
+    <item>
+      <title>Microsoft trata agentes de IA como risco interno e anuncia controles para vigiá-los</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-20/microsoft-trata-agentes-de-ia-como-risco-interno-e-anuncia/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-20/microsoft-trata-agentes-de-ia-como-risco-interno-e-anuncia/</guid>
+      <pubDate>Tue, 20 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A Microsoft diz que agentes de IA com acesso a dados e sistemas são risco interno: modelos de ponta são imprevisíveis, não necessariamente maliciosos</description>
+    </item>
     <item>
       <title>Infraestrutura e redes: Wi-Fi, firewall e cabeamento organizados para a empresa funcionar</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-19/infraestrutura-e-redes-wi-fi-firewall-e-cabeamento/</link>
@@ -294,38 +326,6 @@
       <pubDate>Thu, 08 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A Samsung estimou lucro operacional de 107,4 trilhões de wons no 3º trimestre, alta de 782% em um ano, puxado pela memória usada em servidores e IA</description>
-    </item>
-    <item>
-      <title>Hardening: servidores e estações configurados para dar menos brechas aos invasores</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-07/hardening-servidores-e-estacoes-configurados-para-dar-menos/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-07/hardening-servidores-e-estacoes-configurados-para-dar-menos/</guid>
-      <pubDate>Wed, 07 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>A TECHDIM revisa a configuração de servidores, estações e rede da sua empresa e fecha o que não precisa estar aberto</description>
-    </item>
-    <item>
-      <title>LGPD sem susto: comece com o modelo de registro da ANPD para pequenas empresas</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-07/lgpd-sem-susto-comece-com-o-modelo-de-registro-da-anpd/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-07/lgpd-sem-susto-comece-com-o-modelo-de-registro-da-anpd/</guid>
-      <pubDate>Wed, 07 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>A ANPD oferece, para agentes de tratamento de pequeno porte, um guia de segurança, um checklist e um formulário-modelo de registro (Excel e PDF)</description>
-    </item>
-    <item>
-      <title>Exchange Server: atualização fora de ciclo corrige leitura indevida de caixas de e-mail</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-07/exchange-server-atualizacao-fora-de-ciclo-corrige-leitura/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-07/exchange-server-atualizacao-fora-de-ciclo-corrige-leitura/</guid>
-      <pubDate>Wed, 07 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A Microsoft liberou atualização para o CVE-2026-96940 (nota 8,8): usuário autenticado pode ler e-mails e anexos de outros na mesma organização</description>
-    </item>
-    <item>
-      <title>Só 22% das empresas conseguiram escalar a IA; quem mede o retorno acerta mais</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-07/so-22-das-empresas-conseguiram-escalar-a-ia-quem-mede/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-07/so-22-das-empresas-conseguiram-escalar-a-ia-quem-mede/</guid>
-      <pubDate>Wed, 07 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>Pesquisa do Gartner com 1.303 organizações aponta que só 22% escalaram a IA em várias áreas, mesmo com 85% dos líderes planejando gastar mais em 2026</description>
     </item>
   </channel>
 </rss>

@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://techdimbr.github.io/techdimbr/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/privacidade.html</loc>
@@ -30,7 +30,31 @@
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-10/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-20/</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-20/microsoft-trata-agentes-de-ia-como-risco-interno-e-anuncia/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-20/microsoft-trata-agentes-de-ia-como-risco-interno-e-anuncia/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-20/rank-math-pro-adulterado-plugin-de-seo-do-wordpress-entregou/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-20/rank-math-pro-adulterado-plugin-de-seo-do-wordpress-entregou/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-20/acesso-controlado-a-pastas-do-windows-proteja-arquivos/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-20/acesso-controlado-a-pastas-do-windows-proteja-arquivos/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-20/ia-local-modelos-de-linguagem-na-sua-rede-para-analisar/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-20/ia-local-modelos-de-linguagem-na-sua-rede-para-analisar/capa.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-19/</loc>
