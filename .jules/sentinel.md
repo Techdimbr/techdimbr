@@ -14,3 +14,8 @@
    - Garantir que todos os links externos possuam `rel="noopener noreferrer"`.
 4. **Deploy e Compatibilidade:**
    - O site roda estático no GitHub Pages. Não adicionar dependências ou rotas de backend dinâmico que quebrem o GitHub Pages.
+
+## 2026-10-25 - Replace innerHTML with textContent for DOM XSS Mitigation
+**Vulnerability:** Use of innerHTML with dynamically mapped list items and UI states poses a DOM XSS risk if the underlying data objects (e.g., data.features) become exposed to uncontrolled sources.
+**Learning:** Even static object configurations can become attack vectors if modified down the line or mapped improperly. Relying on innerHTML for simple text updates exposes the DOM unnecessarily.
+**Prevention:** Enforce the use of document.createElement() with textContent to manipulate elements dynamically, and utilize textContent instead of innerHTML when updating static text states on UI buttons.

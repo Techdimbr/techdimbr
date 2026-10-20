@@ -148,14 +148,14 @@ function initVideoPlayer() {
 
     if (vid && pBtn) {
       pBtn.addEventListener('click', () => {
-        if (vid.paused) { vid.play(); pBtn.innerHTML = '<span>⏸ Pausar</span>'; }
-        else { vid.pause(); pBtn.innerHTML = '<span>▶ Reproduzir</span>'; }
+        if (vid.paused) { vid.play(); pBtn.querySelector('span').textContent = '⏸ Pausar'; }
+        else { vid.pause(); pBtn.querySelector('span').textContent = '▶ Reproduzir'; }
       });
     }
     if (vid && mBtn) {
       mBtn.addEventListener('click', () => {
         vid.muted = !vid.muted;
-        mBtn.innerHTML = vid.muted ? '<span>🔇 Mutado</span>' : '<span>🔊 Áudio On</span>';
+        mBtn.querySelector('span').textContent = vid.muted ? '🔇 Mutado' : '🔊 Áudio On';
       });
     }
     if (container && fBtn) {
@@ -365,7 +365,12 @@ function initServiceModals() {
         if (tagEl) tagEl.textContent = data.tagline;
         if (descEl) descEl.textContent = data.description;
         if (listEl) {
-          listEl.innerHTML = data.features.map(f => `<li>✓ ${f}</li>`).join('');
+          listEl.textContent = '';
+          data.features.forEach(f => {
+            const li = document.createElement('li');
+            li.textContent = `✓ ${f}`;
+            listEl.appendChild(li);
+          });
         }
         if (ctaBtn) {
           const msg = `*TECHDIM - Proposta de Serviço*\nOlá! Tenho interesse no serviço: *${data.title}*.\nGostaria de solicitar uma proposta técnica para minha empresa.`;
