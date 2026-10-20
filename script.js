@@ -365,7 +365,12 @@ function initServiceModals() {
         if (tagEl) tagEl.textContent = data.tagline;
         if (descEl) descEl.textContent = data.description;
         if (listEl) {
-          listEl.innerHTML = data.features.map(f => `<li>✓ ${f}</li>`).join('');
+          listEl.textContent = '';
+          data.features.forEach(f => {
+            const li = document.createElement('li');
+            li.textContent = `✓ ${f}`;
+            listEl.appendChild(li);
+          });
         }
         if (ctaBtn) {
           const msg = `*TECHDIM - Proposta de Serviço*\nOlá! Tenho interesse no serviço: *${data.title}*.\nGostaria de solicitar uma proposta técnica para minha empresa.`;

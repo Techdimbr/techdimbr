@@ -14,3 +14,8 @@
    - Garantir que todos os links externos possuam `rel="noopener noreferrer"`.
 4. **Deploy e Compatibilidade:**
    - O site roda estático no GitHub Pages. Não adicionar dependências ou rotas de backend dinâmico que quebrem o GitHub Pages.
+
+## 2024-03-24 - [DOM XSS and Reverse Tabnabbing Mitigations]
+**Vulnerability:** Use of innerHTML for dynamically rendering lists, creating DOM XSS risk. Missing noreferrer on window.open.
+**Learning:** Even statically controlled data like SITE_CONFIG can be exploited if intercepted. It's safer to always use textContent and appendChild. In addition, external links opened via window.open need noreferrer to prevent the new tab from accessing window.opener and potentially redirecting the original page (Reverse Tabnabbing).
+**Prevention:** Use document.createElement + textContent for DOM injections and always include 'noopener,noreferrer' in window.open calls.
