@@ -24,12 +24,12 @@
       <description>1) Instale: sudo apt install unattended-upgrades. 2) Ative: sudo dpkg-reconfigure -plow unattended-upgrades e responda Sim. O padrão instala só…</description>
     </item>
     <item>
-      <title>PHP: duas falhas críticas de execução remota terão correção de emergência em 21/10</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-21/php-duas-falhas-criticas-de-execucao-remota-terao-correcao/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-21/php-duas-falhas-criticas-de-execucao-remota-terao-correcao/</guid>
+      <title>PHP 8.5.12, 8.4.27, 8.3.36 e 8.2.35 corrigem duas falhas críticas de execução remota</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-21/php-8-5-12-8-4-27-8-3-36-e-8-2-35-corrigem-duas-falhas/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-21/php-8-5-12-8-4-27-8-3-36-e-8-2-35-corrigem-duas-falhas/</guid>
       <pubDate>Wed, 21 Oct 2026 06:01:00 -0300</pubDate>
       <category>Alerta de segurança</category>
-      <description>O PHP alertou para duas falhas críticas (CVE-2026-109618 e -109619, nota 9.2) e marcou a correção de emergência para 21/10, 14h UTC (11h em Brasília)</description>
+      <description>O PHP publicou em 21/10 as versões 8.5.12, 8.4.27, 8.3.36 e 8.2.35, que corrigem duas falhas críticas (CVE-2026-109618 e -109619, nota 9.2) de execução…</description>
     </item>
     <item>
       <title>OpenAI diz que GPT-6.1 Sol migra código COBOL com 86,6% de acerto em teste próprio</title>
