@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 20 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Backup e recuperação: quanto tempo sua empresa aguenta parada e quanto dado pode perder?</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-21/backup-e-recuperacao-quanto-tempo-sua-empresa-aguenta-parada/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-21/backup-e-recuperacao-quanto-tempo-sua-empresa-aguenta-parada/</guid>
+      <pubDate>Wed, 21 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Dois números guiam o backup: quanto tempo a empresa aguenta parada (RTO) e quantas horas de dados aceita perder (RPO). Sem defini-los, a cópia pode não…</description>
+    </item>
+    <item>
+      <title>unattended-upgrades no Debian: atualizações de segurança automáticas em 5 passos</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-21/unattended-upgrades-no-debian-atualizacoes-de-seguranca/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-21/unattended-upgrades-no-debian-atualizacoes-de-seguranca/</guid>
+      <pubDate>Wed, 21 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>1) Instale: sudo apt install unattended-upgrades. 2) Ative: sudo dpkg-reconfigure -plow unattended-upgrades e responda Sim. O padrão instala só…</description>
+    </item>
+    <item>
+      <title>PHP: duas falhas críticas de execução remota terão correção de emergência em 21/10</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-21/php-duas-falhas-criticas-de-execucao-remota-terao-correcao/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-21/php-duas-falhas-criticas-de-execucao-remota-terao-correcao/</guid>
+      <pubDate>Wed, 21 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>O PHP alertou para duas falhas críticas (CVE-2026-109618 e -109619, nota 9.2) e marcou a correção de emergência para 21/10, 14h UTC (11h em Brasília)</description>
+    </item>
+    <item>
+      <title>OpenAI diz que GPT-6.1 Sol migra código COBOL com 86,6% de acerto em teste próprio</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-21/openai-diz-que-gpt-6-1-sol-migra-codigo-cobol-com-86-6/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-21/openai-diz-que-gpt-6-1-sol-migra-codigo-cobol-com-86-6/</guid>
+      <pubDate>Wed, 21 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A OpenAI diz que o GPT-6.1 Sol melhorou muito em linguagens antigas, como COBOL, Fortran e Visual Basic, que têm pouco material para treinar modelos</description>
+    </item>
     <item>
       <title>IA local: modelos de linguagem na sua rede para analisar documentos sem enviá-los à nuvem</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-20/ia-local-modelos-de-linguagem-na-sua-rede-para-analisar/</link>
@@ -294,38 +326,6 @@
       <pubDate>Mon, 12 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A Microsoft avisou em 08/10 que certificados do Windows Update vencem em 17/05 e 19/06/2027; PCs sem os novos perdem o acesso ao Windows Update</description>
-    </item>
-    <item>
-      <title>Infraestrutura de rede: Wi-Fi estável, cabeamento organizado e redes separadas</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-08/infraestrutura-de-rede-wi-fi-estavel-cabeamento-organizado/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-08/infraestrutura-de-rede-wi-fi-estavel-cabeamento-organizado/</guid>
-      <pubDate>Thu, 08 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>A rede é como o encanamento do prédio: ninguém lembra dela até a videoconferência travar, o sistema ficar lento ou o Wi-Fi cair na hora do atendimento</description>
-    </item>
-    <item>
-      <title>Inventário de TI com PowerShell: saiba o que usa antes do próximo alerta de falha</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-08/inventario-de-ti-com-powershell-saiba-o-que-usa-antes/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-08/inventario-de-ti-com-powershell-saiba-o-que-usa-antes/</guid>
-      <pubDate>Thu, 08 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>No Windows, abra o PowerShell e rode Get-ComputerInfo: ele reúne as propriedades do sistema, como nome, versão do Windows, fabricante, modelo e memória</description>
-    </item>
-    <item>
-      <title>Atlassian CVE-2026-21589: falha crítica no Jira e Confluence já atrai tentativas de ataque</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-08/atlassian-cve-2026-21589-falha-critica-no-jira-e-confluence/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-08/atlassian-cve-2026-21589-falha-critica-no-jira-e-confluence/</guid>
-      <pubDate>Thu, 08 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>CVE-2026-21589 (nota 9,3): sem login, o invasor lê arquivos da pasta web, se souber o nome exato, no Jira, Confluence, Bitbucket e outros produtos Data…</description>
-    </item>
-    <item>
-      <title>Memória e SSD podem encarecer: Samsung projeta lucro recorde com a demanda de IA</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-08/memoria-e-ssd-podem-encarecer-samsung-projeta-lucro-recorde/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-08/memoria-e-ssd-podem-encarecer-samsung-projeta-lucro-recorde/</guid>
-      <pubDate>Thu, 08 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>A Samsung estimou lucro operacional de 107,4 trilhões de wons no 3º trimestre, alta de 782% em um ano, puxado pela memória usada em servidores e IA</description>
     </item>
   </channel>
 </rss>
