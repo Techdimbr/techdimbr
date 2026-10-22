@@ -99,6 +99,20 @@
       "priceRange": "$$$",
       "currenciesAccepted": "BRL",
       "paymentAccepted": "PIX, Transferência Bancária, Boleto B2B",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Campinas",
@@ -146,7 +160,20 @@
           "telephone": "+55-19-99615-3276",
           "contactType": "emergency",
           "contactOption": "HearingImpairedSupported",
-          "hoursAvailable": "Mo-Su 00:00-24:00"
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
         }
       ],
       "sameAs": [
@@ -196,48 +223,6 @@
       "publisher": {
         "@id": "https://techdimbr.github.io/techdimbr/#organization"
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://techdimbr.github.io/techdimbr/#breadcrumbs",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Início",
-          "item": "https://techdimbr.github.io/techdimbr/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "ThreatScanner",
-          "item": "https://techdimbr.github.io/techdimbr/#scanner"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Soluções B2B",
-          "item": "https://techdimbr.github.io/techdimbr/#solucoes"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Portfólio Open-Core",
-          "item": "https://techdimbr.github.io/techdimbr/#produtos"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Blog",
-          "item": "https://techdimbr.github.io/techdimbr/blog/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "name": "Contato",
-          "item": "https://techdimbr.github.io/techdimbr/#contato"
-        }
-      ]
     },
     {
       "@type": "ItemList",
@@ -452,7 +437,8 @@
   <meta property="og:image:height" content="768" />
   <meta property="og:image:alt" content="TECHDIM — cibersegurança, nuvem e IA para empresas" />
   <meta name="twitter:image:alt" content="TECHDIM — cibersegurança, nuvem e IA para empresas" />
-  <link rel="stylesheet" href="blog/blog.css" />
+  <link rel="preload" as="style" href="blog/blog.css" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="blog/blog.css" /></noscript>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -496,7 +482,7 @@
   <header class="site-header" id="top">
     <div class="container nav-bar">
       <a href="#top" class="brand-wrapper">
-        <img src="assets/techdim-official-cube-icon.jpg" alt="Logo Oficial TECHDIM INOVA" class="brand-logo-img" width="50" height="50" />
+        <img src="assets/techdim-cube-icon-100.webp" alt="Logo Oficial TECHDIM INOVA" class="brand-logo-img" width="50" height="50" />
         <div class="brand-meta">
           <span class="brand-title">TECHDIM<span>_</span></span>
           <span class="brand-subtitle">INOVA SIMPLES // KETHER_1</span>
@@ -597,7 +583,7 @@
             <div class="video-viewport" id="videoViewport">
               <!-- Default state: Official 3D Cube Logo Showcase -->
               <div class="cube-showcase-container">
-                <img src="assets/techdim-official-cube-logo.webp" width="800" height="800" alt="Logotipo Oficial TECHDIM INOVA 3D" class="cube-showcase-img" id="cubeShowcaseImg" fetchpriority="high" decoding="async" />
+                <img src="assets/techdim-official-cube-logo.webp" srcset="assets/techdim-official-cube-logo-400.webp 400w, assets/techdim-official-cube-logo-600.webp 600w, assets/techdim-official-cube-logo.webp 800w" sizes="(max-width: 900px) 92vw, 560px" width="800" height="800" alt="Logotipo Oficial TECHDIM INOVA 3D" class="cube-showcase-img" id="cubeShowcaseImg" fetchpriority="high" decoding="async" />
                 <div class="cube-hologram-glow"></div>
                 <div class="cube-status-pill">
                   <span class="live-pulse-dot"></span>
@@ -1772,7 +1758,7 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <div class="brand-wrapper">
-          <img src="assets/techdim-official-cube-icon.jpg" alt="Logo Oficial TECHDIM INOVA" class="brand-logo-img" width="46" height="46" loading="lazy" decoding="async" />
+          <img src="assets/techdim-cube-icon-100.webp" alt="Logo Oficial TECHDIM INOVA" class="brand-logo-img" width="46" height="46" loading="lazy" decoding="async" />
           <div class="brand-meta">
             <span class="brand-title">TECHDIM<span>_</span></span>
             <span class="brand-subtitle">INOVA SIMPLES (I.S.) - ME</span>
