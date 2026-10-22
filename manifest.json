@@ -6,7 +6,7 @@
     {
       "src": "assets/techdim-official-logo.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "1024x1024"
     }
   ],
   "start_url": "./",
