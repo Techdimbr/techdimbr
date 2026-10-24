@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 23 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Automação com IA: do PDF que chega por e-mail à planilha, com uma pessoa conferindo</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-24/automacao-com-ia-do-pdf-que-chega-por-e-mail-a-planilha/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-24/automacao-com-ia-do-pdf-que-chega-por-e-mail-a-planilha/</guid>
+      <pubDate>Sat, 24 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Nota fiscal, boleto ou pedido chega por e-mail e alguém digita tudo na planilha? Uma automação com IA pode ler o PDF, separar os campos e deixar tudo…</description>
+    </item>
+    <item>
+      <title>Secure Boot: confira em 5 passos se seus PCs já têm os certificados de 2023 da Microsoft</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-24/secure-boot-confira-em-5-passos-se-seus-pcs-ja-tem/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-24/secure-boot-confira-em-5-passos-se-seus-pcs-ja-tem/</guid>
+      <pubDate>Sat, 24 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Os certificados de 2011 do Secure Boot vencem entre 24/06 e 19/10/2026. 1) No Visualizador de Eventos, abra Logs do Windows &gt; Sistema e filtre a origem…</description>
+    </item>
+    <item>
+      <title>Grupo k0t ataca firewalls Fortinet e Palo Alto: mais de 70 mil credenciais expostas</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-24/grupo-k0t-ataca-firewalls-fortinet-e-palo-alto-mais-de-70/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-24/grupo-k0t-ataca-firewalls-fortinet-e-palo-alto-mais-de-70/</guid>
+      <pubDate>Sat, 24 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>Group-IB e NyxLab descrevem o grupo k0t, que procura firewalls e VPNs expostos na internet. Mais de 70 mil credenciais de equipamentos de rede foram…</description>
+    </item>
+    <item>
+      <title>Windows Server 2016: Microsoft avisa que a atualização de janeiro de 2027 será a última</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-24/windows-server-2016-microsoft-avisa-que-a-atualizacao/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-24/windows-server-2016-microsoft-avisa-que-a-atualizacao/</guid>
+      <pubDate>Sat, 24 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A Microsoft confirmou que a atualização de segurança de janeiro de 2027 será a última do Windows Server 2016, em todas as edições, inclusive a Essentials</description>
+    </item>
     <item>
       <title>Software sob medida: aplicativo de ordem de serviço no celular para sua equipe de campo</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-23/software-sob-medida-aplicativo-de-ordem-de-servico/</link>
@@ -294,38 +326,6 @@
       <pubDate>Thu, 15 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A Microsoft confirmou: após a prévia de 22/09 (KB5124010) ou atualizações seguintes, usuários comuns podem falhar ao conectar por Remote Desktop, com o…</description>
-    </item>
-    <item>
-      <title>Migração de servidor: planeje a troca antes que o suporte do Windows Server 2016 acabe</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-14/migracao-de-servidor-planeje-a-troca-antes-que-o-suporte/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-14/migracao-de-servidor-planeje-a-troca-antes-que-o-suporte/</guid>
-      <pubDate>Wed, 14 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Quem muda de casa etiqueta as caixas, combina o caminhão e guarda a chave antiga. Migrar servidor é igual, e o suporte do Windows Server 2016 acaba em…</description>
-    </item>
-    <item>
-      <title>Encaminhamento automático de e-mail: como bloquear no Google Workspace e no Microsoft 365</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-14/encaminhamento-automatico-de-e-mail-como-bloquear-no-google/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-14/encaminhamento-automatico-de-e-mail-como-bloquear-no-google/</guid>
-      <pubDate>Wed, 14 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>No Google Workspace: Admin Console &gt; Apps &gt; Google Workspace &gt; Gmail &gt; Acesso do usuário final &gt; Encaminhamento automático (exige o privilégio…</description>
-    </item>
-    <item>
-      <title>Windows Shell CVE-2026-96951: falha explorada burla o aviso de arquivos da internet</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-14/windows-shell-cve-2026-96951-falha-explorada-burla-o-aviso/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-14/windows-shell-cve-2026-96951-falha-explorada-burla-o-aviso/</guid>
-      <pubDate>Wed, 14 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A Microsoft corrigiu no Patch Tuesday de outubro a CVE-2026-96951, no Windows Shell, já explorada: ela burla o Mark of the Web e o arquivo abre sem o…</description>
-    </item>
-    <item>
-      <title>Totvs apresenta o Corten: gestão com mais de 30 agentes de IA e supervisão humana</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-14/totvs-apresenta-o-corten-gestao-com-mais-de-30-agentes-de-ia/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-14/totvs-apresenta-o-corten-gestao-com-mais-de-30-agentes-de-ia/</guid>
-      <pubDate>Wed, 14 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>Na terça (13/10), a Totvs apresentou o Corten, um “sistema operacional de gestão” que reúne backoffice, clientes, serviços financeiros, nuvem e IA em uma…</description>
     </item>
   </channel>
 </rss>
