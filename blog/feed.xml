@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 26 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Migração de servidor: leve seus dados sem interromper a operação da empresa</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-27/migracao-de-servidor-leve-seus-dados-sem-interromper/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-27/migracao-de-servidor-leve-seus-dados-sem-interromper/</guid>
+      <pubDate>Tue, 27 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Muitas empresas adiam a migração de servidores por medo de paradas prolongadas e perda de dados, um risco real sem planejamento e execução adequados.</description>
+    </item>
+    <item>
+      <title>Firewall: Seu firewall está configurado ou só ligado? Não basta ter, precisa proteger.</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-27/firewall-seu-firewall-esta-configurado-ou-so-ligado-nao/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-27/firewall-seu-firewall-esta-configurado-ou-so-ligado-nao/</guid>
+      <pubDate>Tue, 27 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Muitas PMEs investem em firewall, mas o deixam com configurações padrão, que não bloqueiam ameaças avançadas.</description>
+    </item>
+    <item>
+      <title>Cibersegurança: Huntress revela táticas de ataque que mais impactam empresas hoje</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-27/ciberseguranca-huntress-revela-taticas-de-ataque-que-mais/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-27/ciberseguranca-huntress-revela-taticas-de-ataque-que-mais/</guid>
+      <pubDate>Tue, 27 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A Huntress, empresa de cibersegurança, ranqueou as táticas de ataque que mais causam impacto em empresas, focando no abuso de ferramentas e fluxos de…</description>
+    </item>
+    <item>
+      <title>IA local: Excluir histórico não apaga rastros em celulares Android</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-27/ia-local-excluir-historico-nao-apaga-rastros-em-celulares/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-27/ia-local-excluir-historico-nao-apaga-rastros-em-celulares/</guid>
+      <pubDate>Tue, 27 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Pesquisadores do Georgia Tech desenvolveram a ferramenta ORISA, capaz de recuperar conversas excluídas de assistentes de IA que operam localmente em…</description>
+    </item>
     <item>
       <title>Diagnóstico de infraestrutura: identifique gargalos na sua rede com a TECHDIM</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-26/diagnostico-de-infraestrutura-identifique-gargalos-na-sua/</link>
@@ -294,38 +326,6 @@
       <pubDate>Sat, 17 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>O CERT-In, órgão de segurança da Índia, relata que agentes de IA em testes na internet chegaram a sistemas reais e leram dados pessoais e registros…</description>
-    </item>
-    <item>
-      <title>Automação com IA: comece pela tarefa que sua equipe repete todo dia</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-16/automacao-com-ia-comece-pela-tarefa-que-sua-equipe-repete/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-16/automacao-com-ia-comece-pela-tarefa-que-sua-equipe-repete/</guid>
-      <pubDate>Fri, 16 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Toda empresa tem tarefas repetidas: copiar dados entre planilhas, montar o mesmo relatório, responder as mesmas dúvidas. IA e automação ajudam, com…</description>
-    </item>
-    <item>
-      <title>SPF, DKIM e DMARC: dificulte a falsificação do e-mail da sua empresa em 5 passos</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-16/spf-dkim-e-dmarc-dificulte-a-falsificacao-do-e-mail-da-sua/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-16/spf-dkim-e-dmarc-dificulte-a-falsificacao-do-e-mail-da-sua/</guid>
-      <pubDate>Fri, 16 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>1) Liste tudo que envia e-mail pelo seu domínio. 2) Publique o SPF em TXT no DNS (v=spf1 include:seu-provedor ~all) e troque por -all quando mapear todas…</description>
-    </item>
-    <item>
-      <title>Zero-day no BeyondTrust Remote Support: falha foi explorada desde o fim de agosto</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-16/zero-day-no-beyondtrust-remote-support-falha-foi-explorada/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-16/zero-day-no-beyondtrust-remote-support-falha-foi-explorada/</guid>
-      <pubDate>Fri, 16 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A BeyondTrust avisou que o Remote Support (até a versão 26.2.3) tem uma falha crítica, a CVE-2026-102764, explorada como zero-day desde o fim de agosto</description>
-    </item>
-    <item>
-      <title>Google dá mais destaque a links nas respostas de IA e testa seção de páginas oficiais</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-16/google-da-mais-destaque-a-links-nas-respostas-de-ia-e-testa/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-16/google-da-mais-destaque-a-links-nas-respostas-de-ia-e-testa/</guid>
-      <pubDate>Fri, 16 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>O Google diz ter aumentado de forma substancial os links no Modo IA e nas visões gerais de IA, exibindo-os mais acima, com mais frequência e, no fim, com…</description>
     </item>
   </channel>
 </rss>
