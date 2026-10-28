@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 27 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Infraestrutura e redes: Wi-Fi, firewall e cabeamento organizados para sua empresa</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-28/infraestrutura-e-redes-wi-fi-firewall-e-cabeamento/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-28/infraestrutura-e-redes-wi-fi-firewall-e-cabeamento/</guid>
+      <pubDate>Wed, 28 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Redes instáveis e pontos cegos de Wi-Fi travam o atendimento e geram frustração na equipe todos os dias.</description>
+    </item>
+    <item>
+      <title>MFA obrigatório: por que senha forte já não basta na sua empresa</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-28/mfa-obrigatorio-por-que-senha-forte-ja-nao-basta-na-sua/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-28/mfa-obrigatorio-por-que-senha-forte-ja-nao-basta-na-sua/</guid>
+      <pubDate>Wed, 28 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Senhas complexas caem em phishing e vazamentos corporativos, tornando a autenticação multifator indispensável para bloquear invasões.</description>
+    </item>
+    <item>
+      <title>Vulnerabilidades de Infraestrutura: Ataques exploram falhas críticas em redes</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-28/vulnerabilidades-de-infraestrutura-ataques-exploram-falhas/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-28/vulnerabilidades-de-infraestrutura-ataques-exploram-falhas/</guid>
+      <pubDate>Wed, 28 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>Atacantes estão explorando ativamente vulnerabilidades em infraestruturas de rede críticas, como firewalls e VPNs, através de falhas PHP2Shell em…</description>
+    </item>
+    <item>
+      <title>Discord: Mensagens de servidores públicos agora pesquisáveis no Google</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-28/discord-mensagens-de-servidores-publicos-agora-pesquisaveis/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-28/discord-mensagens-de-servidores-publicos-agora-pesquisaveis/</guid>
+      <pubDate>Wed, 28 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Discord passará a indexar mensagens de servidores públicos (tipo &#x27;Descobrir&#x27;) em mecanismos de busca, como o Google, a partir de dezembro.</description>
+    </item>
     <item>
       <title>Migração de servidor: leve seus dados sem interromper a operação da empresa</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-27/migracao-de-servidor-leve-seus-dados-sem-interromper/</link>
@@ -294,38 +326,6 @@
       <pubDate>Sun, 18 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>O relatório Cost of a Data Breach 2026, da IBM, aponta que o custo médio de um vazamento no Brasil chegou a R$ 7,44 milhões, recorde da série e 3,5%…</description>
-    </item>
-    <item>
-      <title>Suporte de TI: alguém acompanhando alertas e atualizações antes que virem problema</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-17/suporte-de-ti-alguem-acompanhando-alertas-e-atualizacoes/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-17/suporte-de-ti-alguem-acompanhando-alertas-e-atualizacoes/</guid>
-      <pubDate>Sat, 17 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Toda semana surgem alertas e atualizações importantes. Em muitas empresas ninguém tem tempo de ler, testar e aplicar: o aviso chega, mas a ação não</description>
-    </item>
-    <item>
-      <title>BitLocker nos notebooks da empresa: criptografe o disco em 5 passos contra perda e roubo</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-17/bitlocker-nos-notebooks-da-empresa-criptografe-o-disco-em-5/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-17/bitlocker-nos-notebooks-da-empresa-criptografe-o-disco-em-5/</guid>
-      <pubDate>Sat, 17 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>1) Confira a edição: BitLocker está no Windows Pro, Enterprise e Education. 2) Abra msinfo32 e veja se a criptografia de dispositivo atende aos…</description>
-    </item>
-    <item>
-      <title>AOMEI Backupper: servidores de atualização foram adulterados e instalaram backdoor</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-17/aomei-backupper-servidores-de-atualizacao-foram-adulterados/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-17/aomei-backupper-servidores-de-atualizacao-foram-adulterados/</guid>
-      <pubDate>Sat, 17 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>Google (GTIG/Mandiant) e ManageEngine relatam: de abril a julho, invasores adulteraram por 5 a 10 minutos a atualização do AOMEI Backupper e instalaram…</description>
-    </item>
-    <item>
-      <title>Agentes de IA em testes acessaram dados de empresas na Índia por credenciais expostas</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-17/agentes-de-ia-em-testes-acessaram-dados-de-empresas-na-india/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-17/agentes-de-ia-em-testes-acessaram-dados-de-empresas-na-india/</guid>
-      <pubDate>Sat, 17 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>O CERT-In, órgão de segurança da Índia, relata que agentes de IA em testes na internet chegaram a sistemas reais e leram dados pessoais e registros…</description>
     </item>
   </channel>
 </rss>
