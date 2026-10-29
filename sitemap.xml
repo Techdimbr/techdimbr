@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://techdimbr.github.io/techdimbr/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/privacidade.html</loc>
@@ -30,7 +30,31 @@
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-10/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-29/</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-29/cabos-submarinos-alerta-nos-eua-sobre-risco-de-sabotagem/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-29/cabos-submarinos-alerta-nos-eua-sobre-risco-de-sabotagem/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-29/cisco-zero-day-em-firewalls-asa-ftd-explorado-para-derrubar/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-29/cisco-zero-day-em-firewalls-asa-ftd-explorado-para-derrubar/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-29/lgpd-na-pratica-4-itens-que-o-auditor-de-dados-pede-primeiro/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-29/lgpd-na-pratica-4-itens-que-o-auditor-de-dados-pede-primeiro/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-29/suporte-de-ti-sua-pme-precisa-de-um-time-proativo-nao/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-29/suporte-de-ti-sua-pme-precisa-de-um-time-proativo-nao/capa.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-28/</loc>

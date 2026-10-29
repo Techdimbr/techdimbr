@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 28 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Suporte de TI: Sua PME precisa de um time proativo, não de um &#x27;quebra-galho&#x27;.</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-29/suporte-de-ti-sua-pme-precisa-de-um-time-proativo-nao/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-29/suporte-de-ti-sua-pme-precisa-de-um-time-proativo-nao/</guid>
+      <pubDate>Thu, 29 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Muitas PMEs enfrentam interrupções e lentidão por falta de um suporte de TI dedicado e estratégico, que vá além do reativo.</description>
+    </item>
+    <item>
+      <title>LGPD na prática: 4 itens que o auditor de dados pede primeiro na sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-29/lgpd-na-pratica-4-itens-que-o-auditor-de-dados-pede-primeiro/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-29/lgpd-na-pratica-4-itens-que-o-auditor-de-dados-pede-primeiro/</guid>
+      <pubDate>Thu, 29 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Auditorias de LGPD focam em evidências de conformidade, não apenas em políticas escritas. Prepare-se para mostrar como sua empresa protege dados.</description>
+    </item>
+    <item>
+      <title>Cisco: Zero-day em firewalls ASA/FTD explorado para derrubar dispositivos SSL VPN</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-29/cisco-zero-day-em-firewalls-asa-ftd-explorado-para-derrubar/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-29/cisco-zero-day-em-firewalls-asa-ftd-explorado-para-derrubar/</guid>
+      <pubDate>Thu, 29 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>Cisco lança patches para CVE-2026-76418, uma vulnerabilidade zero-day de alta gravidade em firewalls ASA e FTD, já explorada ativamente.</description>
+    </item>
+    <item>
+      <title>Cabos Submarinos: Alerta nos EUA sobre risco de sabotagem à infraestrutura global da internet</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-29/cabos-submarinos-alerta-nos-eua-sobre-risco-de-sabotagem/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-29/cabos-submarinos-alerta-nos-eua-sobre-risco-de-sabotagem/</guid>
+      <pubDate>Thu, 29 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Navios chineses próximos a cabos submarinos no Pacífico acendem alerta nos EUA sobre possível sabotagem à infraestrutura que sustenta parte crucial da…</description>
+    </item>
     <item>
       <title>Infraestrutura e redes: Wi-Fi, firewall e cabeamento organizados para sua empresa</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-28/infraestrutura-e-redes-wi-fi-firewall-e-cabeamento/</link>
@@ -294,38 +326,6 @@
       <pubDate>Mon, 19 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A Microsoft confirmou que a atualização de 13/10 do Windows Server pode causar falha no login do OWA e no envio de e-mail em Exchange 2016, 2019 e…</description>
-    </item>
-    <item>
-      <title>Software sob medida com IA: Claude Code, Gemini e Antigravity, sempre com revisão humana</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-18/software-sob-medida-com-ia-claude-code-gemini-e-antigravity/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-18/software-sob-medida-com-ia-claude-code-gemini-e-antigravity/</guid>
-      <pubDate>Sun, 18 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Assistentes de programação com IA, como Claude Code, Gemini e Antigravity, ajudam a escrever e testar código. O que entra no sistema continua sendo…</description>
-    </item>
-    <item>
-      <title>Windows LAPS: senha de administrador local diferente em cada computador, em 5 passos</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-18/windows-laps-senha-de-administrador-local-diferente-em-cada/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-18/windows-laps-senha-de-administrador-local-diferente-em-cada/</guid>
-      <pubDate>Sun, 18 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>1) Use Windows 11 (ou 10 atualizado) em PCs ingressados no Entra ID. 2) No Entra: Devices &gt; Device settings &gt; Enable Local Administrator Password…</description>
-    </item>
-    <item>
-      <title>ConnectWise Cloud Backup suspenso após invasão a ambientes Microsoft 365 de clientes</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-18/connectwise-cloud-backup-suspenso-apos-invasao-a-ambientes/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-18/connectwise-cloud-backup-suspenso-apos-invasao-a-ambientes/</guid>
-      <pubDate>Sun, 18 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A ConnectWise suspendeu o Cloud Backup (antigo SkyKick) após invasores usarem credenciais do aplicativo para entrar em ambientes Microsoft 365 de…</description>
-    </item>
-    <item>
-      <title>Vazamento de dados custa R$ 7,44 milhões no Brasil: recorde no relatório 2026 da IBM</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-18/vazamento-de-dados-custa-r-7-44-milhoes-no-brasil-recorde/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-18/vazamento-de-dados-custa-r-7-44-milhoes-no-brasil-recorde/</guid>
-      <pubDate>Sun, 18 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>O relatório Cost of a Data Breach 2026, da IBM, aponta que o custo médio de um vazamento no Brasil chegou a R$ 7,44 milhões, recorde da série e 3,5%…</description>
     </item>
   </channel>
 </rss>
