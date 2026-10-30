@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 29 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Hardening de Servidores: Não deixe sua infraestrutura ser um alvo fácil</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-30/hardening-de-servidores-nao-deixe-sua-infraestrutura-ser/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-30/hardening-de-servidores-nao-deixe-sua-infraestrutura-ser/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Servidores e estações com configurações padrão de fábrica ou desatualizadas são portas abertas para ataques cibernéticos, mesmo com antivírus e firewall.</description>
+    </item>
+    <item>
+      <title>Atualização de Software: Controle de segurança essencial para sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-30/atualizacao-de-software-controle-de-seguranca-essencial/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-30/atualizacao-de-software-controle-de-seguranca-essencial/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Software desatualizado é uma porta aberta para ataques. Manter sistemas e aplicativos em dia é a primeira linha de defesa contra vulnerabilidades…</description>
+    </item>
+    <item>
+      <title>Vulnerabilidade GitLab: Falha crítica CVE-2026-97229 é explorada ativamente</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-30/vulnerabilidade-gitlab-falha-critica-cve-2026-97229/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-30/vulnerabilidade-gitlab-falha-critica-cve-2026-97229/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>CISA confirma exploração ativa da falha crítica CVE-2026-97229 no GitLab, que permite a execução remota de código por atacantes não autenticados.</description>
+    </item>
+    <item>
+      <title>IA Gemini: Edição interativa de documentos no chat otimiza fluxos de trabalho</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-30/ia-gemini-edicao-interativa-de-documentos-no-chat-otimiza/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-30/ia-gemini-edicao-interativa-de-documentos-no-chat-otimiza/</guid>
+      <pubDate>Fri, 30 Oct 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Google Gemini agora permite criar, visualizar e editar documentos (PDFs, Docs, Sheets, apresentações) diretamente no chat, sem sair da interface.</description>
+    </item>
     <item>
       <title>Suporte de TI: Sua PME precisa de um time proativo, não de um &#x27;quebra-galho&#x27;.</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-10-29/suporte-de-ti-sua-pme-precisa-de-um-time-proativo-nao/</link>
@@ -294,38 +326,6 @@
       <pubDate>Tue, 20 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A Microsoft diz que agentes de IA com acesso a dados e sistemas são risco interno: modelos de ponta são imprevisíveis, não necessariamente maliciosos</description>
-    </item>
-    <item>
-      <title>Infraestrutura e redes: Wi-Fi, firewall e cabeamento organizados para a empresa funcionar</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-19/infraestrutura-e-redes-wi-fi-firewall-e-cabeamento/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-19/infraestrutura-e-redes-wi-fi-firewall-e-cabeamento/</guid>
-      <pubDate>Mon, 19 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Rede lenta, Wi-Fi que cai e acesso remoto instável costumam vir de equipamento mal dimensionado ou configuração antiga. O primeiro passo é saber o que…</description>
-    </item>
-    <item>
-      <title>Verificação em duas etapas no Google Workspace: exija para todos em 5 passos</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-19/verificacao-em-duas-etapas-no-google-workspace-exija/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-19/verificacao-em-duas-etapas-no-google-workspace-exija/</guid>
-      <pubDate>Mon, 19 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>1) Como superadmin, abra Menu &gt; Security &gt; Authentication &gt; 2-step verification. 2) Marque Allow users to turn on 2-Step Verification, deixe Enforcement…</description>
-    </item>
-    <item>
-      <title>OpenCode Console: invasão pode ter exposto chaves de API da OpenAI, Anthropic e Google</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-19/opencode-console-invasao-pode-ter-exposto-chaves-de-api/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-19/opencode-console-invasao-pode-ter-exposto-chaves-de-api/</guid>
-      <pubDate>Mon, 19 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>O OpenCode, agente de código aberto para programar com IA, diz que uma invasão ao Console pode ter exposto chaves de API da OpenAI, Anthropic e Google…</description>
-    </item>
-    <item>
-      <title>Exchange: atualização de outubro do Windows Server pode travar o OWA e o envio de e-mail</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-19/exchange-atualizacao-de-outubro-do-windows-server-pode/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-19/exchange-atualizacao-de-outubro-do-windows-server-pode/</guid>
-      <pubDate>Mon, 19 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>A Microsoft confirmou que a atualização de 13/10 do Windows Server pode causar falha no login do OWA e no envio de e-mail em Exchange 2016, 2019 e…</description>
     </item>
   </channel>
 </rss>

@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://techdimbr.github.io/techdimbr/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/privacidade.html</loc>
@@ -30,7 +30,31 @@
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-10/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-30/</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-30/ia-gemini-edicao-interativa-de-documentos-no-chat-otimiza/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-30/ia-gemini-edicao-interativa-de-documentos-no-chat-otimiza/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-30/vulnerabilidade-gitlab-falha-critica-cve-2026-97229/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-30/vulnerabilidade-gitlab-falha-critica-cve-2026-97229/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-30/atualizacao-de-software-controle-de-seguranca-essencial/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-30/atualizacao-de-software-controle-de-seguranca-essencial/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-30/hardening-de-servidores-nao-deixe-sua-infraestrutura-ser/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-30/hardening-de-servidores-nao-deixe-sua-infraestrutura-ser/capa.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-29/</loc>
