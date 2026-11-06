@@ -13,6 +13,7 @@
     <a href="https://linkedin.com/in/deivismayer"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Deivis%20Mayer-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
     <a href="https://techdimbr.github.io/reparafacil/"><img alt="ReparaFácil" src="https://img.shields.io/badge/ReparaFácil-Campinas_SP-ff0844?style=for-the-badge&logo=apple&logoColor=white"></a>
     <a href="https://techdimbr.github.io/MUNDO3D/"><img alt="Mundo 3D" src="https://img.shields.io/badge/Mundo_3D-Academy-ffb300?style=for-the-badge&logo=blender&logoColor=black"></a>
+    <a href="https://www.instagram.com/techdimbr/"><img alt="Instagram Oficial" src="https://img.shields.io/badge/Instagram-@techdimbr-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
   </p>
 
   <p align="center">
@@ -68,6 +69,7 @@ Combinamos **Cibersegurança Defensiva em Linux Debian 13**, **Arquiteturas Goog
 ### 3. ⚡ Techdim Social Spark — Automação de Conteúdo e Presença Digital
 - **Agência Autônoma de Conteúdo com IA**: Esteira inteligente desenvolvida em Antigravity que realiza a curadoria diária de tendências do seu setor, redige artigos técnicos para o blog da sua empresa e gera criativos visuais personalizados.
 - **Publicações Automáticas no Piloto Automático**: Disparo programado de postagens de alta autoridade no Instagram, Facebook e sites institucionais, com indexação imediata em mecanismos de busca (Google, Bing, IndexNow).
+- **Demonstração em Tempo Real**: Veja a esteira operando ao vivo com publicações diárias no Instagram oficial: [**@techdimbr**](https://www.instagram.com/techdimbr/).
 
 ### 4. 💻 ReparaFácil Vision AI — Laboratório de Hardware Crítico
 - **Assistência Técnica Especializada em Campinas/SP**: Laboratório dedicado para recuperação de placas-mãe, MacBooks, placas de vídeo (GPUs) e servidores corporativos com solda BGA e análise microscópica.
@@ -137,6 +139,7 @@ Nossa equipe técnica atua sob contratos formais de prestação de serviços com
 | **Plantão Emergencial 24/7** | [**Ligar: (19) 99615-3276**](tel:+5519996153276) | Chamados Críticos de Parada de Servidores | Imediato (SLA 15 min) |
 | **E-mail Corporativo** | [**techdimbrasil@gmail.com**](mailto:techdimbrasil@gmail.com) | Propostas de Escopo Fechado e Homologação de Fornecedor | Até 24 horas úteis |
 | **Portal Institucional** | [**techdim.com.br**](https://techdimbr.github.io/techdimbr/) | Calculadora de ROI e Ferramentas Interativas | 24/7 Online |
+| **Instagram Oficial** | [**@techdimbr**](https://www.instagram.com/techdimbr/) | Publicações Diárias Automatizadas via Gemini Spark | Diário / Feed Ativo |
 | **LinkedIn Corporativo** | [**linkedin.com/in/deivismayer**](https://linkedin.com/in/deivismayer) | Conexão com a Liderança Técnica | Regular |
 
 <br/>
