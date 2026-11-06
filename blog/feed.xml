@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 05 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Diagnóstico de Infraestrutura: identifique gargalos antes da falha</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-06/diagnostico-de-infraestrutura-identifique-gargalos-antes/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-06/diagnostico-de-infraestrutura-identifique-gargalos-antes/</guid>
+      <pubDate>Fri, 06 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Redes corporativas com gargalos ocultos provocam lentidão crônica e quedas de produtividade na PME.</description>
+    </item>
+    <item>
+      <title>Downtime: O Custo Oculto da Parada de Sistema na Sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-06/downtime-o-custo-oculto-da-parada-de-sistema-na-sua-pme/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-06/downtime-o-custo-oculto-da-parada-de-sistema-na-sua-pme/</guid>
+      <pubDate>Fri, 06 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Cada hora de sistema parado na PME pode custar milhares de reais em perdas de receita, produtividade e danos à reputação, impactando diretamente o caixa…</description>
+    </item>
+    <item>
+      <title>OpenSSH: Falha &#x27;SSHOLE&#x27; permite acesso root e é explorada ativamente</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-06/openssh-falha-sshole-permite-acesso-root-e-e-explorada/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-06/openssh-falha-sshole-permite-acesso-root-e-e-explorada/</guid>
+      <pubDate>Fri, 06 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A falha CVE-2026-123158 (SSHOLE) no OpenSSH permite login sem senha em contas com asterisco (*) no hash. Afeta Linux com musl C library e PAM…</description>
+    </item>
+    <item>
+      <title>Vulnerabilidade no Paint: Falha grave permite ataques remotos no Windows 11</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-06/vulnerabilidade-no-paint-falha-grave-permite-ataques-remotos/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-06/vulnerabilidade-no-paint-falha-grave-permite-ataques-remotos/</guid>
+      <pubDate>Fri, 06 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A vulnerabilidade CVE-2026-83844 no Microsoft Paint do Windows 11 permite a execução remota de código malicioso, com pontuação de gravidade 8,1 (CVSS 3.1).</description>
+    </item>
     <item>
       <title>Automação com IA: Reduza erros e impulsione a eficiência da sua PME</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-05/automacao-com-ia-reduza-erros-e-impulsione-a-eficiencia/</link>
@@ -294,38 +326,6 @@
       <pubDate>Wed, 28 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>Discord passará a indexar mensagens de servidores públicos (tipo &#x27;Descobrir&#x27;) em mecanismos de busca, como o Google, a partir de dezembro.</description>
-    </item>
-    <item>
-      <title>Migração de servidor: leve seus dados sem interromper a operação da empresa</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-27/migracao-de-servidor-leve-seus-dados-sem-interromper/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-27/migracao-de-servidor-leve-seus-dados-sem-interromper/</guid>
-      <pubDate>Tue, 27 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Muitas empresas adiam a migração de servidores por medo de paradas prolongadas e perda de dados, um risco real sem planejamento e execução adequados.</description>
-    </item>
-    <item>
-      <title>Firewall: Seu firewall está configurado ou só ligado? Não basta ter, precisa proteger.</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-27/firewall-seu-firewall-esta-configurado-ou-so-ligado-nao/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-27/firewall-seu-firewall-esta-configurado-ou-so-ligado-nao/</guid>
-      <pubDate>Tue, 27 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Muitas PMEs investem em firewall, mas o deixam com configurações padrão, que não bloqueiam ameaças avançadas.</description>
-    </item>
-    <item>
-      <title>Cibersegurança: Huntress revela táticas de ataque que mais impactam empresas hoje</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-27/ciberseguranca-huntress-revela-taticas-de-ataque-que-mais/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-27/ciberseguranca-huntress-revela-taticas-de-ataque-que-mais/</guid>
-      <pubDate>Tue, 27 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A Huntress, empresa de cibersegurança, ranqueou as táticas de ataque que mais causam impacto em empresas, focando no abuso de ferramentas e fluxos de…</description>
-    </item>
-    <item>
-      <title>IA local: Excluir histórico não apaga rastros em celulares Android</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-27/ia-local-excluir-historico-nao-apaga-rastros-em-celulares/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-27/ia-local-excluir-historico-nao-apaga-rastros-em-celulares/</guid>
-      <pubDate>Tue, 27 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>Pesquisadores do Georgia Tech desenvolveram a ferramenta ORISA, capaz de recuperar conversas excluídas de assistentes de IA que operam localmente em…</description>
     </item>
   </channel>
 </rss>
