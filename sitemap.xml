@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://techdimbr.github.io/techdimbr/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/privacidade.html</loc>
@@ -29,8 +29,156 @@
     <lastmod>2026-10-10</lastmod>
   </url>
   <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-11/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-10/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-05/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-05/vazamento-de-dados-fgc-notifica-investidores-apos-incidente/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-05/vazamento-de-dados-fgc-notifica-investidores-apos-incidente/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-05/cwpdoor-servidores-linux-sendo-backdoored-via-cwp-web-server/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-05/cwpdoor-servidores-linux-sendo-backdoored-via-cwp-web-server/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-05/sinais-de-vulnerabilidade-3-alertas-que-sua-rede-pode-estar/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-05/sinais-de-vulnerabilidade-3-alertas-que-sua-rede-pode-estar/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-05/automacao-com-ia-reduza-erros-e-impulsione-a-eficiencia/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-05/automacao-com-ia-reduza-erros-e-impulsione-a-eficiencia/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-04/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-04/anatel-bloqueia-sms-fraudulentos-novas-regras-para-protecao/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-04/anatel-bloqueia-sms-fraudulentos-novas-regras-para-protecao/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-04/phishing-campanha-de-google-calendar-burla-mfa-e-sequestra/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-04/phishing-campanha-de-google-calendar-burla-mfa-e-sequestra/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-04/wi-fi-corporativo-3-erros-comuns-que-ainda-vemos-e-como/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-04/wi-fi-corporativo-3-erros-comuns-que-ainda-vemos-e-como/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-04/diagnostico-de-infraestrutura-identifique-gargalos-e-falhas/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-04/diagnostico-de-infraestrutura-identifique-gargalos-e-falhas/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-03/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-03/falha-de-seguranca-no-smart-sampa-expoe-17-mil-cameras/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-03/falha-de-seguranca-no-smart-sampa-expoe-17-mil-cameras/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-03/llmjacking-google-alerta-sobre-ataques-que-geram-ate-us-1/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-03/llmjacking-google-alerta-sobre-ataques-que-geram-ate-us-1/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-03/ia-segura-implemente-inteligencia-artificial-sem-expor-dados/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-03/ia-segura-implemente-inteligencia-artificial-sem-expor-dados/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-03/migracao-de-servidor-modernize-sua-estrutura-sem-parar/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-03/migracao-de-servidor-modernize-sua-estrutura-sem-parar/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-02/</loc>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-02/ia-e-iot-o-perigo-dos-vermes-digitais-autonomos/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-02/ia-e-iot-o-perigo-dos-vermes-digitais-autonomos/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-02/ransomware-c3rb3r-synology-alerta-sobre-ataques/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-02/ransomware-c3rb3r-synology-alerta-sobre-ataques/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-02/offboarding-o-acesso-que-ficou-aberto-e-porta-para-riscos/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-02/offboarding-o-acesso-que-ficou-aberto-e-porta-para-riscos/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-02/governanca-de-acesso-reduza-riscos-com-controle-estrito/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-02/governanca-de-acesso-reduza-riscos-com-controle-estrito/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-01/</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-01/ia-corporativa-entire-traz-hospedagem-git-com-ia/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-01/ia-corporativa-entire-traz-hospedagem-git-com-ia/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-01/ivanti-connect-secure-cisa-alerta-sobre-exploracao-ativa/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-01/ivanti-connect-secure-cisa-alerta-sobre-exploracao-ativa/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-01/shadow-it-o-perigo-invisivel-que-sua-pme-precisa-mapear/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-01/shadow-it-o-perigo-invisivel-que-sua-pme-precisa-mapear/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-01/backup-gerenciado-garanta-que-sua-pme-consiga-recuperar/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-01/backup-gerenciado-garanta-que-sua-pme-consiga-recuperar/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-31/</loc>
+    <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-31/entire-plataforma-git-com-ia-e-servidores-locais-no-brasil/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-31/entire-plataforma-git-com-ia-e-servidores-locais-no-brasil/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-31/vulnerabilidade-ivanti-falhas-em-cadeia-concedem-acesso-root/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-31/vulnerabilidade-ivanti-falhas-em-cadeia-concedem-acesso-root/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-31/phishing-como-identificar-e-se-defender-de-ataques-que-vao/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-31/phishing-como-identificar-e-se-defender-de-ataques-que-vao/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-31/infraestrutura-e-redes-garanta-estabilidade-e-seguranca/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-10-31/infraestrutura-e-redes-garanta-estabilidade-e-seguranca/capa.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/2026-10-30/</loc>
