@@ -8,6 +8,7 @@
 
   <p align="center">
     <a href="https://techdimbr.github.io/techdimbr/"><img alt="Portal Corporativo" src="https://img.shields.io/badge/Portal_Oficial-techdim.com.br-00ffcc?style=for-the-badge&logo=googlechrome&logoColor=black"></a>
+    <a href="https://github.com/Techdimbr/daily-engineering-lab"><img alt="Daily Engineering Lab" src="https://img.shields.io/badge/Daily_Engineering-Lab_&_Algorithms-10b981?style=for-the-badge&logo=github&logoColor=white"></a>
     <a href="https://wa.me/5519996153276?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20da%20TECHDIM%20para%20a%20minha%20empresa!"><img alt="WhatsApp B2B" src="https://img.shields.io/badge/WhatsApp_B2B-(19)%2099615--3276-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
     <a href="mailto:techdimbrasil@gmail.com"><img alt="Email Corporativo" src="https://img.shields.io/badge/Email-techdimbrasil%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
     <a href="https://linkedin.com/in/deivismayer"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Deivis%20Mayer-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
@@ -92,8 +93,9 @@ Combinamos **Cibersegurança Defensiva em Linux Debian 13**, **Arquiteturas Goog
 ## 📊 Telemetria de Código & Capacidade Operacional
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Techdimbr&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="175" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Techdimbr&layout=compact&theme=tokyonight&hide_border=true" height="175" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Techdimbr&theme=tokyonight&hide_border=true" height="175" alt="GitHub Streak" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Techdimbr&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="175" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Techdimbr&layout=compact&theme=tokyonight&hide_border=true" height="175" alt="Top Languages" />
 </div>
 
 ---
@@ -142,8 +144,19 @@ Nossa equipe técnica atua sob contratos formais de prestação de serviços com
 | **Instagram Oficial** | [**@techdimbr**](https://www.instagram.com/techdimbr/) | Publicações Diárias Automatizadas via Gemini Spark | Diário / Feed Ativo |
 | **LinkedIn Corporativo** | [**linkedin.com/in/deivismayer**](https://linkedin.com/in/deivismayer) | Conexão com a Liderança Técnica | Regular |
 
+---
+
+### 🌐 Metadados Canônicos para Motores de Busca (SEO & Indexação)
+
+- **Engenheiro & Arquiteto de Software:** **Eng. Deivis Irio Mayer** (Kether1)
+- **Empresa Oficial:** **TECHDIM INOVA SIMPLES (I.S.) - ME** · CNPJ: `61.933.926/0001-24`
+- **Sede Operacional:** Campinas — SP, Brasil
+- **Especialidades Indexadas:** Cibersegurança em Linux Debian 13, Arquitetura Limpa, Padrões GoF, IA Agêntica (Google Gemini), Engenharia 3D e Governança de TI.
+- **Portfólio de Código Aberto:** [daily-engineering-lab](https://github.com/Techdimbr/daily-engineering-lab) · [Landing Page e Schema.org](https://techdimbr.github.io/daily-engineering-lab/)
+- **Portal Corporativo:** [techdim.com.br](https://techdimbr.github.io/techdimbr/) · Contato: [techdimbrasil@gmail.com](mailto:techdimbrasil@gmail.com)
+
 <br/>
 
 <div align="center">
-  <sub>© 2026 TECHDIM INOVA SIMPLES (I.S.) - ME • Todos os direitos reservados • Desenvolvido sob o rigor do Protocolo Kether_1</sub>
+  <sub>© 2026 TECHDIM INOVA SIMPLES (I.S.) - ME • Liderança Técnica: Eng. Deivis Irio Mayer • Todos os direitos reservados • Desenvolvido sob o rigor do Protocolo Kether_1</sub>
 </div>
