@@ -1,0 +1,102 @@
+{
+  "repository": "Techdimbr/techdimbr",
+  "description": "Perfil Profissional & Catálogo Corporativo - Eng. Deivis Irio Mayer | TECHDIM INOVA SIMPLES (I.S.) - ME",
+  "homepage": "https://techdim.com.br",
+  "visibility": "PUBLIC",
+  "archived": false,
+  "language": "HTML",
+  "topics": [
+    "campinas-sp",
+    "cybersecurity",
+    "deivis-irio-mayer",
+    "deivis-mayer",
+    "linux-debian",
+    "software-architect",
+    "techdim",
+    "techdimbr",
+    "clean-architecture",
+    "devsecops",
+    "software-engineering",
+    "web-development"
+  ],
+  "labels": [
+    {
+      "name": "security",
+      "color": "d73a4a",
+      "description": "Security hardening, vulnerability remediation & ISO-27001/LGPD compliance"
+    },
+    {
+      "name": "architecture",
+      "color": "0052cc",
+      "description": "Architectural Decision Record (ADR), modularity & clean architecture"
+    },
+    {
+      "name": "enhancement",
+      "color": "a2eeef",
+      "description": "New feature, capability expansion or UX/UI improvement"
+    },
+    {
+      "name": "performance",
+      "color": "fbca04",
+      "description": "Latency reduction, algorithmic optimization & Core Web Vitals"
+    },
+    {
+      "name": "accessibility",
+      "color": "7057ff",
+      "description": "WCAG 2.1 AA/AAA compliance, ARIA semantics & keyboard navigation"
+    },
+    {
+      "name": "documentation",
+      "color": "0075ca",
+      "description": "Technical documentation, bilingual guides, API specs & CITATION.cff"
+    },
+    {
+      "name": "governance",
+      "color": "5319e7",
+      "description": "OpenSSF best practices, CI/CD pipelines, Dependabot & quality gates"
+    },
+    {
+      "name": "roadmap",
+      "color": "0e8a16",
+      "description": "Strategic engineering milestone & planned evolution (2026-2027)"
+    },
+    {
+      "name": "priority: high",
+      "color": "b60205",
+      "description": "High-impact engineering deliverable or critical security fix"
+    }
+  ],
+  "standards_applied": [
+    "ISO/IEC 29147 Vulnerability Disclosure (SECURITY.md)",
+    "Contributor Covenant v2.1 (CODE_OF_CONDUCT.md)",
+    "Conventional Commits 1.0 & SemVer 2.0 (CONTRIBUTING.md)",
+    "GitHub YAML Issue Forms (bug_report.yml, feature_request.yml, security_audit.yml, config.yml)",
+    "DevSecOps Pull Request Template (PULL_REQUEST_TEMPLATE.md)",
+    "Mandatory Code Owners (CODEOWNERS)",
+    "Citation File Format 1.2.0 (CITATION.cff)",
+    "Enterprise Support Matrix (SUPPORT.md)"
+  ],
+  "structured_issues": [
+    {
+      "id": "GOV-001",
+      "title": "[GOV-001] International Repository Governance, ISO/IEC 29147 Security Policy & OpenSSF Standards",
+      "state": "closed",
+      "labels": [
+        "governance",
+        "security",
+        "documentation"
+      ]
+    },
+    {
+      "id": "ROADMAP-2026",
+      "title": "[ROADMAP] Continuous Architecture Evolution, DevSecOps Quality Gates & Observability — techdimbr",
+      "state": "open",
+      "labels": [
+        "roadmap",
+        "architecture",
+        "enhancement"
+      ]
+    }
+  ],
+  "updated_at": "2026-11-07T02:18:00-03:00"
+}
