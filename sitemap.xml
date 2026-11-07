@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://techdimbr.github.io/techdimbr/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-07</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-07</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/privacidade.html</loc>
@@ -30,11 +30,35 @@
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-11/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-07</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-10/</loc>
     <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-07/</loc>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-07/gpt-6-cyber-openai-lanca-ia-para-ciberseguranca-e-deteccao/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-07/gpt-6-cyber-openai-lanca-ia-para-ciberseguranca-e-deteccao/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-07/sonicwall-falha-em-ssl-vpn-com-bypass-de-mfa-e-explorada/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-07/sonicwall-falha-em-ssl-vpn-com-bypass-de-mfa-e-explorada/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-07/firewall-corporativo-sua-empresa-esta-protegida-ou-apenas/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-07/firewall-corporativo-sua-empresa-esta-protegida-ou-apenas/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-07/infraestrutura-e-redes-construa-uma-base-solida-para-a-sua/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-07/infraestrutura-e-redes-construa-uma-base-solida-para-a-sua/capa.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-06/</loc>

@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 06 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Infraestrutura e Redes: construa uma base sólida para a sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-07/infraestrutura-e-redes-construa-uma-base-solida-para-a-sua/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-07/infraestrutura-e-redes-construa-uma-base-solida-para-a-sua/</guid>
+      <pubDate>Sat, 07 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Redes instáveis e gargalos de hardware geram lentidão diária e travamentos que prejudicam a operação da sua empresa.</description>
+    </item>
+    <item>
+      <title>Firewall corporativo: sua empresa está protegida ou apenas com o equipamento ligado?</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-07/firewall-corporativo-sua-empresa-esta-protegida-ou-apenas/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-07/firewall-corporativo-sua-empresa-esta-protegida-ou-apenas/</guid>
+      <pubDate>Sat, 07 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Ter um firewall fisicamente instalado e ligado na PME não garante segurança se regras de acesso e monitoramento não estiverem ativas.</description>
+    </item>
+    <item>
+      <title>SonicWall: Falha em SSL-VPN com bypass de MFA é explorada em ataques</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-07/sonicwall-falha-em-ssl-vpn-com-bypass-de-mfa-e-explorada/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-07/sonicwall-falha-em-ssl-vpn-com-bypass-de-mfa-e-explorada/</guid>
+      <pubDate>Sat, 07 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A SonicWall corrigiu a falha CVE-2026-19868 no SonicOS, que permite a invasores burlar o SAML e controles de MFA.</description>
+    </item>
+    <item>
+      <title>GPT-6 Cyber: OpenAI lança IA para cibersegurança e detecção de falhas</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-07/gpt-6-cyber-openai-lanca-ia-para-ciberseguranca-e-deteccao/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-07/gpt-6-cyber-openai-lanca-ia-para-ciberseguranca-e-deteccao/</guid>
+      <pubDate>Sat, 07 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A OpenAI anunciou o GPT-6 Cyber, um modelo de inteligência artificial voltado para pesquisas avançadas em cibersegurança, testes de vulnerabilidade e…</description>
+    </item>
     <item>
       <title>Diagnóstico de Infraestrutura: identifique gargalos antes da falha</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-06/diagnostico-de-infraestrutura-identifique-gargalos-antes/</link>
@@ -294,38 +326,6 @@
       <pubDate>Thu, 29 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>Navios chineses próximos a cabos submarinos no Pacífico acendem alerta nos EUA sobre possível sabotagem à infraestrutura que sustenta parte crucial da…</description>
-    </item>
-    <item>
-      <title>Infraestrutura e redes: Wi-Fi, firewall e cabeamento organizados para sua empresa</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-28/infraestrutura-e-redes-wi-fi-firewall-e-cabeamento/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-28/infraestrutura-e-redes-wi-fi-firewall-e-cabeamento/</guid>
-      <pubDate>Wed, 28 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Redes instáveis e pontos cegos de Wi-Fi travam o atendimento e geram frustração na equipe todos os dias.</description>
-    </item>
-    <item>
-      <title>MFA obrigatório: por que senha forte já não basta na sua empresa</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-28/mfa-obrigatorio-por-que-senha-forte-ja-nao-basta-na-sua/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-28/mfa-obrigatorio-por-que-senha-forte-ja-nao-basta-na-sua/</guid>
-      <pubDate>Wed, 28 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Senhas complexas caem em phishing e vazamentos corporativos, tornando a autenticação multifator indispensável para bloquear invasões.</description>
-    </item>
-    <item>
-      <title>Vulnerabilidades de Infraestrutura: Ataques exploram falhas críticas em redes</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-28/vulnerabilidades-de-infraestrutura-ataques-exploram-falhas/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-28/vulnerabilidades-de-infraestrutura-ataques-exploram-falhas/</guid>
-      <pubDate>Wed, 28 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>Atacantes estão explorando ativamente vulnerabilidades em infraestruturas de rede críticas, como firewalls e VPNs, através de falhas PHP2Shell em…</description>
-    </item>
-    <item>
-      <title>Discord: Mensagens de servidores públicos agora pesquisáveis no Google</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-28/discord-mensagens-de-servidores-publicos-agora-pesquisaveis/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-28/discord-mensagens-de-servidores-publicos-agora-pesquisaveis/</guid>
-      <pubDate>Wed, 28 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>Discord passará a indexar mensagens de servidores públicos (tipo &#x27;Descobrir&#x27;) em mecanismos de busca, como o Google, a partir de dezembro.</description>
     </item>
   </channel>
 </rss>
