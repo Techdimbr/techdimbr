@@ -1,8 +1,8 @@
 /* Blog TECHDIM: complementa o styles.css do site */
 .blog-artigo, .blog-lista { max-width: 860px; padding-top: 7rem; padding-bottom: 4rem; }
 .blog-migalhas { font-family: var(--font-mono); font-size: .8rem; color: var(--text-muted); margin-bottom: 1.2rem; line-height: 1.6; }
-.blog-migalhas a { color: var(--cyan-neon); text-decoration: none; }
-.blog-migalhas a:hover { text-decoration: underline; }
+.blog-migalhas a { color: var(--cyan-neon); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.blog-migalhas a:hover { text-decoration-thickness: 2px; }
 .blog-topo h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.15; color: var(--text-pure); margin: .4rem 0 1rem; }
 .blog-rotulo-linha { display: flex; flex-wrap: wrap; gap: .6rem 1rem; align-items: center; font-family: var(--font-mono); font-size: .82rem; color: var(--text-muted); }
 .blog-rotulo { display: inline-block; font-family: var(--font-mono); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--cyan-neon); }
@@ -32,8 +32,8 @@
 .blog-grade { display: grid; gap: 1.2rem; margin-top: 2rem; }
 .blog-cartao { padding: 1.4rem 1.5rem; border: 1px solid var(--border-cyber); border-radius: var(--radius-md); background: var(--bg-card); transition: background .25s var(--ease), transform .25s var(--ease); }
 .blog-cartao:hover, .blog-cartao:focus-within { background: var(--bg-card-hover); transform: translateY(-2px); }
-.blog-cartao h3 { font-family: var(--font-display); font-size: 1.3rem; line-height: 1.3; margin: .4rem 0 .7rem; }
-.blog-cartao h3 a { color: var(--text-pure); text-decoration: none; }
+.blog-cartao h2 { font-family: var(--font-display); font-size: 1.3rem; line-height: 1.3; margin: .4rem 0 .7rem; }
+.blog-cartao h2 a { color: var(--text-pure); text-decoration: none; }
 .blog-cartao p { color: var(--text-muted); line-height: 1.6; margin-bottom: .7rem; }
 .blog-cartao ul { margin: 0 0 .9rem 1.1rem; color: var(--text-muted); line-height: 1.55; }
 .blog-cartao li a { color: var(--text-main); text-decoration: none; }
