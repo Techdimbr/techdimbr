@@ -1,0 +1,56 @@
+name: "🐛 Bug Report / Relatório de Falha Técnica"
+description: "Reporte uma falha determinística, regressão ou comportamento inesperado (Padrão Internacional ISO/IEEE)."
+title: "[BUG] "
+labels: ["bug", "priority: high"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🔍 Relatório Estruturado de Anomalia Técnica
+        Preencha os campos abaixo com precisão para permitir a reprodução determinística e correção rápida.
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severidade Operacional / Impact Severity"
+      description: "Qual o impacto desta falha no ambiente de produção ou desenvolvimento?"
+      options:
+        - "P0 — Crítica (Indisponibilidade total, perda de dados ou risco de segurança)"
+        - "P1 — Alta (Funcionalidade principal degradada sem contorno imediato)"
+        - "P2 — Média (Comportamento incorreto com workaround disponível)"
+        - "P3 — Baixa (Ajuste cosmético, UI/UX menor ou documentação)"
+      default: 2
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Descrição Técnica do Problema / Bug Description"
+      description: "Descreva claramente o comportamento observado versus o comportamento esperado."
+      placeholder: "Ao executar o módulo X com o parâmetro Y, ocorre..."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Passos para Reprodução / Steps to Reproduce"
+      description: "Sequência exata de comandos ou ações para reproduzir o problema."
+      value: |
+        1. Execute '...'
+        2. Informe os parâmetros '...'
+        3. Observe o erro na saída '...'
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: "Ambiente de Execução / Environment"
+      description: "SO, versão da linguagem (Python/Node/Kotlin), navegador ou container."
+      placeholder: "Ex.: Debian 13 (Trixie) / Python 3.13 / Node 22 LTS"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs, Stack Trace ou Diagnóstico"
+      description: "Cole os logs relevantes (remova qualquer dado sensível antes de enviar)."
+      render: shell

@@ -1,0 +1,28 @@
+name: "🛡️ Security & Hardening Audit / Auditoria DevSecOps"
+description: "Registre melhorias preventivas de segurança (SAST, DAST, CSP, IAM, LGPD) que NÃO exponham vulnerabilidades zero-day."
+title: "[SEC-AUDIT] "
+labels: ["security", "governance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > ⚠️ **ATENÇÃO**: Para vulnerabilidades exploráveis ativas, utilize exclusivamente o canal privado **[Security Advisories](../security/advisories/new)**. Use este formulário apenas para melhorias preventivas de hardening, conformidade e DevSecOps.
+  - type: dropdown
+    id: standard
+    attributes:
+      label: "Framework de Referência / Security Standard"
+      options:
+        - "OWASP Top 10 / ASVS (Web & API Security)"
+        - "CIS Benchmarks / STIG (Linux Debian & Containers)"
+        - "ISO/IEC 27001 & LGPD (Privacidade e Governança de Dados)"
+        - "OpenSSF Best Practices & Supply Chain Security (Dependabot / SBOM)"
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "Escopo do Hardening e Controles Propostos"
+      description: "Descreva os controles preventivos a serem implementados ou auditados."
+    validations:
+      required: true

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "techdimbr — Perfil Profissional & Catálogo Corporativo - Eng. Deivis Irio Mayer | TECHDIM INOVA SIMPLES (I.S.) - ME"
+message: "If you use or reference this software or architecture, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: "Mayer"
+    given-names: "Deivis Irio"
+    affiliation: "TECHDIM INOVA SIMPLES (I.S.) - ME"
+    website: "https://techdimbr.github.io/deivis-mayer/"
+repository-code: "https://github.com/Techdimbr/techdimbr"
+url: "https://techdim.com.br"
+date-released: "2026-11-07"
+version: "1.0.0"
+keywords:
+  - "software-engineering"
+  - "clean-architecture"
+  - "cybersecurity"
+  - "techdim"
+  - "deivis-mayer"

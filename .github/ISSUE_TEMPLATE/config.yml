@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "🛡️ Reportar Vulnerabilidade de Segurança (ISO/IEC 29147)"
+    url: "https://github.com/Techdimbr/techdimbr/security/advisories/new"
+    about: "Canal privado e criptografado para divulgação responsável de vulnerabilidades de segurança."
+  - name: "🌐 Portal Corporativo TECHDIM Inova Simples"
+    url: "https://techdim.com.br"
+    about: "Consultoria em Engenharia de Software, Inteligência Artificial, Cibersegurança e Infraestrutura."
+  - name: "👨‍💻 Portfólio Executivo — Eng. Deivis Irio Mayer"
+    url: "https://techdimbr.github.io/deivis-mayer/"
+    about: "Arquitetura de Soluções, Google Cloud, Antigravity & Ecossistema Kether_1."

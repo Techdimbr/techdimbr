@@ -1,0 +1,48 @@
+name: "🚀 Feature Request & ADR / Proposta de Evolução Arquitetural"
+description: "Proponha uma nova funcionalidade, otimização de performance ou Registro de Decisão de Arquitetura (ADR)."
+title: "[FEAT] "
+labels: ["enhancement", "architecture"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 💡 Proposta de Engenharia & Evolução de Produto
+        Utilize este formulário para especificar novas capacidades técnicas, melhorias de UX/Acessibilidade ou refatorações arquiteturais.
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Domínio da Melhoria / Engineering Domain"
+      options:
+        - "Arquitetura & Core Engine (Clean Architecture / Modularidade)"
+        - "Inteligência Artificial & Agentes (Gemini API / RAG / Automação)"
+        - "Segurança & Compliance (Hardening / Zero-Trust / LGPD)"
+        - "Performance & Observabilidade (Latência / Memória / Telemetria)"
+        - "Interface, UX & Acessibilidade (WCAG 2.1 AA / Design System)"
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Contexto e Problema de Negócio / Problem Statement"
+      description: "Qual gargalo técnico, oportunidade estratégica ou necessidade de usuário esta proposta resolve?"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Especificação da Solução Proposta / Proposed Architecture"
+      description: "Detalhe a abordagem técnica, contratos de API, impacto em dados e critérios de aceitação."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Critérios de Aceitação / Definition of Done (DoD)"
+      value: |
+        - [ ] Implementação modular concluída e documentada
+        - [ ] Testes automatizados cobrindo o fluxo principal e casos de borda
+        - [ ] Auditoria de segurança (Zero Plaintext Secrets / Input Validation) aprovada
+        - [ ] Documentação (`README.md` / ADR) atualizada
+    validations:
+      required: true
