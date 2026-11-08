@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 07 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Software Sob Medida: Solução para processos únicos da sua PME.</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-08/software-sob-medida-solucao-para-processos-unicos-da-sua-pme/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-08/software-sob-medida-solucao-para-processos-unicos-da-sua-pme/</guid>
+      <pubDate>Sun, 08 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Sistemas genéricos forçam sua PME a adaptar processos, gerando ineficiência e gargalos operacionais.</description>
+    </item>
+    <item>
+      <title>MFA: Por que apenas uma senha forte não protege sua PME de ciberataques</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-08/mfa-por-que-apenas-uma-senha-forte-nao-protege-sua-pme/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-08/mfa-por-que-apenas-uma-senha-forte-nao-protege-sua-pme/</guid>
+      <pubDate>Sun, 08 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Ataques de phishing e engenharia social evoluíram para roubar credenciais, tornando senhas fortes insuficientes para a segurança corporativa.</description>
+    </item>
+    <item>
+      <title>DEFESA CONTRA FALHAS: SonicWall alerta sobre vulnerabilidade crítica em SSL-VPN</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-08/defesa-contra-falhas-sonicwall-alerta-sobre-vulnerabilidade/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-08/defesa-contra-falhas-sonicwall-alerta-sobre-vulnerabilidade/</guid>
+      <pubDate>Sun, 08 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A SonicWall lançou atualizações de segurança para corrigir sete falhas em seus firewalls SonicOS, incluindo uma vulnerabilidade de bypass de autenticação…</description>
+    </item>
+    <item>
+      <title>Ciberataque: Hackers alteram temperatura de freezers em bancos de sangue na França</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-08/ciberataque-hackers-alteram-temperatura-de-freezers/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-08/ciberataque-hackers-alteram-temperatura-de-freezers/</guid>
+      <pubDate>Sun, 08 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Hackers alteraram remotamente a temperatura de freezers em três instalações do Estabelecimento Francês de Sangue (EFS), programando-os para até 110 ºC.</description>
+    </item>
     <item>
       <title>Infraestrutura e Redes: construa uma base sólida para a sua PME</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-07/infraestrutura-e-redes-construa-uma-base-solida-para-a-sua/</link>
@@ -294,38 +326,6 @@
       <pubDate>Fri, 30 Oct 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>Google Gemini agora permite criar, visualizar e editar documentos (PDFs, Docs, Sheets, apresentações) diretamente no chat, sem sair da interface.</description>
-    </item>
-    <item>
-      <title>Suporte de TI: Sua PME precisa de um time proativo, não de um &#x27;quebra-galho&#x27;.</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-29/suporte-de-ti-sua-pme-precisa-de-um-time-proativo-nao/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-29/suporte-de-ti-sua-pme-precisa-de-um-time-proativo-nao/</guid>
-      <pubDate>Thu, 29 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Muitas PMEs enfrentam interrupções e lentidão por falta de um suporte de TI dedicado e estratégico, que vá além do reativo.</description>
-    </item>
-    <item>
-      <title>LGPD na prática: 4 itens que o auditor de dados pede primeiro na sua PME</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-29/lgpd-na-pratica-4-itens-que-o-auditor-de-dados-pede-primeiro/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-29/lgpd-na-pratica-4-itens-que-o-auditor-de-dados-pede-primeiro/</guid>
-      <pubDate>Thu, 29 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Auditorias de LGPD focam em evidências de conformidade, não apenas em políticas escritas. Prepare-se para mostrar como sua empresa protege dados.</description>
-    </item>
-    <item>
-      <title>Cisco: Zero-day em firewalls ASA/FTD explorado para derrubar dispositivos SSL VPN</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-29/cisco-zero-day-em-firewalls-asa-ftd-explorado-para-derrubar/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-29/cisco-zero-day-em-firewalls-asa-ftd-explorado-para-derrubar/</guid>
-      <pubDate>Thu, 29 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>Cisco lança patches para CVE-2026-76418, uma vulnerabilidade zero-day de alta gravidade em firewalls ASA e FTD, já explorada ativamente.</description>
-    </item>
-    <item>
-      <title>Cabos Submarinos: Alerta nos EUA sobre risco de sabotagem à infraestrutura global da internet</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-29/cabos-submarinos-alerta-nos-eua-sobre-risco-de-sabotagem/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-29/cabos-submarinos-alerta-nos-eua-sobre-risco-de-sabotagem/</guid>
-      <pubDate>Thu, 29 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>Navios chineses próximos a cabos submarinos no Pacífico acendem alerta nos EUA sobre possível sabotagem à infraestrutura que sustenta parte crucial da…</description>
     </item>
   </channel>
 </rss>
