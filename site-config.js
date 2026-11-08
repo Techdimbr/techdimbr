@@ -44,7 +44,7 @@ window.TECHDIM_CONFIG = {
   // Com preço e sem link, o botão vira "Contratar/Comprar pelo WhatsApp" com o valor na mensagem.
   loja: {
     'workstation-ia-ryzen9':     { link: '', preco: '', imagem: '' },
-    'suporte-ti-especializado':  { link: '', preco: 'R$ 500,00', unidade: 'por chamado', imagem: 'assets/loja/suporte-ti-especializado.jpg' },
+    'suporte-ti-especializado':  { link: 'https://buy.stripe.com/6oU00ideJ0PZ4cg6wR8bS01', preco: 'R$ 150,00', unidade: 'por chamado', imagem: 'assets/loja/suporte-ti-especializado.jpg' },
     'kit-unifi-ubiquiti':        { link: '', preco: '', imagem: '', gtin: '' },
     'pixel-11-pro-hardening':    { link: '', preco: '', imagem: '', gtin: '' },
     'thinkpad-l14-hardening':    { link: '', preco: '', imagem: '', gtin: '' },

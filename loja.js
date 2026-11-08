@@ -24,7 +24,7 @@
     }
     if (botao && /^https:\/\//.test(dados.link || '')) {
       botao.href = dados.link;
-      botao.textContent = 'Comprar';
+      botao.textContent = card.dataset.categoria === 'servico' ? 'Contratar' : 'Comprar';
       botao.dataset.compra = card.dataset.produto;
     } else if (botao && dados.preco) {
       const servico = card.dataset.categoria === 'servico';
