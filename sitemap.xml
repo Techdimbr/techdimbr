@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://techdimbr.github.io/techdimbr/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/privacidade.html</loc>
@@ -30,11 +30,35 @@
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-11/</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-10/</loc>
     <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-09/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-09/claude-ai-marca-d-agua-invisivel-agora-em-mais-modelos/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-09/claude-ai-marca-d-agua-invisivel-agora-em-mais-modelos/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-09/ciberseguranca-ataque-a-qubole-expoe-dados-e-credenciais/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-09/ciberseguranca-ataque-a-qubole-expoe-dados-e-credenciais/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-09/lgpd-na-pratica-prepare-sua-pme-para-a-auditoria-com-estes-4/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-09/lgpd-na-pratica-prepare-sua-pme-para-a-auditoria-com-estes-4/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-09/lgpd-adequacao-a-lgpd-sem-travar-a-operacao-da-sua-pme/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-09/lgpd-adequacao-a-lgpd-sem-travar-a-operacao-da-sua-pme/capa.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-08/</loc>
