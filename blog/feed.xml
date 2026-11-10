@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 09 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>DIAGNÓSTICO: Identifique gargalos e vulnerabilidades antes que afetem sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-10/diagnostico-identifique-gargalos-e-vulnerabilidades-antes/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-10/diagnostico-identifique-gargalos-e-vulnerabilidades-antes/</guid>
+      <pubDate>Tue, 10 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Muitas PMEs operam com infraestrutura de TI sem visibilidade clara dos riscos, levando a falhas inesperadas e perda de produtividade.</description>
+    </item>
+    <item>
+      <title>Atualização de Software: Mantenha seus sistemas seguros e evite vulnerabilidades críticas</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-10/atualizacao-de-software-mantenha-seus-sistemas-seguros/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-10/atualizacao-de-software-mantenha-seus-sistemas-seguros/</guid>
+      <pubDate>Tue, 10 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Atualizações de software não são apenas para novas funcionalidades; elas corrigem falhas de segurança que hackers exploram ativamente.</description>
+    </item>
+    <item>
+      <title>Ataque Blind Eagle: Falsas notificações judiciais espalham RAT na América Latina</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-10/ataque-blind-eagle-falsas-notificacoes-judiciais-espalham/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-10/ataque-blind-eagle-falsas-notificacoes-judiciais-espalham/</guid>
+      <pubDate>Tue, 10 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>O grupo Blind Eagle (APT-C-36) reativou campanhas de phishing com iscas judiciais e administrativas em português e espanhol, visando empresas na América…</description>
+    </item>
+    <item>
+      <title>Meta Muse Ember: IA ultrabarata otimiza tarefas repetitivas em PMEs brasileiras</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-10/meta-muse-ember-ia-ultrabarata-otimiza-tarefas-repetitivas/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-10/meta-muse-ember-ia-ultrabarata-otimiza-tarefas-repetitivas/</guid>
+      <pubDate>Tue, 10 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A Meta lançou o Muse Ember, seu menor e mais eficiente modelo de IA até o momento, focado em tarefas repetitivas de alto volume como análise de…</description>
+    </item>
     <item>
       <title>LGPD: Adequação à LGPD sem travar a operação da sua PME é possível</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-09/lgpd-adequacao-a-lgpd-sem-travar-a-operacao-da-sua-pme/</link>
@@ -294,38 +326,6 @@
       <pubDate>Sun, 01 Nov 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>Entire, plataforma Git do ex-CEO do GitHub, Thomas Dohmke, expandiu suas operações para o Brasil com infraestrutura de servidores locais para hospedagem…</description>
-    </item>
-    <item>
-      <title>Infraestrutura e redes: garanta estabilidade e segurança para sua PME</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-31/infraestrutura-e-redes-garanta-estabilidade-e-seguranca/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-31/infraestrutura-e-redes-garanta-estabilidade-e-seguranca/</guid>
-      <pubDate>Sat, 31 Oct 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Redes instáveis e gargalos de hardware geram lentidão diária e interrompem a operação das equipes na sua empresa.</description>
-    </item>
-    <item>
-      <title>Phishing: Como identificar e se defender de ataques que vão além do e-mail mal escrito</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-31/phishing-como-identificar-e-se-defender-de-ataques-que-vao/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-31/phishing-como-identificar-e-se-defender-de-ataques-que-vao/</guid>
-      <pubDate>Sat, 31 Oct 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Ataques de phishing evoluíram e agora utilizam técnicas sofisticadas, como engenharia social e falsificação de identidade, para enganar usuários.</description>
-    </item>
-    <item>
-      <title>Vulnerabilidade Ivanti: Falhas em cadeia concedem acesso root não autenticado</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-31/vulnerabilidade-ivanti-falhas-em-cadeia-concedem-acesso-root/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-31/vulnerabilidade-ivanti-falhas-em-cadeia-concedem-acesso-root/</guid>
-      <pubDate>Sat, 31 Oct 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A CISA adicionou falhas críticas no Ivanti Connect Secure (ICS) ao seu catálogo KEV após exploração ativa em campo, revelando uma cadeia de ataque.</description>
-    </item>
-    <item>
-      <title>Entire: Plataforma Git com IA e servidores locais no Brasil impulsiona devs</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-10-31/entire-plataforma-git-com-ia-e-servidores-locais-no-brasil/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-10-31/entire-plataforma-git-com-ia-e-servidores-locais-no-brasil/</guid>
-      <pubDate>Sat, 31 Oct 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>A Entire, nova plataforma de hospedagem Git do ex-CEO do GitHub, Thomas Dohmke, expandiu operações para o Brasil com infraestrutura de servidores locais.</description>
     </item>
   </channel>
 </rss>
