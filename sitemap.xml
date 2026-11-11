@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://techdimbr.github.io/techdimbr/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/privacidade.html</loc>
@@ -30,11 +30,35 @@
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-11/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-11</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-10/</loc>
     <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-11/</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-11/claude-ai-novas-ferramentas-de-produtividade-para-empresas/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-11/claude-ai-novas-ferramentas-de-produtividade-para-empresas/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-11/vulnerabilidades-zero-day-n-able-hotfixes-urgentes/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-11/vulnerabilidades-zero-day-n-able-hotfixes-urgentes/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-11/gerenciamento-de-senhas-cofre-corporativo-e-essencial/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-11/gerenciamento-de-senhas-cofre-corporativo-e-essencial/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-11/backup-gerenciado-garanta-que-sua-pme-consiga-recuperar/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-11/backup-gerenciado-garanta-que-sua-pme-consiga-recuperar/capa.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-10/</loc>

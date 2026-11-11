@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 10 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Backup gerenciado: garanta que sua PME consiga recuperar dados e operar após falhas</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-11/backup-gerenciado-garanta-que-sua-pme-consiga-recuperar/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-11/backup-gerenciado-garanta-que-sua-pme-consiga-recuperar/</guid>
+      <pubDate>Wed, 11 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Empresas frequentemente acumulam cópias de segurança sem nunca validar se os arquivos corrompidos podem ser restaurados com integridade.</description>
+    </item>
+    <item>
+      <title>GERENCIAMENTO DE SENHAS: Cofre corporativo é essencial para a segurança da sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-11/gerenciamento-de-senhas-cofre-corporativo-e-essencial/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-11/gerenciamento-de-senhas-cofre-corporativo-e-essencial/</guid>
+      <pubDate>Wed, 11 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Senhas fracas ou reutilizadas são portas de entrada comuns para ciberataques, expondo dados e sistemas críticos da sua PME.</description>
+    </item>
+    <item>
+      <title>Vulnerabilidades Zero-Day N-able: Hotfixes urgentes para plataforma RMM</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-11/vulnerabilidades-zero-day-n-able-hotfixes-urgentes/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-11/vulnerabilidades-zero-day-n-able-hotfixes-urgentes/</guid>
+      <pubDate>Wed, 11 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A N-able lançou hotfixes de segurança para vulnerabilidades zero-day críticas em sua plataforma N-central RMM, forçando a desativação de ambientes…</description>
+    </item>
+    <item>
+      <title>Claude AI: Novas ferramentas de produtividade para empresas em fase beta</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-11/claude-ai-novas-ferramentas-de-produtividade-para-empresas/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-11/claude-ai-novas-ferramentas-de-produtividade-para-empresas/</guid>
+      <pubDate>Wed, 11 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A Anthropic lançou Claude Meetings, Claude Sheets e Claude Whiteboards, expandindo o assistente Claude para tarefas de escritório, atualmente em fase beta.</description>
+    </item>
     <item>
       <title>DIAGNÓSTICO: Identifique gargalos e vulnerabilidades antes que afetem sua PME</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-10/diagnostico-identifique-gargalos-e-vulnerabilidades-antes/</link>
@@ -294,38 +326,6 @@
       <pubDate>Mon, 02 Nov 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A Anthropic alerta sobre softwares maliciosos com IA capazes de infectar e se espalhar de forma autônoma em aparelhos de Internet das Coisas (IoT).</description>
-    </item>
-    <item>
-      <title>Backup gerenciado: garanta que sua PME consiga recuperar dados quando necessário</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-01/backup-gerenciado-garanta-que-sua-pme-consiga-recuperar/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-01/backup-gerenciado-garanta-que-sua-pme-consiga-recuperar/</guid>
-      <pubDate>Sun, 01 Nov 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Ter arquivos copiados não garante recuperação se o processo nunca foi validado por testes de restauração.</description>
-    </item>
-    <item>
-      <title>Shadow IT: O perigo invisível que sua PME precisa mapear e controlar</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-01/shadow-it-o-perigo-invisivel-que-sua-pme-precisa-mapear/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-01/shadow-it-o-perigo-invisivel-que-sua-pme-precisa-mapear/</guid>
-      <pubDate>Sun, 01 Nov 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Shadow IT refere-se a softwares ou serviços de TI usados na empresa sem aprovação ou conhecimento da equipe de TI, elevando riscos operacionais.</description>
-    </item>
-    <item>
-      <title>Ivanti Connect Secure: CISA alerta sobre exploração ativa de falhas críticas</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-01/ivanti-connect-secure-cisa-alerta-sobre-exploracao-ativa/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-01/ivanti-connect-secure-cisa-alerta-sobre-exploracao-ativa/</guid>
-      <pubDate>Sun, 01 Nov 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A CISA (Agência de Cibersegurança e Infraestrutura dos EUA) adicionou falhas do Ivanti Connect Secure (ICS) ao catálogo KEV, devido à exploração ativa.</description>
-    </item>
-    <item>
-      <title>IA Corporativa: Entire traz hospedagem Git com IA e infraestrutura local para o Brasil</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-01/ia-corporativa-entire-traz-hospedagem-git-com-ia/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-01/ia-corporativa-entire-traz-hospedagem-git-com-ia/</guid>
-      <pubDate>Sun, 01 Nov 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>Entire, plataforma Git do ex-CEO do GitHub, Thomas Dohmke, expandiu suas operações para o Brasil com infraestrutura de servidores locais para hospedagem…</description>
     </item>
   </channel>
 </rss>
