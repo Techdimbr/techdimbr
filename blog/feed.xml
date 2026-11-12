@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 11 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>HARDENING DE SERVIDORES: Blindagem técnica para proteger os ativos críticos da sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-12/hardening-de-servidores-blindagem-tecnica-para-proteger/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-12/hardening-de-servidores-blindagem-tecnica-para-proteger/</guid>
+      <pubDate>Thu, 12 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Servidores e estações de trabalho mal configurados expõem portas, serviços desnecessários e credenciais padrão a invasões.</description>
+    </item>
+    <item>
+      <title>Shadow IT: o risco invisível que pode estar rodando na sua empresa hoje</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-12/shadow-it-o-risco-invisivel-que-pode-estar-rodando-na-sua/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-12/shadow-it-o-risco-invisivel-que-pode-estar-rodando-na-sua/</guid>
+      <pubDate>Thu, 12 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Shadow IT ocorre quando colaboradores utilizam softwares, nuvens ou dispositivos não aprovados pelo TI para realizar tarefas corporativas.</description>
+    </item>
+    <item>
+      <title>SignDrop: Nova Zero-Day no Windows concede privilégios SYSTEM a cibercriminosos</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-12/signdrop-nova-zero-day-no-windows-concede-privilegios-system/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-12/signdrop-nova-zero-day-no-windows-concede-privilegios-system/</guid>
+      <pubDate>Thu, 12 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A zero-day SignDrop permite a atacantes obter privilégios SYSTEM no Windows ao explorar uma falha na mitigação do componente CLFS.</description>
+    </item>
+    <item>
+      <title>VAZAMENTO DE DADOS: Grok expõe informações confidenciais de 35 mil aplicativos</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-12/vazamento-de-dados-grok-expoe-informacoes-confidenciais/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-12/vazamento-de-dados-grok-expoe-informacoes-confidenciais/</guid>
+      <pubDate>Thu, 12 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Mais de 35 mil aplicativos criados no Grok Build tiveram dados confidenciais expostos, incluindo informações médicas, comerciais e até da SpaceX.</description>
+    </item>
     <item>
       <title>Backup gerenciado: garanta que sua PME consiga recuperar dados e operar após falhas</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-11/backup-gerenciado-garanta-que-sua-pme-consiga-recuperar/</link>
@@ -294,38 +326,6 @@
       <pubDate>Tue, 03 Nov 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A nova brecha no Smart Sampa permitiu acesso indevido a 17 mil câmeras, expondo imagens de ruas onde residem autoridades e dados sensíveis.</description>
-    </item>
-    <item>
-      <title>Governança de Acesso: Reduza riscos com controle estrito de privilégios na sua PME</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-02/governanca-de-acesso-reduza-riscos-com-controle-estrito/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-02/governanca-de-acesso-reduza-riscos-com-controle-estrito/</guid>
-      <pubDate>Mon, 02 Nov 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>A maioria dos ataques cibernéticos explora credenciais fracas ou acessos excessivos, transformando usuários comuns em portas de entrada para brechas…</description>
-    </item>
-    <item>
-      <title>Offboarding: O acesso que ficou aberto é porta para riscos na sua PME</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-02/offboarding-o-acesso-que-ficou-aberto-e-porta-para-riscos/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-02/offboarding-o-acesso-que-ficou-aberto-e-porta-para-riscos/</guid>
-      <pubDate>Mon, 02 Nov 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>O processo de offboarding é essencial para a segurança da informação, garantindo que ex-colaboradores não mantenham acessos a sistemas e dados.</description>
-    </item>
-    <item>
-      <title>Ransomware C3RB3R: Synology alerta sobre ataques a dispositivos NAS desatualizados</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-02/ransomware-c3rb3r-synology-alerta-sobre-ataques/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-02/ransomware-c3rb3r-synology-alerta-sobre-ataques/</guid>
-      <pubDate>Mon, 02 Nov 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A Synology alertou clientes para atualizarem seus dispositivos NAS imediatamente devido a um aumento nos ataques de ransomware C3RB3R, que exploram…</description>
-    </item>
-    <item>
-      <title>IA e IoT: O perigo dos &quot;vermes&quot; digitais autônomos em dispositivos conectados</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-02/ia-e-iot-o-perigo-dos-vermes-digitais-autonomos/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-02/ia-e-iot-o-perigo-dos-vermes-digitais-autonomos/</guid>
-      <pubDate>Mon, 02 Nov 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>A Anthropic alerta sobre softwares maliciosos com IA capazes de infectar e se espalhar de forma autônoma em aparelhos de Internet das Coisas (IoT).</description>
     </item>
   </channel>
 </rss>
