@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 12 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>INFRAESTRUTURA: Construa uma base de redes sólida para a sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-13/infraestrutura-construa-uma-base-de-redes-solida-para-a-sua/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-13/infraestrutura-construa-uma-base-de-redes-solida-para-a-sua/</guid>
+      <pubDate>Fri, 13 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Redes instáveis e gargalos de hardware reduzem a produtividade diária e geram lentidão sistêmica nas operações da sua empresa.</description>
+    </item>
+    <item>
+      <title>Offboarding de colaboradores: como garantir a segurança após o desligamento</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-13/offboarding-de-colaboradores-como-garantir-a-seguranca-apos/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-13/offboarding-de-colaboradores-como-garantir-a-seguranca-apos/</guid>
+      <pubDate>Fri, 13 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>O offboarding estruturado revoga acessos críticos imediatamente após o desligamento de funcionários.</description>
+    </item>
+    <item>
+      <title>Check Point Gateways: Ataques PHP2Shell exploram falhas e instalam wiper em VMware ESXi</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-13/check-point-gateways-ataques-php2shell-exploram-falhas/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-13/check-point-gateways-ataques-php2shell-exploram-falhas/</guid>
+      <pubDate>Fri, 13 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>Ataques recentes exploraram vulnerabilidades PHP2Shell (CVE-2026-109618, CVE-2026-109619) em gateways Check Point, instalando um wiper destrutivo em…</description>
+    </item>
+    <item>
+      <title>APAGÃO MICROSOFT: Falha global força empresas a usar fax e telefone</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-13/apagao-microsoft-falha-global-forca-empresas-a-usar-fax/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-13/apagao-microsoft-falha-global-forca-empresas-a-usar-fax/</guid>
+      <pubDate>Fri, 13 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A interrupção dos serviços Microsoft afetou mais de 30 milhões de assinantes, obrigando empresas a recorrer a fax, telefone e Bluetooth para manter…</description>
+    </item>
     <item>
       <title>HARDENING DE SERVIDORES: Blindagem técnica para proteger os ativos críticos da sua PME</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-12/hardening-de-servidores-blindagem-tecnica-para-proteger/</link>
@@ -294,38 +326,6 @@
       <pubDate>Wed, 04 Nov 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>Anatel determinou o bloqueio de SMS corporativos (A2P) enviados por códigos curtos não cadastrados, visando combater golpes de mensagens falsas.</description>
-    </item>
-    <item>
-      <title>Migração de Servidor: modernize sua estrutura sem parar a operação da sua PME</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-03/migracao-de-servidor-modernize-sua-estrutura-sem-parar/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-03/migracao-de-servidor-modernize-sua-estrutura-sem-parar/</guid>
-      <pubDate>Tue, 03 Nov 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Trocar o servidor antigo sem interromper o expediente evita prejuízos e mantém a equipe produtiva durante o processo de modernização tecnológica.</description>
-    </item>
-    <item>
-      <title>IA Segura: Implemente Inteligência Artificial sem expor dados de clientes</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-03/ia-segura-implemente-inteligencia-artificial-sem-expor-dados/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-03/ia-segura-implemente-inteligencia-artificial-sem-expor-dados/</guid>
-      <pubDate>Tue, 03 Nov 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>A integração de IA em PMEs otimiza processos, mas exige atenção rigorosa à privacidade para evitar vazamentos de dados sensíveis de clientes.</description>
-    </item>
-    <item>
-      <title>LLMjacking: Google alerta sobre ataques que geram até US$1 milhão em custos na nuvem</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-03/llmjacking-google-alerta-sobre-ataques-que-geram-ate-us-1/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-03/llmjacking-google-alerta-sobre-ataques-que-geram-ate-us-1/</guid>
-      <pubDate>Tue, 03 Nov 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>Google alertou sobre LLMjacking, onde atacantes sequestram acesso a LLMs para usar recursos caros de computação em nuvem, gerando até US$1 milhão em…</description>
-    </item>
-    <item>
-      <title>Falha de Segurança no Smart Sampa expõe 17 mil câmeras e dados sensíveis</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-03/falha-de-seguranca-no-smart-sampa-expoe-17-mil-cameras/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-03/falha-de-seguranca-no-smart-sampa-expoe-17-mil-cameras/</guid>
-      <pubDate>Tue, 03 Nov 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>A nova brecha no Smart Sampa permitiu acesso indevido a 17 mil câmeras, expondo imagens de ruas onde residem autoridades e dados sensíveis.</description>
     </item>
   </channel>
 </rss>
