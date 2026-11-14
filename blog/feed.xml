@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 13 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Migração de Servidor: Mude sua infraestrutura sem paralisar a operação da sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-14/migracao-de-servidor-mude-sua-infraestrutura-sem-paralisar/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-14/migracao-de-servidor-mude-sua-infraestrutura-sem-paralisar/</guid>
+      <pubDate>Sat, 14 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Migrar servidores é um desafio crítico para PMEs, que frequentemente adiam a modernização por medo de interrupções e perda de produtividade.</description>
+    </item>
+    <item>
+      <title>IA Segura: Como usar inteligência artificial sem expor dados confidenciais da sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-14/ia-segura-como-usar-inteligencia-artificial-sem-expor-dados/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-14/ia-segura-como-usar-inteligencia-artificial-sem-expor-dados/</guid>
+      <pubDate>Sat, 14 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>A integração de IA em processos corporativos pode otimizar tarefas, mas exige cautela para evitar a exposição indevida de dados sensíveis de clientes ou…</description>
+    </item>
+    <item>
+      <title>Vulnerabilidades AMD: Ataques Mior e Skyfall expõem VMs Confidenciais</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-14/vulnerabilidades-amd-ataques-mior-e-skyfall-expoem-vms/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-14/vulnerabilidades-amd-ataques-mior-e-skyfall-expoem-vms/</guid>
+      <pubDate>Sat, 14 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>Os ataques Mior e Skyfall permitem que hosts maliciosos leiam e, no caso de Mior, modifiquem dados em Máquinas Virtuais (VMs) protegidas por AMD SEV-SNP.</description>
+    </item>
+    <item>
+      <title>IA na Educação: MEC regulamenta uso, com impacto em plataformas e prazo de 12 meses</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-14/ia-na-educacao-mec-regulamenta-uso-com-impacto/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-14/ia-na-educacao-mec-regulamenta-uso-com-impacto/</guid>
+      <pubDate>Sat, 14 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>O MEC homologou diretrizes para o uso responsável de IA na educação, estabelecendo regras claras para escolas, universidades e empresas de plataformas…</description>
+    </item>
     <item>
       <title>INFRAESTRUTURA: Construa uma base de redes sólida para a sua PME</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-13/infraestrutura-construa-uma-base-de-redes-solida-para-a-sua/</link>
@@ -294,38 +326,6 @@
       <pubDate>Thu, 05 Nov 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>O Fundo Garantidor de Créditos (FGC) detectou acesso não autorizado a informações pessoais e dados de pagamento de garantia na última semana de outubro.</description>
-    </item>
-    <item>
-      <title>Diagnóstico de Infraestrutura: identifique gargalos e falhas na sua rede</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-04/diagnostico-de-infraestrutura-identifique-gargalos-e-falhas/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-04/diagnostico-de-infraestrutura-identifique-gargalos-e-falhas/</guid>
-      <pubDate>Wed, 04 Nov 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Redes corporativas sofrem degradação silenciosa por gargalos de hardware, cabeamento inadequado e falhas de configuração.</description>
-    </item>
-    <item>
-      <title>WI-FI Corporativo: 3 erros comuns que ainda vemos e como evitá-los na PME</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-04/wi-fi-corporativo-3-erros-comuns-que-ainda-vemos-e-como/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-04/wi-fi-corporativo-3-erros-comuns-que-ainda-vemos-e-como/</guid>
-      <pubDate>Wed, 04 Nov 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Redes Wi-Fi corporativas mal configuradas são portas de entrada para ataques e vazamento de dados críticos.</description>
-    </item>
-    <item>
-      <title>Phishing: Campanha de Google Calendar burla MFA e sequestra sessões corporativas</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-04/phishing-campanha-de-google-calendar-burla-mfa-e-sequestra/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-04/phishing-campanha-de-google-calendar-burla-mfa-e-sequestra/</guid>
-      <pubDate>Wed, 04 Nov 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>Uma campanha de phishing sofisticada, ativa desde meados de 2026, sequestra sessões ativas de Google de usuários corporativos, contornando a Autenticação…</description>
-    </item>
-    <item>
-      <title>Anatel bloqueia SMS fraudulentos: novas regras para proteção corporativa</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-04/anatel-bloqueia-sms-fraudulentos-novas-regras-para-protecao/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-04/anatel-bloqueia-sms-fraudulentos-novas-regras-para-protecao/</guid>
-      <pubDate>Wed, 04 Nov 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>Anatel determinou o bloqueio de SMS corporativos (A2P) enviados por códigos curtos não cadastrados, visando combater golpes de mensagens falsas.</description>
     </item>
   </channel>
 </rss>
