@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://techdimbr.github.io/techdimbr/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/privacidade.html</loc>
@@ -30,11 +30,35 @@
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-11/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-10/</loc>
     <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-15/</loc>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-15/concentracao-tecnologica-falha-microsoft-expoe-riscos/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-15/concentracao-tecnologica-falha-microsoft-expoe-riscos/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-15/ataque-de-cibercriminosos-credenciais-roubadas-expoem-dados/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-15/ataque-de-cibercriminosos-credenciais-roubadas-expoem-dados/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-15/wi-fi-corporativo-4-erros-estruturais-que-expoem-a-rede/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-15/wi-fi-corporativo-4-erros-estruturais-que-expoem-a-rede/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-15/infraestrutura-o-perigo-invisivel-do-hardware-obsoleto/</loc>
+    <lastmod>2026-11-15</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-15/infraestrutura-o-perigo-invisivel-do-hardware-obsoleto/capa.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-14/</loc>

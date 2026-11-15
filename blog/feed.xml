@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 14 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>INFRAESTRUTURA: O perigo invisível do hardware obsoleto na sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-15/infraestrutura-o-perigo-invisivel-do-hardware-obsoleto/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-15/infraestrutura-o-perigo-invisivel-do-hardware-obsoleto/</guid>
+      <pubDate>Sun, 15 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Redes lentas, quedas intermitentes de conexão e gargalos em servidores geram prejuízos diários e frustram equipes inteiras.</description>
+    </item>
+    <item>
+      <title>Wi-Fi Corporativo: 4 erros estruturais que expõem a rede da sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-15/wi-fi-corporativo-4-erros-estruturais-que-expoem-a-rede/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-15/wi-fi-corporativo-4-erros-estruturais-que-expoem-a-rede/</guid>
+      <pubDate>Sun, 15 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Usar a mesma senha de Wi-Fi para funcionários, visitantes e dispositivos IoT fragiliza toda a operação e facilita o acesso não autorizado.</description>
+    </item>
+    <item>
+      <title>ATAQUE DE CIBERCRIMINOSOS: Credenciais roubadas expõem dados e instalam backdoors</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-15/ataque-de-cibercriminosos-credenciais-roubadas-expoem-dados/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-15/ataque-de-cibercriminosos-credenciais-roubadas-expoem-dados/</guid>
+      <pubDate>Sun, 15 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A Cursor confirmou uma violação de segurança que permitiu a distribuição de uma extensão maliciosa do Claude Code, após roubo de credenciais da Fireworks…</description>
+    </item>
+    <item>
+      <title>Concentração Tecnológica: Falha Microsoft expõe riscos para PMEs e serviços essenciais</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-15/concentracao-tecnologica-falha-microsoft-expoe-riscos/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-15/concentracao-tecnologica-falha-microsoft-expoe-riscos/</guid>
+      <pubDate>Sun, 15 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>A pane global da Microsoft, que afetou serviços como Outlook e Teams em mais de 70 países, demonstrou a vulnerabilidade de infraestruturas centralizadas.</description>
+    </item>
     <item>
       <title>Migração de Servidor: Mude sua infraestrutura sem paralisar a operação da sua PME</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-14/migracao-de-servidor-mude-sua-infraestrutura-sem-paralisar/</link>
@@ -294,38 +326,6 @@
       <pubDate>Fri, 06 Nov 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A vulnerabilidade CVE-2026-83844 no Microsoft Paint do Windows 11 permite a execução remota de código malicioso, com pontuação de gravidade 8,1 (CVSS 3.1).</description>
-    </item>
-    <item>
-      <title>Automação com IA: Reduza erros e impulsione a eficiência da sua PME</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-05/automacao-com-ia-reduza-erros-e-impulsione-a-eficiencia/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-05/automacao-com-ia-reduza-erros-e-impulsione-a-eficiencia/</guid>
-      <pubDate>Thu, 05 Nov 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Processos repetitivos e manuais consomem tempo valioso e estão sujeitos a falhas humanas, impactando a produtividade e a qualidade dos serviços.</description>
-    </item>
-    <item>
-      <title>Sinais de Vulnerabilidade: 3 alertas que sua rede pode estar emitindo agora</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-05/sinais-de-vulnerabilidade-3-alertas-que-sua-rede-pode-estar/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-05/sinais-de-vulnerabilidade-3-alertas-que-sua-rede-pode-estar/</guid>
-      <pubDate>Thu, 05 Nov 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Identificar sinais precoces de vulnerabilidade é crucial para PMEs, pois permite agir antes que incidentes de segurança se tornem crises.</description>
-    </item>
-    <item>
-      <title>CWPdoor: Servidores Linux sendo backdoored via CWP web server trojanizado</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-05/cwpdoor-servidores-linux-sendo-backdoored-via-cwp-web-server/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-05/cwpdoor-servidores-linux-sendo-backdoored-via-cwp-web-server/</guid>
-      <pubDate>Thu, 05 Nov 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>Uma nova ameaça, o malware CWPdoor, está sendo distribuída através de uma versão trojanizada do cwpsrv, o servidor web do Control Web Panel (CWP).</description>
-    </item>
-    <item>
-      <title>Vazamento de Dados: FGC notifica investidores após incidente com informações sensíveis</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-05/vazamento-de-dados-fgc-notifica-investidores-apos-incidente/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-05/vazamento-de-dados-fgc-notifica-investidores-apos-incidente/</guid>
-      <pubDate>Thu, 05 Nov 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>O Fundo Garantidor de Créditos (FGC) detectou acesso não autorizado a informações pessoais e dados de pagamento de garantia na última semana de outubro.</description>
     </item>
   </channel>
 </rss>
