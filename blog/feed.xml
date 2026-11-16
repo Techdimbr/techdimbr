@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Sun, 15 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>AUTOMAÇÃO COM IA: Otimize processos e reduza custos na sua PME com inteligência artificial</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-16/automacao-com-ia-otimize-processos-e-reduza-custos-na-sua/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-16/automacao-com-ia-otimize-processos-e-reduza-custos-na-sua/</guid>
+      <pubDate>Mon, 16 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Muitas PMEs enfrentam gargalos operacionais e tarefas repetitivas que consomem tempo e recursos, impactando a produtividade e o crescimento.</description>
+    </item>
+    <item>
+      <title>Rede Vulnerável: 3 sinais que sua PME não pode ignorar hoje</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-16/rede-vulneravel-3-sinais-que-sua-pme-nao-pode-ignorar-hoje/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-16/rede-vulneravel-3-sinais-que-sua-pme-nao-pode-ignorar-hoje/</guid>
+      <pubDate>Mon, 16 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Sua rede corporativa pode estar vulnerável sem que você perceba. Pequenos sinais diários podem indicar brechas de segurança.</description>
+    </item>
+    <item>
+      <title>Windows Server 2016: Fim do suporte em janeiro de 2027 exige ação imediata</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-16/windows-server-2016-fim-do-suporte-em-janeiro-de-2027-exige/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-16/windows-server-2016-fim-do-suporte-em-janeiro-de-2027-exige/</guid>
+      <pubDate>Mon, 16 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A Microsoft alertou novamente que o Windows Server 2016 deixará de receber atualizações de segurança em 13 de janeiro de 2027, marcando o fim do suporte…</description>
+    </item>
+    <item>
+      <title>Apagão Microsoft 365: Microsoft revela &#x27;tempestade perfeita&#x27; de falhas</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-16/apagao-microsoft-365-microsoft-revela-tempestade-perfeita/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-16/apagao-microsoft-365-microsoft-revela-tempestade-perfeita/</guid>
+      <pubDate>Mon, 16 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Microsoft identificou três problemas simultâneos: um defeito no código dos servidores, aumento de tráfego do Teams e redução de capacidade da…</description>
+    </item>
     <item>
       <title>INFRAESTRUTURA: O perigo invisível do hardware obsoleto na sua PME</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-15/infraestrutura-o-perigo-invisivel-do-hardware-obsoleto/</link>
@@ -294,38 +326,6 @@
       <pubDate>Sat, 07 Nov 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A OpenAI anunciou o GPT-6 Cyber, um modelo de inteligência artificial voltado para pesquisas avançadas em cibersegurança, testes de vulnerabilidade e…</description>
-    </item>
-    <item>
-      <title>Diagnóstico de Infraestrutura: identifique gargalos antes da falha</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-06/diagnostico-de-infraestrutura-identifique-gargalos-antes/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-06/diagnostico-de-infraestrutura-identifique-gargalos-antes/</guid>
-      <pubDate>Fri, 06 Nov 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Redes corporativas com gargalos ocultos provocam lentidão crônica e quedas de produtividade na PME.</description>
-    </item>
-    <item>
-      <title>Downtime: O Custo Oculto da Parada de Sistema na Sua PME</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-06/downtime-o-custo-oculto-da-parada-de-sistema-na-sua-pme/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-06/downtime-o-custo-oculto-da-parada-de-sistema-na-sua-pme/</guid>
-      <pubDate>Fri, 06 Nov 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Cada hora de sistema parado na PME pode custar milhares de reais em perdas de receita, produtividade e danos à reputação, impactando diretamente o caixa…</description>
-    </item>
-    <item>
-      <title>OpenSSH: Falha &#x27;SSHOLE&#x27; permite acesso root e é explorada ativamente</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-06/openssh-falha-sshole-permite-acesso-root-e-e-explorada/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-06/openssh-falha-sshole-permite-acesso-root-e-e-explorada/</guid>
-      <pubDate>Fri, 06 Nov 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A falha CVE-2026-123158 (SSHOLE) no OpenSSH permite login sem senha em contas com asterisco (*) no hash. Afeta Linux com musl C library e PAM…</description>
-    </item>
-    <item>
-      <title>Vulnerabilidade no Paint: Falha grave permite ataques remotos no Windows 11</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-06/vulnerabilidade-no-paint-falha-grave-permite-ataques-remotos/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-06/vulnerabilidade-no-paint-falha-grave-permite-ataques-remotos/</guid>
-      <pubDate>Fri, 06 Nov 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>A vulnerabilidade CVE-2026-83844 no Microsoft Paint do Windows 11 permite a execução remota de código malicioso, com pontuação de gravidade 8,1 (CVSS 3.1).</description>
     </item>
   </channel>
 </rss>
