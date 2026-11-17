@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Mon, 16 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>INFRAESTRUTURA: Diagnóstico completo mapeia gargalos ocultos da sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-17/infraestrutura-diagnostico-completo-mapeia-gargalos-ocultos/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-17/infraestrutura-diagnostico-completo-mapeia-gargalos-ocultos/</guid>
+      <pubDate>Tue, 17 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>O diagnóstico detalhado de infraestrutura e segurança identifica falhas invisíveis que comprometem a operação diária.</description>
+    </item>
+    <item>
+      <title>Auditoria de TI: 4 itens que o auditor da LGPD exige primeiro</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-17/auditoria-de-ti-4-itens-que-o-auditor-da-lgpd-exige-primeiro/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-17/auditoria-de-ti-4-itens-que-o-auditor-da-lgpd-exige-primeiro/</guid>
+      <pubDate>Tue, 17 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>O auditor da LGPD inicia a verificação exigindo o mapeamento do fluxo de dados pessoais que circulam na empresa.</description>
+    </item>
+    <item>
+      <title>Phishing Avançado: Kits roubam sessões Microsoft 365 e bypassam MFA</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-17/phishing-avancado-kits-roubam-sessoes-microsoft-365/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-17/phishing-avancado-kits-roubam-sessoes-microsoft-365/</guid>
+      <pubDate>Tue, 17 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>Kits de phishing modernos agem como SaaS, oferecendo painéis de administração e suporte para roubar tokens de sessão do Microsoft 365, não apenas…</description>
+    </item>
+    <item>
+      <title>IA e Clima: Brasil, UIT e UNESCO lançam instituto para capacitar países em desenvolvimento</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-17/ia-e-clima-brasil-uit-e-unesco-lancam-instituto/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-17/ia-e-clima-brasil-uit-e-unesco-lancam-instituto/</guid>
+      <pubDate>Tue, 17 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>O Brasil, em parceria com Anatel, UIT e UNESCO, lançou o Instituto de IA para Mudanças Climáticas (AICI) na COP31, visando ampliar a aplicação de IA em…</description>
+    </item>
     <item>
       <title>AUTOMAÇÃO COM IA: Otimize processos e reduza custos na sua PME com inteligência artificial</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-16/automacao-com-ia-otimize-processos-e-reduza-custos-na-sua/</link>
@@ -294,38 +326,6 @@
       <pubDate>Sun, 08 Nov 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>Hackers alteraram remotamente a temperatura de freezers em três instalações do Estabelecimento Francês de Sangue (EFS), programando-os para até 110 ºC.</description>
-    </item>
-    <item>
-      <title>Infraestrutura e Redes: construa uma base sólida para a sua PME</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-07/infraestrutura-e-redes-construa-uma-base-solida-para-a-sua/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-07/infraestrutura-e-redes-construa-uma-base-solida-para-a-sua/</guid>
-      <pubDate>Sat, 07 Nov 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Redes instáveis e gargalos de hardware geram lentidão diária e travamentos que prejudicam a operação da sua empresa.</description>
-    </item>
-    <item>
-      <title>Firewall corporativo: sua empresa está protegida ou apenas com o equipamento ligado?</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-07/firewall-corporativo-sua-empresa-esta-protegida-ou-apenas/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-07/firewall-corporativo-sua-empresa-esta-protegida-ou-apenas/</guid>
-      <pubDate>Sat, 07 Nov 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Ter um firewall fisicamente instalado e ligado na PME não garante segurança se regras de acesso e monitoramento não estiverem ativas.</description>
-    </item>
-    <item>
-      <title>SonicWall: Falha em SSL-VPN com bypass de MFA é explorada em ataques</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-07/sonicwall-falha-em-ssl-vpn-com-bypass-de-mfa-e-explorada/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-07/sonicwall-falha-em-ssl-vpn-com-bypass-de-mfa-e-explorada/</guid>
-      <pubDate>Sat, 07 Nov 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A SonicWall corrigiu a falha CVE-2026-19868 no SonicOS, que permite a invasores burlar o SAML e controles de MFA.</description>
-    </item>
-    <item>
-      <title>GPT-6 Cyber: OpenAI lança IA para cibersegurança e detecção de falhas</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-07/gpt-6-cyber-openai-lanca-ia-para-ciberseguranca-e-deteccao/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-07/gpt-6-cyber-openai-lanca-ia-para-ciberseguranca-e-deteccao/</guid>
-      <pubDate>Sat, 07 Nov 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>A OpenAI anunciou o GPT-6 Cyber, um modelo de inteligência artificial voltado para pesquisas avançadas em cibersegurança, testes de vulnerabilidade e…</description>
     </item>
   </channel>
 </rss>
