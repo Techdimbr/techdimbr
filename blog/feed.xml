@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 17 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>INFRAESTRUTURA: Diagnóstico de TI mapeia falhas ocultas em servidores e redes</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-18/infraestrutura-diagnostico-de-ti-mapeia-falhas-ocultas/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-18/infraestrutura-diagnostico-de-ti-mapeia-falhas-ocultas/</guid>
+      <pubDate>Wed, 18 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Identifique gargalos de desempenho e falhas de segurança antes que causem paradas não planejadas na sua operação.</description>
+    </item>
+    <item>
+      <title>Firewall de PME: Seu equipamento está configurado ou apenas ligado na tomada?</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-18/firewall-de-pme-seu-equipamento-esta-configurado-ou-apenas/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-18/firewall-de-pme-seu-equipamento-esta-configurado-ou-apenas/</guid>
+      <pubDate>Wed, 18 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Firewalls apenas conectados à tomada de fábrica mantêm senhas padrão e portas abertas para a internet.</description>
+    </item>
+    <item>
+      <title>Vulnerabilidade Java4Shell (CVE-2026-114938): RCE Pré-Autenticação em Apps Críticos</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-18/vulnerabilidade-java4shell-cve-2026-114938-rce-pre/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-18/vulnerabilidade-java4shell-cve-2026-114938-rce-pre/</guid>
+      <pubDate>Wed, 18 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A falha Java4Shell permite a execução remota de código (RCE) sem autenticação em aplicações como Jira, Jenkins e Keycloak, segundo a Calif.</description>
+    </item>
+    <item>
+      <title>CIBERSEGURANÇA: Ataques autônomos de IA já são realidade, alerta Google</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-18/ciberseguranca-ataques-autonomos-de-ia-ja-sao-realidade/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-18/ciberseguranca-ataques-autonomos-de-ia-ja-sao-realidade/</guid>
+      <pubDate>Wed, 18 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>O Google Threat Intelligence Group (GTIG) identificou agentes de IA que automatizam a descoberta de vulnerabilidades e a criação de ataques sem…</description>
+    </item>
     <item>
       <title>INFRAESTRUTURA: Diagnóstico completo mapeia gargalos ocultos da sua PME</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-17/infraestrutura-diagnostico-completo-mapeia-gargalos-ocultos/</link>
@@ -294,38 +326,6 @@
       <pubDate>Mon, 09 Nov 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A Anthropic expandiu a marca d&#x27;água invisível para modelos antigos do Claude AI, como Opus 4.6 e a família Claude 4.5, a partir de 16 de novembro.</description>
-    </item>
-    <item>
-      <title>Software Sob Medida: Solução para processos únicos da sua PME.</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-08/software-sob-medida-solucao-para-processos-unicos-da-sua-pme/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-08/software-sob-medida-solucao-para-processos-unicos-da-sua-pme/</guid>
-      <pubDate>Sun, 08 Nov 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Sistemas genéricos forçam sua PME a adaptar processos, gerando ineficiência e gargalos operacionais.</description>
-    </item>
-    <item>
-      <title>MFA: Por que apenas uma senha forte não protege sua PME de ciberataques</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-08/mfa-por-que-apenas-uma-senha-forte-nao-protege-sua-pme/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-08/mfa-por-que-apenas-uma-senha-forte-nao-protege-sua-pme/</guid>
-      <pubDate>Sun, 08 Nov 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Ataques de phishing e engenharia social evoluíram para roubar credenciais, tornando senhas fortes insuficientes para a segurança corporativa.</description>
-    </item>
-    <item>
-      <title>DEFESA CONTRA FALHAS: SonicWall alerta sobre vulnerabilidade crítica em SSL-VPN</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-08/defesa-contra-falhas-sonicwall-alerta-sobre-vulnerabilidade/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-08/defesa-contra-falhas-sonicwall-alerta-sobre-vulnerabilidade/</guid>
-      <pubDate>Sun, 08 Nov 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A SonicWall lançou atualizações de segurança para corrigir sete falhas em seus firewalls SonicOS, incluindo uma vulnerabilidade de bypass de autenticação…</description>
-    </item>
-    <item>
-      <title>Ciberataque: Hackers alteram temperatura de freezers em bancos de sangue na França</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-08/ciberataque-hackers-alteram-temperatura-de-freezers/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-08/ciberataque-hackers-alteram-temperatura-de-freezers/</guid>
-      <pubDate>Sun, 08 Nov 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>Hackers alteraram remotamente a temperatura de freezers em três instalações do Estabelecimento Francês de Sangue (EFS), programando-os para até 110 ºC.</description>
     </item>
   </channel>
 </rss>
