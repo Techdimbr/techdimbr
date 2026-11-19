@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 18 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>INFRAESTRUTURA: Migração de servidor sem parar a empresa</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-19/infraestrutura-migracao-de-servidor-sem-parar-a-empresa/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-19/infraestrutura-migracao-de-servidor-sem-parar-a-empresa/</guid>
+      <pubDate>Thu, 19 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>A substituição ou atualização de servidores centrais é indispensável para evitar gargalos operacionais e falhas de hardware em PMEs.</description>
+    </item>
+    <item>
+      <title>MFA corporativo: por que senha forte já não basta para proteger sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-19/mfa-corporativo-por-que-senha-forte-ja-nao-basta/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-19/mfa-corporativo-por-que-senha-forte-ja-nao-basta/</guid>
+      <pubDate>Thu, 19 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Senhas complexas caem facilmente frente a ataques modernos de phishing avançado e roubo de sessões.</description>
+    </item>
+    <item>
+      <title>CRITICAL VMware vCenter Flaw: CVE-2026-123890 bypasses authentication</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-19/critical-vmware-vcenter-flaw-cve-2026-123890-bypasses/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-19/critical-vmware-vcenter-flaw-cve-2026-123890-bypasses/</guid>
+      <pubDate>Thu, 19 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>Uma falha crítica de bypass de autenticação no VMware vCenter (CVE-2026-123890), com pontuação CVSS de 9.8, afeta o VMware Directory Service.</description>
+    </item>
+    <item>
+      <title>IA e Cibersegurança: Inteligência Artificial ajudou a descobrir falha crítica no Java</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-19/ia-e-ciberseguranca-inteligencia-artificial-ajudou/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-19/ia-e-ciberseguranca-inteligencia-artificial-ajudou/</guid>
+      <pubDate>Thu, 19 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Uma startup de cibersegurança utilizou ferramentas de IA, incluindo GPT-6 Cyber e agente Codex, para identificar uma vulnerabilidade crítica no Java…</description>
+    </item>
     <item>
       <title>INFRAESTRUTURA: Diagnóstico de TI mapeia falhas ocultas em servidores e redes</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-18/infraestrutura-diagnostico-de-ti-mapeia-falhas-ocultas/</link>
@@ -294,38 +326,6 @@
       <pubDate>Tue, 10 Nov 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A Meta lançou o Muse Ember, seu menor e mais eficiente modelo de IA até o momento, focado em tarefas repetitivas de alto volume como análise de…</description>
-    </item>
-    <item>
-      <title>LGPD: Adequação à LGPD sem travar a operação da sua PME é possível</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-09/lgpd-adequacao-a-lgpd-sem-travar-a-operacao-da-sua-pme/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-09/lgpd-adequacao-a-lgpd-sem-travar-a-operacao-da-sua-pme/</guid>
-      <pubDate>Mon, 09 Nov 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>A LGPD exige conformidade com a proteção de dados, mas a implementação inadequada pode gerar burocracia excessiva e atrasar processos.</description>
-    </item>
-    <item>
-      <title>LGPD na prática: Prepare sua PME para a auditoria com estes 4 itens essenciais</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-09/lgpd-na-pratica-prepare-sua-pme-para-a-auditoria-com-estes-4/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-09/lgpd-na-pratica-prepare-sua-pme-para-a-auditoria-com-estes-4/</guid>
-      <pubDate>Mon, 09 Nov 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Auditorias de LGPD focam em evidências de conformidade; ter os documentos e processos organizados é crucial para PMEs.</description>
-    </item>
-    <item>
-      <title>Cibersegurança: Ataque à Qubole expõe dados e credenciais de clientes AWS</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-09/ciberseguranca-ataque-a-qubole-expoe-dados-e-credenciais/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-09/ciberseguranca-ataque-a-qubole-expoe-dados-e-credenciais/</guid>
-      <pubDate>Mon, 09 Nov 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>Um ataque explorou credenciais da plataforma Qubole para acessar contas AWS de múltiplos clientes entre 14 e 26 de outubro, resultando em roubo de dados…</description>
-    </item>
-    <item>
-      <title>Claude AI: Marca d&#x27;água invisível agora em mais modelos de texto para procedência</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-09/claude-ai-marca-d-agua-invisivel-agora-em-mais-modelos/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-09/claude-ai-marca-d-agua-invisivel-agora-em-mais-modelos/</guid>
-      <pubDate>Mon, 09 Nov 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>A Anthropic expandiu a marca d&#x27;água invisível para modelos antigos do Claude AI, como Opus 4.6 e a família Claude 4.5, a partir de 16 de novembro.</description>
     </item>
   </channel>
 </rss>
