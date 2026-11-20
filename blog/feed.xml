@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 19 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>Suporte de TI: Sua PME merece um parceiro, não um &quot;quebra-galho&quot; reativo.</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-20/suporte-de-ti-sua-pme-merece-um-parceiro-nao-um-quebra-galho/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-20/suporte-de-ti-sua-pme-merece-um-parceiro-nao-um-quebra-galho/</guid>
+      <pubDate>Fri, 20 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>Muitas PMEs enfrentam a frustração de um suporte de TI reativo, que só age quando o problema já está impactando a operação, gerando custos e perdas.</description>
+    </item>
+    <item>
+      <title>BACKUP: Teste sua restauração ou seu backup pode ser inútil</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-20/backup-teste-sua-restauracao-ou-seu-backup-pode-ser-inutil/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-20/backup-teste-sua-restauracao-ou-seu-backup-pode-ser-inutil/</guid>
+      <pubDate>Fri, 20 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Apenas ter cópias de segurança não garante a recuperação de dados em caso de falha; o teste de restauração é crucial para validar a eficácia do backup.</description>
+    </item>
+    <item>
+      <title>KVM Flaw: Vulnerabilidade permite acesso à memória do host em servidores AMD</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-20/kvm-flaw-vulnerabilidade-permite-acesso-a-memoria-do-host/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-20/kvm-flaw-vulnerabilidade-permite-acesso-a-memoria-do-host/</guid>
+      <pubDate>Fri, 20 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A falha CVE-2026-99312 no KVM do Linux permite que VMs convidadas acessem até 127 GB da memória do host em servidores com processadores AMD e…</description>
+    </item>
+    <item>
+      <title>VAZAMENTO: Dados de clientes Visa, Mastercard e JPMorgan expostos via terceiros</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-20/vazamento-dados-de-clientes-visa-mastercard-e-jpmorgan/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-20/vazamento-dados-de-clientes-visa-mastercard-e-jpmorgan/</guid>
+      <pubDate>Fri, 20 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>O grupo de extorsão digital n0n reivindicou o vazamento de dados de clientes de Visa, Mastercard e JPMorgan, obtidos via fornecedores terceirizados.</description>
+    </item>
     <item>
       <title>INFRAESTRUTURA: Migração de servidor sem parar a empresa</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-19/infraestrutura-migracao-de-servidor-sem-parar-a-empresa/</link>
@@ -294,38 +326,6 @@
       <pubDate>Wed, 11 Nov 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>A Anthropic lançou Claude Meetings, Claude Sheets e Claude Whiteboards, expandindo o assistente Claude para tarefas de escritório, atualmente em fase beta.</description>
-    </item>
-    <item>
-      <title>DIAGNÓSTICO: Identifique gargalos e vulnerabilidades antes que afetem sua PME</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-10/diagnostico-identifique-gargalos-e-vulnerabilidades-antes/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-10/diagnostico-identifique-gargalos-e-vulnerabilidades-antes/</guid>
-      <pubDate>Tue, 10 Nov 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Muitas PMEs operam com infraestrutura de TI sem visibilidade clara dos riscos, levando a falhas inesperadas e perda de produtividade.</description>
-    </item>
-    <item>
-      <title>Atualização de Software: Mantenha seus sistemas seguros e evite vulnerabilidades críticas</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-10/atualizacao-de-software-mantenha-seus-sistemas-seguros/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-10/atualizacao-de-software-mantenha-seus-sistemas-seguros/</guid>
-      <pubDate>Tue, 10 Nov 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Atualizações de software não são apenas para novas funcionalidades; elas corrigem falhas de segurança que hackers exploram ativamente.</description>
-    </item>
-    <item>
-      <title>Ataque Blind Eagle: Falsas notificações judiciais espalham RAT na América Latina</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-10/ataque-blind-eagle-falsas-notificacoes-judiciais-espalham/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-10/ataque-blind-eagle-falsas-notificacoes-judiciais-espalham/</guid>
-      <pubDate>Tue, 10 Nov 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>O grupo Blind Eagle (APT-C-36) reativou campanhas de phishing com iscas judiciais e administrativas em português e espanhol, visando empresas na América…</description>
-    </item>
-    <item>
-      <title>Meta Muse Ember: IA ultrabarata otimiza tarefas repetitivas em PMEs brasileiras</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-10/meta-muse-ember-ia-ultrabarata-otimiza-tarefas-repetitivas/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-10/meta-muse-ember-ia-ultrabarata-otimiza-tarefas-repetitivas/</guid>
-      <pubDate>Tue, 10 Nov 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>A Meta lançou o Muse Ember, seu menor e mais eficiente modelo de IA até o momento, focado em tarefas repetitivas de alto volume como análise de…</description>
     </item>
   </channel>
 </rss>
