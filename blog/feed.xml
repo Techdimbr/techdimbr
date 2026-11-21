@@ -6,7 +6,39 @@
     <atom:link href="https://techdimbr.github.io/techdimbr/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Radar diário de tecnologia, segurança e IA para empresas.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 20 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 06:03:00 -0300</lastBuildDate>
+    <item>
+      <title>INFRAESTRUTURA: Diagnóstico de TI revela falhas ocultas que travam sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-21/infraestrutura-diagnostico-de-ti-revela-falhas-ocultas/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-21/infraestrutura-diagnostico-de-ti-revela-falhas-ocultas/</guid>
+      <pubDate>Sat, 21 Nov 2026 06:03:00 -0300</pubDate>
+      <category>Serviço TECHDIM</category>
+      <description>O diagnóstico de infraestrutura e segurança da TECHDIM mapeia gargalos invisíveis, lentidões crônicas e falhas de arquitetura na sua rede.</description>
+    </item>
+    <item>
+      <title>HARDENING: Blindagem técnica para proteger os ativos críticos da sua PME</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-21/hardening-blindagem-tecnica-para-proteger-os-ativos-criticos/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-21/hardening-blindagem-tecnica-para-proteger-os-ativos-criticos/</guid>
+      <pubDate>Sat, 21 Nov 2026 06:02:00 -0300</pubDate>
+      <category>Dica prática</category>
+      <description>Hardening de servidores é o processo de fortalecer a segurança de um sistema, reduzindo sua superfície de ataque e minimizando vulnerabilidades.</description>
+    </item>
+    <item>
+      <title>CIBERSEGURANÇA: CISA alerta para exploração ativa em VMware, Cisco e Apache</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-21/ciberseguranca-cisa-alerta-para-exploracao-ativa-em-vmware/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-21/ciberseguranca-cisa-alerta-para-exploracao-ativa-em-vmware/</guid>
+      <pubDate>Sat, 21 Nov 2026 06:01:00 -0300</pubDate>
+      <category>Alerta de segurança</category>
+      <description>A CISA adicionou quatro falhas críticas em Apache Roller, Cisco Expressway, SAP NetWeaver e VMware vCenter ao KEV, confirmando exploração ativa.</description>
+    </item>
+    <item>
+      <title>IA Corporativa: 5 erros fatais na governança que comprometem sua adoção segura</title>
+      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-21/ia-corporativa-5-erros-fatais-na-governanca-que-comprometem/</link>
+      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-21/ia-corporativa-5-erros-fatais-na-governanca-que-comprometem/</guid>
+      <pubDate>Sat, 21 Nov 2026 06:00:00 -0300</pubDate>
+      <category>Notícia de tecnologia</category>
+      <description>Um estudo de 2025 revelou que 93% das empresas exploravam IA generativa, mas apenas 46% possuíam políticas de governança, e 47% destas raramente eram…</description>
+    </item>
     <item>
       <title>Suporte de TI: Sua PME merece um parceiro, não um &quot;quebra-galho&quot; reativo.</title>
       <link>https://techdimbr.github.io/techdimbr/blog/2026-11-20/suporte-de-ti-sua-pme-merece-um-parceiro-nao-um-quebra-galho/</link>
@@ -294,38 +326,6 @@
       <pubDate>Thu, 12 Nov 2026 06:00:00 -0300</pubDate>
       <category>Notícia de tecnologia</category>
       <description>Mais de 35 mil aplicativos criados no Grok Build tiveram dados confidenciais expostos, incluindo informações médicas, comerciais e até da SpaceX.</description>
-    </item>
-    <item>
-      <title>Backup gerenciado: garanta que sua PME consiga recuperar dados e operar após falhas</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-11/backup-gerenciado-garanta-que-sua-pme-consiga-recuperar/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-11/backup-gerenciado-garanta-que-sua-pme-consiga-recuperar/</guid>
-      <pubDate>Wed, 11 Nov 2026 06:03:00 -0300</pubDate>
-      <category>Serviço TECHDIM</category>
-      <description>Empresas frequentemente acumulam cópias de segurança sem nunca validar se os arquivos corrompidos podem ser restaurados com integridade.</description>
-    </item>
-    <item>
-      <title>GERENCIAMENTO DE SENHAS: Cofre corporativo é essencial para a segurança da sua PME</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-11/gerenciamento-de-senhas-cofre-corporativo-e-essencial/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-11/gerenciamento-de-senhas-cofre-corporativo-e-essencial/</guid>
-      <pubDate>Wed, 11 Nov 2026 06:02:00 -0300</pubDate>
-      <category>Dica prática</category>
-      <description>Senhas fracas ou reutilizadas são portas de entrada comuns para ciberataques, expondo dados e sistemas críticos da sua PME.</description>
-    </item>
-    <item>
-      <title>Vulnerabilidades Zero-Day N-able: Hotfixes urgentes para plataforma RMM</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-11/vulnerabilidades-zero-day-n-able-hotfixes-urgentes/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-11/vulnerabilidades-zero-day-n-able-hotfixes-urgentes/</guid>
-      <pubDate>Wed, 11 Nov 2026 06:01:00 -0300</pubDate>
-      <category>Alerta de segurança</category>
-      <description>A N-able lançou hotfixes de segurança para vulnerabilidades zero-day críticas em sua plataforma N-central RMM, forçando a desativação de ambientes…</description>
-    </item>
-    <item>
-      <title>Claude AI: Novas ferramentas de produtividade para empresas em fase beta</title>
-      <link>https://techdimbr.github.io/techdimbr/blog/2026-11-11/claude-ai-novas-ferramentas-de-produtividade-para-empresas/</link>
-      <guid isPermaLink="true">https://techdimbr.github.io/techdimbr/blog/2026-11-11/claude-ai-novas-ferramentas-de-produtividade-para-empresas/</guid>
-      <pubDate>Wed, 11 Nov 2026 06:00:00 -0300</pubDate>
-      <category>Notícia de tecnologia</category>
-      <description>A Anthropic lançou Claude Meetings, Claude Sheets e Claude Whiteboards, expandindo o assistente Claude para tarefas de escritório, atualmente em fase beta.</description>
     </item>
   </channel>
 </rss>

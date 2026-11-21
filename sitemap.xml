@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://techdimbr.github.io/techdimbr/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-21</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-21</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/privacidade.html</loc>
@@ -30,11 +30,35 @@
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-11/</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-21</lastmod>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/arquivo/2026-10/</loc>
     <lastmod>2026-10-31</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-21/</loc>
+    <lastmod>2026-11-21</lastmod>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-21/ia-corporativa-5-erros-fatais-na-governanca-que-comprometem/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-21/ia-corporativa-5-erros-fatais-na-governanca-que-comprometem/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-21/ciberseguranca-cisa-alerta-para-exploracao-ativa-em-vmware/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-21/ciberseguranca-cisa-alerta-para-exploracao-ativa-em-vmware/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-21/hardening-blindagem-tecnica-para-proteger-os-ativos-criticos/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-21/hardening-blindagem-tecnica-para-proteger-os-ativos-criticos/capa.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-21/infraestrutura-diagnostico-de-ti-revela-falhas-ocultas/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <image:image><image:loc>https://techdimbr.github.io/techdimbr/blog/2026-11-21/infraestrutura-diagnostico-de-ti-revela-falhas-ocultas/capa.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://techdimbr.github.io/techdimbr/blog/2026-11-20/</loc>
